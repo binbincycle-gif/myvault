@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"234567890abcdef1","type":"text","text":"## 关键洞察\n\n**核心突破：**\n- 自主权限\n- Skill 生态\n- A2A 互动\n\n**最大挑战：**\n- 安全风险\n- Token 成本\n- 组织重构","x":3710,"y":0,"width":300,"height":200,"color":"3"},
+		{"id":"34567890abcdef12","type":"file","file":"Clippings/闭门探讨：130位AI创业者，对Clawdbot和下一代AI产品的39条思考.md","x":3410,"y":1760,"width":300,"height":150,"color":"2"},
+		{"id":"1234567890abcdef","type":"text","text":"## 08 会成为2026主流形态吗？\n\n**未来展望**\n\n37. 本质是「云电脑」\n38. 仍是极客狂欢，大众市场缺席\n39. **基于 AI 的进化速度无法比拟**","x":1500,"y":1200,"width":350,"height":250,"color":"4"},
+		{"id":"0123456789abcdef","type":"text","text":"## 07 安全是最大短板\n\n**当前痛点**\n\n32. Token 消耗夸张\n33. 文件检索低效\n34. 沙箱和虚拟化不足\n35. **安全风险高**\n36. 备份机制缺失","x":350,"y":1585,"width":350,"height":250,"color":"1"},
+		{"id":"a1b2c3d4e5f67890","type":"text","text":"## 01 从被动响应到主动服务\n\n**AI 开始自己迭代自己了**\n\n1. 用户面对 Agent 时仍「笨拙」\n2. **自主权限突破**是关键\n3. 高频定时任务催生想象力\n4. AI 能感知环境变化\n5. **AI 能迭代工具本身**\n6. 个人本地 Agent 是 self-evolve 最佳场景\n7. 进化速度超乎想象","x":-560,"y":-250,"width":350,"height":250,"color":"4"},
+		{"id":"e5f67890123456ab","type":"text","text":"## 05 活在用户高频工作流中\n\n**入口无处不在**\n\n26. AI 入口扩展到所有 IM\n27. **IM 即任务入口**\n28. 社交场景新机会\n29. 交易场景应用广泛","x":-1040,"y":550,"width":350,"height":250,"color":"6"},
+		{"id":"f67890123456789a","type":"text","text":"## 06 端侧作为上下文「沉淀池」\n\n**设备集成**\n\n30. Agent 设计是核心\n31. 端侧沉淀个性化上下文","x":350,"y":-2080,"width":350,"height":200,"color":"5"},
+		{"id":"6f0ad84f44ce9c17","type":"text","text":"# Clawdbot 闭门探讨\n\n## 130位AI创业者的39条思考\n\n**核心主题：** AI Agent 的自主进化与 Skill 生态革命","x":1350,"y":-595,"width":500,"height":200,"color":"5"},
+		{"id":"d4e5f6789012345a","type":"text","text":"## 04 人类「交互带宽」有限\n\n**终极形态：A2A 互动**\n\n21. 用户认知带宽有限\n22. 人类交互带宽受限\n23. **AI 与 AI 互动是真正突破**\n24. A2A 可重塑所有应用\n25. 人指挥 AI 效率太低","x":2200,"y":-285,"width":350,"height":250,"color":"1"},
+		{"id":"c3d4e5f678901234","type":"text","text":"## 03 Memory as a File System\n\n**记忆即进化**\n\n15. Memory 是轻量化组件\n16. Memory = Self-evolving\n17. **「Memory as a File System」是方向**\n18. 混合检索方案\n19. 需要人类反馈闭环\n20. 云端记忆引擎解决检索问题","x":1350,"y":-120,"width":710,"height":560,"color":"2"},
+		{"id":"b2c3d4e5f6789012","type":"text","text":"## 02 Skills 就是新时代的 Apps\n\n**生态重塑**\n\n8. Agent/IM = 新 OS\n   AI 云电脑 = Runtime\n   Skills = 新时代 Apps\n9. IM 入口触达产品\n10. 底层技术同质化，Skills 是唯一变量\n11. 未来无需交互入口\n12. 按 Skill 执行付费\n13. Skill Store SEO 是关键\n14. **绝大多数产品将「Skill 化」**","x":710,"y":-1105,"width":640,"height":610,"color":"3"}
+	],
+	"edges":[
+		{"id":"4567890abcdef123","fromNode":"6f0ad84f44ce9c17","fromSide":"left","toNode":"a1b2c3d4e5f67890","toSide":"right","color":"4"},
+		{"id":"67890abcdef12345","fromNode":"6f0ad84f44ce9c17","fromSide":"right","toNode":"c3d4e5f678901234","toSide":"left","color":"2"},
+		{"id":"7890abcdef123456","fromNode":"6f0ad84f44ce9c17","fromSide":"bottom","toNode":"d4e5f6789012345a","toSide":"top","color":"1"},
+		{"id":"890abcdef1234567","fromNode":"a1b2c3d4e5f67890","fromSide":"bottom","toNode":"e5f67890123456ab","toSide":"top","color":"6"},
+		{"id":"90abcdef12345678","fromNode":"b2c3d4e5f6789012","fromSide":"bottom","toNode":"f67890123456789a","toSide":"top","color":"5"},
+		{"id":"0abcdef123456789","fromNode":"c3d4e5f678901234","fromSide":"bottom","toNode":"0123456789abcdef","toSide":"top","color":"1"},
+		{"id":"abcdef1234567890","fromNode":"d4e5f6789012345a","fromSide":"bottom","toNode":"1234567890abcdef","toSide":"top","color":"4"},
+		{"id":"cdef1234567890ab","fromNode":"234567890abcdef1","fromSide":"bottom","toNode":"34567890abcdef12","toSide":"top","color":"2","label":"原文链接"}
+	]
+}

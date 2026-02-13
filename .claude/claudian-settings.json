@@ -1,0 +1,79 @@
+{
+  "userName": "cycle",
+  "enableBlocklist": true,
+  "blockedCommands": {
+    "unix": [
+      "rm -rf",
+      "chmod 777",
+      "chmod -R 777"
+    ],
+    "windows": [
+      "del /s /q",
+      "rd /s /q",
+      "rmdir /s /q",
+      "format",
+      "diskpart",
+      "Remove-Item -Recurse -Force",
+      "Remove-Item -Force -Recurse",
+      "Remove-Item -r -fo",
+      "Remove-Item -fo -r",
+      "Remove-Item -Recurse",
+      "Remove-Item -r",
+      "ri -Recurse",
+      "ri -r",
+      "ri -Force",
+      "ri -fo",
+      "rm -r -fo",
+      "rm -Recurse",
+      "rm -Force",
+      "del -Recurse",
+      "del -Force",
+      "erase -Recurse",
+      "erase -Force",
+      "rd -Recurse",
+      "rmdir -Recurse",
+      "Format-Volume",
+      "Clear-Disk",
+      "Initialize-Disk",
+      "Remove-Partition"
+    ]
+  },
+  "permissionMode": "yolo",
+  "model": "deepseek-v3",
+  "thinkingBudget": "medium",
+  "enableAutoTitleGeneration": true,
+  "titleGenerationModel": "",
+  "show1MModel": false,
+  "enableChrome": false,
+  "enableBangBash": false,
+  "excludedTags": [],
+  "mediaFolder": "",
+  "systemPrompt": "",
+  "allowedExportPaths": [
+    "~/Desktop",
+    "~/Downloads"
+  ],
+  "persistentExternalContextPaths": [],
+  "environmentVariables": "ANTHROPIC_API_KEY=sk-f4ad7294b4394786a2920884113f83cf\nANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic\nANTHROPIC_MODEL=deepseek-v3",
+  "envSnippets": [],
+  "customContextLimits": {},
+  "keyboardNavigation": {
+    "scrollUpKey": "w",
+    "scrollDownKey": "s",
+    "focusInputKey": "i"
+  },
+  "locale": "zh-CN",
+  "claudeCliPath": "",
+  "claudeCliPathsByHost": {
+    "524339340qqcomdeMacBook-Pro.local": "/Users/524339340qq.com/.nvm/versions/node/v24.11.0/bin/claude"
+  },
+  "loadUserClaudeSettings": true,
+  "lastClaudeModel": "opus",
+  "lastCustomModel": "",
+  "lastEnvHash": "ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic|ANTHROPIC_MODEL=deepseek-v3",
+  "maxTabs": 3,
+  "tabBarPosition": "input",
+  "enableAutoScroll": true,
+  "openInMainTab": false,
+  "hiddenSlashCommands": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "conv-1770640913749-hrjet9pai",
+  "title": "Summarize AI strategy and organizational restru...",
+  "titleGenerationStatus": "success",
+  "createdAt": 1770640913750,
+  "updatedAt": 1770799177261,
+  "lastResponseAt": 1770642047303,
+  "sessionId": "6bd2d5cb-8a90-4bbf-bdb5-084f927abe8a",
+  "sdkSessionId": "6bd2d5cb-8a90-4bbf-bdb5-084f927abe8a",
+  "usage": {
+    "model": "deepseek-v3",
+    "inputTokens": 638,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 33472,
+    "contextWindow": 200000,
+    "contextTokens": 34110,
+    "percentage": 17
+  }
+}

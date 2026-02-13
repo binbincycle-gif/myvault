@@ -1,0 +1,427 @@
+{
+  "main": {
+    "id": "8939de60166c3aad",
+    "type": "split",
+    "children": [
+      {
+        "id": "84b840df9bd613ce",
+        "type": "split",
+        "children": [
+          {
+            "id": "fb36f6530803ec48",
+            "type": "tabs",
+            "dimension": 78.92518440463647,
+            "children": [
+              {
+                "id": "f73e65a02cadc8ca",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Clippings/Anthropic新工具出世，软件股一夜崩盘.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Anthropic新工具出世，软件股一夜崩盘"
+                }
+              },
+              {
+                "id": "a07d5a0e690b8d69",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "03-Resources/效率工具/Obsidian学习笔记-第一篇.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Obsidian学习笔记-第一篇"
+                }
+              },
+              {
+                "id": "9b79787af6d1cf30",
+                "type": "leaf",
+                "state": {
+                  "type": "excalidraw",
+                  "state": {
+                    "file": "Excalidraw/Drawing 2026-02-06 16.01.34.excalidraw.md"
+                  },
+                  "icon": "excalidraw-icon",
+                  "title": "Drawing 2026-02-06 16.01.34.excalidraw"
+                }
+              },
+              {
+                "id": "f031765b8990ba7c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Clippings/闭门探讨：130位AI创业者，对Clawdbot和下一代AI产品的39条思考.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "闭门探讨：130位AI创业者，对Clawdbot和下一代AI产品的39条思考"
+                }
+              },
+              {
+                "id": "863b208cec86c47f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "06-Journal/2026年春节后待办事项.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "2026年春节后待办事项"
+                }
+              }
+            ],
+            "currentTab": 4
+          },
+          {
+            "id": "dd7bf5170d614881",
+            "type": "tabs",
+            "dimension": 21.074815595363543,
+            "children": [
+              {
+                "id": "d823041dcedf8db7",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "terminal:terminal",
+                  "state": {
+                    "terminal:terminal": {
+                      "cwd": "/Users/524339340qq.com/Desktop/资料/知识库/MyDevVault",
+                      "focus": false,
+                      "profile": {
+                        "followTheme": true,
+                        "name": "",
+                        "restoreHistory": false,
+                        "rightClickAction": "copyPaste",
+                        "successExitCodes": [
+                          "0",
+                          "SIGINT",
+                          "SIGTERM"
+                        ],
+                        "terminalOptions": {
+                          "documentOverride": null
+                        },
+                        "type": "developerConsole"
+                      },
+                      "serial": null
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "terminal",
+                  "title": "终端：开发者控制台"
+                }
+              },
+              {
+                "id": "f87355d47cf659d2",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "terminal:terminal",
+                  "state": {
+                    "terminal:terminal": {
+                      "cwd": "/Users/524339340qq.com/Desktop/资料/知识库/MyDevVault",
+                      "focus": false,
+                      "profile": {
+                        "args": [
+                          "--login"
+                        ],
+                        "executable": "/bin/zsh",
+                        "followTheme": true,
+                        "name": "",
+                        "platforms": {
+                          "darwin": true
+                        },
+                        "pythonExecutable": "python3",
+                        "restoreHistory": false,
+                        "rightClickAction": "copyPaste",
+                        "successExitCodes": [
+                          "0",
+                          "SIGINT",
+                          "SIGTERM"
+                        ],
+                        "terminalOptions": {
+                          "documentOverride": null
+                        },
+                        "type": "integrated",
+                        "useWin32Conhost": true
+                      },
+                      "serial": null
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "terminal",
+                  "title": "终端：524339340qq.com@524339340qqcomdeMacBook-Pro:~/Desktop/资料/知识库/MyDevVault"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "81b4d468b623f3f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b4c71eabba92653",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5469a6483cba1454",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "4b7ef37e121cb42b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "b28b640629de91d7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 269.5
+  },
+  "right": {
+    "id": "1b2967dce4dc6d17",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a8b1590791ed4fc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "66d9017469cff040",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-02-05 13.55.16.excalidraw.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Drawing 2026-02-05 13.55.16.excalidraw 的反向链接列表"
+            }
+          },
+          {
+            "id": "1a894c56f9988b06",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "26 年开年汇报手稿.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "26 年开年汇报手稿 的出链列表"
+            }
+          },
+          {
+            "id": "4171485d93eb3b7b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "969e694129f1565d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "71c5fa01fc73fe30",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "未命名.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "未命名 的大纲"
+            }
+          },
+          {
+            "id": "479ec97e0061ade3",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          },
+          {
+            "id": "72b4152f0f7e8ad1",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
+          },
+          {
+            "id": "7c14ed56afac5f67",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "0a913b011139dd90",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
+          }
+        ],
+        "currentTab": 8
+      }
+    ],
+    "direction": "horizontal",
+    "width": 786.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "copilot:Open Copilot Chat": false,
+      "cannoli:Start/stop cannoli": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
+      "templater-obsidian:Templater": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Lookup: Open lookup view": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "obsidian-git:Open Git source control": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "terminal:Open terminal": false,
+      "obsidian42-brat:BRAT": false,
+      "claudian:Open Claudian": false
+    }
+  },
+  "active": "f87355d47cf659d2",
+  "lastOpenFiles": [
+    "06-Journal/2026年春节后待办事项.md",
+    "02-Areas/团队建设/2026年述职反馈总结与节后计划.md",
+    "02-Areas/技术中心管理/公司AI知识中台OKR对齐思考.md",
+    "02-Areas/技术中心管理/2025年研发迭代分析与AI代理影响综合报告.md",
+    "02-Areas/AI战略规划/AI全流程闭环与提效规划会议-2026-02-13.md",
+    "02-Areas/AI战略规划/Clawdbot (OpenClaw) 趋势分析与下一步建议.md",
+    "Clippings/Anthropic新工具出世，软件股一夜崩盘.md",
+    "Clippings/现象级爆款Moltbot之父：大公司要用好AI，需要来一次大重构！现在更喜欢Codex，超级私人Agent是反OKR的！要求PR必须附提示词，不看好MCP.md",
+    "Clippings/闭门探讨：130位AI创业者，对Clawdbot和下一代AI产品的39条思考.md",
+    "01-Projects/README.md",
+    "Clippings/OpenClaw 新手保姆级教程：Mac 一次装好，Telegram 直接开用.md",
+    "06-Journal/周计划-2026-02-09.md",
+    "Excalidraw/Clawdbot 闭门探讨思维导图.canvas",
+    "copilot/copilot-custom-prompts/知识关联生成.md",
+    "07-Meta/知识库索引.md",
+    "05-Templates/会议记录模板.md",
+    "03-Resources/效率工具/Obsidian学习笔记-第一篇.md",
+    "Excalidraw/Drawing 2026-02-06 16.01.34.excalidraw.md",
+    "03-Resources/效率工具/Claudian插件学习笔记-第二篇.md",
+    "03-Resources/效率工具/README.md",
+    "aboutme/我的介绍.md",
+    "03-Resources/README.md",
+    "06-Journal/README.md",
+    "Excalidraw/Drawing 2026-02-05 13.55.16.excalidraw.md",
+    "Excalidraw/Drawing 2026-02-05 13.53.53.excalidraw.md",
+    "Excalidraw/Obsidian生态系统架构图.md",
+    "05-Templates/学习笔记模板.md",
+    "03-Resources/效率工具",
+    "02-Areas/技术中心管理/规划文档/2026人效提升构想 (2).docx",
+    "02-Areas/技术中心管理/规划文档",
+    "03-Resources/AI学习/工具评测",
+    "03-Resources/AI学习/Prompt工程",
+    "03-Resources/AI学习/Agent技术",
+    "03-Resources/AI学习",
+    "03-Resources/行业知识/SaaS趋势",
+    "03-Resources/行业知识/服饰零售",
+    "03-Resources/行业知识/CRM领域",
+    "未命名.canvas"
+  ]
+}

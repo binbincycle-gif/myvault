@@ -1,0 +1,19 @@
+{
+  "id": "conv-1770799180991-v5xej2meo",
+  "title": "Analyze 2025 R&D iteration report structure",
+  "titleGenerationStatus": "success",
+  "createdAt": 1770799180991,
+  "updatedAt": 1770948665403,
+  "lastResponseAt": 1770799387911,
+  "sessionId": "264ca7d4-0498-4c60-85d2-5a30813cac1b",
+  "sdkSessionId": "264ca7d4-0498-4c60-85d2-5a30813cac1b",
+  "usage": {
+    "model": "deepseek-v3",
+    "inputTokens": 411,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 40256,
+    "contextWindow": 200000,
+    "contextTokens": 40667,
+    "percentage": 20
+  }
+}
