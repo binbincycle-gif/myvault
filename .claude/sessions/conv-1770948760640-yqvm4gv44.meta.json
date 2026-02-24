@@ -1,12 +1,13 @@
 {
   "id": "conv-1770948760640-yqvm4gv44",
-  "title": "Plan AI integration and team collaboration stra...",
-  "titleGenerationStatus": "success",
+  "title": "帮我整理一下",
+  "titleGenerationStatus": "failed",
   "createdAt": 1770948760640,
-  "updatedAt": 1770962500337,
-  "lastResponseAt": 1770962500337,
+  "updatedAt": 1771911510221,
+  "lastResponseAt": 1771911510221,
   "sessionId": "ff43886d-3b44-40a8-af3e-b137d420dcfd",
   "sdkSessionId": "ff43886d-3b44-40a8-af3e-b137d420dcfd",
+  "currentNote": "Inbox/驿氪营销助手APP_AI升级建议_2026-02-19.md",
   "usage": {
     "model": "deepseek-v3",
     "inputTokens": 930,
