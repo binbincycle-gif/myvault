@@ -72,12 +72,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "02-Areas/AI战略规划/驿氪营销助手APP_AI升级建议_2026-02-19.md",
+                    "file": "02-Areas/个人成长/每日日记/2026/2026-02-26-每日日记.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "驿氪营销助手APP_AI升级建议_2026-02-19"
+                  "title": "2026-02-26-每日日记"
                 }
               }
             ],
@@ -200,7 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 430.5
   },
   "right": {
     "id": "1b2967dce4dc6d17",
@@ -332,7 +332,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 646.5
+    "width": 646.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -359,45 +360,50 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "5469a6483cba1454",
+  "active": "863b208cec86c47f",
   "lastOpenFiles": [
-    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-02-25.md",
-    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-02-24.md",
-    "Inbox/驿氪营销助手APP_AI升级建议_2026-02-19.md",
-    "02-Areas/AI战略规划/驿氪营销助手APP_AI升级建议_2026-02-19.md",
-    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-02-23.md",
-    "02-Areas/AI战略规划/PAI系统/PAI-周复盘-2026-02-22.md",
-    "06-Journal/2026年春节后待办事项.md",
-    "06-Journal/周计划-2026-02-09.md",
-    "读书快照/2026-02-14-AI教育分龄行动建议-读书快照.md",
-    "读书快照/2026-02-14-自动化对不同行业冲击示意图-读书快照.md",
+    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-02-26.md",
     "00-Inbox/README.md",
-    "02-Areas/AI战略规划/2026-02-20-CRM护城河体检与90天行动方案.md",
-    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-02-21.md",
-    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-02-20.md",
-    "02-Areas/团队建设/2026年述职反馈总结与节后计划.md",
-    "03-Resources/效率工具/Obsidian学习笔记-第一篇.md",
-    "03-Resources/效率工具/Claudian插件学习笔记-第二篇.md",
-    "05-Templates/周复盘模板.md",
-    "07-Meta/知识库索引.md",
-    "aboutme/我的介绍.md",
-    "copilot/memory/Recent Conversations.md",
-    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-02-22.md",
+    "00-Inbox/每日日记-2026-02-26.md",
+    "02-Areas/个人成长/每日日记/2026/2026-02-26-每日日记.md",
+    "02-Areas/个人成长/每日日记/2026",
+    "02-Areas/个人成长/每日日记",
+    "02-Areas/个人成长",
+    "02-Areas/技术中心管理/2025年研发迭代分析与AI代理影响综合报告.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/Day01-OpenClaw全景认知：从对话到执行.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/Day02-架构与分层：消息如何变成可执行动作.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/Day03-本地启动与最小闭环验证.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day01-openclaw-architecture-whiteboard.svg",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day01-openclaw-architecture-handdrawn.svg",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day01-openclaw-architecture-clean.svg",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day01-core-flow-whiteboard.svg",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day01-concept-map-whiteboard.svg",
+    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-02-25.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/assets",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/start__getting-started.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/本地文档索引.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/tools__index.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/concepts__agent-loop.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/tools__web.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/tools__subagents.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/tools__skills.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/tools__exec.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/tools__creating-skills.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/tools__browser.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/start__setup.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/start__quickstart.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/concepts__sessions.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/concepts__session.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/concepts__messages.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/concepts__memory.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/concepts__context.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)",
+    "03-Resources/效率工具/OpenClaw-30天学习手册",
     "02-Areas/AI战略规划/PAI系统",
     "02-Areas/AI战略规划/驿氪营销助手APP_AI升级建议_2026-02-19.docx",
     "Inbox/驿氪营销助手APP_AI升级建议_2026-02-19.docx",
     "Inbox",
-    "读书快照/2026-02-14-AI重塑劳动力市场-读书快照.md",
-    "读书快照",
-    "02-Areas/技术中心管理/2025年研发迭代分析与AI代理影响综合报告.md",
-    "02-Areas/技术中心管理/公司AI知识中台OKR对齐思考.md",
-    "02-Areas/AI战略规划/AI全流程闭环与提效规划会议-2026-02-13.md",
     "Excalidraw/Clawdbot 闭门探讨思维导图.canvas",
-    "03-Resources/效率工具",
-    "02-Areas/技术中心管理/规划文档/2026人效提升构想 (2).docx",
-    "02-Areas/技术中心管理/规划文档",
-    "03-Resources/AI学习/工具评测",
-    "03-Resources/AI学习/Prompt工程",
     "未命名.canvas"
   ]
 }
