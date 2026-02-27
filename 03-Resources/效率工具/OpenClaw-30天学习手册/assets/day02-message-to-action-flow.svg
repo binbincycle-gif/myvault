@@ -1,0 +1,52 @@
+<svg width="960" height="640" viewBox="0 0 960 640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .txt { font-family: "HanziPen SC", "Hannotate SC", "KaiTi", "STKaiti", "PingFang SC", sans-serif; fill: #1f2937; }
+      .title { font-size: 28px; font-weight: 600; }
+      .label { font-size: 22px; }
+      .small { font-size: 18px; }
+      .box { fill: #ffffff; stroke: #111827; stroke-width: 3; rx: 18; ry: 18; }
+      .line { fill: none; stroke: #111827; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; }
+      .hint { fill: #374151; }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#111827" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="24" y="24" width="912" height="592" fill="#fffdf8" stroke="#d1d5db" stroke-width="2" rx="20" ry="20"/>
+  <text x="52" y="70" class="txt title">Day02：消息如何变成可执行动作</text>
+
+  <rect class="box" x="60" y="120" width="220" height="88"/>
+  <text x="92" y="174" class="txt label">用户消息输入</text>
+
+  <rect class="box" x="370" y="120" width="220" height="88"/>
+  <text x="402" y="174" class="txt label">需求理解与拆解</text>
+
+  <rect class="box" x="680" y="120" width="220" height="88"/>
+  <text x="730" y="174" class="txt label">执行决策</text>
+
+  <rect class="box" x="680" y="290" width="220" height="88"/>
+  <text x="734" y="344" class="txt label">工具执行</text>
+
+  <rect class="box" x="370" y="290" width="220" height="88"/>
+  <text x="414" y="344" class="txt label">结果校验</text>
+
+  <rect class="box" x="60" y="290" width="220" height="88"/>
+  <text x="100" y="344" class="txt label">汇总并回传</text>
+
+  <rect class="box" x="60" y="460" width="220" height="88"/>
+  <text x="116" y="514" class="txt label">审计留痕</text>
+
+  <path class="line" d="M280 164 C318 164, 332 164, 370 164" marker-end="url(#arrow)"/>
+  <path class="line" d="M590 164 C628 164, 642 164, 680 164" marker-end="url(#arrow)"/>
+  <path class="line" d="M790 208 C790 236, 790 252, 790 290" marker-end="url(#arrow)"/>
+  <path class="line" d="M680 334 C642 334, 628 334, 590 334" marker-end="url(#arrow)"/>
+  <path class="line" d="M370 334 C332 334, 318 334, 280 334" marker-end="url(#arrow)"/>
+  <path class="line" d="M170 378 C170 410, 170 428, 170 460" marker-end="url(#arrow)"/>
+
+  <path class="line" d="M470 290 C470 252, 520 244, 680 244" marker-end="url(#arrow)"/>
+  <text x="492" y="258" class="txt small hint">校验未通过 → 回到决策层</text>
+
+  <text x="60" y="590" class="txt small hint">原则：先理解目标，再执行动作；执行后必须校验；结果与日志同时产出。</text>
+</svg>
