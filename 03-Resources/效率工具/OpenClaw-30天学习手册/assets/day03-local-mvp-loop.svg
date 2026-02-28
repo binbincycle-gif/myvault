@@ -1,0 +1,53 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: 700 38px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#1f2937; }
+      .box { fill:#fff; stroke:#111827; stroke-width:3; rx:18; ry:18; }
+      .txt { font: 600 28px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#111827; }
+      .sub { font: 500 22px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#374151; }
+      .arrow { stroke:#111827; stroke-width:3.5; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+    </style>
+    <marker id="arrowHead" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L12,5 L0,10" fill="#111827" />
+    </marker>
+  </defs>
+
+  <text x="60" y="70" class="title">OpenClaw 本地最小闭环（启动 → 执行 → 验证）</text>
+
+  <rect x="70" y="150" width="240" height="130" class="box"/>
+  <text x="105" y="205" class="txt">1. 环境准备</text>
+  <text x="102" y="243" class="sub">配置账号与基础参数</text>
+
+  <rect x="370" y="150" width="240" height="130" class="box"/>
+  <text x="405" y="205" class="txt">2. 启动服务</text>
+  <text x="403" y="243" class="sub">openclaw gateway start</text>
+
+  <rect x="670" y="150" width="240" height="130" class="box"/>
+  <text x="706" y="205" class="txt">3. 发送指令</text>
+  <text x="706" y="243" class="sub">用最小任务做验证</text>
+
+  <rect x="970" y="150" width="180" height="130" class="box"/>
+  <text x="1002" y="205" class="txt">4. 回执</text>
+  <text x="1004" y="243" class="sub">拿到结果</text>
+
+  <rect x="370" y="430" width="280" height="130" class="box"/>
+  <text x="420" y="485" class="txt">5. 结果校验</text>
+  <text x="410" y="523" class="sub">是否符合预期与约束</text>
+
+  <rect x="760" y="430" width="300" height="130" class="box"/>
+  <text x="802" y="485" class="txt">6. 问题定位</text>
+  <text x="785" y="523" class="sub">日志 / 权限 / 参数逐项排查</text>
+
+  <path d="M310 215 C330 215, 345 215, 370 215" class="arrow" marker-end="url(#arrowHead)"/>
+  <path d="M610 215 C630 215, 645 215, 670 215" class="arrow" marker-end="url(#arrowHead)"/>
+  <path d="M910 215 C930 215, 945 215, 970 215" class="arrow" marker-end="url(#arrowHead)"/>
+
+  <path d="M1060 285 C1060 340, 980 380, 890 430" class="arrow" marker-end="url(#arrowHead)"/>
+  <path d="M760 495 C720 495, 690 495, 650 495" class="arrow" marker-end="url(#arrowHead)"/>
+
+  <path d="M370 495 C260 495, 200 400, 200 280" class="arrow" marker-end="url(#arrowHead)"/>
+  <text x="95" y="360" class="sub">不通过→回到准备/启动环节修正</text>
+
+  <path d="M650 430 C640 380, 700 320, 760 280" class="arrow" marker-end="url(#arrowHead)"/>
+  <text x="665" y="365" class="sub">通过→固化为可复用流程</text>
+</svg>
