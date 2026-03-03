@@ -61,10 +61,10 @@ OpenClaw 的稳定性来自“分层而非堆能力”，常见可以拆成四�
 - https://docs.openclaw.ai/tools
 - https://github.com/openclaw/openclaw
 
-## 图示
+## 图示（手绘风格版）
 ![[OpenClaw-30天学习手册/assets/day02-message-to-action-flow.svg]]
 
-图示阅读要点：
+> 💡 图示要点：四层金字塔 + 6步链路 + 4大机制
 - “需求理解”与“执行决策”是分开的，避免一上来就盲目调用工具；
 - 执行后必须有“结果校验”，不通过则回到决策层调整；
 - 最终结果和审计日志并行产出，保证可交付与可治理同时成立。

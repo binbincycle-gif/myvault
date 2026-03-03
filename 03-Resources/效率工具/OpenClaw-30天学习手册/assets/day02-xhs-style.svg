@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF5F0"/>
+      <stop offset="100%" style="stop-color:#FFE8E0"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B6B"/>
+      <stop offset="100%" style="stop-color:#FF8E53"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1200" fill="url(#bg)"/>
+  
+  <!-- 顶部标签 -->
+  <rect x="30" y="30" width="80" height="36" rx="18" fill="#FFE4D9"/>
+  <text x="70" y="53" font-family="PingFang SC, sans-serif" font-size="16" fill="#FF6B6B" text-anchor="middle" font-weight="600">AI</text>
+  
+  <rect x="120" y="30" width="100" height="36" rx="18" fill="#E8F4FF"/>
+  <text x="170" y="53" font-family="PingFang SC, sans-serif" font-size="16" fill="#4A90D9" text-anchor="middle" font-weight="600">架构</text>
+  
+  <rect x="230" y="30" width="100" height="36" rx="18" fill="#E8FFE8"/>
+  <text x="280" y="53" font-family="PingFang SC, sans-serif" font-size="16" fill="#52A852" text-anchor="middle" font-weight="600">教程</text>
+  
+  <!-- 主标题 -->
+  <text x="400" y="130" font-family="PingFang SC, sans-serif" font-size="42" fill="#333" text-anchor="middle" font-weight="800">OpenClaw</text>
+  <text x="400" y="175" font-family="PingFang SC, sans-serif" font-size="28" fill="#666" text-anchor="middle" font-weight="500">消息如何变成可执行动作？</text>
+  
+  <!-- 副标题 -->
+  <text x="400" y="215" font-family="PingFang SC, sans-serif" font-size="18" fill="#999" text-anchor="middle">Day02 · 架构与分层</text>
+  
+  <!-- 分隔线 -->
+  <line x1="100" y1="250" x2="700" y2="250" stroke="#FFB8A8" stroke-width="2"/>
+  
+  <!-- 大纲部分 -->
+  <text x="60" y="300" font-family="PingFang SC, sans-serif" font-size="24" fill="#FF6B6B" font-weight="700">📚 今日大纲</text>
+  
+  <!-- 大纲项 -->
+  <g transform="translate(60, 340)">
+    <circle cx="15" cy="15" r="8" fill="#FF8E53"/>
+    <text x="40" y="22" font-family="PingFang SC, sans-serif" font-size="20" fill="#333" font-weight="500">分层架构：四层责任拆分</text>
+  </g>
+  <g transform="translate(60, 390)">
+    <circle cx="15" cy="15" r="8" fill="#FF8E53"/>
+    <text x="40" y="22" font-family="PingFang SC, sans-serif" font-size="20" fill="#333" font-weight="500">消息变动作的最小链路</text>
+  </g>
+  <g transform="translate(60, 440)">
+    <circle cx="15" cy="15" r="8" fill="#FF8E53"/>
+    <text x="40" y="22" font-family="PingFang SC, sans-serif" font-size="20" fill="#333" font-weight="500">关键机制与常见误区</text>
+  </g>
+  <g transform="translate(60, 490)">
+    <circle cx="15" cy="15" r="8" fill="#FF8E53"/>
+    <text x="40" y="22" font-family="PingFang SC, sans-serif" font-size="20" fill="#333" font-weight="500">业务价值翻译</text>
+  </g>
+  
+  <!-- 架构图部分 -->
+  <text x="60" y="560" font-family="PingFang SC, sans-serif" font-size="24" fill="#FF6B6B" font-weight="700">🏗️ 核心架构</text>
+  
+  <!-- 架构层级 -->
+  <g transform="translate(100, 600)">
+    <rect x="0" y="0" width="600" height="60" rx="12" fill="#FFEBE8" stroke="#FF6B6B" stroke-width="2"/>
+    <text x="300" y="38" font-family="PingFang SC, sans-serif" font-size="20" fill="#FF6B6B" text-anchor="middle" font-weight="600">交互层 · Channel / Session</text>
+  </g>
+  
+  <g transform="translate(100, 680)">
+    <rect x="0" y="0" width="600" height="60" rx="12" fill="#FFF3E8" stroke="#FF8E53" stroke-width="2"/>
+    <text x="300" y="38" font-family="PingFang SC, sans-serif" font-size="20" fill="#FF8E53" text-anchor="middle" font-weight="600">决策层 · Agent Loop</text>
+  </g>
+  
+  <g transform="translate(100, 760)">
+    <rect x="0" y="0" width="600" height="60" rx="12" fill="#FFFBE8" stroke="#FFB84D" stroke-width="2"/>
+    <text x="300" y="38" font-family="PingFang SC, sans-serif" font-size="20" fill="#CC8800" text-anchor="middle" font-weight="600">执行层 · Tools</text>
+  </g>
+  
+  <g transform="translate(100, 840)">
+    <rect x="0" y="0" width="600" height="60" rx="12" fill="#E8FFF0" stroke="#52A852" stroke-width="2"/>
+    <text x="300" y="38" font-family="PingFang SC, sans-serif" font-size="20" fill="#52A852" text-anchor="middle" font-weight="600">治理层 · Audit / Guardrails</text>
+  </g>
+  
+  <!-- 箭头 -->
+  <path d="M400 670 L400 680 M390 675 L400 680 L410 675" stroke="#FF8E53" stroke-width="2" fill="none"/>
+  <path d="M400 750 L400 760 M390 755 L400 760 L410 755" stroke="#FFB84D" stroke-width="2" fill="none"/>
+  <path d="M400 830 L400 840 M390 835 L400 840 L410 835" stroke="#52A852" stroke-width="2" fill="none"/>
+  
+  <!-- 关键机制 -->
+  <text x="60" y="940" font-family="PingFang SC, sans-serif" font-size="24" fill="#FF6B6B" font-weight="700">⚡ 关键机制</text>
+  
+  <g transform="translate(60, 980)">
+    <rect x="0" y="0" width="280" height="70" rx="10" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+    <text x="140" y="28" font-family="PingFang SC, sans-serif" font-size="16" fill="#666" text-anchor="middle">工具选择最小化</text>
+    <text x="140" y="52" font-family="PingFang SC, sans-serif" font-size="14" fill="#999" text-anchor="middle">够用即可，避免过度调用</text>
+  </g>
+  
+  <g transform="translate(360, 980)">
+    <rect x="0" y="0" width="280" height="70" rx="10" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+    <text x="140" y="28" font-family="PingFang SC, sans-serif" font-size="16" fill="#666" text-anchor="middle">失败可恢复</text>
+    <text x="140" y="52" font-family="PingFang SC, sans-serif" font-size="14" fill="#999" text-anchor="middle">超时/权限/结构变化可补救</text>
+  </g>
+  
+  <g transform="translate(60, 1060)">
+    <rect x="0" y="0" width="280" height="70" rx="10" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+    <text x="140" y="28" font-family="PingFang SC, sans-serif" font-size="16" fill="#666" text-anchor="middle">上下文约束</text>
+    <text x="140" y="52" font-family="PingFang SC, sans-serif" font-size="14" fill="#999" text-anchor="middle">沿用会话目标，避免跑题</text>
+  </g>
+  
+  <g transform="translate(360, 1060)">
+    <rect x="0" y="0" width="280" height="70" rx="10" fill="#FFF" stroke="#DDD" stroke-width="1"/>
+    <text x="140" y="28" font-family="PingFang SC, sans-serif" font-size="16" fill="#666" text-anchor="middle">审计与留痕</text>
+    <text x="140" y="52" font-family="PingFang SC, sans-serif" font-size="14" fill="#999" text-anchor="middle">每步可追踪，出错可定位</text>
+  </g>
+  
+  <!-- 一句话总结 -->
+  <rect x="60" y="1150" width="680" height="40" rx="20" fill="#FF6B6B"/>
+  <text x="400" y="1176" font-family="PingFang SC, sans-serif" font-size="18" fill="#FFF" text-anchor="middle" font-weight="600">OpenClaw = 分层架构 + 可执行 + 可验证 + 可治理</text>
+</svg>

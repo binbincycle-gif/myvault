@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1400" width="800" height="1400">
+  <defs>
+    <filter id="sketch">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  
+  <!-- 纸张背景 -->
+  <rect width="800" height="1400" fill="#FFFEF5"/>
+  <rect x="5" y="5" width="790" height="1390" fill="none" stroke="#8B7355" stroke-width="2" rx="5"/>
+  
+  <!-- 主标题 -->
+  <text x="400" y="100" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="42" fill="#2D3436" text-anchor="middle" filter="url(#sketch)">📖 OpenClaw</text>
+  <text x="400" y="145" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="24" fill="#636E72" text-anchor="middle" filter="url(#sketch)">消息 → 可执行动作</text>
+  <text x="400" y="180" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="16" fill="#B2BEC3" text-anchor="middle" filter="url(#sketch)">Day 02 · 架构与分层</text>
+  
+  <!-- 分隔线 -->
+  <line x1="100" y1="210" x2="700" y2="210" stroke="#B2BEC3" stroke-width="2" stroke-dasharray="10,5" filter="url(#sketch)"/>
+  
+  <!-- 章节1：四层架构 -->
+  <text x="60" y="250" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="22" fill="#2D3436" font-weight="bold" filter="url(#sketch)">🏗️ 四层架构</text>
+  
+  <!-- Layer 1 -->
+  <g filter="url(#sketch)">
+    <rect x="80" y="280" width="640" height="65" rx="8" fill="#FFEAA7" stroke="#2D3436" stroke-width="2"/>
+    <text x="400" y="318" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="18" fill="#2D3436" text-anchor="middle">① 交互层 Channel/Session</text>
+    <text x="400" y="338" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="12" fill="#636E72" text-anchor="middle">接收消息，维护上下文</text>
+  </g>
+  <path d="M400 350 L400 360 M390 355 L400 360 L410 355" stroke="#2D3436" stroke-width="2" fill="none" filter="url(#sketch)"/>
+  
+  <!-- Layer 2 -->
+  <g filter="url(#sketch)">
+    <rect x="80" y="365" width="640" height="65" rx="8" fill="#74B9FF" stroke="#2D3436" stroke-width="2"/>
+    <text x="400" y="403" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="18" fill="#2D3436" text-anchor="middle">② 决策层 Agent Loop</text>
+    <text x="400" y="423" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="12" fill="#636E72" text-anchor="middle">判断是否调用工具，选哪个</text>
+  </g>
+  <path d="M400 435 L400 445 M390 440 L400 445 L410 440" stroke="#2D3436" stroke-width="2" fill="none" filter="url(#sketch)"/>
+  
+  <!-- Layer 3 -->
+  <g filter="url(#sketch)">
+    <rect x="80" y="450" width="640" height="65" rx="8" fill="#55EFC4" stroke="#2D3436" stroke-width="2"/>
+    <text x="400" y="488" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="18" fill="#2D3436" text-anchor="middle">③ 执行层 Tools</text>
+    <text x="400" y="508" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="12" fill="#636E72" text-anchor="middle">read/write/exec/browser/cron</text>
+  </g>
+  <path d="M400 520 L400 530 M390 525 L400 530 L410 525" stroke="#2D3436" stroke-width="2" fill="none" filter="url(#sketch)"/>
+  
+  <!-- Layer 4 -->
+  <g filter="url(#sketch)">
+    <rect x="80" y="535" width="640" height="65" rx="8" fill="#FD79A8" stroke="#2D3436" stroke-width="2"/>
+    <text x="400" y="573" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="18" fill="#2D3436" text-anchor="middle">④ 治理层 Audit/Guardrails</text>
+    <text x="400" y="593" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="12" fill="#636E72" text-anchor="middle">日志、权限、重试、合规</text>
+  </g>
+  
+  <!-- 章节2：6步链路 -->
+  <text x="60" y="650" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="22" fill="#2D3436" font-weight="bold" filter="url(#sketch)">🔄 消息→动作 6步</text>
+  
+  <!-- Row 1 -->
+  <g transform="translate(80, 680)" filter="url(#sketch)">
+    <rect x="0" y="0" width="200" height="55" rx="6" fill="#FFF" stroke="#2D3436" stroke-width="1.5"/>
+    <text x="100" y="32" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="14" fill="#2D3436" text-anchor="middle">1️⃣ 解析目标</text>
+  </g>
+  <g transform="translate(300, 680)" filter="url(#sketch)">
+    <rect x="0" y="0" width="200" height="55" rx="6" fill="#FFF" stroke="#2D3436" stroke-width="1.5"/>
+    <text x="100" y="32" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="14" fill="#2D3436" text-anchor="middle">2️⃣ 拆分步骤</text>
+  </g>
+  <g transform="translate(520, 680)" filter="url(#sketch)">
+    <rect x="0" y="0" width="200" height="55" rx="6" fill="#FFF" stroke="#2D3436" stroke-width="1.5"/>
+    <text x="100" y="32" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="14" fill="#2D3436" text-anchor="middle">3️⃣ 选择工具</text>
+  </g>
+  
+  <!-- Row 2 -->
+  <g transform="translate(80, 750)" filter="url(#sketch)">
+    <rect x="0" y="0" width="200" height="55" rx="6" fill="#FFF" stroke="#2D3436" stroke-width="1.5"/>
+    <text x="100" y="32" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="14" fill="#2D3436" text-anchor="middle">4️⃣ 执行观察</text>
+  </g>
+  <g transform="translate(300, 750)" filter="url(#sketch)">
+    <rect x="0" y="0" width="200" height="55" rx="6" fill="#FFF" stroke="#2D3436" stroke-width="1.5"/>
+    <text x="100" y="32" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="14" fill="#2D3436" text-anchor="middle">5️⃣ 汇总回传</text>
+  </g>
+  <g transform="translate(520, 750)" filter="url(#sketch)">
+    <rect x="0" y="0" width="200" height="55" rx="6" fill="#FFF" stroke="#2D3436" stroke-width="1.5"/>
+    <text x="100" y="32" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="14" fill="#2D3436" text-anchor="middle">6️⃣ 留痕审计</text>
+  </g>
+  
+  <!-- 章节3：4大机制 -->
+  <text x="60" y="840" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="22" fill="#2D3436" font-weight="bold" filter="url(#sketch)">💡 4大关键机制</text>
+  
+  <g transform="translate(80, 870)" filter="url(#sketch)">
+    <rect x="0" y="0" width="300" height="75" rx="8" fill="#FFEAA7" stroke="#2D3436" stroke-width="2"/>
+    <text x="20" y="28" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="15" fill="#2D3436" font-weight="bold">工具选择最小化</text>
+    <text x="20" y="52" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="12" fill="#636E72">够用即可，避免过度调用</text>
+  </g>
+  <g transform="translate(400, 870)" filter="url(#sketch)">
+    <rect x="0" y="0" width="300" height="75" rx="8" fill="#74B9FF" stroke="#2D3436" stroke-width="2"/>
+    <text x="20" y="28" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="15" fill="#2D3436" font-weight="bold">失败可恢复</text>
+    <text x="20" y="52" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="12" fill="#636E72">超时/权限/变化可走备用</text>
+  </g>
+  
+  <g transform="translate(80, 960)" filter="url(#sketch)">
+    <rect x="0" y="0" width="300" height="75" rx="8" fill="#55EFC4" stroke="#2D3436" stroke-width="2"/>
+    <text x="20" y="28" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="15" fill="#2D3436" font-weight="bold">上下文约束</text>
+    <text x="20" y="52" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="12" fill="#636E72">沿用会话目标，避免跑题</text>
+  </g>
+  <g transform="translate(400, 960)" filter="url(#sketch)">
+    <rect x="0" y="0" width="300" height="75" rx="8" fill="#FD79A8" stroke="#2D3436" stroke-width="2"/>
+    <text x="20" y="28" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="15" fill="#2D3436" font-weight="bold">审计与留痕</text>
+    <text x="20" y="52" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="12" fill="#636E72">每步可追踪，出错可定位</text>
+  </g>
+  
+  <!-- 一句话总结 -->
+  <rect x="80" y="1080" width="640" height="55" rx="10" fill="#2D3436" filter="url(#sketch)"/>
+  <text x="400" y="1115" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="20" fill="#FFF" text-anchor="middle" font-weight="bold">OpenClaw = 分层 + 可执行 + 可验证 + 可治理</text>
+  
+  <!-- 底部 -->
+  <text x="400" y="1180" font-family="ZCOOL KuaiLe, PingFang SC, sans-serif" font-size="14" fill="#B2BEC3" text-anchor="middle" filter="url(#sketch)">━━━━━ 手绘版 · OpenClaw 30天学习 ━━━━━</text>
+  
+  <!-- 角落涂鸦 -->
+  <path d="M730 1300 Q750 1280 770 1300 T790 1280" stroke="#8B7355" stroke-width="2" fill="none" filter="url(#sketch)"/>
+  <circle cx="760" cy="1330" r="25" fill="none" stroke="#8B7355" stroke-width="2" filter="url(#sketch)"/>
+</svg>
