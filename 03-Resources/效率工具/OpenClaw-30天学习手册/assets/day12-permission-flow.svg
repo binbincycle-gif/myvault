@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" font-family="HanziPen SC, Hannotate SC, KaiTi, STKaiti, PingFang SC, sans-serif">
+  <!-- 背景 -->
+  <rect width="400" height="520" fill="#fafafa"/>
+  
+  <!-- 标题 -->
+  <text x="200" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">OpenClaw 权限检查流程</text>
+  
+  <!-- 节点1: 用户请求 -->
+  <rect x="130" y="50" width="140" height="36" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="200" y="73" text-anchor="middle" font-size="12" fill="#333">用户请求</text>
+  
+  <!-- 箭头1 -->
+  <path d="M200 86 L200 105" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- 节点2: Agent接收 -->
+  <rect x="130" y="110" width="140" height="36" rx="4" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+  <text x="200" y="133" text-anchor="middle" font-size="12" fill="#333">Agent 接收请求</text>
+  
+  <!-- 箭头2 -->
+  <path d="M200 146 L200 165" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- 节点3: Profile检查 -->
+  <rect x="80" y="170" width="240" height="36" rx="4" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="200" y="193" text-anchor="middle" font-size="12" fill="#333">1. Profile 检查 (基础白名单)</text>
+  
+  <!-- 箭头3 -->
+  <path d="M200 206 L200 225" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- 节点4: Allow/Deny检查 -->
+  <rect x="80" y="230" width="240" height="36" rx="4" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+  <text x="200" y="253" text-anchor="middle" font-size="12" fill="#333">2. Allow/Deny 检查 (deny优先)</text>
+  
+  <!-- 箭头4 -->
+  <path d="M200 266 L200 285" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- 节点5: Provider检查 -->
+  <rect x="80" y="290" width="240" height="36" rx="4" fill="#e1f5fe" stroke="#0288d1" stroke-width="2"/>
+  <text x="200" y="313" text-anchor="middle" font-size="12" fill="#333">3. Provider 检查 (按模型限制)</text>
+  
+  <!-- 箭头5 -->
+  <path d="M200 326 L200 345" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- 分支: 通过/拒绝 -->
+  <rect x="50" y="350" width="100" height="32" rx="4" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+  <text x="100" y="371" text-anchor="middle" font-size="11" fill="#333">通过</text>
+  
+  <rect x="250" y="350" width="100" height="32" rx="4" fill="#ffebee" stroke="#d32f2f" stroke-width="2"/>
+  <text x="300" y="371" text-anchor="middle" font-size="11" fill="#333">拒绝</text>
+  
+  <!-- 向下箭头 -->
+  <path d="M100 382 L100 400" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M300 382 L300 400" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Elevated检查 -->
+  <rect x="30" y="405" width="140" height="36" rx="4" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="100" y="428" text-anchor="middle" font-size="11" fill="#333">需 Elevated?</text>
+  
+  <!-- 拒绝分支 -->
+  <rect x="250" y="405" width="100" height="36" rx="4" fill="#ffcdd2" stroke="#b71c1c" stroke-width="2"/>
+  <text x="300" y="428" text-anchor="middle" font-size="11" fill="#333">返回错误</text>
+  
+  <!-- Elevated Y路径 -->
+  <path d="M170 423 L220 423 L220 460" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <rect x="220" y="445" width="80" height="30" rx="4" fill="#ede7f6" stroke="#512da8" stroke-width="2"/>
+  <text x="260" y="465" text-anchor="middle" font-size="10" fill="#333">授权?</text>
+  
+  <!-- Elevated Yes -->
+  <path d="M260 475 L260 490" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <rect x="210" y="490" width="100" height="24" rx="4" fill="#c5cae9" stroke="#303f9f" stroke-width="2"/>
+  <text x="260" y="507" text-anchor="middle" font-size="10" fill="#333">执行操作</text>
+  
+  <!-- Elevated No -->
+  <path d="M300 441 L340 441 L340 490 L310 490" stroke="#666" stroke-width="1.5" fill="none"/>
+  <rect x="210" y="490" width="100" height="24" rx="4" fill="#ffcdd2" stroke="#b71c1c" stroke-width="2"/>
+  <text x="260" y="507" text-anchor="middle" font-size="10" fill="#333">拒绝</text>
+  
+  <!-- 定义箭头 -->
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 L1,3 Z" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- 图例 -->
+  <text x="40" y="60" font-size="9" fill="#888">Profile: minimal/coding</text>
+  <text x="40" y="75" font-size="9" fill="#888">          /messaging/full</text>
+</svg>
