@@ -10,7 +10,7 @@
           {
             "id": "fb36f6530803ec48",
             "type": "tabs",
-            "dimension": 76.79814385150812,
+            "dimension": 81.48148148148148,
             "children": [
               {
                 "id": "f73e65a02cadc8ca",
@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "03-Resources/效率工具/OpenClaw-30天学习手册/Day10-输入输出Schema设计与一致性.md",
+                    "file": "02-Areas/AI战略规划/26年技术中心战略方向-AI时代组织与能力进化.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Day10-输入输出Schema设计与一致性"
+                  "title": "26年技术中心战略方向-AI时代组织与能力进化"
                 }
               },
               {
@@ -85,7 +85,7 @@
           {
             "id": "dd7bf5170d614881",
             "type": "tabs",
-            "dimension": 23.201856148491878,
+            "dimension": 18.51851851851852,
             "children": [
               {
                 "id": "d823041dcedf8db7",
@@ -361,6 +361,23 @@
   },
   "active": "f73e65a02cadc8ca",
   "lastOpenFiles": [
+    "02-Areas/个人成长/每日日记/2026/2026-03-10.md",
+    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-03-10.md",
+    "02-Areas/个人成长/每日日记/2026/2026-03-10-每日日记.md",
+    "02-Areas/AI战略规划/assets/ezr-saas-skills-detailed.svg",
+    "02-Areas/AI战略规划/assets/ezr-saas-skills-architecture.svg",
+    "02-Areas/AI战略规划/assets/saas-openclaw-architecture.svg",
+    "02-Areas/AI战略规划/26年技术中心战略-PPT最终版.md",
+    "02-Areas/AI战略规划/assets",
+    "02-Areas/AI战略规划/26年技术中心战略方向-AI时代组织与能力进化.md",
+    "02-Areas/个人成长/每日日记/2026/2026-03-09.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day13-audit-masking-flow.svg",
+    "02-Areas/个人成长/每日日记/2026/2026-03-09-每日日记.md",
+    "02-Areas/个人成长/每日日记/2026/2026-03-05-每日日记.md",
+    "02-Areas/个人成长/每日日记/2026/2026-02-26-每日日记.md",
+    "02-Areas/个人成长/每日日记/2026/03-05小红书AI学习-Day2.md",
+    "02-Areas/个人成长/每日日记/2026/03-05小红书AI学习.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/Day10-输入输出Schema设计与一致性.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/Day09-复刻第一个Skill（最小可用）.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/Day08-Skill机制总览与开发入口.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/Day06-可观测性：日志、状态与追踪.md",
@@ -369,28 +386,16 @@
     "03-Resources/效率工具/OpenClaw-30天学习手册/Day03-本地启动与最小闭环验证.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/Day19-Browser任务封装为可复用Skill.md",
     "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-03-09.md",
-    "02-Areas/个人成长/每日日记/2026/2026-03-09-每日日记.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/Day07-Week1复盘：从会用到能跑.md",
-    "03-Resources/效率工具/OpenClaw-30天学习手册/Day10-输入输出Schema设计与一致性.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/Day12-权限分级与审批流设计.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/Day15-Browser自动化基础能力.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/Day14-Week2复盘：第一个可治理Skill.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/Day13-审计与脱敏规范实践.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/Day11-幂等、超时与重试策略.md",
-    "03-Resources/效率工具/OpenClaw-30天学习手册/Day02-架构与分层：消息如何变成可执行动作.md",
-    "03-Resources/效率工具/OpenClaw-30天学习手册/Day16-网页抓取任务：结构化提取.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day12-permission-flow.svg",
-    "02-Areas/个人成长/每日日记/2026/2026-03-07-每日日记.md",
-    "02-Areas/个人成长/每日日记/2026/2026-03-08-每日日记.md",
-    "01-Projects/AI能力建设/GLiNER2-客户微信记录解析技术方案.md",
-    "03-Resources/行业情报/ToB-SaaS-竞品情报-2026-03-09.md",
     "03-Resources/行业情报",
-    "02-Areas/AI战略规划/PAI系统/PAI-周复盘-2026-03-08.md",
-    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-03-08.md",
-    "02-Areas/AI战略规划/Meta_Creator_Agent_Google_产品对业务的机会与风险.md",
     "02-Areas/AI战略规划/Meta_Creator_Agent_Google_产品对业务的机会与风险.docx",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day11-retry-flow.svg",
-    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-03-07.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day10-schema-design-flow.svg",
     "01-Projects/AI能力建设",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day09-minimal-skill-flow.svg",
@@ -399,14 +404,9 @@
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day08-skill-flow.svg",
     "03-Resources/AI知识内容分享",
     "03-Resources/小红书户外内容",
-    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day02-message-to-action-flow.svg",
-    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day02-handdrawn.svg",
-    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day02-xhs-style.svg",
-    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day03-local-mvp-loop.svg",
     "03-Resources/读书笔记",
     "02-Areas/个人成长/每日日记/2026",
     "02-Areas/个人成长/每日日记",
-    "02-Areas/个人成长",
     "Excalidraw/Clawdbot 闭门探讨思维导图.canvas",
     "未命名.canvas"
   ]
