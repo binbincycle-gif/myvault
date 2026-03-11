@@ -16,14 +16,12 @@
                 "id": "f73e65a02cadc8ca",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
+                  "type": "image",
                   "state": {
-                    "file": "02-Areas/AI战略规划/26年技术中心战略方向-AI时代组织与能力进化.md",
-                    "mode": "source",
-                    "source": false
+                    "file": "02-Areas/AI战略规划/assets/ezr-saas-skills-architecture.svg"
                   },
-                  "icon": "lucide-file",
-                  "title": "26年技术中心战略方向-AI时代组织与能力进化"
+                  "icon": "lucide-image",
+                  "title": "ezr-saas-skills-architecture"
                 }
               },
               {
@@ -361,6 +359,10 @@
   },
   "active": "f73e65a02cadc8ca",
   "lastOpenFiles": [
+    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-03-11.md",
+    "02-Areas/个人成长/每日日记/2026/2026-03-11-每日日记.md",
+    "02-Areas/AI战略规划/26年技术中心战略方向-AI时代组织与能力进化.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day14-week2-skill-governance.svg",
     "02-Areas/个人成长/每日日记/2026/2026-03-10.md",
     "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-03-10.md",
     "02-Areas/个人成长/每日日记/2026/2026-03-10-每日日记.md",
@@ -369,7 +371,6 @@
     "02-Areas/AI战略规划/assets/saas-openclaw-architecture.svg",
     "02-Areas/AI战略规划/26年技术中心战略-PPT最终版.md",
     "02-Areas/AI战略规划/assets",
-    "02-Areas/AI战略规划/26年技术中心战略方向-AI时代组织与能力进化.md",
     "02-Areas/个人成长/每日日记/2026/2026-03-09.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day13-audit-masking-flow.svg",
     "02-Areas/个人成长/每日日记/2026/2026-03-09-每日日记.md",
@@ -390,8 +391,6 @@
     "03-Resources/效率工具/OpenClaw-30天学习手册/Day12-权限分级与审批流设计.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/Day15-Browser自动化基础能力.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/Day14-Week2复盘：第一个可治理Skill.md",
-    "03-Resources/效率工具/OpenClaw-30天学习手册/Day13-审计与脱敏规范实践.md",
-    "03-Resources/效率工具/OpenClaw-30天学习手册/Day11-幂等、超时与重试策略.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day12-permission-flow.svg",
     "03-Resources/行业情报",
     "02-Areas/AI战略规划/Meta_Creator_Agent_Google_产品对业务的机会与风险.docx",
@@ -401,7 +400,6 @@
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day09-minimal-skill-flow.svg",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day07-week1-closed-loop.svg",
     "01-Projects/案例库搭建",
-    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day08-skill-flow.svg",
     "03-Resources/AI知识内容分享",
     "03-Resources/小红书户外内容",
     "03-Resources/读书笔记",
