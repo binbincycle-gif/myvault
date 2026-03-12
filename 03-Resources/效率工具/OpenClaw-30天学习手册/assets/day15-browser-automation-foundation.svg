@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620">
+  <rect width="100%" height="100%" fill="#fcfbf7"/>
+  <g stroke="#2f2f2f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 70 Q72 62 82 60 H238 Q248 62 250 72 V148 Q248 158 238 160 H82 Q72 158 70 148 Z"/>
+    <path d="M300 70 Q302 62 312 60 H488 Q498 62 500 72 V148 Q498 158 488 160 H312 Q302 158 300 148 Z"/>
+    <path d="M550 70 Q552 62 562 60 H738 Q748 62 750 72 V148 Q748 158 738 160 H562 Q552 158 550 148 Z"/>
+    <path d="M70 250 Q72 242 82 240 H238 Q248 242 250 252 V328 Q248 338 238 340 H82 Q72 338 70 328 Z"/>
+    <path d="M300 250 Q302 242 312 240 H488 Q498 242 500 252 V328 Q498 338 488 340 H312 Q302 338 300 328 Z"/>
+    <path d="M550 250 Q552 242 562 240 H738 Q748 242 750 252 V328 Q748 338 738 340 H562 Q552 338 550 328 Z"/>
+    <path d="M300 430 Q302 422 312 420 H488 Q498 422 500 432 V508 Q498 518 488 520 H312 Q302 518 300 508 Z"/>
+    <path d="M250 110 C270 108 280 108 300 110"/>
+    <path d="M500 110 C520 108 530 108 550 110"/>
+    <path d="M160 160 C160 198 160 210 160 240"/>
+    <path d="M390 160 C390 198 390 210 390 240"/>
+    <path d="M650 160 C650 198 650 210 650 240"/>
+    <path d="M250 290 C270 288 280 288 300 290"/>
+    <path d="M500 290 C520 288 530 288 550 290"/>
+    <path d="M390 340 C390 378 390 390 390 420"/>
+    <path d="M294 104 L300 110 L294 116"/>
+    <path d="M544 104 L550 110 L544 116"/>
+    <path d="M154 234 L160 240 L166 234"/>
+    <path d="M384 234 L390 240 L396 234"/>
+    <path d="M644 234 L650 240 L656 234"/>
+    <path d="M294 284 L300 290 L294 296"/>
+    <path d="M544 284 L550 290 L544 296"/>
+    <path d="M384 414 L390 420 L396 414"/>
+  </g>
+  <g font-family="HanziPen SC, Hannotate SC, KaiTi, STKaiti, PingFang SC, sans-serif" fill="#1f1f1f">
+    <text x="160" y="98" text-anchor="middle" font-size="28">用户目标</text>
+    <text x="160" y="130" text-anchor="middle" font-size="20">打开网页 / 点按钮</text>
+    <text x="400" y="98" text-anchor="middle" font-size="28">Browser 工具</text>
+    <text x="400" y="130" text-anchor="middle" font-size="20">open · snapshot · act</text>
+    <text x="650" y="98" text-anchor="middle" font-size="28">页面状态快照</text>
+    <text x="650" y="130" text-anchor="middle" font-size="20">读取结构，不靠猜坐标</text>
+    <text x="160" y="278" text-anchor="middle" font-size="28">定位元素</text>
+    <text x="160" y="310" text-anchor="middle" font-size="20">role / aria ref</text>
+    <text x="400" y="278" text-anchor="middle" font-size="28">执行动作</text>
+    <text x="400" y="310" text-anchor="middle" font-size="20">点击 / 输入 / 选择</text>
+    <text x="650" y="278" text-anchor="middle" font-size="28">校验结果</text>
+    <text x="650" y="310" text-anchor="middle" font-size="20">成功页 / 提示文案 / 数据变化</text>
+    <text x="400" y="458" text-anchor="middle" font-size="28">失败处理</text>
+    <text x="400" y="490" text-anchor="middle" font-size="20">重取快照 → 重定位 → 降级方案</text>
+    <text x="812" y="120" font-size="22">关键原则</text>
+    <text x="812" y="158" font-size="18">• 先看页面结构，再动作</text>
+    <text x="812" y="190" font-size="18">• 每一步都要可验证</text>
+    <text x="812" y="222" font-size="18">• 少用盲等，多用状态判断</text>
+  </g>
+</svg>
