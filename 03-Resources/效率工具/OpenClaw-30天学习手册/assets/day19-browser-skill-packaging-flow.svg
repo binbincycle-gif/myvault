@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860">
+  <rect width="1200" height="860" fill="#fcfbf7"/>
+  <g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#222" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <text x="600" y="58" text-anchor="middle" font-size="34" stroke="none" fill="#222">Day19｜Browser任务封装为可复用Skill</text>
+    <text x="600" y="92" text-anchor="middle" font-size="18" stroke="none" fill="#555">把一次性网页自动化，沉淀成可复用、可治理、可复盘的能力单元</text>
+
+    <rect x="70" y="140" rx="18" ry="18" width="220" height="110" fill="none"/>
+    <text x="180" y="183" text-anchor="middle" font-size="24" stroke="none">业务输入</text>
+    <text x="180" y="218" text-anchor="middle" font-size="18" stroke="none" fill="#555">目标页面 / 参数 /</text>
+    <text x="180" y="242" text-anchor="middle" font-size="18" stroke="none" fill="#555">输出口径</text>
+
+    <rect x="350" y="140" rx="18" ry="18" width="220" height="110" fill="none"/>
+    <text x="460" y="183" text-anchor="middle" font-size="24" stroke="none">Skill封装层</text>
+    <text x="460" y="218" text-anchor="middle" font-size="18" stroke="none" fill="#555">description + schema</text>
+    <text x="460" y="242" text-anchor="middle" font-size="18" stroke="none" fill="#555">边界清晰</text>
+
+    <rect x="630" y="140" rx="18" ry="18" width="220" height="110" fill="none"/>
+    <text x="740" y="183" text-anchor="middle" font-size="24" stroke="none">Browser执行层</text>
+    <text x="740" y="218" text-anchor="middle" font-size="18" stroke="none" fill="#555">打开 / 快照 /</text>
+    <text x="740" y="242" text-anchor="middle" font-size="18" stroke="none" fill="#555">交互 / 提取</text>
+
+    <rect x="910" y="140" rx="18" ry="18" width="220" height="110" fill="none"/>
+    <text x="1020" y="183" text-anchor="middle" font-size="24" stroke="none">结构化输出</text>
+    <text x="1020" y="218" text-anchor="middle" font-size="18" stroke="none" fill="#555">结果 / 状态 /</text>
+    <text x="1020" y="242" text-anchor="middle" font-size="18" stroke="none" fill="#555">异常说明</text>
+
+    <path d="M290 195 L350 195" fill="none"/>
+    <polygon points="350,195 334,187 334,203" fill="#222" stroke="none"/>
+    <path d="M570 195 L630 195" fill="none"/>
+    <polygon points="630,195 614,187 614,203" fill="#222" stroke="none"/>
+    <path d="M850 195 L910 195" fill="none"/>
+    <polygon points="910,195 894,187 894,203" fill="#222" stroke="none"/>
+
+    <rect x="105" y="340" rx="18" ry="18" width="260" height="160" fill="none"/>
+    <text x="235" y="382" text-anchor="middle" font-size="26" stroke="none">① 输入要标准化</text>
+    <text x="235" y="418" text-anchor="middle" font-size="18" stroke="none" fill="#555">URL、筛选条件、字段范围</text>
+    <text x="235" y="446" text-anchor="middle" font-size="18" stroke="none" fill="#555">不要把页面细节暴露给调用方</text>
+    <text x="235" y="474" text-anchor="middle" font-size="18" stroke="none" fill="#555">先定义“要什么结果”</text>
+
+    <rect x="390" y="340" rx="18" ry="18" width="420" height="160" fill="none"/>
+    <text x="600" y="382" text-anchor="middle" font-size="26" stroke="none">② 交互要拆步</text>
+    <text x="600" y="418" text-anchor="middle" font-size="18" stroke="none" fill="#555">snapshot 看状态 → act 点击/输入 → wait 等页面稳定</text>
+    <text x="600" y="446" text-anchor="middle" font-size="18" stroke="none" fill="#555">不要把“打开页面到拿结果”写成一坨黑盒流程</text>
+    <text x="600" y="474" text-anchor="middle" font-size="18" stroke="none" fill="#555">每一步都要能定位、能重试、能解释</text>
+
+    <rect x="835" y="340" rx="18" ry="18" width="260" height="160" fill="none"/>
+    <text x="965" y="382" text-anchor="middle" font-size="26" stroke="none">③ 输出要收口</text>
+    <text x="965" y="418" text-anchor="middle" font-size="18" stroke="none" fill="#555">返回结构化字段</text>
+    <text x="965" y="446" text-anchor="middle" font-size="18" stroke="none" fill="#555">附带状态、时间、失败原因</text>
+    <text x="965" y="474" text-anchor="middle" font-size="18" stroke="none" fill="#555">方便上层工作流继续用</text>
+
+    <rect x="120" y="585" rx="18" ry="18" width="290" height="180" fill="none"/>
+    <text x="265" y="625" text-anchor="middle" font-size="25" stroke="none">稳定性关注</text>
+    <text x="265" y="662" text-anchor="middle" font-size="18" stroke="none" fill="#555">页面结构变动</text>
+    <text x="265" y="690" text-anchor="middle" font-size="18" stroke="none" fill="#555">登录态失效 / 目标元素缺失</text>
+    <text x="265" y="718" text-anchor="middle" font-size="18" stroke="none" fill="#555">等待条件不准导致偶发超时</text>
+
+    <rect x="455" y="585" rx="18" ry="18" width="290" height="180" fill="none"/>
+    <text x="600" y="625" text-anchor="middle" font-size="25" stroke="none">治理关注</text>
+    <text x="600" y="662" text-anchor="middle" font-size="18" stroke="none" fill="#555">权限分级 / 合规边界</text>
+    <text x="600" y="690" text-anchor="middle" font-size="18" stroke="none" fill="#555">超时、重试、幂等策略</text>
+    <text x="600" y="718" text-anchor="middle" font-size="18" stroke="none" fill="#555">日志、trace、失败可追溯</text>
+
+    <rect x="790" y="585" rx="18" ry="18" width="290" height="180" fill="none"/>
+    <text x="935" y="625" text-anchor="middle" font-size="25" stroke="none">复用价值</text>
+    <text x="935" y="662" text-anchor="middle" font-size="18" stroke="none" fill="#555">一次封装，多场景调用</text>
+    <text x="935" y="690" text-anchor="middle" font-size="18" stroke="none" fill="#555">从“人盯网页”变成“系统能力”</text>
+    <text x="935" y="718" text-anchor="middle" font-size="18" stroke="none" fill="#555">更适合接入工作流和周报</text>
+
+    <path d="M235 500 L235 585" fill="none"/>
+    <polygon points="235,585 227,569 243,569" fill="#222" stroke="none"/>
+    <path d="M600 500 L600 585" fill="none"/>
+    <polygon points="600,585 592,569 608,569" fill="#222" stroke="none"/>
+    <path d="M965 500 L965 585" fill="none"/>
+    <polygon points="965,585 957,569 973,569" fill="#222" stroke="none"/>
+  </g>
+</svg>
