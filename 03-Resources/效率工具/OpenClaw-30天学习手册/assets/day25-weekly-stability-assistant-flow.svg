@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#2f4858" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .bg { fill: #fffdf8; }
+      .box { fill: #fffefb; stroke: #2f4858; stroke-width: 3; rx: 18; ry: 18; }
+      .line { fill: none; stroke: #2f4858; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+      .title { font: 700 28px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #1f2d3d; }
+      .label { font: 600 22px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #1f2d3d; }
+      .small { font: 500 18px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #334e68; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="960" height="720"/>
+  <text class="title" x="60" y="70">Day25｜稳定性周报助手：从数据收集到管理输出</text>
+
+  <rect class="box" x="60" y="120" width="220" height="110"/>
+  <text class="label" x="95" y="170">1. 周报输入</text>
+  <text class="small" x="92" y="205">日志 / 告警 / 工单 / SLA</text>
+
+  <rect class="box" x="370" y="120" width="220" height="110"/>
+  <text class="label" x="405" y="170">2. OpenClaw 编排</text>
+  <text class="small" x="420" y="205">定时触发 + 调工具</text>
+
+  <rect class="box" x="680" y="120" width="220" height="110"/>
+  <text class="label" x="735" y="170">3. 数据校验</text>
+  <text class="small" x="718" y="205">去重 / 缺失检查 / 对比</text>
+
+  <rect class="box" x="60" y="340" width="220" height="120"/>
+  <text class="label" x="95" y="390">4. 结构化归因</text>
+  <text class="small" x="84" y="425">按系统 / 场景 / 严重度整理</text>
+
+  <rect class="box" x="370" y="340" width="220" height="120"/>
+  <text class="label" x="405" y="390">5. 生成周报</text>
+  <text class="small" x="406" y="425">KPI + 风险 + 行动建议</text>
+
+  <rect class="box" x="680" y="340" width="220" height="120"/>
+  <text class="label" x="720" y="390">6. 管理分发</text>
+  <text class="small" x="704" y="425">消息通知 / 知识库沉淀</text>
+
+  <path class="line" d="M280 175 C320 175, 330 175, 370 175"/>
+  <path class="line" d="M590 175 C630 175, 640 175, 680 175"/>
+  <path class="line" d="M790 230 C790 275, 790 290, 790 340"/>
+  <path class="line" d="M680 400 C645 400, 630 400, 590 400"/>
+  <path class="line" d="M370 400 C335 400, 320 400, 280 400"/>
+  <path class="line" d="M170 340 C170 300, 170 280, 170 230"/>
+
+  <text class="small" x="105" y="515">关键原则：先校验口径，再输出结论；先给管理摘要，再下钻明细。</text>
+  <text class="small" x="105" y="548">适合移动端阅读：一屏先看趋势、异常、责任与下一步。</text>
+</svg>
