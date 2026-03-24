@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" font-family="HanziPen SC, Hannotate SC, KaiTi, STKaiti, PingFang SC, sans-serif">
+  <!-- 背景 -->
+  <rect width="400" height="420" fill="#fafafa"/>
+  
+  <!-- 标题 -->
+  <text x="200" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">协作流程与RACI模型</text>
+  
+  <!-- 阶段1: 需求 -->
+  <g transform="translate(50, 60)">
+    <!-- 需求阶段 -->
+    <rect x="0" y="0" width="100" height="40" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+    <text x="50" y="25" text-anchor="middle" font-size="12" fill="#333">需求阶段</text>
+    
+    <!-- RACI标注 -->
+    <text x="120" y="25" font-size="10" fill="#666">产品(R) → 技术(A)</text>
+    
+    <!-- 箭头到评审 -->
+    <path d="M50 40 L50 55" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 评审阶段 -->
+    <rect x="0" y="60" width="100" height="40" rx="4" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
+    <text x="50" y="85" text-anchor="middle" font-size="12" fill="#333">评审阶段</text>
+    
+    <text x="120" y="85" font-size="10" fill="#666">技术(R) → 设计(C)</text>
+    
+    <!-- 箭头到设计 -->
+    <path d="M50 100 L50 115" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 设计阶段 -->
+    <rect x="0" y="120" width="100" height="40" rx="4" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+    <text x="50" y="145" text-anchor="middle" font-size="12" fill="#333">设计阶段</text>
+    
+    <text x="120" y="145" font-size="10" fill="#666">设计(R) → 产品(C)</text>
+    
+    <!-- 箭头到开发 -->
+    <path d="M50 160 L50 175" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 开发阶段 -->
+    <rect x="0" y="180" width="100" height="40" rx="4" fill="#fce4ec" stroke="#d81b60" stroke-width="1.5"/>
+    <text x="50" y="205" text-anchor="middle" font-size="12" fill="#333">开发阶段</text>
+    
+    <text x="120" y="205" font-size="10" fill="#666">开发(R) → 测试(A)</text>
+    
+    <!-- 箭头到测试 -->
+    <path d="M50 220 L50 235" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 测试阶段 -->
+    <rect x="0" y="240" width="100" height="40" rx="4" fill="#e1f5fe" stroke="#0288d1" stroke-width="1.5"/>
+    <text x="50" y="265" text-anchor="middle" font-size="12" fill="#333">测试阶段</text>
+    
+    <text x="120" y="265" font-size="10" fill="#666">测试(R) → 运维(A)</text>
+    
+    <!-- 箭头到上线 -->
+    <path d="M50 280 L50 295" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 上线阶段 -->
+    <rect x="0" y="300" width="100" height="40" rx="4" fill="#e0f2f1" stroke="#00796b" stroke-width="1.5"/>
+    <text x="50" y="325" text-anchor="middle" font-size="12" fill="#333">上线阶段</text>
+    
+    <text x="120" y="325" font-size="10" fill="#666">运维(R) → 安全(C)</text>
+    
+    <!-- 箭头到通知 -->
+    <path d="M50 340 L50 355" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 知会全员 -->
+    <rect x="0" y="360" width="100" height="40" rx="4" fill="#f5f5f5" stroke="#757575" stroke-width="1.5"/>
+    <text x="50" y="385" text-anchor="middle" font-size="12" fill="#333">全员知会</text>
+    
+    <text x="120" y="385" font-size="10" fill="#666">全员(I)</text>
+  </g>
+  
+  <!-- 底部图例 -->
+  <g transform="translate(50, 390)">
+    <text x="0" y="0" font-size="9" fill="#666">R=执行 A=负责 C=咨询 I=知会</text>
+  </g>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" font-family="HanziPen SC, Hannotate SC, KaiTi, STKaiti, PingFang SC, sans-serif">
+  <!-- 背景 -->
+  <rect width="400" height="520" fill="#fafafa"/>
+  
+  <!-- 标题 -->
+  <text x="200" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">迭代发布助手流程</text>
+  
+  <!-- 节点 -->
+  <g transform="translate(50, 60)">
+    <!-- 代码提交 -->
+    <rect x="0" y="0" width="100" height="40" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+    <text x="50" y="25" text-anchor="middle" font-size="12" fill="#333">代码提交</text>
+    
+    <!-- 箭头 -->
+    <path d="M50 40 L50 55" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+    
+    <!-- 构建 -->
+    <rect x="0" y="60" width="100" height="40" rx="4" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
+    <text x="50" y="85" text-anchor="middle" font-size="12" fill="#333">构建</text>
+    
+    <!-- 箭头 -->
+    <path d="M50 100 L50 115" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 测试 -->
+    <rect x="0" y="120" width="100" height="40" rx="4" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+    <text x="50" y="145" text-anchor="middle" font-size="12" fill="#333">测试验证</text>
+    
+    <!-- 箭头 -->
+    <path d="M50 160 L50 175" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 审批门禁 -->
+    <rect x="0" y="180" width="100" height="40" rx="4" fill="#fce4ec" stroke="#d81b60" stroke-width="1.5"/>
+    <text x="50" y="205" text-anchor="middle" font-size="12" fill="#333">审批门禁</text>
+    
+    <!-- 分支箭头 -->
+    <path d="M50 220 L50 235" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 部署 -->
+    <rect x="0" y="240" width="100" height="40" rx="4" fill="#e1f5fe" stroke="#0288d1" stroke-width="1.5"/>
+    <text x="50" y="265" text-anchor="middle" font-size="12" fill="#333">部署上线</text>
+    
+    <!-- 部署后的箭头到审计 -->
+    <path d="M100 260 L180 260 L180 300" stroke="#666" stroke-width="1.5" fill="none"/>
+    <path d="M180 300 L170 295 M180 300 L170 305" stroke="#666" stroke-width="1.5"/>
+    
+    <!-- 审计日志 -->
+    <rect x="130" y="300" width="100" height="40" rx="4" fill="#f5f5f5" stroke="#757575" stroke-width="1.5"/>
+    <text x="180" y="325" text-anchor="middle" font-size="12" fill="#333">审计日志</text>
+    
+    <!-- 反馈箭头 -->
+    <path d="M180 340 L180 360" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 通知 -->
+    <rect x="130" y="365" width="100" height="40" rx="4" fill="#e0f2f1" stroke="#00796b" stroke-width="1.5"/>
+    <text x="180" y="390" text-anchor="middle" font-size="12" fill="#333">通知群</text>
+    
+    <!-- 失败回滚分支 -->
+    <path d="M50 220 L-30 220 L-30 300" stroke="#d32f2f" stroke-width="1.5" fill="none" stroke-dasharray="4,2"/>
+    <path d="M-30 300 L-20 295 M-30 300 L-20 305" stroke="#d32f2f" stroke-width="1.5"/>
+    
+    <!-- 回滚节点 -->
+    <rect x="-80" y="280" width="100" height="40" rx="4" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+    <text x="-30" y="305" text-anchor="middle" font-size="12" fill="#333">一键回滚</text>
+    
+    <!-- 回滚箭头到审计 -->
+    <path d="M-30 320 L-30 340 L180 340 L180 360" stroke="#666" stroke-width="1.5" fill="none"/>
+  </g>
+  
+  <!-- 标注 -->
+  <g transform="translate(20, 450)">
+    <text x="0" y="0" font-size="10" fill="#666">■ 审批不通过 → 回滚</text>
+    <text x="0" y="20" font-size="10" fill="#666">→ 正常流程</text>
+    <text x="0" y="40" font-size="10" fill="#666">-- → 失败分支</text>
+  </g>
+  
+  <!-- 定义箭头 -->
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

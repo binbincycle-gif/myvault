@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" font-family="HanziPen SC, Hannotate SC, KaiTi, STKaiti, PingFang SC, sans-serif">
+  <!-- 背景 -->
+  <rect width="400" height="480" fill="#fafafa"/>
+  
+  <!-- 标题 -->
+  <text x="200" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">告警机制与SLA流程</text>
+  
+  <!-- 主流程节点 -->
+  <g transform="translate(50, 60)">
+    <!-- 指标采集 -->
+    <rect x="0" y="0" width="100" height="40" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+    <text x="50" y="25" text-anchor="middle" font-size="12" fill="#333">指标采集</text>
+    
+    <!-- 箭头 -->
+    <path d="M50 40 L50 55" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 规则引擎 -->
+    <rect x="0" y="60" width="100" height="40" rx="4" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
+    <text x="50" y="85" text-anchor="middle" font-size="12" fill="#333">规则引擎</text>
+    
+    <!-- 判断分支 -->
+    <path d="M50 100 L50 115" stroke="#666" stroke-width="1.5" fill="none"/>
+    <path d="M50 115 L30 115 L30 130" stroke="#666" stroke-width="1.5" fill="none"/>
+    <path d="M30 130 L20 125 M30 130 L20 135" stroke="#666" stroke-width="1.5"/>
+    <path d="M50 115 L70 115 L70 130" stroke="#666" stroke-width="1.5" fill="none"/>
+    <path d="M70 130 L60 125 M70 130 L60 135" stroke="#666" stroke-width="1.5"/>
+    
+    <!-- 触发告警 -->
+    <rect x="-30" y="135" width="100" height="40" rx="4" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+    <text x="20" y="160" text-anchor="middle" font-size="12" fill="#333">触发告警</text>
+    
+    <!-- 正常 -->
+    <rect x="40" y="135" width="100" height="40" rx="4" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+    <text x="90" y="160" text-anchor="middle" font-size="12" fill="#333">正常</text>
+    
+    <!-- 告警后箭头到分级 -->
+    <path d="M20 175 L20 190" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 告警分级 -->
+    <rect x="-30" y="195" width="100" height="40" rx="4" fill="#fce4ec" stroke="#d81b60" stroke-width="1.5"/>
+    <text x="20" y="220" text-anchor="middle" font-size="12" fill="#333">告警分级</text>
+    
+    <!-- 箭头到通知 -->
+    <path d="M20 235 L20 250" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 通知渠道 -->
+    <rect x="-30" y="255" width="100" height="40" rx="4" fill="#e0f2f1" stroke="#00796b" stroke-width="1.5"/>
+    <text x="20" y="280" text-anchor="middle" font-size="12" fill="#333">通知渠道</text>
+    
+    <!-- 箭头到响应 -->
+    <path d="M20 295 L20 310" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 响应处理 -->
+    <rect x="-30" y="315" width="100" height="40" rx="4" fill="#ede7f6" stroke="#7b1fa2" stroke-width="1.5"/>
+    <text x="20" y="340" text-anchor="middle" font-size="12" fill="#333">响应处理</text>
+    
+    <!-- 箭头到升级 -->
+    <path d="M20 355 L20 370" stroke="#666" stroke-width="1.5" fill="none"/>
+    
+    <!-- 升级机制 -->
+    <rect x="-30" y="375" width="100" height="40" rx="4" fill="#fff9c4" stroke="#f9a825" stroke-width="1.5"/>
+    <text x="20" y="400" text-anchor="middle" font-size="12" fill="#333">升级机制</text>
+  </g>
+  
+  <!-- SLA仪表盘 -->
+  <g transform="translate(180, 200)">
+    <rect x="0" y="0" width="120" height="40" rx="4" fill="#f5f5f5" stroke="#757575" stroke-width="1.5"/>
+    <text x="60" y="25" text-anchor="middle" font-size="11" fill="#333">SLA仪表盘</text>
+  </g>
+  
+  <!-- 连接线 -->
+  <path d="M90 175 L180 175 L180 200" stroke="#666" stroke-width="1.5" fill="none"/>
+  <path d="M180 240 L180 260 L90 260" stroke="#666" stroke-width="1.5" fill="none"/>
+  
+  <!-- 标注 -->
+  <g transform="translate(20, 430)">
+    <text x="0" y="0" font-size="10" fill="#666">■ 异常 → 触发告警</text>
+    <text x="120" y="0" font-size="10" fill="#666">→ 正常 → 记录</text>
+  </g>
+</svg>
