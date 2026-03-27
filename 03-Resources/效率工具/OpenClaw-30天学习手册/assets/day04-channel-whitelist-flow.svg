@@ -1,119 +1,65 @@
-<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="760" viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
       .bg{fill:#fffdfa}
-      .title{font:700 48px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#111}
-      .text{font:700 36px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#111}
-      .label{font:600 28px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#666}
-      .box{fill:#fff;stroke:#222;stroke-width:5}
-      .box-highlight{fill:#fff;stroke:#d32f2f;stroke-width:7}
-      .box2{fill:#f5f5f5;stroke:#333;stroke-width:3}
-      .arr{stroke:#3b6fd0;stroke-width:4;fill:none;marker-end:url(#a)}
-      .highlight{fill:#fff3e0;stroke:#ff9800;stroke-width:4}
-      .highlight-red{fill:#ffebee;stroke:#d32f2f;stroke-width:5}
+      .title{font:700 42px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#1f1f1f}
+      .box{fill:#ffffff;stroke:#2f2f2f;stroke-width:4}
+      .safe{fill:#eef8ee;stroke:#2f7d32;stroke-width:4}
+      .warn{fill:#fff2f0;stroke:#c62828;stroke-width:4}
+      .note{fill:#fff8e8;stroke:#d08b00;stroke-width:4}
+      .text{font:700 28px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#1f1f1f}
+      .small{font:600 22px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#555}
+      .arrow{stroke:#4c78d0;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowHead)}
     </style>
-    <marker id="a" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto">
-      <path d="M0.5,0.5 L4,2.5 L0.5,4.5" fill="none" stroke="#3b6fd0" stroke-width="1"/>
+    <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1,1 L10,6 L1,11" fill="none" stroke="#4c78d0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
   </defs>
-  
-  <rect class="bg" x="0" y="0" width="1200" height="800"/>
 
-  <!-- 卡通小龙虾 -->
-  <g transform="translate(25, 5)">
-    <ellipse fill="#FF6B6B" cx="50" cy="40" rx="30" ry="22"/>
-    <ellipse fill="#FF8E8E" cx="45" cy="35" rx="15" ry="10"/>
-    <circle fill="#FF6B6B" cx="75" cy="35" r="18"/>
-    <circle fill="#fff" cx="80" cy="30" r="8"/>
-    <circle fill="#fff" cx="68" cy="30" r="8"/>
-    <circle fill="#333" cx="82" cy="30" r="4"/>
-    <circle fill="#333" cx="70" cy="30" r="4"/>
-    <circle fill="#fff" cx="84" cy="28" r="1.5"/>
-    <circle fill="#fff" cx="72" cy="28" r="1.5"/>
-    <ellipse fill="#FFAAAA" cx="85" cy="40" rx="4" ry="2" opacity="0.6"/>
-    <ellipse fill="#FFAAAA" cx="65" cy="40" rx="4" ry="2" opacity="0.6"/>
-    <path stroke="#333" stroke-width="2" fill="none" d="M73,42 Q78,46 83,42"/>
-    <path stroke="#FF6B6B" stroke-width="3" fill="none" stroke-linecap="round" d="M85,20 Q95,5 110,15 Q120,25 105,25"/>
-    <path stroke="#FF6B6B" stroke-width="3" fill="none" stroke-linecap="round" d="M90,22 Q100,15 115,22"/>
-    <ellipse fill="#FF6B6B" cx="55" cy="55" rx="12" ry="8"/>
-    <ellipse fill="#FF6B6B" cx="95" cy="55" rx="12" ry="8"/>
-    <line stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" x1="40" y1="60" x2="32" y2="72"/>
-    <line stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" x1="50" y1="62" x2="45" y2="75"/>
-    <line stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" x1="60" y1="62" x2="60" y2="75"/>
-    <line stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" x1="70" y1="60" x2="75" y2="72"/>
-    <path fill="#FF6B6B" d="M20,35 Q5,30 10,45 Q15,55 25,45"/>
-  </g>
+  <rect class="bg" x="0" y="0" width="1200" height="760"/>
+  <text class="title" x="600" y="56" text-anchor="middle">Day04 渠道接入与白名单机制</text>
 
-  <!-- 标题 -->
-  <text class="title" x="650" y="55" text-anchor="middle">Day04 渠道接入与白名单</text>
+  <rect class="box" x="60" y="110" width="220" height="84" rx="18"/>
+  <text class="text" x="170" y="160" text-anchor="middle">聊天渠道 / API</text>
+  <text class="small" x="170" y="188" text-anchor="middle">Telegram、Discord、Webhook</text>
 
-  <!-- 第一行：外部渠道 -->
-  <rect class="box" x="20" y="85" width="180" height="65" rx="10" fill="#e3f2fd" stroke="#1976d2"/>
-  <text class="label" x="110" y="125" text-anchor="middle">Telegram</text>
+  <rect class="box" x="340" y="110" width="220" height="84" rx="18"/>
+  <text class="text" x="450" y="160" text-anchor="middle">消息标准化</text>
+  <text class="small" x="450" y="188" text-anchor="middle">统一身份、来源、正文</text>
 
-  <rect class="box" x="210" y="85" width="180" height="65" rx="10" fill="#e3f2fd" stroke="#1976d2"/>
-  <text class="label" x="300" y="125" text-anchor="middle">WebChat</text>
+  <rect class="note" x="620" y="96" width="250" height="112" rx="18"/>
+  <text class="text" x="745" y="144" text-anchor="middle">白名单校验</text>
+  <text class="small" x="745" y="173" text-anchor="middle">人 / 场 / 事</text>
+  <text class="small" x="745" y="198" text-anchor="middle">先判断，再放行</text>
 
-  <rect class="box" x="400" y="85" width="180" height="65" rx="10" fill="#e3f2fd" stroke="#1976d2"/>
-  <text class="label" x="490" y="125" text-anchor="middle">Discord</text>
+  <rect class="box" x="930" y="110" width="210" height="84" rx="18"/>
+  <text class="text" x="1035" y="160" text-anchor="middle">进入会话</text>
+  <text class="small" x="1035" y="188" text-anchor="middle">承接上下文与状态</text>
 
-  <rect class="box" x="590" y="85" width="180" height="65" rx="10" fill="#e3f2fd" stroke="#1976d2"/>
-  <text class="label" x="680" y="125" text-anchor="middle">WhatsApp</text>
+  <path class="arrow" d="M280 152 C300 152, 320 152, 340 152"/>
+  <path class="arrow" d="M560 152 C580 152, 600 152, 620 152"/>
+  <path class="arrow" d="M870 152 C890 152, 910 152, 930 152"/>
 
-  <rect class="box" x="780" y="85" width="180" height="65" rx="10" fill="#e3f2fd" stroke="#1976d2"/>
-  <text class="label" x="870" y="125" text-anchor="middle">API</text>
+  <rect class="box" x="915" y="290" width="240" height="84" rx="18"/>
+  <text class="text" x="1035" y="340" text-anchor="middle">工具执行</text>
+  <text class="small" x="1035" y="368" text-anchor="middle">read / exec / browser ...</text>
 
-  <rect class="box" x="970" y="85" width="180" height="65" rx="10" fill="#e3f2fd" stroke="#1976d2"/>
-  <text class="label" x="1060" y="125" text-anchor="middle">Signal</text>
+  <path class="arrow" d="M1035 194 C1035 220, 1035 252, 1035 290"/>
 
-  <!-- 箭头 -->
-  <path class="arr" d="M110,150 L110,180"/>
-  <path class="arr" d="M300,150 L300,180"/>
-  <path class="arr" d="M490,150 L490,180"/>
-  <path class="arr" d="M680,150 L680,180"/>
-  <path class="arr" d="M870,150 L870,180"/>
-  <path class="arr" d="M1060,150 L1060,180"/>
+  <rect class="safe" x="720" y="470" width="330" height="92" rx="20"/>
+  <text class="text" x="885" y="522" text-anchor="middle">通过：进入执行链路</text>
+  <text class="small" x="885" y="551" text-anchor="middle">允许的身份在允许的场景做允许的动作</text>
 
-  <!-- 第二行：消息标准化 -->
-  <rect class="box-highlight" x="300" y="190" width="600" height="65" rx="12" fill="#fff8e1"/>
-  <text class="text" x="600" y="235" text-anchor="middle">消息标准化 → 统一消息对象</text>
+  <rect class="warn" x="150" y="470" width="330" height="92" rx="20"/>
+  <text class="text" x="315" y="522" text-anchor="middle">拒绝：拦截并记录</text>
+  <text class="small" x="315" y="551" text-anchor="middle">不满足规则就不进入执行层</text>
 
-  <!-- 箭头 -->
-  <path class="arr" d="M110,190 L300,220"/>
-  <path class="arr" d="M300,190 L400,220"/>
-  <path class="arr" d="M490,190 L500,220"/>
-  <path class="arr" d="M680,190 L600,220"/>
-  <path class="arr" d="M870,190 L700,220"/>
-  <path class="arr" d="M1060,190 L900,220"/>
+  <path class="arrow" d="M745 208 C745 290, 540 360, 315 470"/>
+  <path class="arrow" d="M785 208 C820 290, 855 365, 885 470"/>
 
-  <!-- 第三行：白名单校验 -->
-  <rect class="box-highlight" x="200" y="300" width="800" height="110" rx="15" fill="#f5fff5"/>
-  <text class="text" x="600" y="345" text-anchor="middle" fill="#2e7d32">白名单校验</text>
-  <text class="label" x="420" y="390" text-anchor="middle">1. 识别身份</text>
-  <text class="label" x="780" y="390" text-anchor="middle">2. 匹配规则</text>
+  <rect class="box" x="240" y="640" width="720" height="70" rx="18"/>
+  <text class="text" x="600" y="684" text-anchor="middle">核心原则：入口先治理，执行才可控</text>
 
-  <path class="arr" d="M600,255 L600,300"/>
-
-  <!-- 第四行：通过/拒绝 -->
-  <rect class="box" x="50" y="450" width="400" height="90" rx="12" fill="#ffebee" stroke="#e53935"/>
-  <text class="text" x="250" y="505" text-anchor="middle" fill="#c62828">✗ 拒绝</text>
-  <text class="label" x="250" y="530" text-anchor="middle">未匹配则拦截</text>
-
-  <rect class="box" x="750" y="450" width="400" height="90" rx="12" fill="#e8f5e9" stroke="#43a047"/>
-  <text class="text" x="950" y="505" text-anchor="middle" fill="#2e7d32">✓ 通过</text>
-  <text class="label" x="950" y="530" text-anchor="middle">进入执行链路</text>
-
-  <!-- 曲线箭头 -->
-  <path d="M600,410 C600,430 400,430 250,450" stroke="#3b6fd0" stroke-width="4" fill="none" marker-end="url(#a)"/>
-  <path d="M600,410 C600,430 800,430 950,450" stroke="#3b6fd0" stroke-width="4" fill="none" marker-end="url(#a)"/>
-
-  <!-- 底部：核心原则 -->
-  <rect class="highlight-red" x="100" y="580" width="1000" height="50" rx="12"/>
-  <text class="label" x="600" y="615" text-anchor="middle">核心：先校验再执行，入口即治理</text>
-
-  <!-- 关键要点 -->
-  <rect class="box" x="100" y="650" width="1000" height="80" rx="10" fill="#f5f5f5" stroke="#666"/>
-  <text class="label" x="300" y="690" text-anchor="middle">✓ 校验在执行前</text>
-  <text class="label" x="600" y="690" text-anchor="middle">✓ 不是事后追责</text>
-  <text class="label" x="900" y="690" text-anchor="middle">✓ 统一入口降低成本</text>
+  <path class="arrow" d="M315 562 C315 606, 430 624, 520 640"/>
+  <path class="arrow" d="M885 562 C885 606, 770 624, 680 640"/>
 </svg>
