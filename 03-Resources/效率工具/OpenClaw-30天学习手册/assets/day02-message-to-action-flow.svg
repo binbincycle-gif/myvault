@@ -1,140 +1,106 @@
-<svg width="1200" height="950" viewBox="0 0 1200 950" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1480" viewBox="0 0 1080 1480">
+  <rect width="1080" height="1480" fill="#fcfbf7"/>
+  <style>
+    .title{font: 700 34px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#2d2a26}
+    .section{font: 700 24px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#2d2a26}
+    .label{font: 22px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#2d2a26}
+    .small{font: 18px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#5b554d}
+    .box{fill:#fffdf8; stroke:#3d372f; stroke-width:3; rx:24; ry:24}
+    .line{stroke:#3d372f; stroke-width:4; fill:none; stroke-linecap:round; stroke-linejoin:round}
+    .dash{stroke:#8a7f73; stroke-width:3; fill:none; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:10 10}
+    .accent{fill:#f6efe2; stroke:#3d372f; stroke-width:3; rx:20; ry:20}
+  </style>
   <defs>
-    <style>
-      .bg{fill:#fffdfa}
-      .title{font:700 42px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#111}
-      .text{font:700 30px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#111}
-      .label{font:500 22px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#666}
-      .box{fill:#fff;stroke:#222;stroke-width:5}
-      .box-highlight{fill:#fff;stroke:#d32f2f;stroke-width:7}
-      .box2{fill:#f5f5f5;stroke:#333;stroke-width:3}
-      .arr{stroke:#3b6fd0;stroke-width:4;fill:none;marker-end:url(#a)}
-      .highlight{fill:#fff3e0;stroke:#ff9800;stroke-width:4}
-      .highlight-red{fill:#ffebee;stroke:#d32f2f;stroke-width:5}
-    </style>
-    <marker id="a" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto">
-      <path d="M0.5,0.5 L4,2.5 L0.5,4.5" fill="none" stroke="#3b6fd0" stroke-width="1"/>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1,1 L10,6 L1,11" fill="none" stroke="#3d372f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
   </defs>
 
-  <rect class="bg" x="0" y="0" width="1200" height="950"/>
+  <text x="540" y="72" text-anchor="middle" class="title">Day02｜消息如何变成可执行动作</text>
+  <text x="540" y="112" text-anchor="middle" class="small">一条请求，经过分层判断、工具执行、结果校验，最后形成可交付输出</text>
 
-  <!-- 卡通小龙虾 -->
-  <g transform="translate(20, 5) scale(0.75)">
-    <ellipse fill="#FF6B6B" cx="50" cy="40" rx="30" ry="22"/>
-    <ellipse fill="#FF8E8E" cx="45" cy="35" rx="15" ry="10"/>
-    <circle fill="#FF6B6B" cx="75" cy="35" r="18"/>
-    <circle fill="#fff" cx="80" cy="30" r="8"/>
-    <circle fill="#fff" cx="68" cy="30" r="8"/>
-    <circle fill="#333" cx="82" cy="30" r="4"/>
-    <circle fill="#333" cx="70" cy="30" r="4"/>
-    <circle fill="#fff" cx="84" cy="28" r="1.5"/>
-    <circle fill="#fff" cx="72" cy="28" r="1.5"/>
-    <ellipse fill="#FFAAAA" cx="85" cy="40" rx="4" ry="2" opacity="0.6"/>
-    <ellipse fill="#FFAAAA" cx="65" cy="40" rx="4" ry="2" opacity="0.6"/>
-    <path stroke="#333" stroke-width="2" fill="none" d="M73,42 Q78,46 83,42"/>
-    <path stroke="#FF6B6B" stroke-width="3" fill="none" stroke-linecap="round" d="M85,20 Q95,5 110,15 Q120,25 105,25"/>
-    <path stroke="#FF6B6B" stroke-width="3" fill="none" stroke-linecap="round" d="M90,22 Q100,15 115,22"/>
-    <ellipse fill="#FF6B6B" cx="55" cy="55" rx="12" ry="8"/>
-    <ellipse fill="#FF6B6B" cx="95" cy="55" rx="12" ry="8"/>
-    <line stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" x1="40" y1="60" x2="32" y2="72"/>
-    <line stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" x1="50" y1="62" x2="45" y2="75"/>
-    <line stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" x1="60" y1="62" x2="60" y2="75"/>
-    <line stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" x1="70" y1="60" x2="75" y2="72"/>
-    <path fill="#FF6B6B" d="M20,35 Q5,30 10,45 Q15,55 25,45"/>
-  </g>
+  <rect x="110" y="160" width="860" height="130" class="accent"/>
+  <text x="540" y="205" text-anchor="middle" class="section">四层架构：先分责，再执行</text>
+  <rect x="140" y="225" width="180" height="42" class="box"/>
+  <text x="230" y="252" text-anchor="middle" class="label">交互层</text>
+  <rect x="340" y="225" width="180" height="42" class="box"/>
+  <text x="430" y="252" text-anchor="middle" class="label">决策层</text>
+  <rect x="540" y="225" width="180" height="42" class="box"/>
+  <text x="630" y="252" text-anchor="middle" class="label">执行层</text>
+  <rect x="740" y="225" width="180" height="42" class="box"/>
+  <text x="830" y="252" text-anchor="middle" class="label">治理层</text>
 
-  <!-- 标题 -->
-  <text class="title" x="680" y="55" text-anchor="middle">Day02 架构与分层：消息如何变成动作</text>
+  <path d="M320 246 C330 236, 330 236, 340 246" class="line" marker-end="url(#arrow)"/>
+  <path d="M520 246 C530 236, 530 236, 540 246" class="line" marker-end="url(#arrow)"/>
+  <path d="M720 246 C730 236, 730 236, 740 246" class="line" marker-end="url(#arrow)"/>
 
-  <!-- 四层架构 -->
-  <rect class="box-highlight" x="50" y="75" width="240" height="90" rx="12" fill="#e3f2fd"/>
-  <text class="text" x="170" y="115" text-anchor="middle">交互层</text>
-  <text class="label" x="170" y="148" text-anchor="middle">Channel/Session</text>
+  <text x="230" y="315" text-anchor="middle" class="small">渠道消息 / Session 上下文</text>
+  <text x="430" y="315" text-anchor="middle" class="small">意图理解 / 步骤拆解 / 工具选择</text>
+  <text x="630" y="315" text-anchor="middle" class="small">read / exec / browser / cron ...</text>
+  <text x="830" y="315" text-anchor="middle" class="small">日志 / 审批 / 权限 / 重试</text>
 
-  <rect class="box" x="310" y="75" width="240" height="90" rx="12" fill="#fff8e1"/>
-  <text class="text" x="430" y="115" text-anchor="middle">决策层</text>
-  <text class="label" x="430" y="148" text-anchor="middle">Agent Loop</text>
+  <text x="540" y="392" text-anchor="middle" class="section">六步主链路：从需求到结果</text>
 
-  <rect class="box" x="570" y="75" width="240" height="90" rx="12" fill="#f5fff5"/>
-  <text class="text" x="690" y="115" text-anchor="middle">执行层</text>
-  <text class="label" x="690" y="148" text-anchor="middle">Tools</text>
+  <rect x="120" y="440" width="250" height="110" class="box"/>
+  <text x="245" y="482" text-anchor="middle" class="label">① 接收请求</text>
+  <text x="245" y="515" text-anchor="middle" class="small">用户话语 + 历史上下文</text>
 
-  <rect class="box" x="830" y="75" width="240" height="90" rx="12" fill="#fff3e0"/>
-  <text class="text" x="950" y="115" text-anchor="middle">治理层</text>
-  <text class="label" x="950" y="148" text-anchor="middle">Audit/Guardrails</text>
+  <rect x="415" y="440" width="250" height="110" class="box"/>
+  <text x="540" y="482" text-anchor="middle" class="label">② 理解目标</text>
+  <text x="540" y="515" text-anchor="middle" class="small">识别输出、约束、优先级</text>
 
-  <path class="arr" d="M290,120 L310,120"/>
-  <path class="arr" d="M550,120 L570,120"/>
-  <path class="arr" d="M810,120 L830,120"/>
+  <rect x="710" y="440" width="250" height="110" class="box"/>
+  <text x="835" y="482" text-anchor="middle" class="label">③ 规划动作</text>
+  <text x="835" y="515" text-anchor="middle" class="small">拆任务，选最低风险工具</text>
 
-  <!-- 消息变动作链路 -->
-  <rect class="box" x="50" y="195" width="1100" height="160" rx="12" fill="#fafafa" stroke="#333"/>
-  <text class="text" x="600" y="230" text-anchor="middle">消息 → 动作 最小链路</text>
-  
-  <rect class="box2" x="70" y="250" width="150" height="40" rx="6"/>
-  <text class="label" x="145" y="278" text-anchor="middle">1. 解析目标</text>
-  
-  <rect class="box2" x="230" y="250" width="150" height="40" rx="6"/>
-  <text class="label" x="305" y="278" text-anchor="middle">2. 拆分步骤</text>
-  
-  <rect class="box2" x="390" y="250" width="150" height="40" rx="6"/>
-  <text class="label" x="465" y="278" text-anchor="middle">3. 选择工具</text>
-  
-  <rect class="box2" x="550" y="250" width="150" height="40" rx="6"/>
-  <text class="label" x="625" y="278" text-anchor="middle">4. 执行观察</text>
-  
-  <rect class="box2" x="710" y="250" width="150" height="40" rx="6"/>
-  <text class="label" x="785" y="278" text-anchor="middle">5. 汇总回传</text>
-  
-  <rect class="box2" x="870" y="250" width="150" height="40" rx="6"/>
-  <text class="label" x="945" y="278" text-anchor="middle">6. 留痕审计</text>
+  <path d="M370 495 L415 495" class="line" marker-end="url(#arrow)"/>
+  <path d="M665 495 L710 495" class="line" marker-end="url(#arrow)"/>
 
-  <!-- 关键机制 -->
-  <rect class="box" x="50" y="385" width="350" height="130" rx="12" fill="#f5fff5" stroke="#4caf50"/>
-  <text class="text" x="225" y="420" text-anchor="middle" fill="#2e7d32">关键机制A</text>
-  <text class="label" x="225" y="455" text-anchor="middle">工具选择最小化</text>
-  <text class="label" x="225" y="490" text-anchor="middle">够用即可</text>
+  <rect x="120" y="650" width="250" height="110" class="box"/>
+  <text x="245" y="692" text-anchor="middle" class="label">④ 执行动作</text>
+  <text x="245" y="725" text-anchor="middle" class="small">调用工具，拿到中间结果</text>
 
-  <rect class="box" x="410" y="385" width="350" height="130" rx="12" fill="#fff3e0" stroke="#ff9800"/>
-  <text class="text" x="585" y="420" text-anchor="middle" fill="#e65100">关键机制B</text>
-  <text class="label" x="585" y="455" text-anchor="middle">失败可恢复</text>
-  <text class="label" x="585" y="490" text-anchor="middle">超时/权限备用</text>
+  <rect x="415" y="650" width="250" height="110" class="box"/>
+  <text x="540" y="692" text-anchor="middle" class="label">⑤ 校验结果</text>
+  <text x="540" y="725" text-anchor="middle" class="small">看是否满足目标与格式</text>
 
-  <rect class="box" x="770" y="385" width="350" height="130" rx="12" fill="#e3f2fd" stroke="#1976d2"/>
-  <text class="text" x="945" y="420" text-anchor="middle" fill="#1565c0">关键机制C</text>
-  <text class="label" x="945" y="455" text-anchor="middle">上下文约束</text>
-  <text class="label" x="945" y="490" text-anchor="middle">沿用目标</text>
+  <rect x="710" y="650" width="250" height="110" class="box"/>
+  <text x="835" y="692" text-anchor="middle" class="label">⑥ 回传沉淀</text>
+  <text x="835" y="725" text-anchor="middle" class="small">生成结果 + 留审计轨迹</text>
 
-  <!-- 底部 -->
-  <rect class="highlight-red" x="50" y="545" width="1100" height="40" rx="10"/>
-  <text class="label" x="600" y="572" text-anchor="middle">核心：分层而非堆能力，可回退的闭环</text>
+  <path d="M370 705 L415 705" class="line" marker-end="url(#arrow)"/>
+  <path d="M665 705 L710 705" class="line" marker-end="url(#arrow)"/>
 
-  <!-- 核心要点 -->
-  <rect class="box" x="50" y="610" width="1100" height="70" rx="10" fill="#f5f5f5" stroke="#666"/>
-  <text class="text" x="600" y="648" text-anchor="middle">核心要点</text>
-  <text class="label" x="275" y="680" text-anchor="middle">✓ 稳定来自分层</text>
-  <text class="label" x="600" y="680" text-anchor="middle">✓ 失败可回退</text>
-  <text class="label" x="925" y="680" text-anchor="middle">✓ 四层各司其职</text>
+  <path d="M540 550 L540 650" class="dash" marker-end="url(#arrow)"/>
+  <text x="564" y="610" class="small">进入执行闭环</text>
 
-  <!-- 详细说明 - 分两行避免重叠 -->
-  <rect class="box" x="50" y="700" width="530" height="100" rx="10" fill="#fafafa" stroke="#666"/>
-  <text class="text" x="315" y="730" text-anchor="middle">交互层：接收消息，维护上下文</text>
-  <text class="label" x="315" y="770" text-anchor="middle">Channel + Session</text>
-  <text class="label" x="315" y="795" text-anchor="middle">回执承载</text>
+  <path d="M500 650 C450 610, 410 610, 370 650" class="dash" marker-end="url(#arrow)"/>
+  <text x="435" y="615" text-anchor="middle" class="small">异常时回退</text>
 
-  <rect class="box" x="590" y="700" width="560" height="100" rx="10" fill="#fafafa" stroke="#666"/>
-  <text class="text" x="870" y="730" text-anchor="middle">决策层：判断是否调用工具链路</text>
-  <text class="label" x="870" y="770" text-anchor="middle">Agent Loop</text>
-  <text class="label" x="870" y="795" text-anchor="middle">可回退闭环</text>
+  <rect x="110" y="845" width="860" height="230" class="accent"/>
+  <text x="540" y="890" text-anchor="middle" class="section">为什么这套分层对业务有价值</text>
 
-  <rect class="box" x="50" y="810" width="530" height="100" rx="10" fill="#fafafa" stroke="#666"/>
-  <text class="text" x="315" y="840" text-anchor="middle">执行层：read/write/exec/web等</text>
-  <text class="label" x="315" y="880" text-anchor="middle">Tools 工具能力</text>
-  <text class="label" x="315" y="905" text-anchor="middle">可执行动作</text>
+  <rect x="145" y="925" width="180" height="110" class="box"/>
+  <text x="235" y="965" text-anchor="middle" class="label">提效</text>
+  <text x="235" y="998" text-anchor="middle" class="small">减少人工盯流程</text>
 
-  <rect class="box" x="590" y="810" width="560" height="100" rx="10" fill="#fafafa" stroke="#666"/>
-  <text class="text" x="870" y="840" text-anchor="middle">治理层：日志、权限、重试、合规</text>
-  <text class="label" x="870" y="880" text-anchor="middle">Audit + Guardrails</text>
-  <text class="label" x="870" y="905" text-anchor="middle">安全保障</text>
+  <rect x="345" y="925" width="180" height="110" class="box"/>
+  <text x="435" y="965" text-anchor="middle" class="label">提质</text>
+  <text x="435" y="998" text-anchor="middle" class="small">输出结构更稳定</text>
+
+  <rect x="545" y="925" width="180" height="110" class="box"/>
+  <text x="635" y="965" text-anchor="middle" class="label">提速</text>
+  <text x="635" y="998" text-anchor="middle" class="small">目标到结果更短</text>
+
+  <rect x="745" y="925" width="180" height="110" class="box"/>
+  <text x="835" y="965" text-anchor="middle" class="label">可控</text>
+  <text x="835" y="998" text-anchor="middle" class="small">每一步都可追踪</text>
+
+  <text x="540" y="1138" text-anchor="middle" class="section">管理者看图时重点盯三件事</text>
+  <path d="M180 1195 L900 1195" class="line"/>
+  <text x="200" y="1245" class="label">1. 哪些动作可以标准化复用</text>
+  <text x="200" y="1288" class="label">2. 哪些动作需要审批、白名单或人工兜底</text>
+  <text x="200" y="1331" class="label">3. 失败后是自动重试，还是转人工确认</text>
+
+  <text x="540" y="1410" text-anchor="middle" class="small">读图顺序：上半部分看技术分层，下半部分看业务价值与治理抓手</text>
 </svg>
