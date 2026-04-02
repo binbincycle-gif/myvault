@@ -1,51 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="1180" viewBox="0 0 860 1180" role="img" aria-labelledby="title desc">
+  <title id="title">Day25 稳定性周报助手流程图</title>
+  <desc id="desc">展示稳定性周报助手从定时触发、数据采集、口径校验到摘要输出与复盘沉淀的闭环流程。</desc>
   <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#2f4858" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </marker>
     <style>
-      .bg { fill: #fffdf8; }
-      .box { fill: #fffefb; stroke: #2f4858; stroke-width: 3; rx: 18; ry: 18; }
-      .line { fill: none; stroke: #2f4858; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
-      .title { font: 700 28px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #1f2d3d; }
-      .label { font: 600 22px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #1f2d3d; }
-      .small { font: 500 18px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #334e68; }
+      .bg { fill: #fcfbf7; }
+      .card { fill: #fffdfa; stroke: #2f3b52; stroke-width: 3.2; stroke-linejoin: round; }
+      .title { font-family: 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; font-size: 28px; fill: #20304a; }
+      .h { font-family: 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; font-size: 24px; fill: #20304a; }
+      .t { font-family: 'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif; font-size: 20px; fill: #223049; }
+      .small { font-size: 18px; }
+      .arrow { stroke: #40506d; stroke-width: 4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .note { fill: #f7f2df; stroke: #8e7a34; stroke-width: 2.8; stroke-linejoin: round; }
+      .accent1 { fill: #eaf4ff; }
+      .accent2 { fill: #eaf8ef; }
+      .accent3 { fill: #fff1e7; }
+      .accent4 { fill: #f4ecff; }
     </style>
+    <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L10,6 L1,11" fill="none" stroke="#40506d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
   </defs>
-  <rect class="bg" x="0" y="0" width="960" height="720"/>
-  <text class="title" x="60" y="70">Day25｜稳定性周报助手：从数据收集到管理输出</text>
 
-  <rect class="box" x="60" y="120" width="220" height="110"/>
-  <text class="label" x="95" y="170">1. 周报输入</text>
-  <text class="small" x="92" y="205">日志 / 告警 / 工单 / SLA</text>
+  <rect class="bg" x="0" y="0" width="860" height="1180" rx="24"/>
+  <text class="title" x="430" y="58" text-anchor="middle">稳定性周报助手：从采集到治理闭环</text>
 
-  <rect class="box" x="370" y="120" width="220" height="110"/>
-  <text class="label" x="405" y="170">2. OpenClaw 编排</text>
-  <text class="small" x="420" y="205">定时触发 + 调工具</text>
+  <rect class="card accent1" x="90" y="110" width="680" height="128" rx="22"/>
+  <text class="h" x="430" y="155" text-anchor="middle">① 定时触发</text>
+  <text class="t" x="430" y="192" text-anchor="middle">cron / 定时任务：每周一 09:00 拉起生成流程</text>
+  <text class="t small" x="430" y="220" text-anchor="middle">关键点：时间固定、范围固定、避免临时拼报告</text>
 
-  <rect class="box" x="680" y="120" width="220" height="110"/>
-  <text class="label" x="735" y="170">3. 数据校验</text>
-  <text class="small" x="718" y="205">去重 / 缺失检查 / 对比</text>
+  <path class="arrow" d="M430 238 C430 270,430 282,430 314" marker-end="url(#arrowHead)"/>
 
-  <rect class="box" x="60" y="340" width="220" height="120"/>
-  <text class="label" x="95" y="390">4. 结构化归因</text>
-  <text class="small" x="84" y="425">按系统 / 场景 / 严重度整理</text>
+  <rect class="card accent2" x="90" y="318" width="680" height="168" rx="22"/>
+  <text class="h" x="430" y="360" text-anchor="middle">② 多源采集</text>
+  <text class="t" x="430" y="398" text-anchor="middle">日志摘要｜告警记录｜工单列表｜值班纪要</text>
+  <text class="t small" x="430" y="428" text-anchor="middle">通过 read / browser / web_fetch / exec 获取原始信息</text>
+  <text class="t small" x="430" y="458" text-anchor="middle">关键点：来源先列清，不漏主要系统</text>
 
-  <rect class="box" x="370" y="340" width="220" height="120"/>
-  <text class="label" x="405" y="390">5. 生成周报</text>
-  <text class="small" x="406" y="425">KPI + 风险 + 行动建议</text>
+  <path class="arrow" d="M430 486 C430 518,430 530,430 562" marker-end="url(#arrowHead)"/>
 
-  <rect class="box" x="680" y="340" width="220" height="120"/>
-  <text class="label" x="720" y="390">6. 管理分发</text>
-  <text class="small" x="704" y="425">消息通知 / 知识库沉淀</text>
+  <rect class="card accent3" x="90" y="566" width="680" height="188" rx="22"/>
+  <text class="h" x="430" y="608" text-anchor="middle">③ 结构化加工与口径校验</text>
+  <text class="t" x="430" y="646" text-anchor="middle">统一字段：事件名｜影响范围｜发现时间｜恢复时间｜根因｜是否闭环</text>
+  <text class="t small" x="430" y="678" text-anchor="middle">去重、补缺、分类，校验告警数 / 工单数 / 结论是否一致</text>
+  <text class="t small" x="430" y="708" text-anchor="middle">关键点：先统一口径，再谈自动生成</text>
 
-  <path class="line" d="M280 175 C320 175, 330 175, 370 175"/>
-  <path class="line" d="M590 175 C630 175, 640 175, 680 175"/>
-  <path class="line" d="M790 230 C790 275, 790 290, 790 340"/>
-  <path class="line" d="M680 400 C645 400, 630 400, 590 400"/>
-  <path class="line" d="M370 400 C335 400, 320 400, 280 400"/>
-  <path class="line" d="M170 340 C170 300, 170 280, 170 230"/>
+  <path class="arrow" d="M430 754 C430 786,430 798,430 830" marker-end="url(#arrowHead)"/>
 
-  <text class="small" x="105" y="515">关键原则：先校验口径，再输出结论；先给管理摘要，再下钻明细。</text>
-  <text class="small" x="105" y="548">适合移动端阅读：一屏先看趋势、异常、责任与下一步。</text>
+  <rect class="card accent4" x="90" y="834" width="680" height="182" rx="22"/>
+  <text class="h" x="430" y="876" text-anchor="middle">④ 输出双层结果</text>
+  <text class="t" x="430" y="914" text-anchor="middle">管理者摘要：趋势、风险、待决策事项</text>
+  <text class="t" x="430" y="946" text-anchor="middle">执行明细：事件清单、责任人、后续动作</text>
+  <text class="t small" x="430" y="978" text-anchor="middle">通过 message 通知、write 入知识库，形成可追踪留痕</text>
+
+  <path class="arrow" d="M430 1016 C430 1040,430 1048,430 1070" marker-end="url(#arrowHead)"/>
+
+  <rect class="note" x="168" y="1076" width="524" height="70" rx="18"/>
+  <text class="t" x="430" y="1118" text-anchor="middle">复盘沉淀：下周可环比、可追责、可复用，不再从零整理</text>
 </svg>
