@@ -176,23 +176,25 @@ OpenClaw 的可观测性，本质上是在补齐 AI 系统的“驾驶舱”。�
 
 ### 本地文档（知识库镜像路径）
 
-- [[本地文档索引]] - 看点：先确认当前知识库里已镜像的 OpenClaw 文档范围，避免引用失联。
-- [[官方文档-本地镜像(节选)/日志与状态]] - 看点：理解日志、状态查询、会话追踪这三类能力在系统里各自承担什么角色。
-- [[官方文档-本地镜像(节选)/任务与执行链路]] - 看点：适合结合 Trace / Span 视角理解一次任务是如何从触发走到完成的。
+- [[OpenClaw-30天学习手册/本地文档索引|本地文档索引]] - 看点：先确认本地镜像覆盖了哪些官方能力，避免引用悬空。
+- [[OpenClaw-30天学习手册/官方文档-本地镜像(节选)/concepts__architecture.md|concepts__architecture.md]] - 看点：从架构层理解“请求进入系统后，为什么需要有统一的日志、状态与治理抓手”。
+- [[OpenClaw-30天学习手册/官方文档-本地镜像(节选)/concepts__session.md|concepts__session.md]] - 看点：理解 session 为什么是可观测性的天然主键之一，很多排障都要先回到会话上下文。
+- [[OpenClaw-30天学习手册/官方文档-本地镜像(节选)/tools__index.md|tools__index.md]] - 看点：把工具调用放进执行链路里看，才能真正读懂日志里的关键步骤与失败点。
+- [[OpenClaw-30天学习手册/官方文档-本地镜像(节选)/tools__exec.md|tools__exec.md]] - 看点：执行型任务最容易出现超时、重试、后台持续运行等问题，适合拿来理解状态追踪的价值。
 
 ### 在线文档
 
-- <https://docs.openclaw.ai/> - 看点：OpenClaw 官方文档入口，适合回查架构、运行方式与工具能力。
-- <https://docs.openclaw.ai/docs/concepts/tools> - 看点：把工具调用放进执行链路里理解，可帮助你看懂日志里的关键步骤。
-- <https://github.com/openclaw/openclaw> - 看点：若想进一步确认实现方式，可以从源码结构理解事件、任务、工具的连接关系。
-
-> 说明：若本地镜像里还没有“日志与状态 / 任务与执行链路”对应条目，可以先保留上述 Obsidian 链接命名，后续补镜像时统一对齐。
+- <https://docs.openclaw.ai/concepts/architecture> - 看点：从整体架构看可观测性为什么不是外挂，而是执行系统的一部分。
+- <https://docs.openclaw.ai/concepts/session> - 看点：看懂 session 与上下文连续性，才能理解排障为什么不能只盯单条消息。
+- <https://docs.openclaw.ai/tools> - 看点：工具是日志与追踪的主要事件来源，适合对应阅读。
+- <https://docs.openclaw.ai/tools/exec> - 看点：看长任务、后台任务、进程管理时，最容易联想到状态层与追踪层设计。
+- <https://github.com/openclaw/openclaw> - 看点：如果想继续深挖，可以从源码结构理解事件、任务、工具之间是怎样衔接的。
 
 ## 图示
 
-![OpenClaw 可观测性闭环](./assets/day06-observability-loop.svg)
+![[OpenClaw-30天学习手册/assets/day06-observability-loop.svg]]
 
-图里表达的是一个最小但完整的闭环：**任务发起 → 统一打点 → 执行过程 → 结果沉淀 → 日志/状态/追踪三层视角 → 运营/开发/合规三类使用者消费同一套事实**。
+图里表达的是一个最小但完整的闭环：**任务触发 → 统一打点 → 执行与校验 → 结果沉淀 → 日志/状态/追踪三层视角 → 运营 / 开发 / 管理 / 合规共享同一套事实底座**。
 
 如果你以后要做周报、告警、审计，底层都依赖这套闭环是否完整。
 

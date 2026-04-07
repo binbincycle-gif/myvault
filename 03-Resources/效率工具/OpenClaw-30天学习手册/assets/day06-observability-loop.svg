@@ -1,75 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820">
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
   <defs>
     <style>
       .bg { fill: #fcfbf7; }
       .title { font: 700 34px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #24313f; }
-      .label { font: 600 24px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #24313f; }
+      .subtitle { font: 400 20px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #5f6c79; }
+      .label { font: 600 26px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #24313f; }
       .text { font: 400 20px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #425466; }
-      .box { fill: #fffdf8; stroke: #3d4b59; stroke-width: 3.2; rx: 22; ry: 22; }
+      .small { font: 400 18px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #5f6c79; }
+      .box { fill: #fffdf8; stroke: #3d4b59; stroke-width: 3.2; rx: 24; ry: 24; }
       .line { fill: none; stroke: #3d4b59; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; }
-      .dash { fill: none; stroke: #7b8794; stroke-width: 2.5; stroke-linecap: round; stroke-dasharray: 9 9; }
-      .hint { font: 400 18px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #5f6c79; }
+      .dash { fill: none; stroke: #7b8794; stroke-width: 2.6; stroke-linecap: round; stroke-dasharray: 10 10; }
     </style>
     <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse">
       <path d="M1,1 L12,7 L1,13" fill="none" stroke="#3d4b59" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
   </defs>
-  <rect class="bg" x="0" y="0" width="1200" height="820" rx="28"/>
-  <text class="title" x="56" y="64">Day06｜OpenClaw 可观测性闭环</text>
-  <text class="hint" x="58" y="98">目标：让“任务做了什么、卡在哪、该谁处理”都能被看见</text>
 
-  <rect class="box" x="70" y="150" width="240" height="120"/>
-  <text class="label" x="130" y="198">1. 任务发起</text>
-  <text class="text" x="103" y="232">消息 / Cron / Browser / Tool</text>
+  <rect class="bg" x="0" y="0" width="1080" height="1440" rx="28"/>
+  <text class="title" x="60" y="68">Day06｜可观测性：日志、状态与追踪</text>
+  <text class="subtitle" x="60" y="104">目标：把“任务有没有跑通、卡在哪、谁该处理”变成可视事实</text>
 
-  <rect class="box" x="360" y="150" width="240" height="120"/>
-  <text class="label" x="423" y="198">2. 统一打点</text>
-  <text class="text" x="390" y="232">记录 session、task、trace</text>
+  <rect class="box" x="110" y="150" width="860" height="120"/>
+  <text class="label" x="170" y="198">① 任务触发</text>
+  <text class="text" x="170" y="234">消息 / 定时任务 / Browser 自动化 / 外部工具请求进入统一执行链路</text>
 
-  <rect class="box" x="650" y="150" width="240" height="120"/>
-  <text class="label" x="706" y="198">3. 执行过程</text>
-  <text class="text" x="692" y="232">模型推理、工具调用、重试</text>
+  <path class="line" d="M540 270 C540 300, 540 320, 540 346" marker-end="url(#arrow)"/>
 
-  <rect class="box" x="940" y="150" width="190" height="120"/>
-  <text class="label" x="980" y="198">4. 结果沉淀</text>
-  <text class="text" x="968" y="232">成功 / 失败 / 耗时</text>
+  <rect class="box" x="110" y="356" width="860" height="138"/>
+  <text class="label" x="170" y="408">② 统一打点</text>
+  <text class="text" x="170" y="444">给这次任务绑定 session / task / trace 标识，方便后续串起整条链路</text>
+  <text class="small" x="170" y="474">这一步决定后面能不能查、能不能复盘、能不能追责</text>
 
-  <path class="line" d="M310 210 C330 210, 338 210, 360 210" marker-end="url(#arrow)"/>
-  <path class="line" d="M600 210 C620 210, 628 210, 650 210" marker-end="url(#arrow)"/>
-  <path class="line" d="M890 210 C910 210, 918 210, 940 210" marker-end="url(#arrow)"/>
+  <path class="line" d="M540 494 C540 524, 540 544, 540 570" marker-end="url(#arrow)"/>
 
-  <rect class="box" x="120" y="380" width="270" height="150"/>
-  <text class="label" x="206" y="430">日志层</text>
-  <text class="text" x="154" y="468">时间戳、参数、错误、耗时</text>
-  <text class="text" x="150" y="502">适合排查“为什么失败”</text>
+  <rect class="box" x="110" y="580" width="860" height="170"/>
+  <text class="label" x="170" y="632">③ 执行与校验</text>
+  <text class="text" x="170" y="668">模型推理、工具调用、重试、超时、人工接管都在这一层发生</text>
+  <text class="text" x="170" y="706">不是只看“有没有执行”，而是看“结果是否满足目标”</text>
 
-  <rect class="box" x="465" y="380" width="270" height="150"/>
-  <text class="label" x="552" y="430">状态层</text>
-  <text class="text" x="504" y="468">会话状态、任务状态、心跳</text>
-  <text class="text" x="496" y="502">适合判断“现在做到哪”</text>
+  <path class="line" d="M540 750 C540 780, 540 800, 540 826" marker-end="url(#arrow)"/>
 
-  <rect class="box" x="810" y="380" width="270" height="150"/>
-  <text class="label" x="893" y="430">追踪层</text>
-  <text class="text" x="853" y="468">Trace / Span 串起全链路</text>
-  <text class="text" x="849" y="502">适合定位“卡在哪一跳”</text>
+  <rect class="box" x="110" y="836" width="860" height="122"/>
+  <text class="label" x="170" y="886">④ 结果沉淀</text>
+  <text class="text" x="170" y="922">把成功 / 失败 / 耗时 / 错误类型沉淀成可检索事实，而不是口头感觉</text>
 
-  <path class="dash" d="M480 270 C420 320, 360 340, 280 380"/>
-  <path class="dash" d="M620 270 C620 320, 620 340, 620 380"/>
-  <path class="dash" d="M770 270 C840 320, 900 340, 945 380"/>
+  <path class="dash" d="M540 958 C540 1000, 540 1018, 540 1040" marker-end="url(#arrow)"/>
 
-  <rect class="box" x="155" y="620" width="260" height="110"/>
-  <text class="label" x="224" y="668">运营 / 管理者看板</text>
-  <text class="text" x="207" y="702">成功率、SLA、成本、告警</text>
+  <rect class="box" x="80" y="1050" width="270" height="170"/>
+  <text class="label" x="160" y="1102">日志层</text>
+  <text class="text" x="122" y="1140">记录时间、参数摘要、</text>
+  <text class="text" x="122" y="1170">错误信息、耗时、重试</text>
 
-  <rect class="box" x="470" y="620" width="260" height="110"/>
-  <text class="label" x="541" y="668">开发 / 调试视角</text>
-  <text class="text" x="527" y="702">日志检索、失败复盘、重放</text>
+  <rect class="box" x="405" y="1050" width="270" height="170"/>
+  <text class="label" x="486" y="1102">状态层</text>
+  <text class="text" x="448" y="1140">告诉你任务现在在哪：</text>
+  <text class="text" x="448" y="1170">排队中 / 执行中 / 已完成</text>
 
-  <rect class="box" x="785" y="620" width="260" height="110"/>
-  <text class="label" x="863" y="668">合规 / 审计视角</text>
-  <text class="text" x="844" y="702">留痕、脱敏、责任边界</text>
+  <rect class="box" x="730" y="1050" width="270" height="170"/>
+  <text class="label" x="811" y="1102">追踪层</text>
+  <text class="text" x="772" y="1140">把模型、工具、子任务</text>
+  <text class="text" x="772" y="1170">串成完整 Trace / Span</text>
 
-  <path class="line" d="M255 530 C255 565, 255 580, 285 620" marker-end="url(#arrow)"/>
-  <path class="line" d="M600 530 C600 565, 600 580, 600 620" marker-end="url(#arrow)"/>
-  <path class="line" d="M945 530 C945 565, 945 580, 915 620" marker-end="url(#arrow)"/>
+  <path class="line" d="M215 1220 C215 1258, 215 1270, 250 1300" marker-end="url(#arrow)"/>
+  <path class="line" d="M540 1220 C540 1258, 540 1270, 540 1300" marker-end="url(#arrow)"/>
+  <path class="line" d="M865 1220 C865 1258, 865 1270, 830 1300" marker-end="url(#arrow)"/>
+
+  <rect class="box" x="130" y="1310" width="820" height="90"/>
+  <text class="label" x="210" y="1362">最终服务对象：运营看板、开发排障、管理复盘、合规审计共用同一套事实底座</text>
 </svg>
