@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1320" viewBox="0 0 900 1320">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10" fill="none" stroke="#2b2b2b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .title { font: 700 28px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#222; }
+      .subtitle { font: 600 20px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#333; }
+      .text { font: 18px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#333; }
+      .small { font: 16px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#444; }
+      .box { fill:#fffdf8; stroke:#2b2b2b; stroke-width:2.2; rx:18; ry:18; }
+      .line { fill:none; stroke:#2b2b2b; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; marker-end:url(#arrow); }
+      .dashed { fill:none; stroke:#666; stroke-width:1.8; stroke-dasharray:7 8; stroke-linecap:round; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="1320" fill="#fffaf2"/>
+  <text x="450" y="56" text-anchor="middle" class="title">Day08 Skill 机制总览</text>
+  <text x="450" y="92" text-anchor="middle" class="small">把散点工具，封装成 Agent 可发现、可调用、可治理的能力单元</text>
+
+  <rect x="70" y="140" width="230" height="110" class="box"/>
+  <text x="185" y="182" text-anchor="middle" class="subtitle">1. 用户提出目标</text>
+  <text x="185" y="214" text-anchor="middle" class="text">天气查询 / 入库 / 提醒</text>
+
+  <rect x="335" y="140" width="230" height="110" class="box"/>
+  <text x="450" y="182" text-anchor="middle" class="subtitle">2. Agent 识别意图</text>
+  <text x="450" y="214" text-anchor="middle" class="text">判断是否需要 Skill</text>
+
+  <rect x="600" y="140" width="230" height="110" class="box"/>
+  <text x="715" y="182" text-anchor="middle" class="subtitle">3. 匹配可用 Skill</text>
+  <text x="715" y="214" text-anchor="middle" class="text">靠 name + description + 规则</text>
+
+  <path d="M300 195 L335 195" class="line"/>
+  <path d="M565 195 L600 195" class="line"/>
+
+  <rect x="85" y="340" width="320" height="200" class="box"/>
+  <text x="245" y="382" text-anchor="middle" class="subtitle">4. Skill 定义层</text>
+  <text x="245" y="420" text-anchor="middle" class="text">SKILL.md</text>
+  <text x="245" y="452" text-anchor="middle" class="small">name / description</text>
+  <text x="245" y="482" text-anchor="middle" class="small">适用场景 / 使用规则</text>
+  <text x="245" y="512" text-anchor="middle" class="small">依赖工具 / 外部资源说明</text>
+
+  <rect x="495" y="340" width="320" height="200" class="box"/>
+  <text x="655" y="382" text-anchor="middle" class="subtitle">5. 执行层</text>
+  <text x="655" y="420" text-anchor="middle" class="text">系统工具 / 脚本 / API</text>
+  <text x="655" y="452" text-anchor="middle" class="small">read / write / exec / web_fetch</text>
+  <text x="655" y="482" text-anchor="middle" class="small">必要时多步串联</text>
+  <text x="655" y="512" text-anchor="middle" class="small">返回结构化结果</text>
+
+  <path d="M715 250 L715 310" class="line"/>
+  <path d="M715 310 C715 325 700 330 675 330 L675 340" class="line"/>
+  <path d="M715 310 C715 325 520 330 245 330 L245 340" class="line"/>
+
+  <path d="M405 440 L495 440" class="line"/>
+
+  <rect x="70" y="630" width="760" height="180" class="box"/>
+  <text x="450" y="675" text-anchor="middle" class="subtitle">6. 治理层，Skill 不是写完就算结束</text>
+  <text x="220" y="725" text-anchor="middle" class="text">权限边界</text>
+  <text x="220" y="755" text-anchor="middle" class="small">哪些能力可直接调</text>
+  <text x="220" y="783" text-anchor="middle" class="small">哪些必须审批</text>
+  <text x="450" y="725" text-anchor="middle" class="text">可观测</text>
+  <text x="450" y="755" text-anchor="middle" class="small">日志 / 状态 / 失败原因</text>
+  <text x="450" y="783" text-anchor="middle" class="small">支持复盘和迭代</text>
+  <text x="680" y="725" text-anchor="middle" class="text">可复用</text>
+  <text x="680" y="755" text-anchor="middle" class="small">沉淀成团队资产</text>
+  <text x="680" y="783" text-anchor="middle" class="small">下次直接调用</text>
+
+  <path d="M245 540 L245 630" class="line"/>
+  <path d="M655 540 L655 630" class="line"/>
+
+  <rect x="120" y="920" width="240" height="120" class="box"/>
+  <text x="240" y="964" text-anchor="middle" class="subtitle">好 Skill 的标准</text>
+  <text x="240" y="998" text-anchor="middle" class="small">高频</text>
+  <text x="240" y="1026" text-anchor="middle" class="small">边界清晰</text>
+
+  <rect x="330" y="1080" width="240" height="120" class="box"/>
+  <text x="450" y="1124" text-anchor="middle" class="subtitle">团队价值</text>
+  <text x="450" y="1158" text-anchor="middle" class="small">从个人提示词</text>
+  <text x="450" y="1186" text-anchor="middle" class="small">升级为组织能力</text>
+
+  <rect x="540" y="920" width="240" height="120" class="box"/>
+  <text x="660" y="964" text-anchor="middle" class="subtitle">别急着封装</text>
+  <text x="660" y="998" text-anchor="middle" class="small">低频</text>
+  <text x="660" y="1026" text-anchor="middle" class="small">判断太重</text>
+
+  <path d="M450 810 L450 880" class="line"/>
+  <path d="M450 880 L240 920" class="line"/>
+  <path d="M450 880 L660 920" class="line"/>
+  <path d="M240 1040 L390 1080" class="line"/>
+  <path d="M660 1040 L510 1080" class="line"/>
+
+  <path d="M240 1045 C240 1070 300 1078 330 1085" class="dashed"/>
+  <path d="M660 1045 C660 1070 600 1078 570 1085" class="dashed"/>
+</svg>

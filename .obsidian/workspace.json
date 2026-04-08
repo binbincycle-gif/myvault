@@ -13,31 +13,17 @@
             "dimension": 81.48148148148148,
             "children": [
               {
-                "id": "f73e65a02cadc8ca",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "02-Areas/个人成长/每日日记/2026/2026-04-01.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "2026-04-01"
-                }
-              },
-              {
                 "id": "a07d5a0e690b8d69",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "03-Resources/效率工具/Obsidian学习笔记-第一篇.md",
+                    "file": "02-Areas/AI战略规划/EZR Skills 清单（第一版）.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Obsidian学习笔记-第一篇"
+                  "title": "EZR Skills 清单（第一版）"
                 }
               },
               {
@@ -302,8 +288,8 @@
             "state": {
               "type": "smart-connections-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "smart-connections-view"
+              "icon": "smart-connections",
+              "title": "Connections"
             }
           },
           {
@@ -327,12 +313,11 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 646.5,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -359,11 +344,24 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "5469a6483cba1454",
+  "active": "a07d5a0e690b8d69",
   "lastOpenFiles": [
-    "02-Areas/个人成长/每日日记/2026/2026-04-07.md",
+    "02-Areas/AI战略规划/七大AI项目组合管理清单.md",
+    "02-Areas/AI战略规划/AI项目推进规划蓝图.md",
+    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-04-08.md",
+    "02-Areas/个人成长/每日日记/2026/2026-04-08.md",
+    "02-Areas/AI战略规划/人才管理标准（L1-L3 含AI效率与敬业度）.md",
+    "02-Areas/AI战略规划/EZR特性化Skills平台-构建计划-2026-03-13.md",
+    "02-Areas/AI战略规划/SaaS 如何 Skill 化：从功能系统到能力系统.md",
+    "03-Resources/效率工具/Obsidian学习笔记-第一篇.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/本地文档索引.md",
+    "02-Areas/AI战略规划/EZR 可被 AI 调用的能力地图.md",
+    "01-Projects/AI能力建设/GLiNER2-客户微信记录解析技术方案.md",
     "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-04-07.md",
     "02-Areas/AI战略规划/PAI系统/PAI-周复盘-2026-04-05.md",
+    "02-Areas/个人成长/每日日记/2026/2026-04-01.md",
+    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day08-skill-capability-loop.svg",
+    "02-Areas/个人成长/每日日记/2026/2026-04-07.md",
     "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-04-05.md",
     "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-04-04.md",
     "02-Areas/个人成长/每日日记/2026/2026-04-04.md",
@@ -372,21 +370,9 @@
     "02-Areas/AI战略规划/AI战略发展方向补充：从能力调用走向认知与决策基础设施.md",
     "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-04-02.md",
     "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-03-23.md",
-    "02-Areas/AI战略规划/SaaS 如何 Skill 化：从功能系统到能力系统.md",
-    "02-Areas/个人成长/每日日记/2026/2026-04-01.md",
     "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-03-31.md",
     "02-Areas/个人成长/每日日记/2026/2026-03-31.md",
     "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-03-30.md",
-    "02-Areas/个人成长/每日日记/2026/2026-03-30.md",
-    "02-Areas/AI战略规划/公司AI项目推进与组织模式创新研讨会-核心共识与阶段机制.md",
-    "02-Areas/AI战略规划/PAI系统/PAI-周复盘-2026-03-29.md",
-    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-03-29.md",
-    "02-Areas/个人成长/每日日记/2026/2026-03-29.md",
-    "02-Areas/AI战略规划/EZR Skills 清单（第一版）.md",
-    "02-Areas/AI战略规划/EZR AI 总体架构图.md",
-    "02-Areas/AI战略规划/EZR Agent 安全治理图.md",
-    "02-Areas/AI战略规划/EZR 可被 AI 调用的能力地图.md",
-    "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-03-28.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day30-learning-matrix-and-roadmap.svg",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day29-demo-script-flow.svg",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day28-raci-collaboration-flow.svg",
@@ -396,7 +382,6 @@
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day25-weekly-stability-assistant-flow.svg",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day24-env-secrets-flow.svg",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day23-minimum-security-approval-flow.svg",
-    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day22-threat-modeling-flow.svg",
     "02-Areas/AI战略规划/assets",
     "03-Resources/行业情报",
     "02-Areas/AI战略规划/Meta_Creator_Agent_Google_产品对业务的机会与风险.docx",
