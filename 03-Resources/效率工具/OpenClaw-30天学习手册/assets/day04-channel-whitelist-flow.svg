@@ -1,65 +1,76 @@
-<svg width="1200" height="760" viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="980" viewBox="0 0 900 980">
+  <rect width="900" height="980" fill="#fcfbf7"/>
+  <style>
+    .title { font: 700 30px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#1f2937; }
+    .label { font: 600 21px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#1f2937; }
+    .text { font: 18px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#374151; }
+    .small { font: 16px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#4b5563; }
+    .box { fill:#fffefb; stroke:#2f3b4a; stroke-width:3; rx:18; ry:18; }
+    .soft { fill:#f8fafc; stroke:#2f3b4a; stroke-width:3; rx:18; ry:18; }
+    .warn { fill:#fff7ed; stroke:#9a3412; stroke-width:3; rx:18; ry:18; }
+    .ok { fill:#ecfdf5; stroke:#166534; stroke-width:3; rx:18; ry:18; }
+    .line { stroke:#2f3b4a; stroke-width:3.5; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+    .arrow { marker-end:url(#arrow); }
+    .dot { stroke-dasharray:8 10; }
+  </style>
   <defs>
-    <style>
-      .bg{fill:#fffdfa}
-      .title{font:700 42px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#1f1f1f}
-      .box{fill:#ffffff;stroke:#2f2f2f;stroke-width:4}
-      .safe{fill:#eef8ee;stroke:#2f7d32;stroke-width:4}
-      .warn{fill:#fff2f0;stroke:#c62828;stroke-width:4}
-      .note{fill:#fff8e8;stroke:#d08b00;stroke-width:4}
-      .text{font:700 28px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#1f1f1f}
-      .small{font:600 22px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#555}
-      .arrow{stroke:#4c78d0;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowHead)}
-    </style>
-    <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-      <path d="M1,1 L10,6 L1,11" fill="none" stroke="#4c78d0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse">
+      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#2f3b4a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
   </defs>
 
-  <rect class="bg" x="0" y="0" width="1200" height="760"/>
-  <text class="title" x="600" y="56" text-anchor="middle">Day04 渠道接入与白名单机制</text>
+  <text x="450" y="54" text-anchor="middle" class="title">Day04 渠道接入与白名单机制</text>
 
-  <rect class="box" x="60" y="110" width="220" height="84" rx="18"/>
-  <text class="text" x="170" y="160" text-anchor="middle">聊天渠道 / API</text>
-  <text class="small" x="170" y="188" text-anchor="middle">Telegram、Discord、Webhook</text>
+  <rect x="70" y="110" width="180" height="82" class="box"/>
+  <text x="160" y="145" text-anchor="middle" class="label">Telegram / Discord</text>
+  <text x="160" y="171" text-anchor="middle" class="small">聊天渠道消息</text>
 
-  <rect class="box" x="340" y="110" width="220" height="84" rx="18"/>
-  <text class="text" x="450" y="160" text-anchor="middle">消息标准化</text>
-  <text class="small" x="450" y="188" text-anchor="middle">统一身份、来源、正文</text>
+  <rect x="330" y="110" width="240" height="82" class="box"/>
+  <text x="450" y="145" text-anchor="middle" class="label">统一消息对象</text>
+  <text x="450" y="171" text-anchor="middle" class="small">身份 + 来源 + 正文 + 元数据</text>
 
-  <rect class="note" x="620" y="96" width="250" height="112" rx="18"/>
-  <text class="text" x="745" y="144" text-anchor="middle">白名单校验</text>
-  <text class="small" x="745" y="173" text-anchor="middle">人 / 场 / 事</text>
-  <text class="small" x="745" y="198" text-anchor="middle">先判断，再放行</text>
+  <rect x="650" y="110" width="180" height="82" class="box"/>
+  <text x="740" y="145" text-anchor="middle" class="label">Webhook / API</text>
+  <text x="740" y="171" text-anchor="middle" class="small">系统回调与外部输入</text>
 
-  <rect class="box" x="930" y="110" width="210" height="84" rx="18"/>
-  <text class="text" x="1035" y="160" text-anchor="middle">进入会话</text>
-  <text class="small" x="1035" y="188" text-anchor="middle">承接上下文与状态</text>
+  <path d="M250 151 C280 151, 290 151, 330 151" class="line arrow"/>
+  <path d="M650 151 C620 151, 610 151, 570 151" class="line arrow"/>
 
-  <path class="arrow" d="M280 152 C300 152, 320 152, 340 152"/>
-  <path class="arrow" d="M560 152 C580 152, 600 152, 620 152"/>
-  <path class="arrow" d="M870 152 C890 152, 910 152, 930 152"/>
+  <rect x="250" y="245" width="400" height="96" class="soft"/>
+  <text x="450" y="283" text-anchor="middle" class="label">白名单 / 准入判断</text>
+  <text x="450" y="312" text-anchor="middle" class="text">人：谁发起</text>
+  <text x="450" y="336" text-anchor="middle" class="text">场：在哪个群、线程、域名、渠道</text>
 
-  <rect class="box" x="915" y="290" width="240" height="84" rx="18"/>
-  <text class="text" x="1035" y="340" text-anchor="middle">工具执行</text>
-  <text class="small" x="1035" y="368" text-anchor="middle">read / exec / browser ...</text>
+  <path d="M450 192 C450 214, 450 220, 450 245" class="line arrow"/>
 
-  <path class="arrow" d="M1035 194 C1035 220, 1035 252, 1035 290"/>
+  <rect x="125" y="400" width="240" height="104" class="warn"/>
+  <text x="245" y="438" text-anchor="middle" class="label">拒绝执行</text>
+  <text x="245" y="467" text-anchor="middle" class="text">返回拒绝说明</text>
+  <text x="245" y="493" text-anchor="middle" class="small">并记录来源与原因</text>
 
-  <rect class="safe" x="720" y="470" width="330" height="92" rx="20"/>
-  <text class="text" x="885" y="522" text-anchor="middle">通过：进入执行链路</text>
-  <text class="small" x="885" y="551" text-anchor="middle">允许的身份在允许的场景做允许的动作</text>
+  <rect x="535" y="400" width="240" height="104" class="ok"/>
+  <text x="655" y="438" text-anchor="middle" class="label">进入 Session</text>
+  <text x="655" y="467" text-anchor="middle" class="text">承接上下文与目标</text>
+  <text x="655" y="493" text-anchor="middle" class="small">准备进入 Agent Loop</text>
 
-  <rect class="warn" x="150" y="470" width="330" height="92" rx="20"/>
-  <text class="text" x="315" y="522" text-anchor="middle">拒绝：拦截并记录</text>
-  <text class="small" x="315" y="551" text-anchor="middle">不满足规则就不进入执行层</text>
+  <path d="M410 341 C360 362, 320 378, 290 400" class="line arrow"/>
+  <path d="M490 341 C540 362, 580 378, 610 400" class="line arrow"/>
 
-  <path class="arrow" d="M745 208 C745 290, 540 360, 315 470"/>
-  <path class="arrow" d="M785 208 C820 290, 855 365, 885 470"/>
+  <rect x="535" y="560" width="240" height="104" class="box"/>
+  <text x="655" y="598" text-anchor="middle" class="label">工具执行边界</text>
+  <text x="655" y="627" text-anchor="middle" class="text">read / web / cron / message</text>
+  <text x="655" y="651" text-anchor="middle" class="small">高风险动作再叠加审批</text>
 
-  <rect class="box" x="240" y="640" width="720" height="70" rx="18"/>
-  <text class="text" x="600" y="684" text-anchor="middle">核心原则：入口先治理，执行才可控</text>
+  <path d="M655 504 C655 526, 655 534, 655 560" class="line arrow"/>
 
-  <path class="arrow" d="M315 562 C315 606, 430 624, 520 640"/>
-  <path class="arrow" d="M885 562 C885 606, 770 624, 680 640"/>
+  <rect x="250" y="720" width="400" height="126" class="soft"/>
+  <text x="450" y="760" text-anchor="middle" class="label">审计记录</text>
+  <text x="450" y="792" text-anchor="middle" class="text">通过、拒绝、失败、回退都要留痕</text>
+  <text x="450" y="820" text-anchor="middle" class="small">这样才能复盘规则、优化入口、控制风险</text>
+
+  <path d="M245 504 C245 610, 305 655, 390 720" class="line arrow"/>
+  <path d="M655 664 C655 688, 620 700, 560 720" class="line arrow"/>
+
+  <path d="M395 875 C328 910, 242 914, 180 882" class="line line dot"/>
+  <text x="178" y="930" class="small">入口规则前置，风险后移更少</text>
 </svg>
