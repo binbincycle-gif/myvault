@@ -1,76 +1,86 @@
-<svg width="1200" height="820" viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg">
+<svg width="960" height="1360" viewBox="0 0 960 1360" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      .bg{fill:#fffdfa}
-      .title{font:700 52px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#111}
-      .text{font:700 36px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#111}
-      .label{font:600 28px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#555}
-      .box{fill:#fff;stroke:#222;stroke-width:6}
-      .box-soft{fill:#f7f7f7;stroke:#333;stroke-width:4}
-      .arr{stroke:#3b6fd0;stroke-width:5;fill:none;marker-end:url(#a)}
-      .note{fill:#fff3e0;stroke:#ff9800;stroke-width:5}
-      .warn{fill:#ffebee;stroke:#d32f2f;stroke-width:6}
-      .ok{fill:#f1fff3;stroke:#2e7d32;stroke-width:5}
+      .bg { fill: #fcfbf7; }
+      .title { font: 700 34px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #1f2937; }
+      .subtitle { font: 600 22px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #334155; }
+      .text { font: 18px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #334155; }
+      .small { font: 16px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #475569; }
+      .box { fill: #fffef9; stroke: #334155; stroke-width: 3; rx: 24; ry: 24; }
+      .light { fill: #f8fafc; stroke: #475569; stroke-width: 2.5; rx: 20; ry: 20; }
+      .arrow { stroke: #334155; stroke-width: 3.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .dash { stroke: #64748b; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 8 10; }
     </style>
-    <marker id="a" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-      <path d="M0.6,0.6 L5,3 L0.6,5.4" fill="none" stroke="#3b6fd0" stroke-width="1.5"/>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
   </defs>
 
-  <rect class="bg" x="0" y="0" width="1200" height="820"/>
-  <text class="title" x="600" y="64" text-anchor="middle">Day03 本地启动与最小闭环</text>
+  <rect class="bg" x="0" y="0" width="960" height="1360"/>
 
-  <!-- 主闭环 -->
-  <rect class="box" x="70" y="110" width="240" height="90" rx="12"/>
-  <text class="text" x="190" y="160" text-anchor="middle">1. 服务启动</text>
-  <text class="label" x="190" y="188" text-anchor="middle">Gateway在线</text>
+  <text class="title" x="72" y="78">Day03 本地启动与最小闭环验证</text>
+  <text class="subtitle" x="72" y="118">先证明“能稳定完成一次输入到回执”，再谈更复杂自动化</text>
 
-  <rect class="box" x="340" y="110" width="240" height="90" rx="12"/>
-  <text class="text" x="460" y="160" text-anchor="middle">2. 指令接收</text>
-  <text class="label" x="460" y="188" text-anchor="middle">进入Session</text>
+  <rect class="box" x="72" y="160" width="816" height="132"/>
+  <text class="subtitle" x="104" y="205">最小闭环验收标准</text>
+  <text class="text" x="104" y="245">服务在线 + 指令进会话 + 工具有结果 + 状态可复盘</text>
+  <text class="small" x="104" y="276">不是“界面能打开”，而是“链路能连续跑通且可重复”</text>
 
-  <rect class="box" x="610" y="110" width="240" height="90" rx="12"/>
-  <text class="text" x="730" y="160" text-anchor="middle">3. 工具执行</text>
-  <text class="label" x="730" y="188" text-anchor="middle">read/exec等</text>
+  <rect class="box" x="72" y="346" width="176" height="138"/>
+  <text class="subtitle" x="109" y="390">1 服务启动</text>
+  <text class="small" x="98" y="424">Gateway 在线</text>
+  <text class="small" x="98" y="452">运行时可用</text>
 
-  <rect class="box" x="880" y="110" width="240" height="90" rx="12"/>
-  <text class="text" x="1000" y="160" text-anchor="middle">4. 结果校验</text>
-  <text class="label" x="1000" y="188" text-anchor="middle">日志/状态</text>
+  <rect class="box" x="286" y="346" width="176" height="138"/>
+  <text class="subtitle" x="322" y="390">2 指令接收</text>
+  <text class="small" x="312" y="424">消息进入 Session</text>
+  <text class="small" x="312" y="452">上下文不丢</text>
 
-  <path class="arr" d="M310,155 L340,155"/>
-  <path class="arr" d="M580,155 L610,155"/>
-  <path class="arr" d="M850,155 L880,155"/>
+  <rect class="box" x="500" y="346" width="176" height="138"/>
+  <text class="subtitle" x="536" y="390">3 工具执行</text>
+  <text class="small" x="532" y="424">先用低风险工具</text>
+  <text class="small" x="532" y="452">结果可读取</text>
 
-  <!-- 关键组件 -->
-  <rect class="box-soft" x="150" y="245" width="900" height="150" rx="12"/>
-  <text class="text" x="600" y="285" text-anchor="middle">关键组件检查点</text>
-  <rect class="box" x="190" y="305" width="220" height="55" rx="8"/>
-  <text class="label" x="300" y="342" text-anchor="middle">Gateway</text>
-  <rect class="box" x="440" y="305" width="220" height="55" rx="8"/>
-  <text class="label" x="550" y="342" text-anchor="middle">Session</text>
-  <rect class="box" x="690" y="305" width="220" height="55" rx="8"/>
-  <text class="label" x="800" y="342" text-anchor="middle">Tool Runtime</text>
+  <rect class="box" x="714" y="346" width="174" height="138"/>
+  <text class="subtitle" x="748" y="390">4 结果校验</text>
+  <text class="small" x="742" y="424">日志可追踪</text>
+  <text class="small" x="742" y="452">可复跑验证</text>
 
-  <!-- 风险与成功 -->
-  <rect class="warn" x="90" y="430" width="360" height="170" rx="12"/>
-  <text class="text" x="270" y="470" text-anchor="middle" fill="#b71c1c">常见失败</text>
-  <text class="label" x="270" y="510" text-anchor="middle">服务未就绪 / 端口占用</text>
-  <text class="label" x="270" y="545" text-anchor="middle">权限策略阻断</text>
-  <text class="label" x="270" y="580" text-anchor="middle">路径/环境不一致</text>
+  <path class="arrow" marker-end="url(#arrow)" d="M248 415 C260 415, 270 415, 286 415"/>
+  <path class="arrow" marker-end="url(#arrow)" d="M462 415 C474 415, 484 415, 500 415"/>
+  <path class="arrow" marker-end="url(#arrow)" d="M676 415 C688 415, 698 415, 714 415"/>
 
-  <rect class="ok" x="460" y="430" width="300" height="170" rx="12"/>
-  <text class="text" x="610" y="470" text-anchor="middle" fill="#1b5e20">交付标准</text>
-  <text class="label" x="610" y="510" text-anchor="middle">可启动 / 可触发</text>
-  <text class="label" x="610" y="545" text-anchor="middle">可回执 / 可复盘</text>
-  <text class="label" x="610" y="580" text-anchor="middle">失败可定位</text>
+  <rect class="light" x="94" y="560" width="768" height="110"/>
+  <text class="subtitle" x="120" y="603">推荐验证顺序</text>
+  <text class="text" x="120" y="642">状态检查 → 读一个本地文件 → 看工具回执 → 查日志 / status → 连续复跑 2~3 次</text>
 
-  <rect class="note" x="790" y="430" width="320" height="170" rx="12"/>
-  <text class="text" x="950" y="470" text-anchor="middle">价值</text>
-  <text class="label" x="950" y="510" text-anchor="middle">从主观感觉</text>
-  <text class="label" x="950" y="545" text-anchor="middle">变成可验证事实</text>
-  <text class="label" x="950" y="580" text-anchor="middle">可复制给团队</text>
+  <rect class="box" x="72" y="740" width="244" height="170"/>
+  <text class="subtitle" x="107" y="784">常见卡点 A</text>
+  <text class="small" x="102" y="822">服务未就绪 / 端口冲突</text>
+  <text class="small" x="102" y="852">表现：能聊天，不能执行</text>
+  <text class="small" x="102" y="882">先看 gateway status</text>
 
-  <!-- 底部提示 -->
-  <rect class="note" x="120" y="650" width="960" height="70" rx="12"/>
-  <text class="label" x="600" y="694" text-anchor="middle">最小闭环：输入 → 执行 → 校验 → 回执（一次成功 ≠ 稳定）</text>
+  <rect class="box" x="358" y="740" width="244" height="170"/>
+  <text class="subtitle" x="393" y="784">常见卡点 B</text>
+  <text class="small" x="388" y="822">权限或安全模式拦截</text>
+  <text class="small" x="388" y="852">表现：工具调用被拒</text>
+  <text class="small" x="388" y="882">先分清策略还是能力</text>
+
+  <rect class="box" x="644" y="740" width="244" height="170"/>
+  <text class="subtitle" x="679" y="784">常见卡点 C</text>
+  <text class="small" x="674" y="822">路径 / cwd 不一致</text>
+  <text class="small" x="674" y="852">表现：文件明明在却找不到</text>
+  <text class="small" x="674" y="882">先确认工作目录</text>
+
+  <path class="dash" marker-end="url(#arrow)" d="M194 910 C194 980, 280 1010, 380 1030"/>
+  <path class="dash" marker-end="url(#arrow)" d="M480 910 C480 980, 480 1000, 480 1030"/>
+  <path class="dash" marker-end="url(#arrow)" d="M766 910 C766 980, 680 1010, 580 1030"/>
+
+  <rect class="light" x="214" y="1032" width="532" height="146"/>
+  <text class="subtitle" x="250" y="1076">管理上真正要的不是“启动成功”</text>
+  <text class="text" x="250" y="1116">而是形成统一验收口径：可触发、可回执、可复盘、可复跑</text>
+  <text class="small" x="250" y="1150">这样新环境接入、自动化试点、团队推广都能站在同一基线之上</text>
+
+  <rect class="box" x="72" y="1224" width="816" height="88"/>
+  <text class="text" x="102" y="1278">一句话：先跑通最小闭环，才能证明 OpenClaw 今天真的能干活，而不是“看起来装好了”。</text>
 </svg>
