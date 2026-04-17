@@ -1,76 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" font-family="HanziPen SC, Hannotate SC, KaiTi, STKaiti, PingFang SC, sans-serif">
-  <!-- 背景 -->
-  <rect width="400" height="420" fill="#fafafa"/>
-  
-  <!-- 标题 -->
-  <text x="200" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">协作流程与RACI模型</text>
-  
-  <!-- 阶段1: 需求 -->
-  <g transform="translate(50, 60)">
-    <!-- 需求阶段 -->
-    <rect x="0" y="0" width="100" height="40" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
-    <text x="50" y="25" text-anchor="middle" font-size="12" fill="#333">需求阶段</text>
-    
-    <!-- RACI标注 -->
-    <text x="120" y="25" font-size="10" fill="#666">产品(R) → 技术(A)</text>
-    
-    <!-- 箭头到评审 -->
-    <path d="M50 40 L50 55" stroke="#666" stroke-width="1.5" fill="none"/>
-    
-    <!-- 评审阶段 -->
-    <rect x="0" y="60" width="100" height="40" rx="4" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
-    <text x="50" y="85" text-anchor="middle" font-size="12" fill="#333">评审阶段</text>
-    
-    <text x="120" y="85" font-size="10" fill="#666">技术(R) → 设计(C)</text>
-    
-    <!-- 箭头到设计 -->
-    <path d="M50 100 L50 115" stroke="#666" stroke-width="1.5" fill="none"/>
-    
-    <!-- 设计阶段 -->
-    <rect x="0" y="120" width="100" height="40" rx="4" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
-    <text x="50" y="145" text-anchor="middle" font-size="12" fill="#333">设计阶段</text>
-    
-    <text x="120" y="145" font-size="10" fill="#666">设计(R) → 产品(C)</text>
-    
-    <!-- 箭头到开发 -->
-    <path d="M50 160 L50 175" stroke="#666" stroke-width="1.5" fill="none"/>
-    
-    <!-- 开发阶段 -->
-    <rect x="0" y="180" width="100" height="40" rx="4" fill="#fce4ec" stroke="#d81b60" stroke-width="1.5"/>
-    <text x="50" y="205" text-anchor="middle" font-size="12" fill="#333">开发阶段</text>
-    
-    <text x="120" y="205" font-size="10" fill="#666">开发(R) → 测试(A)</text>
-    
-    <!-- 箭头到测试 -->
-    <path d="M50 220 L50 235" stroke="#666" stroke-width="1.5" fill="none"/>
-    
-    <!-- 测试阶段 -->
-    <rect x="0" y="240" width="100" height="40" rx="4" fill="#e1f5fe" stroke="#0288d1" stroke-width="1.5"/>
-    <text x="50" y="265" text-anchor="middle" font-size="12" fill="#333">测试阶段</text>
-    
-    <text x="120" y="265" font-size="10" fill="#666">测试(R) → 运维(A)</text>
-    
-    <!-- 箭头到上线 -->
-    <path d="M50 280 L50 295" stroke="#666" stroke-width="1.5" fill="none"/>
-    
-    <!-- 上线阶段 -->
-    <rect x="0" y="300" width="100" height="40" rx="4" fill="#e0f2f1" stroke="#00796b" stroke-width="1.5"/>
-    <text x="50" y="325" text-anchor="middle" font-size="12" fill="#333">上线阶段</text>
-    
-    <text x="120" y="325" font-size="10" fill="#666">运维(R) → 安全(C)</text>
-    
-    <!-- 箭头到通知 -->
-    <path d="M50 340 L50 355" stroke="#666" stroke-width="1.5" fill="none"/>
-    
-    <!-- 知会全员 -->
-    <rect x="0" y="360" width="100" height="40" rx="4" fill="#f5f5f5" stroke="#757575" stroke-width="1.5"/>
-    <text x="50" y="385" text-anchor="middle" font-size="12" fill="#333">全员知会</text>
-    
-    <text x="120" y="385" font-size="10" fill="#666">全员(I)</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 1180" font-family="HanziPen SC, Hannotate SC, KaiTi, STKaiti, PingFang SC, sans-serif">
+  <rect width="820" height="1180" fill="#fcfcfb"/>
+
+  <g stroke="#2f2f2f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M52 48 Q410 28 768 48" opacity="0.18"/>
+    <path d="M60 1132 Q410 1156 760 1132" opacity="0.14"/>
   </g>
-  
-  <!-- 底部图例 -->
-  <g transform="translate(50, 390)">
-    <text x="0" y="0" font-size="9" fill="#666">R=执行 A=负责 C=咨询 I=知会</text>
+
+  <text x="410" y="74" text-anchor="middle" font-size="30" fill="#222" font-weight="700">协作流程与 RACI 模型</text>
+  <text x="410" y="110" text-anchor="middle" font-size="18" fill="#555">把任务推进路径和责任归属放到一张图里</text>
+
+  <g transform="translate(56 150)">
+    <rect x="0" y="0" width="708" height="820" rx="24" fill="#fffdf8" stroke="#2f2f2f" stroke-width="3"/>
+    <text x="28" y="42" font-size="24" fill="#222" font-weight="700">一条任务如何稳定推进</text>
+
+    <g transform="translate(28 86)">
+      <rect x="0" y="0" width="200" height="96" rx="18" fill="#E8F4FF" stroke="#2f2f2f" stroke-width="3"/>
+      <text x="100" y="34" text-anchor="middle" font-size="24" fill="#222">1. 提出任务</text>
+      <text x="100" y="64" text-anchor="middle" font-size="16" fill="#444">有人发起需求</text>
+      <text x="100" y="84" text-anchor="middle" font-size="16" fill="#444">先明确目标和范围</text>
+
+      <rect x="452" y="0" width="200" height="96" rx="18" fill="#FFF4DF" stroke="#2f2f2f" stroke-width="3"/>
+      <text x="552" y="34" text-anchor="middle" font-size="24" fill="#222">2. 澄清判断</text>
+      <text x="552" y="64" text-anchor="middle" font-size="16" fill="#444">确认要做什么</text>
+      <text x="552" y="84" text-anchor="middle" font-size="16" fill="#444">谁有拍板权</text>
+
+      <path d="M228 48 C282 48 324 48 370 48" stroke="#2f2f2f" stroke-width="3"/>
+      <path d="M370 48 L352 38" stroke="#2f2f2f" stroke-width="3"/>
+      <path d="M370 48 L352 58" stroke="#2f2f2f" stroke-width="3"/>
+
+      <rect x="0" y="184" width="200" height="96" rx="18" fill="#EAF8EA" stroke="#2f2f2f" stroke-width="3"/>
+      <text x="100" y="218" text-anchor="middle" font-size="24" fill="#222">3. 执行动作</text>
+      <text x="100" y="248" text-anchor="middle" font-size="16" fill="#444">由执行者落地</text>
+      <text x="100" y="268" text-anchor="middle" font-size="16" fill="#444">工具和资料开始工作</text>
+
+      <rect x="452" y="184" width="200" height="96" rx="18" fill="#F8EAFE" stroke="#2f2f2f" stroke-width="3"/>
+      <text x="552" y="218" text-anchor="middle" font-size="24" fill="#222">4. 验收拍板</text>
+      <text x="552" y="248" text-anchor="middle" font-size="16" fill="#444">确认结果是否达标</text>
+      <text x="552" y="268" text-anchor="middle" font-size="16" fill="#444">必要时升级审批</text>
+
+      <path d="M552 96 C552 122 552 144 552 184" stroke="#2f2f2f" stroke-width="3"/>
+      <path d="M552 184 L542 166" stroke="#2f2f2f" stroke-width="3"/>
+      <path d="M552 184 L562 166" stroke="#2f2f2f" stroke-width="3"/>
+
+      <path d="M452 232 C402 232 330 232 228 232" stroke="#2f2f2f" stroke-width="3"/>
+      <path d="M228 232 L246 222" stroke="#2f2f2f" stroke-width="3"/>
+      <path d="M228 232 L246 242" stroke="#2f2f2f" stroke-width="3"/>
+
+      <rect x="0" y="368" width="200" height="96" rx="18" fill="#FFF1F1" stroke="#2f2f2f" stroke-width="3"/>
+      <text x="100" y="402" text-anchor="middle" font-size="24" fill="#222">5. 通知同步</text>
+      <text x="100" y="432" text-anchor="middle" font-size="16" fill="#444">结果发给相关人</text>
+      <text x="100" y="452" text-anchor="middle" font-size="16" fill="#444">避免重复追问</text>
+
+      <rect x="452" y="368" width="200" height="96" rx="18" fill="#EEF3FF" stroke="#2f2f2f" stroke-width="3"/>
+      <text x="552" y="402" text-anchor="middle" font-size="24" fill="#222">6. 复盘沉淀</text>
+      <text x="552" y="432" text-anchor="middle" font-size="16" fill="#444">记录责任链和结论</text>
+      <text x="552" y="452" text-anchor="middle" font-size="16" fill="#444">为下次复用做准备</text>
+
+      <path d="M100 280 C100 306 100 328 100 368" stroke="#2f2f2f" stroke-width="3"/>
+      <path d="M100 368 L90 350" stroke="#2f2f2f" stroke-width="3"/>
+      <path d="M100 368 L110 350" stroke="#2f2f2f" stroke-width="3"/>
+
+      <path d="M228 416 C282 416 324 416 452 416" stroke="#2f2f2f" stroke-width="3"/>
+      <path d="M452 416 L434 406" stroke="#2f2f2f" stroke-width="3"/>
+      <path d="M452 416 L434 426" stroke="#2f2f2f" stroke-width="3"/>
+
+      <path d="M452 464 C382 524 298 548 206 576" stroke="#2f2f2f" stroke-width="3" stroke-dasharray="8 10"/>
+      <path d="M206 576 L224 570" stroke="#2f2f2f" stroke-width="3"/>
+      <path d="M206 576 L218 590" stroke="#2f2f2f" stroke-width="3"/>
+      <text x="356" y="548" text-anchor="middle" font-size="17" fill="#555">复盘后的规则，下次直接复用</text>
+    </g>
+
+    <g transform="translate(28 640)">
+      <rect x="0" y="0" width="652" height="136" rx="18" fill="#fff" stroke="#2f2f2f" stroke-width="3"/>
+      <text x="24" y="32" font-size="22" fill="#222" font-weight="700">RACI 在流程里的角色定位</text>
+
+      <rect x="20" y="54" width="140" height="60" rx="14" fill="#E8F4FF" stroke="#2f2f2f" stroke-width="3"/>
+      <text x="90" y="80" text-anchor="middle" font-size="22" fill="#222">R 执行</text>
+      <text x="90" y="102" text-anchor="middle" font-size="15" fill="#444">把动作真正做出来</text>
+
+      <rect x="178" y="54" width="140" height="60" rx="14" fill="#FFF4DF" stroke="#2f2f2f" stroke-width="3"/>
+      <text x="248" y="80" text-anchor="middle" font-size="22" fill="#222">A 负责</text>
+      <text x="248" y="102" text-anchor="middle" font-size="15" fill="#444">最终拍板，最好唯一</text>
+
+      <rect x="336" y="54" width="140" height="60" rx="14" fill="#EAF8EA" stroke="#2f2f2f" stroke-width="3"/>
+      <text x="406" y="80" text-anchor="middle" font-size="22" fill="#222">C 咨询</text>
+      <text x="406" y="102" text-anchor="middle" font-size="15" fill="#444">关键节点提供意见</text>
+
+      <rect x="494" y="54" width="140" height="60" rx="14" fill="#FFF1F1" stroke="#2f2f2f" stroke-width="3"/>
+      <text x="564" y="80" text-anchor="middle" font-size="22" fill="#222">I 知会</text>
+      <text x="564" y="102" text-anchor="middle" font-size="15" fill="#444">知道结果，但不决策</text>
+    </g>
+  </g>
+
+  <g transform="translate(56 1000)">
+    <rect x="0" y="0" width="708" height="114" rx="22" fill="#fffdf8" stroke="#2f2f2f" stroke-width="3"/>
+    <text x="28" y="34" font-size="22" fill="#222" font-weight="700">管理提醒</text>
+    <text x="28" y="64" font-size="18" fill="#444">1. 高风险节点要有唯一 A，避免多人拍板。</text>
+    <text x="28" y="88" font-size="18" fill="#444">2. 不同阶段的 R 可以变化，但责任交接要写清楚。</text>
+    <text x="28" y="112" font-size="18" fill="#444">3. 通知不是打扰所有人，而是让该知道的人及时知道。</text>
   </g>
 </svg>
