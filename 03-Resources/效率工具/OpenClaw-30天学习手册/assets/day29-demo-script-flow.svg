@@ -1,66 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" font-family="HanziPen SC, Hannotate SC, KaiTi, STKaiti, PingFang SC, sans-serif">
-  <!-- 背景 -->
-  <rect width="400" height="380" fill="#fafafa"/>
-  
-  <!-- 标题 -->
-  <text x="200" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">内部Demo与演示脚本</text>
-  
-  <!-- 主流程 -->
-  <g transform="translate(50, 60)">
-    <!-- 场景选择 -->
-    <rect x="0" y="0" width="100" height="40" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
-    <text x="50" y="25" text-anchor="middle" font-size="12" fill="#333">选择场景</text>
-    
-    <!-- 箭头 -->
-    <path d="M50 40 L50 55" stroke="#666" stroke-width="1.5" fill="none"/>
-    
-    <!-- 参数配置 -->
-    <rect x="0" y="60" width="100" height="40" rx="4" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
-    <text x="50" y="85" text-anchor="middle" font-size="12" fill="#333">参数配置</text>
-    
-    <!-- 箭头 -->
-    <path d="M50 100 L50 115" stroke="#666" stroke-width="1.5" fill="none"/>
-    
-    <!-- 脚本执行 -->
-    <rect x="0" y="120" width="100" height="40" rx="4" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
-    <text x="50" y="145" text-anchor="middle" font-size="12" fill="#333">脚本执行</text>
-    
-    <!-- 分支：录制 vs 直播 -->
-    <path d="M50 160 L50 175" stroke="#666" stroke-width="1.5" fill="none"/>
-    <path d="M50 175 L-20 175 L-20 200" stroke="#666" stroke-width="1.5" fill="none"/>
-    <path d="M-20 200 L-30 195 M-20 200 L-30 205" stroke="#666" stroke-width="1.5"/>
-    <path d="M50 175 L120 175 L120 200" stroke="#666" stroke-width="1.5" fill="none"/>
-    <path d="M120 200 L110 195 M120 200 L110 205" stroke="#666" stroke-width="1.5"/>
-    
-    <!-- 录制模式 -->
-    <rect x="-70" y="205" width="100" height="40" rx="4" fill="#fce4ec" stroke="#d81b60" stroke-width="1.5"/>
-    <text x="-20" y="230" text-anchor="middle" font-size="12" fill="#333">录制模式</text>
-    
-    <!-- 直播模式 -->
-    <rect x="70" y="205" width="100" height="40" rx="4" fill="#e1f5fe" stroke="#0288d1" stroke-width="1.5"/>
-    <text x="120" y="230" text-anchor="middle" font-size="12" fill="#333">直播模式</text>
-    
-    <!-- 录制/直播后箭头到素材输出 -->
-    <path d="M-20 245 L-20 260" stroke="#666" stroke-width="1.5" fill="none"/>
-    <path d="M120 245 L120 260" stroke="#666" stroke-width="1.5" fill="none"/>
-    <path d="M-20 260 L50 260" stroke="#666" stroke-width="1.5" fill="none"/>
-    <path d="M120 260 L50 260" stroke="#666" stroke-width="1.5" fill="none"/>
-    
-    <!-- 素材输出 -->
-    <rect x="0" y="265" width="100" height="40" rx="4" fill="#e0f2f1" stroke="#00796b" stroke-width="1.5"/>
-    <text x="50" y="290" text-anchor="middle" font-size="12" fill="#333">素材输出</text>
-    
-    <!-- 箭头 -->
-    <path d="M50 305 L50 320" stroke="#666" stroke-width="1.5" fill="none"/>
-    
-    <!-- 归档 -->
-    <rect x="0" y="325" width="100" height="40" rx="4" fill="#f5f5f5" stroke="#757575" stroke-width="1.5"/>
-    <text x="50" y="350" text-anchor="middle" font-size="12" fill="#333">归档复用</text>
-  </g>
-  
-  <!-- 输出格式标注 -->
-  <g transform="translate(160, 200)">
-    <text x="0" y="0" font-size="9" fill="#666">输出格式：</text>
-    <text x="0" y="15" font-size="9" fill="#666">视频/截图/PDF/报告</text>
-  </g>
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="720" fill="#FCFBF7"/>
+  <style>
+    .title { font: 700 28px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#1F2937; }
+    .subtitle { font: 600 18px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#374151; }
+    .text { font: 16px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#374151; }
+    .small { font: 14px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#4B5563; }
+    .box { fill:#FFFDF8; stroke:#374151; stroke-width:3; rx:20; }
+    .line { stroke:#374151; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+    .dash { stroke:#6B7280; stroke-width:2.5; stroke-linecap:round; stroke-dasharray:7 8; fill:none; }
+    .pill { fill:#FEF3C7; stroke:#D97706; stroke-width:2.5; rx:16; }
+    .warn { fill:#FEE2E2; stroke:#DC2626; stroke-width:2.5; rx:16; }
+    .ok { fill:#DCFCE7; stroke:#16A34A; stroke-width:2.5; rx:16; }
+  </style>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M1.5 1.5L10.5 6L1.5 10.5" fill="none" stroke="#374151" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <text x="60" y="64" class="title">Day29 内部 Demo 与演示脚本</text>
+  <text x="60" y="96" class="subtitle">从目标定义到证据输出，把一次展示变成可复用资产</text>
+
+  <rect x="60" y="140" width="220" height="130" class="box"/>
+  <text x="88" y="180" class="subtitle">1. 目标定义</text>
+  <text x="88" y="214" class="text">• 证明什么价值</text>
+  <text x="88" y="242" class="text">• 给谁看</text>
+  <text x="88" y="270" class="text">• 30秒版还是深度版</text>
+
+  <rect x="370" y="140" width="220" height="130" class="box"/>
+  <text x="398" y="180" class="subtitle">2. 参数准备</text>
+  <text x="398" y="214" class="text">• 模拟数据 / 脱敏数据</text>
+  <text x="398" y="242" class="text">• 时间窗口 / 场景标签</text>
+  <text x="398" y="270" class="text">• 正常流 / 异常流</text>
+
+  <rect x="680" y="140" width="220" height="130" class="box"/>
+  <text x="708" y="180" class="subtitle">3. 脚本执行</text>
+  <text x="708" y="214" class="text">• Browser / Canvas</text>
+  <text x="708" y="242" class="text">• 页面操作与切换</text>
+  <text x="708" y="270" class="text">• 关键步骤可回放</text>
+
+  <path d="M280 205H370" class="line" marker-end="url(#arrow)"/>
+  <path d="M590 205H680" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="90" y="360" width="240" height="128" class="pill"/>
+  <text x="118" y="398" class="subtitle">讲给管理层</text>
+  <text x="118" y="430" class="text">结果、效率、风险</text>
+  <text x="118" y="458" class="text">重点看价值与可复制</text>
+
+  <rect x="360" y="340" width="240" height="168" class="box"/>
+  <text x="388" y="378" class="subtitle">演示脚本中台</text>
+  <text x="388" y="410" class="text">• 场景模板</text>
+  <text x="388" y="438" class="text">• 参数切换</text>
+  <text x="388" y="466" class="text">• 截图 / 日志 / 录屏</text>
+  <text x="388" y="494" class="text">• 输出复盘材料</text>
+
+  <rect x="630" y="360" width="240" height="128" class="ok"/>
+  <text x="658" y="398" class="subtitle">讲给团队</text>
+  <text x="658" y="430" class="text">流程、细节、边界</text>
+  <text x="658" y="458" class="text">重点看如何复用</text>
+
+  <path d="M480 270V340" class="line" marker-end="url(#arrow)"/>
+  <path d="M330 424H360" class="line" marker-end="url(#arrow)"/>
+  <path d="M600 424H630" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="70" y="566" width="260" height="92" class="warn"/>
+  <text x="98" y="602" class="subtitle">风险提醒</text>
+  <text x="98" y="632" class="small">别展示真实隐私数据，别把未稳定能力讲成已可承诺</text>
+
+  <rect x="360" y="552" width="250" height="120" class="box"/>
+  <text x="388" y="590" class="subtitle">证据输出</text>
+  <text x="388" y="620" class="text">截图、录屏、日志、结果页</text>
+  <text x="388" y="648" class="text">让 Demo 讲完后还能复盘</text>
+
+  <rect x="640" y="566" width="250" height="92" class="pill"/>
+  <text x="668" y="602" class="subtitle">复用结果</text>
+  <text x="668" y="632" class="small">汇报、培训、立项、对外分享都能二次利用</text>
+
+  <path d="M480 508V552" class="line" marker-end="url(#arrow)"/>
+  <path d="M610 612H640" class="line" marker-end="url(#arrow)"/>
+  <path d="M680 302C665 320 638 336 600 348" class="dash" marker-end="url(#arrow)"/>
+  <path d="M760 302C778 328 797 344 828 360" class="dash" marker-end="url(#arrow)"/>
 </svg>
