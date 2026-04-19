@@ -1,145 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" font-family="HanziPen SC, Hannotate SC, KaiTi, STKaiti, PingFang SC, sans-serif" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="HanziPen SC, Hannotate SC, KaiTi, STKaiti, PingFang SC, sans-serif" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="18" y="18" width="864" height="584" rx="18" fill="#fcfcfb" stroke="#d8dee6" stroke-width="1.5"/>
+  <text x="450" y="54" text-anchor="middle" font-size="24" font-weight="bold" fill="#2c3e50" stroke="none">OpenClaw 30天学习收口图</text>
+  <text x="450" y="82" text-anchor="middle" font-size="13" fill="#5d6d7e" stroke="none">先盘点，再聚焦，再落到第一个可交付成果</text>
 
-  <!-- Title -->
-  <text x="410" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50" stroke="none">OpenClaw 30天能力盘点与下一阶段规划</text>
+  <rect x="48" y="118" width="292" height="392" rx="16" fill="#f7fbff" stroke="#6ea8d9" stroke-width="2"/>
+  <text x="194" y="150" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50" stroke="none">① 本月能力盘点</text>
 
-  <!-- Left Section: Skill Matrix -->
-  <!-- Section header -->
-  <text x="195" y="62" text-anchor="middle" font-size="14" font-weight="bold" fill="#34495e" stroke="none">能力矩阵自评</text>
+  <rect x="72" y="174" width="244" height="44" rx="10" fill="#ffffff" stroke="#9cb7c9" stroke-width="1.6"/>
+  <text x="90" y="201" font-size="13" fill="#2c3e50" stroke="none">消息接入</text>
+  <text x="250" y="201" font-size="12" fill="#4d6a79" stroke="none">知道 → 能用</text>
 
-  <!-- Matrix header row -->
-  <rect x="60" y="75" width="270" height="28" rx="6" fill="#ecf0f1" stroke="#95a5a6" stroke-width="1.5"/>
-  <text x="195" y="94" text-anchor="middle" font-size="11" fill="#2c3e50" stroke="none">能力维度</text>
-  <text x="290" y="94" text-anchor="middle" font-size="11" fill="#27ae60" stroke="none">初级</text>
-  <text x="315" y="94" text-anchor="middle" font-size="11" fill="#f39c12" stroke="none">中级</text>
-  <text x="340" y="94" text-anchor="middle" font-size="11" fill="#e74c3c" stroke="none">高级</text>
+  <rect x="72" y="228" width="244" height="44" rx="10" fill="#ffffff" stroke="#9cb7c9" stroke-width="1.6"/>
+  <text x="90" y="255" font-size="13" fill="#2c3e50" stroke="none">工具执行</text>
+  <text x="250" y="255" font-size="12" fill="#4d6a79" stroke="none">能用 → 讲清</text>
 
-  <!-- Matrix rows -->
-  <!-- Row 1: 消息接入 -->
-  <rect x="60" y="106" width="270" height="30" rx="4" fill="white" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="75" y="126" font-size="11" fill="#2c3e50" stroke="none">消息接入</text>
-  <circle cx="290" cy="121" r="6" fill="#aed6f1" stroke="#3498db" stroke-width="1.5"/>
-  <circle cx="315" cy="121" r="6" fill="white" stroke="#95a5a6" stroke-width="1.5"/>
-  <circle cx="340" cy="121" r="6" fill="white" stroke="#95a5a6" stroke-width="1.5"/>
+  <rect x="72" y="282" width="244" height="44" rx="10" fill="#ffffff" stroke="#9cb7c9" stroke-width="1.6"/>
+  <text x="90" y="309" font-size="13" fill="#2c3e50" stroke="none">Skill 封装</text>
+  <text x="250" y="309" font-size="12" fill="#4d6a79" stroke="none">知道 → 能用</text>
 
-  <!-- Row 2: 执行层 -->
-  <rect x="60" y="139" width="270" height="30" rx="4" fill="white" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="75" y="159" font-size="11" fill="#2c3e50" stroke="none">执行层</text>
-  <circle cx="290" cy="154" r="6" fill="#aed6f1" stroke="#3498db" stroke-width="1.5"/>
-  <circle cx="315" cy="154" r="6" fill="#fdeaa6" stroke="#f39c12" stroke-width="1.5"/>
-  <circle cx="340" cy="154" r="6" fill="white" stroke="#95a5a6" stroke-width="1.5"/>
+  <rect x="72" y="336" width="244" height="44" rx="10" fill="#ffffff" stroke="#9cb7c9" stroke-width="1.6"/>
+  <text x="90" y="363" font-size="13" fill="#2c3e50" stroke="none">Browser 自动化</text>
+  <text x="238" y="363" font-size="12" fill="#4d6a79" stroke="none">能用 → 讲清</text>
 
-  <!-- Row 3: Skill开发 -->
-  <rect x="60" y="172" width="270" height="30" rx="4" fill="white" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="75" y="192" font-size="11" fill="#2c3e50" stroke="none">Skill开发</text>
-  <circle cx="290" cy="187" r="6" fill="#aed6f1" stroke="#3498db" stroke-width="1.5"/>
-  <circle cx="315" cy="187" r="6" fill="white" stroke="#95a5a6" stroke-width="1.5"/>
-  <circle cx="340" cy="187" r="6" fill="white" stroke="#95a5a6" stroke-width="1.5"/>
+  <rect x="72" y="390" width="244" height="44" rx="10" fill="#ffffff" stroke="#9cb7c9" stroke-width="1.6"/>
+  <text x="90" y="417" font-size="13" fill="#2c3e50" stroke="none">安全治理</text>
+  <text x="250" y="417" font-size="12" fill="#4d6a79" stroke="none">知道 → 能用</text>
 
-  <!-- Row 4: Browser自动化 -->
-  <rect x="60" y="205" width="270" height="30" rx="4" fill="white" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="75" y="225" font-size="11" fill="#2c3e50" stroke="none">Browser自动化</text>
-  <circle cx="290" cy="220" r="6" fill="#aed6f1" stroke="#3498db" stroke-width="1.5"/>
-  <circle cx="315" cy="220" r="6" fill="#fdeaa6" stroke="#f39c12" stroke-width="1.5"/>
-  <circle cx="340" cy="220" r="6" fill="white" stroke="#95a5a6" stroke-width="1.5"/>
+  <rect x="72" y="444" width="244" height="44" rx="10" fill="#ffffff" stroke="#9cb7c9" stroke-width="1.6"/>
+  <text x="90" y="471" font-size="13" fill="#2c3e50" stroke="none">观测与SLA</text>
+  <text x="250" y="471" font-size="12" fill="#4d6a79" stroke="none">知道 → 能用</text>
 
-  <!-- Row 5: 安全治理 -->
-  <rect x="60" y="238" width="270" height="30" rx="4" fill="white" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="75" y="258" font-size="11" fill="#2c3e50" stroke="none">安全治理</text>
-  <circle cx="290" cy="253" r="6" fill="#aed6f1" stroke="#3498db" stroke-width="1.5"/>
-  <circle cx="315" cy="253" r="6" fill="white" stroke="#95a5a6" stroke-width="1.5"/>
-  <circle cx="340" cy="253" r="6" fill="white" stroke="#95a5a6" stroke-width="1.5"/>
+  <text x="72" y="536" font-size="12" fill="#5d6d7e" stroke="none">判断标准：不是会不会，而是是否能迁移到真实场景。</text>
 
-  <!-- Row 6: 观测治理 -->
-  <rect x="60" y="271" width="270" height="30" rx="4" fill="white" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="75" y="291" font-size="11" fill="#2c3e50" stroke="none">观测治理</text>
-  <circle cx="290" cy="286" r="6" fill="#aed6f1" stroke="#3498db" stroke-width="1.5"/>
-  <circle cx="315" cy="286" r="6" fill="#fdeaa6" stroke="#f39c12" stroke-width="1.5"/>
-  <circle cx="340" cy="286" r="6" fill="white" stroke="#95a5a6" stroke-width="1.5"/>
+  <path d="M342 316 C382 316, 392 316, 430 316" stroke="#7f8c8d" stroke-width="2.2"/>
+  <path d="M422 308 L438 316 L422 324" fill="#7f8c8d" stroke="none"/>
 
-  <!-- Legend for matrix -->
-  <circle cx="80" cy="320" r="5" fill="#aed6f1" stroke="#3498db" stroke-width="1.5"/>
-  <text x="92" y="324" font-size="10" fill="#7f8c8d" stroke="none">已达成</text>
-  <circle cx="150" cy="320" r="5" fill="#fdeaa6" stroke="#f39c12" stroke-width="1.5"/>
-  <text x="162" y="324" font-size="10" fill="#7f8c8d" stroke="none">进行中</text>
-  <circle cx="210" cy="320" r="5" fill="white" stroke="#95a5a6" stroke-width="1.5"/>
-  <text x="222" y="324" font-size="10" fill="#7f8c8d" stroke="none">未开始</text>
+  <rect x="446" y="138" width="170" height="108" rx="16" fill="#fff8e8" stroke="#d9a441" stroke-width="2"/>
+  <text x="531" y="170" text-anchor="middle" font-size="17" font-weight="bold" fill="#2c3e50" stroke="none">② 判断原则</text>
+  <text x="531" y="198" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">优先选高频、可复用、</text>
+  <text x="531" y="218" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">能看见结果的场景</text>
 
-  <!-- Arrow from matrix to roadmap -->
-  <path d="M335 185 C370 185, 380 160, 400 160" stroke="#7f8c8d" stroke-width="1.5" stroke-dasharray="6,4"/>
-  <polygon points="400,157 408,163 396,167" fill="#7f8c8d" stroke="none"/>
+  <rect x="446" y="272" width="170" height="108" rx="16" fill="#eef8ef" stroke="#63a96f" stroke-width="2"/>
+  <text x="531" y="304" text-anchor="middle" font-size="17" font-weight="bold" fill="#2c3e50" stroke="none">③ 选下一步</text>
+  <text x="531" y="332" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">广度路线：嵌入工作流</text>
+  <text x="531" y="352" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">深度路线：围绕一类能力</text>
 
-  <!-- Right Section: Roadmap -->
-  <text x="580" y="62" text-anchor="middle" font-size="14" font-weight="bold" fill="#34495e" stroke="none">下一阶段行动路线</text>
+  <path d="M531 246 C531 256, 531 262, 531 272" stroke="#7f8c8d" stroke-width="2.2"/>
+  <path d="M523 264 L531 280 L539 264" fill="#7f8c8d" stroke="none"/>
 
-  <!-- Step 1: 盘点 -->
-  <rect x="415" y="78" width="165" height="56" rx="10" fill="#eaf4fb" stroke="#3498db" stroke-width="1.5"/>
-  <text x="497" y="98" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50" stroke="none">① 盘点现状</text>
-  <text x="497" y="116" text-anchor="middle" font-size="10" fill="#5d6d7e" stroke="none">对照矩阵打出等级</text>
-  <text x="497" y="130" text-anchor="middle" font-size="10" fill="#5d6d7e" stroke="none">识别薄弱点与发力点</text>
+  <path d="M618 326 C656 326, 664 326, 700 326" stroke="#7f8c8d" stroke-width="2.2"/>
+  <path d="M692 318 L708 326 L692 334" fill="#7f8c8d" stroke="none"/>
 
-  <!-- Arrow 1→2 -->
-  <path d="M497 137 C497 152, 497 155, 497 162" stroke="#7f8c8d" stroke-width="1.5"/>
-  <polygon points="494,160 497,168 500,160" fill="#7f8c8d" stroke="none"/>
+  <rect x="716" y="116" width="132" height="106" rx="14" fill="#ffffff" stroke="#c4ccd5" stroke-width="1.8"/>
+  <text x="782" y="146" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50" stroke="none">广度路线</text>
+  <text x="782" y="174" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">周报整理</text>
+  <text x="782" y="194" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">资料归档</text>
+  <text x="782" y="214" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">消息通知</text>
 
-  <!-- Step 2: 选路 -->
-  <rect x="415" y="172" width="165" height="56" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
-  <text x="497" y="192" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50" stroke="none">② 选定路径</text>
-  <text x="497" y="210" text-anchor="middle" font-size="10" fill="#5d6d7e" stroke="none">深度路线 / 广度路线</text>
-  <text x="497" y="224" text-anchor="middle" font-size="10" fill="#5d6d7e" stroke="none">锁定第一个交付物</text>
+  <rect x="716" y="246" width="132" height="106" rx="14" fill="#ffffff" stroke="#c4ccd5" stroke-width="1.8"/>
+  <text x="782" y="276" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50" stroke="none">深度路线</text>
+  <text x="782" y="304" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">Skill 体系化</text>
+  <text x="782" y="324" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">Browser 稳定性</text>
+  <text x="782" y="344" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">安全治理</text>
 
-  <!-- Branch arrow to depth -->
-  <path d="M583 200 C610 200, 618 178, 630 178" stroke="#7f8c8d" stroke-width="1.5"/>
-  <polygon points="628,175 636,178 628,181" fill="#7f8c8d" stroke="none"/>
-  <text x="660" y="182" font-size="10" fill="#7f8c8d" stroke="none">深</text>
+  <path d="M782 356 C782 376, 782 392, 782 410" stroke="#7f8c8d" stroke-width="2.2"/>
+  <path d="M774 402 L782 418 L790 402" fill="#7f8c8d" stroke="none"/>
 
-  <!-- Branch arrow to breadth -->
-  <path d="M583 200 C610 200, 618 222, 630 222" stroke="#7f8c8d" stroke-width="1.5"/>
-  <polygon points="628,219 636,222 628,225" fill="#7f8c8d" stroke="none"/>
-  <text x="660" y="226" font-size="10" fill="#7f8c8d" stroke="none">广</text>
+  <rect x="630" y="430" width="218" height="98" rx="16" fill="#f9fbfd" stroke="#94a3b0" stroke-width="2"/>
+  <text x="739" y="462" text-anchor="middle" font-size="17" font-weight="bold" fill="#2c3e50" stroke="none">④ 第一个交付物</text>
+  <text x="739" y="490" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">选 1 个高频任务</text>
+  <text x="739" y="510" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">写清输入、执行、异常、输出</text>
 
-  <!-- Arrow 2→3 -->
-  <path d="M497 231 C497 246, 497 249, 497 256" stroke="#7f8c8d" stroke-width="1.5"/>
-  <polygon points="494,254 497,262 500,254" fill="#7f8c8d" stroke="none"/>
-
-  <!-- Step 3: 落地 -->
-  <rect x="415" y="266" width="165" height="56" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
-  <text x="497" y="286" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50" stroke="none">③ 落地执行</text>
-  <text x="497" y="304" text-anchor="middle" font-size="10" fill="#5d6d7e" stroke="none">挂到日程/看板</text>
-  <text x="497" y="318" text-anchor="middle" font-size="10" fill="#5d6d7e" stroke="none">设里程碑与验收标准</text>
-
-  <!-- Bottom note -->
-  <rect x="415" y="340" width="330" height="40" rx="8" fill="#f8f9fa" stroke="#bdc3c7" stroke-width="1" stroke-dasharray="4,3"/>
-  <text x="580" y="360" text-anchor="middle" font-size="10" fill="#7f8c8d" stroke="none">两个路径可并行：广度找发力点 → 深度构建壁垒</text>
-  <text x="580" y="374" text-anchor="middle" font-size="10" fill="#7f8c8d" stroke="none">30天是起点，不是终点 — 封装Skill才是能力变现</text>
-
-  <!-- Bottom separator line -->
-  <line x1="60" y1="400" x2="760" y2="400" stroke="#ecf0f1" stroke-width="1"/>
-
-  <!-- Key insight box -->
-  <rect x="60" y="415" width="700" height="44" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
-  <text x="80" y="434" font-size="11" font-weight="bold" fill="#d35400" stroke="none">核心认知</text>
-  <text x="80" y="450" font-size="11" fill="#2c3e50" stroke="none">学习投入的计量方式不是"看了多少文档"，而是"减少了多少手动操作"</text>
-
-  <!-- 4-level progression -->
-  <text x="60" y="480" font-size="11" font-weight="bold" fill="#34495e" stroke="none">能力进阶四阶段：</text>
-  <rect x="190" y="466" width="62" height="20" rx="4" fill="#aed6f1" stroke="#3498db" stroke-width="1"/>
-  <text x="221" y="480" text-anchor="middle" font-size="9" fill="#2c3e50" stroke="none">知道</text>
-  <path d="M254 476 C260 476, 262 476, 268 476" stroke="#95a5a6" stroke-width="1"/>
-  <rect x="270" y="466" width="62" height="20" rx="4" fill="#aed6f1" stroke="#3498db" stroke-width="1"/>
-  <text x="301" y="480" text-anchor="middle" font-size="9" fill="#2c3e50" stroke="none">能用</text>
-  <path d="M334 476 C340 476, 342 476, 348 476" stroke="#95a5a6" stroke-width="1"/>
-  <rect x="350" y="466" width="62" height="20" rx="4" fill="#fdeaa6" stroke="#f39c12" stroke-width="1"/>
-  <text x="381" y="480" text-anchor="middle" font-size="9" fill="#2c3e50" stroke="none">讲清</text>
-  <path d="="414" y1="476" x2="420" y2="476" stroke="#95a5a6" stroke-width="1"/>
-  <rect x="430" y="466" width="62" height="20" rx="4" fill="#a3e4b5" stroke="#27ae60" stroke-width="1"/>
-  <text x="461" y="480" text-anchor="middle" font-size="9" fill="#2c3e50" stroke="none">迁移</text>
-
-  <!-- Key outcomes -->
-  <text x="520" y="480" font-size="11" font-weight="bold" fill="#34495e" stroke="none">关键产出：</text>
-  <text x="590" y="480" font-size="11" fill="#2c3e50" stroke="none">可复用 Skill × 1 + 踩坑笔记 × 1</text>
-
-  <!-- Axis note -->
-  <text x="60" y="500" font-size="9" fill="#95a5a6" stroke="none">图示说明：左侧能力矩阵用于自评，右侧行动路线用于落地，两侧联动形成闭环。</text>
-
+  <rect x="58" y="548" width="790" height="34" rx="10" fill="#fff7dc" stroke="#d9a441" stroke-width="1.6"/>
+  <text x="453" y="570" text-anchor="middle" font-size="13" fill="#6b5b2a" stroke="none">一句话：30天学习要落成模板、Skill 与治理规则，才能从“会用”升级成“能持续产出”。</text>
 </svg>
