@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="#f8fafc"/>
+  <text x="60" y="80" font-size="34" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#0f172a" font-weight="700">Skill 不是功能按钮，而是能力单元</text>
+  <text x="60" y="120" font-size="20" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#475569">从“页面功能”升级为“可调用、可复用、可治理”的业务能力</text>
+
+  <rect x="70" y="190" rx="20" ry="20" width="280" height="150" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+  <text x="110" y="250" font-size="28" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#1d4ed8" font-weight="700">页面功能</text>
+  <text x="105" y="295" font-size="18" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#334155">按钮、页面、人工操作</text>
+
+  <rect x="460" y="190" rx="20" ry="20" width="280" height="150" fill="#e0f2fe" stroke="#38bdf8" stroke-width="2"/>
+  <text x="520" y="250" font-size="28" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#0369a1" font-weight="700">业务动作</text>
+  <text x="500" y="295" font-size="18" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#334155">识别高潜会员、推荐商品</text>
+
+  <rect x="850" y="190" rx="20" ry="20" width="280" height="150" fill="#dcfce7" stroke="#4ade80" stroke-width="2"/>
+  <text x="940" y="250" font-size="28" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#15803d" font-weight="700">Skill</text>
+  <text x="890" y="295" font-size="18" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#334155">可调用、可复用、可治理</text>
+
+  <line x1="350" y1="265" x2="460" y2="265" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="740" y1="265" x2="850" y2="265" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="110" y="430" rx="16" ry="16" width="980" height="180" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="150" y="485" font-size="26" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#0f172a" font-weight="700">一个 Skill 至少要说清楚 5 件事</text>
+  <text x="155" y="535" font-size="22" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#334155">1. 解决什么问题</text>
+  <text x="420" y="535" font-size="22" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#334155">2. 谁会用它</text>
+  <text x="635" y="535" font-size="22" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#334155">3. 输入是什么</text>
+  <text x="880" y="535" font-size="22" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#334155">4. 输出是什么</text>
+  <text x="155" y="580" font-size="22" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#334155">5. 成功标准是什么</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b" />
+    </marker>
+  </defs>
+</svg>
