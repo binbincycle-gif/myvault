@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#f8fafc"/>
+  <text x="60" y="80" font-size="34" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#0f172a" font-weight="700">从业务流程中识别值得 Skill 化的环节</text>
+  <text x="60" y="120" font-size="20" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#475569">不是流程里的每一步都该 Skill 化，要优先抓高频、高价值、可复用的动作</text>
+
+  <rect x="90" y="210" rx="18" ry="18" width="180" height="100" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+  <text x="125" y="268" font-size="24" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#1d4ed8" font-weight="700">识别机会</text>
+
+  <rect x="320" y="210" rx="18" ry="18" width="180" height="100" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+  <text x="355" y="268" font-size="24" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#1d4ed8" font-weight="700">做判断</text>
+
+  <rect x="550" y="210" rx="18" ry="18" width="180" height="100" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+  <text x="585" y="268" font-size="24" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#1d4ed8" font-weight="700">执行动作</text>
+
+  <rect x="780" y="210" rx="18" ry="18" width="180" height="100" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+  <text x="815" y="268" font-size="24" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#1d4ed8" font-weight="700">结果反馈</text>
+
+  <line x1="270" y1="260" x2="320" y2="260" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="500" y1="260" x2="550" y2="260" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="730" y1="260" x2="780" y2="260" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="100" y="430" rx="20" ry="20" width="1000" height="220" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="140" y="485" font-size="28" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#0f172a" font-weight="700">优先 Skill 化的判断标准</text>
+  <text x="150" y="540" font-size="22" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#334155">1. 高频：是不是会被反复做</text>
+  <text x="520" y="540" font-size="22" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#334155">2. 高价值：是不是直接影响结果</text>
+  <text x="150" y="590" font-size="22" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#334155">3. 可复用：是不是多个角色都可能用到</text>
+  <text x="520" y="590" font-size="22" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#334155">4. 可标准化：输入输出能否说清楚</text>
+
+  <text x="140" y="685" font-size="24" font-family="Arial, PingFang SC, Microsoft YaHei" fill="#0f172a" font-weight="700">不是所有流程节点都要 Skill 化，最该先做的是“做判断”和“执行动作”之间最关键的能力。</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b" />
+    </marker>
+  </defs>
+</svg>
