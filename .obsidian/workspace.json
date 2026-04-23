@@ -10,7 +10,7 @@
           {
             "id": "fb36f6530803ec48",
             "type": "tabs",
-            "dimension": 78.92518440463647,
+            "dimension": 78.92518440463645,
             "children": [
               {
                 "id": "f73e65a02cadc8ca",
@@ -72,21 +72,31 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "06-Journal/2026年春节后待办事项.md",
+                    "file": "06-Journal/周计划-2026-02-09.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "2026年春节后待办事项"
+                  "title": "周计划-2026-02-09"
+                }
+              },
+              {
+                "id": "d9869cdba2985f65",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {},
+                  "icon": "lucide-git-fork",
+                  "title": "关系图谱"
                 }
               }
             ],
-            "currentTab": 4
+            "currentTab": 5
           },
           {
             "id": "dd7bf5170d614881",
             "type": "tabs",
-            "dimension": 21.074815595363543,
+            "dimension": 21.07481559536354,
             "children": [
               {
                 "id": "d823041dcedf8db7",
@@ -224,7 +234,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 388.5
   },
   "right": {
     "id": "1b2967dce4dc6d17",
@@ -352,11 +362,11 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 786.5
+    "width": 695.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -383,23 +393,26 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "f87355d47cf659d2",
+  "active": "d9869cdba2985f65",
   "lastOpenFiles": [
     "06-Journal/2026年春节后待办事项.md",
-    "02-Areas/团队建设/2026年述职反馈总结与节后计划.md",
+    "07-Meta/知识库索引.md",
     "02-Areas/技术中心管理/公司AI知识中台OKR对齐思考.md",
     "02-Areas/技术中心管理/2025年研发迭代分析与AI代理影响综合报告.md",
+    "01-Projects/README.md",
+    "00-Inbox/README.md",
+    "copilot/memory/Recent Conversations.md",
+    "README.md",
+    "02-Areas/团队建设/2026年述职反馈总结与节后计划.md",
     "02-Areas/AI战略规划/AI全流程闭环与提效规划会议-2026-02-13.md",
     "02-Areas/AI战略规划/Clawdbot (OpenClaw) 趋势分析与下一步建议.md",
     "Clippings/Anthropic新工具出世，软件股一夜崩盘.md",
     "Clippings/现象级爆款Moltbot之父：大公司要用好AI，需要来一次大重构！现在更喜欢Codex，超级私人Agent是反OKR的！要求PR必须附提示词，不看好MCP.md",
     "Clippings/闭门探讨：130位AI创业者，对Clawdbot和下一代AI产品的39条思考.md",
-    "01-Projects/README.md",
     "Clippings/OpenClaw 新手保姆级教程：Mac 一次装好，Telegram 直接开用.md",
     "06-Journal/周计划-2026-02-09.md",
     "Excalidraw/Clawdbot 闭门探讨思维导图.canvas",
     "copilot/copilot-custom-prompts/知识关联生成.md",
-    "07-Meta/知识库索引.md",
     "05-Templates/会议记录模板.md",
     "03-Resources/效率工具/Obsidian学习笔记-第一篇.md",
     "Excalidraw/Drawing 2026-02-06 16.01.34.excalidraw.md",
@@ -409,9 +422,6 @@
     "03-Resources/README.md",
     "06-Journal/README.md",
     "Excalidraw/Drawing 2026-02-05 13.55.16.excalidraw.md",
-    "Excalidraw/Drawing 2026-02-05 13.53.53.excalidraw.md",
-    "Excalidraw/Obsidian生态系统架构图.md",
-    "05-Templates/学习笔记模板.md",
     "03-Resources/效率工具",
     "02-Areas/技术中心管理/规划文档/2026人效提升构想 (2).docx",
     "02-Areas/技术中心管理/规划文档",
