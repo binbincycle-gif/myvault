@@ -1,73 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" style="font-family: 'HanziPen SC', 'Hannotate SC', 'KaiTi', 'STKaiti', 'PingFang SC', sans-serif;">
-  <!-- 审计与脱敏流程 -->
-  <rect x="10" y="10" width="380" height="300" fill="#fafafa" stroke="#333" stroke-width="2" rx="8"/>
-  
-  <!-- 标题 -->
-  <text x="200" y="40" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">审计与脱敏处理流程</text>
-  
-  <!-- 输入节点 -->
-  <rect x="30" y="70" width="100" height="40" fill="#fff" stroke="#2563eb" stroke-width="2" rx="4"/>
-  <text x="80" y="95" text-anchor="middle" font-size="12" fill="#333">原始数据输入</text>
-  
-  <!-- 审计节点 -->
-  <rect x="150" y="70" width="100" height="40" fill="#fff" stroke="#7c3aed" stroke-width="2" rx="4"/>
-  <text x="200" y="95" text-anchor="middle" font-size="12" fill="#333">审计事件采集</text>
-  
-  <!-- 脱敏规则节点 -->
-  <rect x="270" y="70" width="100" height="40" fill="#fff" stroke="#059669" stroke-width="2" rx="4"/>
-  <text x="320" y="95" text-anchor="middle" font-size="12" fill="#333">脱敏规则匹配</text>
-  
-  <!-- 箭头1 -->
-  <path d="M130 90 L150 90" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
-  
-  <!-- 箭头2 -->
-  <path d="M250 90 L270 90" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
-  
-  <!-- 处理节点 -->
-  <rect x="30" y="150" width="100" height="40" fill="#fff" stroke="#2563eb" stroke-width="2" rx="4"/>
-  <text x="80" y="175" text-anchor="middle" font-size="12" fill="#333">日志写入</text>
-  
-  <!-- 存储节点 -->
-  <rect x="150" y="150" width="100" height="40" fill="#fff" stroke="#7c3aed" stroke-width="2" rx="4"/>
-  <text x="200" y="175" text-anchor="middle" font-size="12" fill="#333">安全存储</text>
-  
-  <!-- 脱敏执行节点 -->
-  <rect x="270" y="150" width="100" height="40" fill="#fff" stroke="#059669" stroke-width="2" rx="4"/>
-  <text x="320" y="175" text-anchor="middle" font-size="12" fill="#333">数据脱敏处理</text>
-  
-  <!-- 箭头3 -->
-  <path d="M130 170 L150 170" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
-  
-  <!-- 箭头4 -->
-  <path d="M250 170 L270 170" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
-  
-  <!-- 输出1 -->
-  <rect x="30" y="230" width="100" height="40" fill="#fff" stroke="#7c3aed" stroke-width="2" rx="4"/>
-  <text x="80" y="255" text-anchor="middle" font-size="12" fill="#333">审计日志</text>
-  
-  <!-- 输出2 -->
-  <rect x="150" y="230" width="100" height="40" fill="#fff" stroke="#059669" stroke-width="2" rx="4"/>
-  <text x="200" y="255" text-anchor="middle" font-size="12" fill="#333">脱敏后数据</text>
-  
-  <!-- 查询节点 -->
-  <rect x="270" y="230" width="100" height="40" fill="#fff" stroke="#dc2626" stroke-width="2" rx="4"/>
-  <text x="320" y="255" text-anchor="middle" font-size="12" fill="#333">合规查询</text>
-  
-  <!-- 箭头5 -->
-  <path d="M80 210 L80 230" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
-  <path d="M200 190 L200 210 L200 230" stroke="#333" stroke-width="2" fill="none"/>
-  <path d="M320 210 L320 230" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
-  
-  <!-- 图例 -->
-  <rect x="30" y="285" width="12" height="12" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
-  <text x="48" y="295" font-size="10" fill="#333">审计</text>
-  <rect x="90" y="285" width="12" height="12" fill="#fff" stroke="#059669" stroke-width="2"/>
-  <text x="108" y="295" font-size="10" fill="#333">脱敏</text>
-  
-  <!-- 箭头定义 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" style="font-family: 'HanziPen SC', 'Hannotate SC', 'KaiTi', 'STKaiti', 'PingFang SC', sans-serif;">
   <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L1,11 L10,6 z" fill="#334155"/>
     </marker>
+    <filter id="roughen" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" seed="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.5"/>
+    </filter>
   </defs>
+
+  <rect x="16" y="16" width="868" height="488" rx="18" fill="#fffdf8" stroke="#1f2937" stroke-width="2.5" filter="url(#roughen)"/>
+  <text x="450" y="54" text-anchor="middle" font-size="28" fill="#111827" font-weight="700">审计与脱敏双闭环</text>
+  <text x="450" y="84" text-anchor="middle" font-size="16" fill="#475569">目标：既能追责，也不把敏感信息带出系统</text>
+
+  <rect x="48" y="128" width="210" height="250" rx="18" fill="#eef6ff" stroke="#2563eb" stroke-width="2.2" filter="url(#roughen)"/>
+  <text x="153" y="160" text-anchor="middle" font-size="24" fill="#1e3a8a" font-weight="700">1. 输入阶段</text>
+  <rect x="74" y="184" width="158" height="50" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="153" y="214" text-anchor="middle" font-size="18" fill="#334155">用户请求 / 工具结果</text>
+  <rect x="74" y="254" width="158" height="50" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="153" y="284" text-anchor="middle" font-size="18" fill="#334155">识别敏感字段</text>
+  <rect x="74" y="324" width="158" height="50" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="153" y="354" text-anchor="middle" font-size="18" fill="#334155">标记风险级别</text>
+
+  <rect x="344" y="128" width="210" height="250" rx="18" fill="#f7f0ff" stroke="#7c3aed" stroke-width="2.2" filter="url(#roughen)"/>
+  <text x="449" y="160" text-anchor="middle" font-size="24" fill="#5b21b6" font-weight="700">2. 审计链路</text>
+  <rect x="370" y="184" width="158" height="50" rx="12" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="449" y="214" text-anchor="middle" font-size="18" fill="#334155">记录人 / 时间 / 动作</text>
+  <rect x="370" y="254" width="158" height="50" rx="12" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="449" y="284" text-anchor="middle" font-size="18" fill="#334155">写入结构化日志</text>
+  <rect x="370" y="324" width="158" height="50" rx="12" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="449" y="354" text-anchor="middle" font-size="18" fill="#334155">支持回放与追责</text>
+
+  <rect x="640" y="128" width="210" height="250" rx="18" fill="#ecfdf5" stroke="#059669" stroke-width="2.2" filter="url(#roughen)"/>
+  <text x="745" y="160" text-anchor="middle" font-size="24" fill="#065f46" font-weight="700">3. 脱敏链路</text>
+  <rect x="666" y="184" width="158" height="50" rx="12" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+  <text x="745" y="214" text-anchor="middle" font-size="18" fill="#334155">规则匹配</text>
+  <rect x="666" y="254" width="158" height="50" rx="12" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+  <text x="745" y="284" text-anchor="middle" font-size="18" fill="#334155">替换 / 截断 / 打码</text>
+  <rect x="666" y="324" width="158" height="50" rx="12" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+  <text x="745" y="354" text-anchor="middle" font-size="18" fill="#334155">安全返回或外发</text>
+
+  <path d="M258 209 C300 209, 312 209, 344 209" fill="none" stroke="#334155" stroke-width="2.4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M258 279 C300 279, 312 279, 344 279" fill="none" stroke="#334155" stroke-width="2.4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M554 209 C596 209, 608 209, 640 209" fill="none" stroke="#334155" stroke-width="2.4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M554 279 C596 279, 608 279, 640 279" fill="none" stroke="#334155" stroke-width="2.4" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <path d="M449 378 C449 418, 745 418, 745 378" fill="none" stroke="#334155" stroke-width="2.4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="598" y="408" text-anchor="middle" font-size="16" fill="#475569">审计记录可证明“做过什么”，脱敏结果控制“能看到什么”</text>
+
+  <rect x="112" y="430" width="676" height="46" rx="12" fill="#fff7ed" stroke="#ea580c" stroke-width="2" filter="url(#roughen)"/>
+  <text x="450" y="459" text-anchor="middle" font-size="19" fill="#9a3412">管理口径：没有审计，问题无法追责；没有脱敏，自动化越强泄露风险越高</text>
 </svg>
