@@ -1,48 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620">
-  <rect width="100%" height="100%" fill="#fcfbf7"/>
-  <g stroke="#2f2f2f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M70 70 Q72 62 82 60 H238 Q248 62 250 72 V148 Q248 158 238 160 H82 Q72 158 70 148 Z"/>
-    <path d="M300 70 Q302 62 312 60 H488 Q498 62 500 72 V148 Q498 158 488 160 H312 Q302 158 300 148 Z"/>
-    <path d="M550 70 Q552 62 562 60 H738 Q748 62 750 72 V148 Q748 158 738 160 H562 Q552 158 550 148 Z"/>
-    <path d="M70 250 Q72 242 82 240 H238 Q248 242 250 252 V328 Q248 338 238 340 H82 Q72 338 70 328 Z"/>
-    <path d="M300 250 Q302 242 312 240 H488 Q498 242 500 252 V328 Q498 338 488 340 H312 Q302 338 300 328 Z"/>
-    <path d="M550 250 Q552 242 562 240 H738 Q748 242 750 252 V328 Q748 338 738 340 H562 Q552 338 550 328 Z"/>
-    <path d="M300 430 Q302 422 312 420 H488 Q498 422 500 432 V508 Q498 518 488 520 H312 Q302 518 300 508 Z"/>
-    <path d="M250 110 C270 108 280 108 300 110"/>
-    <path d="M500 110 C520 108 530 108 550 110"/>
-    <path d="M160 160 C160 198 160 210 160 240"/>
-    <path d="M390 160 C390 198 390 210 390 240"/>
-    <path d="M650 160 C650 198 650 210 650 240"/>
-    <path d="M250 290 C270 288 280 288 300 290"/>
-    <path d="M500 290 C520 288 530 288 550 290"/>
-    <path d="M390 340 C390 378 390 390 390 420"/>
-    <path d="M294 104 L300 110 L294 116"/>
-    <path d="M544 104 L550 110 L544 116"/>
-    <path d="M154 234 L160 240 L166 234"/>
-    <path d="M384 234 L390 240 L396 234"/>
-    <path d="M644 234 L650 240 L656 234"/>
-    <path d="M294 284 L300 290 L294 296"/>
-    <path d="M544 284 L550 290 L544 296"/>
-    <path d="M384 414 L390 420 L396 414"/>
-  </g>
-  <g font-family="HanziPen SC, Hannotate SC, KaiTi, STKaiti, PingFang SC, sans-serif" fill="#1f1f1f">
-    <text x="160" y="98" text-anchor="middle" font-size="28">用户目标</text>
-    <text x="160" y="130" text-anchor="middle" font-size="20">打开网页 / 点按钮</text>
-    <text x="400" y="98" text-anchor="middle" font-size="28">Browser 工具</text>
-    <text x="400" y="130" text-anchor="middle" font-size="20">open · snapshot · act</text>
-    <text x="650" y="98" text-anchor="middle" font-size="28">页面状态快照</text>
-    <text x="650" y="130" text-anchor="middle" font-size="20">读取结构，不靠猜坐标</text>
-    <text x="160" y="278" text-anchor="middle" font-size="28">定位元素</text>
-    <text x="160" y="310" text-anchor="middle" font-size="20">role / aria ref</text>
-    <text x="400" y="278" text-anchor="middle" font-size="28">执行动作</text>
-    <text x="400" y="310" text-anchor="middle" font-size="20">点击 / 输入 / 选择</text>
-    <text x="650" y="278" text-anchor="middle" font-size="28">校验结果</text>
-    <text x="650" y="310" text-anchor="middle" font-size="20">成功页 / 提示文案 / 数据变化</text>
-    <text x="400" y="458" text-anchor="middle" font-size="28">失败处理</text>
-    <text x="400" y="490" text-anchor="middle" font-size="20">重取快照 → 重定位 → 降级方案</text>
-    <text x="812" y="120" font-size="22">关键原则</text>
-    <text x="812" y="158" font-size="18">• 先看页面结构，再动作</text>
-    <text x="812" y="190" font-size="18">• 每一步都要可验证</text>
-    <text x="812" y="222" font-size="18">• 少用盲等，多用状态判断</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720">
+  <rect width="960" height="720" fill="#fcfbf7"/>
+  <style>
+    .title { font: 700 28px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#222; }
+    .label { font: 600 20px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#222; }
+    .text { font: 16px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#333; }
+    .box { fill:#fffdf8; stroke:#2f2f2f; stroke-width:3; rx:18; ry:18; }
+    .line { stroke:#2f2f2f; stroke-width:3; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+    .dash { stroke:#666; stroke-width:2.5; fill:none; stroke-dasharray:8 8; stroke-linecap:round; }
+  </style>
+
+  <text x="52" y="56" class="title">Day15 Browser 自动化基础闭环</text>
+
+  <rect x="60" y="100" width="230" height="124" class="box"/>
+  <text x="92" y="138" class="label">1. 理解页面</text>
+  <text x="92" y="170" class="text">• 打开目标页面</text>
+  <text x="92" y="196" class="text">• 获取 snapshot</text>
+  <text x="92" y="222" class="text">• 识别按钮/输入框/列表</text>
+
+  <rect x="366" y="100" width="230" height="124" class="box"/>
+  <text x="398" y="138" class="label">2. 执行动作</text>
+  <text x="398" y="170" class="text">• click / type / select</text>
+  <text x="398" y="196" class="text">• 基于 ref 操作元素</text>
+  <text x="398" y="222" class="text">• 避免盲点与硬等待</text>
+
+  <rect x="672" y="100" width="230" height="124" class="box"/>
+  <text x="704" y="138" class="label">3. 校验结果</text>
+  <text x="704" y="170" class="text">• 页面是否跳转</text>
+  <text x="704" y="196" class="text">• 提示是否出现</text>
+  <text x="704" y="222" class="text">• 列表/状态是否刷新</text>
+
+  <path d="M292 162 C320 150, 336 150, 364 162" class="line"/>
+  <path d="M354 152 L364 162 L353 171" class="line"/>
+  <path d="M598 162 C626 150, 642 150, 670 162" class="line"/>
+  <path d="M660 152 L670 162 L659 171" class="line"/>
+
+  <rect x="88" y="306" width="320" height="168" class="box"/>
+  <text x="120" y="346" class="label">Browser 的稳定性关键</text>
+  <text x="120" y="382" class="text">• 先看结构，再动手</text>
+  <text x="120" y="410" class="text">• 等待状态，不等待运气</text>
+  <text x="120" y="438" class="text">• 动作后必须有结果证据</text>
+
+  <rect x="552" y="306" width="320" height="168" class="box"/>
+  <text x="584" y="346" class="label">常见失败恢复</text>
+  <text x="584" y="382" class="text">• 元素没找到 → 重取 snapshot</text>
+  <text x="584" y="410" class="text">• 页面被挡住 → 先处理弹窗</text>
+  <text x="584" y="438" class="text">• 登录态失效 → 人工接管</text>
+
+  <path d="M408 390 C448 390, 504 390, 550 390" class="dash"/>
+  <path d="M540 381 L550 390 L540 399" class="line"/>
+
+  <rect x="214" y="540" width="532" height="110" class="box"/>
+  <text x="248" y="582" class="label">一句话</text>
+  <text x="248" y="616" class="text">Browser 自动化不是录鼠标，而是把“页面理解 → 动作执行 → 结果校验 → 失败回退”做成流程。</text>
+
+  <path d="M784 228 C842 266, 860 314, 842 376 C826 432, 780 474, 720 506" class="line"/>
+  <path d="M725 496 L720 506 L731 507" class="line"/>
+  <path d="M240 506 C170 474, 128 430, 118 372 C108 310, 132 252, 182 224" class="line"/>
+  <path d="M177 235 L182 224 L171 225" class="line"/>
 </svg>
