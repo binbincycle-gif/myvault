@@ -1,0 +1,59 @@
+<svg width="960" height="720" viewBox="0 0 960 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #fcfbf7; }
+      .line { stroke: #2f2a24; stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .box { fill: #fffdf8; stroke: #2f2a24; stroke-width: 3; }
+      .title { font-family: "HanziPen SC", "Hannotate SC", "KaiTi", "STKaiti", "PingFang SC", sans-serif; font-size: 28px; fill: #2f2a24; }
+      .text { font-family: "HanziPen SC", "Hannotate SC", "KaiTi", "STKaiti", "PingFang SC", sans-serif; font-size: 22px; fill: #2f2a24; }
+      .small { font-family: "HanziPen SC", "Hannotate SC", "KaiTi", "STKaiti", "PingFang SC", sans-serif; font-size: 18px; fill: #2f2a24; }
+      .note { fill: #f4efe2; stroke: #2f2a24; stroke-width: 2.5; }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L10,6 L1,11" class="line" />
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="720" class="bg"/>
+  <text x="480" y="58" text-anchor="middle" class="title">Day16｜网页抓取的结构化提取闭环</text>
+
+  <rect x="70" y="110" rx="24" ry="24" width="220" height="110" class="box"/>
+  <text x="180" y="155" text-anchor="middle" class="text">网页入口</text>
+  <text x="180" y="188" text-anchor="middle" class="small">URL / 列表页 / 登录后页面</text>
+
+  <rect x="370" y="110" rx="24" ry="24" width="220" height="110" class="box"/>
+  <text x="480" y="155" text-anchor="middle" class="text">读取页面</text>
+  <text x="480" y="188" text-anchor="middle" class="small">snapshot / fetch / browser</text>
+
+  <rect x="670" y="110" rx="24" ry="24" width="220" height="110" class="box"/>
+  <text x="780" y="155" text-anchor="middle" class="text">提取字段</text>
+  <text x="780" y="188" text-anchor="middle" class="small">标题、时间、价格、状态</text>
+
+  <rect x="120" y="320" rx="24" ry="24" width="260" height="120" class="box"/>
+  <text x="250" y="368" text-anchor="middle" class="text">结构化校验</text>
+  <text x="250" y="402" text-anchor="middle" class="small">字段是否齐全</text>
+  <text x="250" y="430" text-anchor="middle" class="small">格式是否统一</text>
+
+  <rect x="420" y="320" rx="24" ry="24" width="260" height="120" class="box"/>
+  <text x="550" y="368" text-anchor="middle" class="text">去噪与标准化</text>
+  <text x="550" y="402" text-anchor="middle" class="small">去广告、去导航、统一单位</text>
+  <text x="550" y="430" text-anchor="middle" class="small">补充来源与时间戳</text>
+
+  <rect x="720" y="320" rx="24" ry="24" width="170" height="120" class="box"/>
+  <text x="805" y="368" text-anchor="middle" class="text">结果输出</text>
+  <text x="805" y="402" text-anchor="middle" class="small">表格 / JSON / 摘要</text>
+
+  <rect x="320" y="530" rx="24" ry="24" width="320" height="110" class="note"/>
+  <text x="480" y="575" text-anchor="middle" class="text">关键原则</text>
+  <text x="480" y="608" text-anchor="middle" class="small">先定义字段，再抓页面；先校验，再下游使用</text>
+
+  <path d="M290 165 C320 165, 335 165, 370 165" class="line" marker-end="url(#arrow)"/>
+  <path d="M590 165 C620 165, 640 165, 670 165" class="line" marker-end="url(#arrow)"/>
+  <path d="M780 220 C780 260, 730 290, 640 320" class="line" marker-end="url(#arrow)"/>
+  <path d="M670 380 C690 380, 705 380, 720 380" class="line" marker-end="url(#arrow)"/>
+  <path d="M420 380 C405 380, 395 380, 380 380" class="line" marker-end="url(#arrow)"/>
+  <path d="M250 440 C250 500, 330 520, 400 530" class="line" marker-end="url(#arrow)"/>
+
+  <text x="110" y="268" class="small">网页只是原料，不是结果</text>
+  <text x="640" y="268" class="small">字段定义清楚，后续复用才稳</text>
+</svg>

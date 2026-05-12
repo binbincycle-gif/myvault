@@ -1,0 +1,94 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg{fill:#fffdfa}
+      .title{font:700 56px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#111}
+      .text{font:600 32px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#111}
+      .sub{font:500 26px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#555}
+      .label{font:500 22px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#666}
+      .cloud{fill:none;stroke:#4f7fd9;stroke-width:4;stroke-dasharray:8 10}
+      .box{fill:#fff;stroke:#222;stroke-width:4}
+      .box2{fill:#f5f5f5;stroke:#333;stroke-width:3}
+      .arr{stroke:#3b6fd0;stroke-width:4;fill:none;marker-end:url(#a);stroke-linecap:round;stroke-linejoin:round}
+      .arr2{stroke:#e57373;stroke-width:3;fill:none;marker-end:url(#a);stroke-linecap:round;stroke-linejoin:round}
+      .highlight{fill:#fff3e0;stroke:#ff9800;stroke-width:4}
+    </style>
+    <marker id="a" markerWidth="5" markerHeight="5" refX="4.2" refY="2.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0.5,0.5 L4.2,2.5 L0.5,4.5" fill="none" stroke="#3b6fd0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="800"/>
+
+  <!-- 标题 -->
+  <text class="title" x="600" y="65" text-anchor="middle">可观测性：日志 状态 追踪</text>
+
+  <!-- 用户层 -->
+  <rect class="box" x="450" y="100" width="300" height="60" rx="10"/>
+  <text class="text" x="600" y="145" text-anchor="middle">用户输入任务</text>
+
+  <!-- 箭头向下 -->
+  <path class="arr" d="M600,160 L600,190"/>
+
+  <!-- Agent 核心处理 -->
+  <rect class="box" x="350" y="200" width="500" height="180" rx="12"/>
+  <text class="text" x="600" y="235" text-anchor="middle">OpenClaw Agent 核心</text>
+  
+  <rect class="box2" x="370" y="255" width="140" height="50" rx="6"/>
+  <text class="label" x="440" y="290" text-anchor="middle">接收任务</text>
+  
+  <rect class="box2" x="530" y="255" width="140" height="50" rx="6"/>
+  <text class="label" x="600" y="290" text-anchor="middle">Plan规划</text>
+  
+  <rect class="box2" x="690" y="255" width="140" height="50" rx="6"/>
+  <text class="label" x="760" y="290" text-anchor="middle">Tool调用</text>
+  
+  <rect class="box2" x="370" y="320" width="140" height="50" rx="6"/>
+  <text class="label" x="440" y="355" text-anchor="middle">Execute</text>
+  
+  <rect class="box2" x="530" y="320" width="140" height="50" rx="6"/>
+  <text class="label" x="600" y="355" text-anchor="middle">错误处理</text>
+  
+  <rect class="box2" x="690" y="320" width="140" height="50" rx="6"/>
+  <text class="label" x="760" y="355" text-anchor="middle">返回结果</text>
+
+  <!-- 箭头向下到可观测性 -->
+  <path class="arr" d="M600,380 L600,410"/>
+  <path class="arr2" d="M450,380 L300,410"/>
+  <path class="arr2" d="M750,380 L900,410"/>
+
+  <!-- 可观测性三大件 -->
+  <rect class="box" x="80" y="420" width="280" height="280" rx="15" fill="#f8fdf8" stroke="#4caf50" stroke-width="4"/>
+  <text class="text" x="220" y="465" text-anchor="middle" fill="#2e7d32">可观测性</text>
+  
+  <rect class="box2" x="100" y="490" width="240" height="55" rx="8"/>
+  <text class="label" x="220" y="528" text-anchor="middle">📝 结构化日志</text>
+  
+  <rect class="box2" x="100" y="555" width="240" height="55" rx="8"/>
+  <text class="label" x="220" y="593" text-anchor="middle">🔄 状态追踪</text>
+  
+  <rect class="box2" x="100" y="620" width="240" height="55" rx="8"/>
+  <text class="label" x="220" y="658" text-anchor="middle">🔍 分布式追踪</text>
+
+  <!-- 存储与分析 -->
+  <rect class="box" x="840" y="420" width="280" height="280" rx="15" fill="#fdf8f8" stroke="#e91e63" stroke-width="4"/>
+  <text class="text" x="980" y="465" text-anchor="middle" fill="#c2185b">存储与分析</text>
+  
+  <rect class="box2" x="860" y="490" width="240" height="55" rx="8"/>
+  <text class="label" x="980" y="528" text-anchor="middle">💾 本地存储</text>
+  
+  <rect class="box2" x="860" y="555" width="240" height="55" rx="8"/>
+  <text class="label" x="980" y="593" text-anchor="middle">📊 Dashboard</text>
+  
+  <rect class="box2" x="860" y="620" width="240" height="55" rx="8"/>
+  <text class="label" x="980" y="658" text-anchor="middle">⚠️ 告警通知</text>
+
+  <!-- 底部标注 -->
+  <rect class="highlight" x="150" y="730" width="900" height="55" rx="10"/>
+  <text class="sub" x="600" y="770" text-anchor="middle">关键价值：问题排查快 60%+ · 成本可量化 · 合规可追溯</text>
+
+  <!-- 连接线细节 -->
+  <path class="arr" d="M300,560 L80,560 L80,500" stroke-dasharray="6 6"/>
+  <path class="arr" d="M900,560 L1120,560 L1120,500" stroke-dasharray="6 6"/>
+
+</svg>

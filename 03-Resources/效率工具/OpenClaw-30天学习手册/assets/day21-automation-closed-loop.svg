@@ -1,0 +1,73 @@
+<svg width="900" height="620" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L10,6 L1,11" fill="none" stroke="#2F4858" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .txt{font-family:"HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif;fill:#1F2937}
+      .title{font-size:28px;font-weight:700}
+      .label{font-size:22px;font-weight:600}
+      .small{font-size:18px}
+      .box{fill:#FFFDF7;stroke:#2F4858;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .flow{fill:none;stroke:#2F4858;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+      .back{fill:none;stroke:#5B6C7A;stroke-width:2.5;stroke-dasharray:8 8;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+    </style>
+  </defs>
+
+  <rect x="18" y="18" width="864" height="584" rx="26" fill="#FFFFFF" stroke="#D6D3D1" stroke-width="2"/>
+  <text x="60" y="64" class="txt title">Week3 自动化闭环验收</text>
+  <text x="60" y="96" class="txt small">重点：不是只跑通，而是可交付、可治理、可复用</text>
+
+  <rect class="box" x="44" y="148" width="130" height="82" rx="18"/>
+  <text x="86" y="183" class="txt label">需求</text>
+  <text x="72" y="210" class="txt small">输入 / 约束</text>
+
+  <rect class="box" x="214" y="148" width="130" height="82" rx="18"/>
+  <text x="256" y="183" class="txt label">执行</text>
+  <text x="239" y="210" class="txt small">Browser / Tool</text>
+
+  <rect class="box" x="384" y="148" width="130" height="82" rx="18"/>
+  <text x="426" y="183" class="txt label">提取</text>
+  <text x="404" y="210" class="txt small">结构化结果</text>
+
+  <rect class="box" x="554" y="148" width="130" height="82" rx="18"/>
+  <text x="596" y="183" class="txt label">校验</text>
+  <text x="584" y="210" class="txt small">成功 / 异常</text>
+
+  <rect class="box" x="724" y="148" width="130" height="82" rx="18"/>
+  <text x="766" y="183" class="txt label">交付</text>
+  <text x="746" y="210" class="txt small">消息 / 文件 / 报表</text>
+
+  <path class="flow" d="M174 189 C190 189, 198 189, 214 189"/>
+  <path class="flow" d="M344 189 C360 189, 368 189, 384 189"/>
+  <path class="flow" d="M514 189 C530 189, 538 189, 554 189"/>
+  <path class="flow" d="M684 189 C700 189, 708 189, 724 189"/>
+
+  <rect class="box" x="96" y="328" width="180" height="86" rx="18"/>
+  <text x="145" y="364" class="txt label">可观测</text>
+  <text x="126" y="392" class="txt small">日志 / 截图 / 状态</text>
+
+  <rect class="box" x="358" y="328" width="180" height="86" rx="18"/>
+  <text x="407" y="364" class="txt label">可恢复</text>
+  <text x="386" y="392" class="txt small">重试 / 降级 / 熔断</text>
+
+  <rect class="box" x="620" y="328" width="180" height="86" rx="18"/>
+  <text x="669" y="364" class="txt label">可度量</text>
+  <text x="649" y="392" class="txt small">耗时 / 成本 / 成功率</text>
+
+  <path class="back" d="M619 230 C619 270, 468 282, 448 328"/>
+  <path class="back" d="M444 414 C430 450, 300 456, 186 414"/>
+  <path class="back" d="M186 328 C190 274, 276 252, 449 248"/>
+
+  <path class="back" d="M792 230 C816 254, 822 286, 776 328"/>
+  <path class="back" d="M710 414 C706 454, 658 484, 570 500"/>
+  <path class="back" d="M570 500 C424 526, 250 506, 154 446"/>
+  <path class="back" d="M154 446 C86 404, 58 330, 74 250"/>
+  <path class="back" d="M74 250 C96 218, 112 204, 174 196"/>
+
+  <rect class="box" x="292" y="470" width="314" height="84" rx="18"/>
+  <text x="371" y="505" class="txt label">管理判断</text>
+  <text x="329" y="534" class="txt small">值不值得做大规模推广？</text>
+
+  <text x="57" y="586" class="txt small">判断标准：能稳定跑、出了错能处理、结果能复用、成本能算清</text>
+</svg>

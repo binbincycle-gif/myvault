@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&amp;display=swap');
+      .label { font-family: 'Noto Sans SC', 'PingFang SC', 'HanziPen SC', 'Hannotate SC', 'KaiTi', 'STKaiti', sans-serif; font-size: 11px; }
+      .title { font-family: 'Noto Sans SC', 'PingFang SC', 'HanziPen SC', 'Hannotate SC', 'KaiTi', 'STKaiti', sans-serif; font-size: 13px; font-weight: 500; }
+      .box { fill: #fafafa; stroke: #333; stroke-width: 1.5; rx: 4; }
+      .arrow { stroke: #333; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+      .success { fill: #e6f7ed; stroke: #1e7e34; }
+      .fail { fill: #ffe6e6; stroke: #c00; }
+      .retry { fill: #fff8e6; stroke: #f5a623; }
+      .start { fill: #e3f2fd; stroke: #1565c0; }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="200" y="22" text-anchor="middle" class="title">幂等·超时·重试流程</text>
+  
+  <!-- 开始节点 -->
+  <rect x="150" y="35" width="100" height="28" class="box start" />
+  <text x="200" y="54" text-anchor="middle" class="label">任务触发</text>
+  
+  <!-- 箭头向下 -->
+  <path d="M200,63 L200,78" class="arrow"/>
+  
+  <!-- 检查幂等键 -->
+  <rect x="125" y="82" width="150" height="32" class="box" />
+  <text x="200" y="98" text-anchor="middle" class="label">检查幂等键</text>
+  <text x="200" y="108" text-anchor="middle" class="label" fill="#666" font-size="9">order_id 存在？</text>
+  
+  <!-- 分支：已存在 -->
+  <path d="M200,114 L200,125" class="arrow"/>
+  <rect x="30" y="129" width="80" height="26" class="box success" />
+  <text x="70" y="147" text-anchor="middle" class="label">已存在→返回缓存</text>
+  
+  <!-- 分支：不存在 -->
+  <path d="M275,129 L340,129 L340,150" class="arrow"/>
+  <path d="M340,150 L290,150" class="arrow"/>
+  <rect x="230" y="154" width="150" height="32" class="box" />
+  <text x="305" y="170" text-anchor="middle" class="label">执行核心逻辑</text>
+  <text x="305" y="180" text-anchor="middle" class="label" fill="#666" font-size="9">调用 API / 处理数据</text>
+  
+  <!-- 执行结果 -->
+  <path d="M305,186 L305,205" class="arrow"/>
+  <rect x="245" y="209" width="120" height="32" class="box" />
+  <text x="305" y="225" text-anchor="middle" class="label">执行结果</text>
+  <text x="305" y="235" text-anchor="middle" class="label" fill="#666" font-size="9">成功 / 失败</text>
+  
+  <!-- 成功分支 -->
+  <path d="M305,241 L305,252" class="arrow"/>
+  <rect x="245" y="256" width="120" height="26" class="box success" />
+  <text x="305" y="274" text-anchor="middle" class="label">✓ 成功 → 记录幂等键</text>
+  
+  <!-- 失败分支 -->
+  <path d="M365,225 L390,225 L390,260 L315,260" class="arrow"/>
+  <rect x="230" y="290" width="150" height="36" class="box retry" />
+  <text x="305" y="306" text-anchor="middle" class="label">失败 → 检查是否重试</text>
+  <text x="305" y="318" text-anchor="middle" class="label" fill="#666" font-size="9">可重试错误？次数&lt;3？</text>
+  
+  <!-- 可重试 -->
+  <path d="M305,326 L305,340" class="arrow"/>
+  <rect x="245" y="344" width="120" height="36" class="box retry" />
+  <text x="305" y="358" text-anchor="middle" class="label">可重试</text>
+  <text x="305" y="370" text-anchor="middle" class="label" fill="#666" font-size="9">等待 1s→2s→4s...</text>
+  
+  <!-- 循环回去 -->
+  <path d="M245,362 L220,362 L220,340 L215,340" class="arrow"/>
+  <path d="M215,340 L215,150" class="arrow"/>
+  <path d="M215,150 L225,150" class="arrow"/>
+  
+  <!-- 不可重试 -->
+  <path d="M380,308 L390,308 L390,380 L305,380" class="arrow"/>
+  <rect x="245" y="384" width="120" height="26" class="box fail" />
+  <text x="305" y="402" text-anchor="middle" class="label">✗ 不可重试 → 报错</text>
+  
+  <!-- 结束节点 -->
+  <path d="M305,410 L305,425" class="arrow"/>
+  <rect x="245" y="429" width="120" height="26" class="box success" />
+  <text x="305" y="447" text-anchor="middle" class="label">返回结果</text>
+  
+  <!-- 重试次数耗尽 -->
+  <rect x="230" y="454" width="150" height="32" class="box fail" />
+  <text x="305" y="470" text-anchor="middle" class="label">重试耗尽 → 报错</text>
+  <path d="M305,454 L305,442" class="arrow"/>
+  
+  <!-- 底部说明 -->
+  <rect x="20" y="492" width="360" height="22" fill="#f5f5f5" rx="3"/>
+  <text x="30" y="508" class="label" fill="#666" font-size="9">幂等键：相同 ID 只执行一次 | 超时：等待太久则放弃 | 重试：失败后等间隔再试</text>
+</svg>

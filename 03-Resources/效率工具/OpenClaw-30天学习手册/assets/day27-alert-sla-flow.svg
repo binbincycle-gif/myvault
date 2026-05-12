@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 980">
+  <defs>
+    <style>
+      .bg { fill: #fcfbf7; }
+      .line { fill: none; stroke: #2f2f2f; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .box { fill: #fffdf8; stroke: #2f2f2f; stroke-width: 3; rx: 22; ry: 22; }
+      .note { fill: #fff7d6; stroke: #2f2f2f; stroke-width: 3; rx: 20; ry: 20; }
+      .title { font: 700 28px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #222; }
+      .h2 { font: 700 22px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #222; }
+      .txt { font: 18px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #222; }
+      .small { font: 16px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #222; }
+      .muted { fill: #666; }
+      .blue { fill: #e8f3ff; }
+      .green { fill: #e9f8ea; }
+      .pink { fill: #fdecef; }
+      .purple { fill: #f2ecff; }
+      .orange { fill: #fff0df; }
+      .gray { fill: #f3f3f3; }
+    </style>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L11,7 L1,13" class="line"/>
+    </marker>
+  </defs>
+
+  <rect width="720" height="980" class="bg"/>
+
+  <text x="360" y="52" text-anchor="middle" class="title">Day27 告警机制与 SLA 口径</text>
+  <text x="360" y="84" text-anchor="middle" class="small muted">从信号采集到升级闭环，再回到月度服务承诺</text>
+
+  <rect x="80" y="120" width="560" height="100" class="box blue"/>
+  <text x="360" y="158" text-anchor="middle" class="h2">1. 指标采集</text>
+  <text x="360" y="188" text-anchor="middle" class="txt">成功率、响应时长、错误率、任务失败数</text>
+
+  <path d="M360 220 C360 245,360 250,360 275" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="80" y="280" width="560" height="120" class="box green"/>
+  <text x="360" y="320" text-anchor="middle" class="h2">2. 规则判断</text>
+  <text x="360" y="350" text-anchor="middle" class="txt">阈值 + 时间窗口 + 持续性条件</text>
+  <text x="360" y="378" text-anchor="middle" class="small muted">例：5 分钟错误率 &gt; 2%，连续 3 次仍异常</text>
+
+  <path d="M360 400 C360 425,360 430,360 455" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="80" y="460" width="560" height="120" class="box pink"/>
+  <text x="360" y="500" text-anchor="middle" class="h2">3. 分级与路由</text>
+  <text x="360" y="530" text-anchor="middle" class="txt">P0 / P1 / P2 / P3 对应不同响应承诺</text>
+  <text x="360" y="558" text-anchor="middle" class="small muted">不是所有异常都要最高优先级打人</text>
+
+  <path d="M360 580 C360 605,360 610,360 635" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="80" y="640" width="560" height="120" class="box purple"/>
+  <text x="360" y="680" text-anchor="middle" class="h2">4. 通知与升级</text>
+  <text x="360" y="710" text-anchor="middle" class="txt">值班人接手，超时未处理则自动升级</text>
+  <text x="360" y="738" text-anchor="middle" class="small muted">消息、工单、群通知都要指向明确 owner</text>
+
+  <path d="M360 760 C360 785,360 790,360 815" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="80" y="820" width="560" height="110" class="box orange"/>
+  <text x="360" y="860" text-anchor="middle" class="h2">5. 事件记录与 SLA 复盘</text>
+  <text x="360" y="890" text-anchor="middle" class="txt">记录触发、恢复、影响范围，再汇总月度可用性</text>
+
+  <rect x="36" y="302" width="160" height="90" class="note"/>
+  <text x="116" y="334" text-anchor="middle" class="txt">降噪规则</text>
+  <text x="116" y="362" text-anchor="middle" class="small">聚合</text>
+  <text x="116" y="384" text-anchor="middle" class="small">抑制</text>
+  <path d="M196 347 C228 345,238 345,260 344" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="524" y="302" width="160" height="90" class="note"/>
+  <text x="604" y="334" text-anchor="middle" class="txt">业务校验</text>
+  <text x="604" y="362" text-anchor="middle" class="small">不能只看 CPU</text>
+  <text x="604" y="384" text-anchor="middle" class="small">还要看关键链路</text>
+  <path d="M524 347 C492 345,482 345,460 344" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="44" y="848" width="200" height="88" class="note gray"/>
+  <text x="144" y="880" text-anchor="middle" class="txt">SLA 口径至少定义</text>
+  <text x="144" y="906" text-anchor="middle" class="small">统计对象 / 时间 / 可用性 / 排除项</text>
+
+  <rect x="476" y="848" width="200" height="88" class="note gray"/>
+  <text x="576" y="880" text-anchor="middle" class="txt">管理者真正看的是</text>
+  <text x="576" y="906" text-anchor="middle" class="small">多久发现、多久恢复、是否反复发生</text>
+</svg>

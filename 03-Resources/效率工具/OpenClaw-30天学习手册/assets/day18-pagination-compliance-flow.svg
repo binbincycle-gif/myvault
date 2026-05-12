@@ -1,0 +1,73 @@
+<svg width="960" height="640" viewBox="0 0 960 640" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="640" fill="#fcfbf7"/>
+  <style>
+    .title { font: 700 28px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#222; }
+    .label { font: 600 20px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#222; }
+    .small { font: 500 16px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#444; }
+    .box { fill:#fffdf8; stroke:#2f2f2f; stroke-width:3; rx:18; ry:18; }
+    .line { stroke:#2f2f2f; stroke-width:3.5; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+    .dash { stroke:#666; stroke-width:3; fill:none; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:8 10; }
+  </style>
+
+  <text x="60" y="54" class="title">Day18｜批量流程：分页与合规处理</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#2f2f2f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="110" width="180" height="88" class="box"/>
+  <text x="103" y="145" class="label">任务输入</text>
+  <text x="84" y="174" class="small">关键词 / 时间范围 / 目标站点</text>
+
+  <rect x="300" y="110" width="180" height="88" class="box"/>
+  <text x="352" y="145" class="label">分页计划</text>
+  <text x="332" y="174" class="small">页码、游标、终止条件</text>
+
+  <rect x="540" y="110" width="180" height="88" class="box"/>
+  <text x="572" y="145" class="label">逐页抓取</text>
+  <text x="564" y="174" class="small">读取列表、提取字段、去重</text>
+
+  <rect x="540" y="268" width="180" height="88" class="box"/>
+  <text x="572" y="303" class="label">合规校验</text>
+  <text x="556" y="332" class="small">频率、权限、敏感字段、用途</text>
+
+  <rect x="300" y="268" width="180" height="88" class="box"/>
+  <text x="338" y="303" class="label">结果归并</text>
+  <text x="321" y="332" class="small">标准化、空值处理、结构输出</text>
+
+  <rect x="60" y="268" width="180" height="88" class="box"/>
+  <text x="95" y="303" class="label">业务结果</text>
+  <text x="91" y="332" class="small">报表、清单、告警、摘要</text>
+
+  <rect x="760" y="110" width="140" height="88" class="box"/>
+  <text x="792" y="145" class="label">是否</text>
+  <text x="783" y="174" class="small">还有下一页？</text>
+
+  <rect x="760" y="268" width="140" height="88" class="box"/>
+  <text x="783" y="303" class="label">是否</text>
+  <text x="773" y="332" class="small">允许继续抓？</text>
+
+  <path d="M240 154 C260 154, 278 154, 300 154" class="line" marker-end="url(#arrow)"/>
+  <path d="M480 154 C500 154, 520 154, 540 154" class="line" marker-end="url(#arrow)"/>
+  <path d="M720 154 C735 154, 744 154, 760 154" class="line" marker-end="url(#arrow)"/>
+  <path d="M830 198 C830 228, 830 238, 830 268" class="line" marker-end="url(#arrow)"/>
+  <path d="M760 312 C746 312, 736 312, 720 312" class="line" marker-end="url(#arrow)"/>
+  <path d="M540 312 C518 312, 500 312, 480 312" class="line" marker-end="url(#arrow)"/>
+  <path d="M300 312 C278 312, 260 312, 240 312" class="line" marker-end="url(#arrow)"/>
+
+  <path d="M830 110 C830 72, 420 70, 390 110" class="dash" marker-end="url(#arrow)"/>
+  <text x="612" y="82" class="small">有下一页 → 回到分页计划，继续下一轮</text>
+
+  <path d="M760 356 C720 420, 212 430, 150 356" class="dash" marker-end="url(#arrow)"/>
+  <text x="382" y="448" class="small">不允许继续抓取 / 超过阈值 → 终止并输出原因</text>
+
+  <text x="775" y="103" class="small">是 / 否</text>
+  <text x="776" y="261" class="small">通过 / 拦截</text>
+
+  <rect x="60" y="504" width="840" height="92" fill="none" stroke="#7b7b7b" stroke-width="2.5" rx="16" ry="16"/>
+  <text x="86" y="538" class="label">图示重点</text>
+  <text x="86" y="570" class="small">批量流程不是“把每一页抓完”这么简单，而是要同时管住 3 件事：</text>
+  <text x="86" y="594" class="small">1）怎么翻页不漏数；2）怎么去重归并；3）什么情况下必须停下，确保频率、权限和数据使用都合规。</text>
+</svg>

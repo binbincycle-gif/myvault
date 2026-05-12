@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="550" fill="#fafafa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">EZR SaaS + Skills 业务架构</text>
+  <text x="400" y="50" text-anchor="middle" font-size="12" fill="#666">客户订阅式AI能力服务体系</text>
+  
+  <!-- EZR SaaS Core -->
+  <rect x="50" y="70" width="700" height="100" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="400" y="95" text-anchor="middle" font-size="14" font-weight="bold" fill="#1976d2">EZR SaaS 核心产品</text>
+  <text x="400" y="115" text-anchor="middle" font-size="11" fill="#555">CRM会员管理 | 营销自动化 | 导购管理 | 订单管理 | 商城</text>
+  <text x="400" y="135" text-anchor="middle" font-size="11" fill="#555">基础订阅（人头/模块）| 增值服务（Skills）</text>
+  
+  <!-- Skills 能力矩阵 -->
+  <rect x="50" y="190" width="700" height="100" rx="8" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+  <text x="400" y="215" text-anchor="middle" font-size="13" font-weight="bold" fill="#ff9800">AI Skills 能力矩阵（客户订阅）</text>
+  
+  <!-- Skills items -->
+  <rect x="70" y="230" width="150" height="50" rx="4" fill="#fff" stroke="#ff9800" stroke-width="1"/>
+  <text x="145" y="255" text-anchor="middle" font-size="11" font-weight="bold" fill="#ff9800">智能导购推荐</text>
+  <text x="145" y="270" text-anchor="middle" font-size="9" fill="#666">提升转化率20%+</text>
+  
+  <rect x="240" y="230" width="150" height="50" rx="4" fill="#fff" stroke="#ff9800" stroke-width="1"/>
+  <text x="315" y="255" text-anchor="middle" font-size="11" font-weight="bold" fill="#ff9800">智能客服</text>
+  <text x="315" y="270" text-anchor="middle" font-size="9" fill="#666">人力成本-30%</text>
+  
+  <rect x="410" y="230" width="150" height="50" rx="4" fill="#fff" stroke="#ff9800" stroke-width="1"/>
+  <text x="485" y="255" text-anchor="middle" font-size="11" font-weight="bold" fill="#ff9800">经营分析</text>
+  <text x="485" y="270" text-anchor="middle" font-size="9" fill="#666">决策效率提升</text>
+  
+  <rect x="580" y="230" width="150" height="50" rx="4" fill="#fff" stroke="#ff9800" stroke-width="1"/>
+  <text x="655" y="255" text-anchor="middle" font-size="11" font-weight="bold" fill="#ff9800">营销自动化</text>
+  <text x="655" y="270" text-anchor="middle" font-size="9" fill="#666">客单价提升</text>
+  
+  <!-- OpenClaw 引擎层 -->
+  <rect x="200" y="310" width="400" height="70" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+  <text x="400" y="335" text-anchor="middle" font-size="13" font-weight="bold" fill="#4caf50">OpenClaw 引擎层</text>
+  <text x="400" y="355" text-anchor="middle" font-size="10" fill="#666">Agent调度 | Skill执行 | 定时任务 | 消息路由 | 工作流编排 | 记忆管理</text>
+  
+  <!-- Arrows -->
+  <line x1="400" y1="170" x2="400" y2="190" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="400" y1="290" x2="400" y2="310" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Multi-tenant Security -->
+  <rect x="50" y="400" width="700" height="130" rx="8" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="400" y="425" text-anchor="middle" font-size="13" font-weight="bold" fill="#7b1fa2">多租户安全隔离</text>
+  
+  <!-- Security layers -->
+  <rect x="80" y="440" width="140" height="75" rx="4" fill="#fff" stroke="#7b1fa2" stroke-width="1"/>
+  <text x="150" y="465" text-anchor="middle" font-size="10" font-weight="bold" fill="#7b1fa2">租户隔离</text>
+  <text x="150" y="482" text-anchor="middle" font-size="9" fill="#666">独立DB Schema</text>
+  <text x="150" y="495" text-anchor="middle" font-size="9" fill="#666">独立缓存空间</text>
+  <text x="150" y="508" text-anchor="middle" font-size="9" fill="#666">独立文件存储</text>
+  
+  <rect x="240" y="440" width="140" height="75" rx="4" fill="#fff" stroke="#7b1fa2" stroke-width="1"/>
+  <text x="310" y="465" text-anchor="middle" font-size="10" font-weight="bold" fill="#7b1fa2">Skill隔离</text>
+  <text x="310" y="482" text-anchor="middle" font-size="9" fill="#666">公共Skill池</text>
+  <text x="310" y="495" text-anchor="middle" font-size="9" fill="#666">租户私有Skill</text>
+  <text x="310" y="508" text-anchor="middle" font-size="9" fill="#666">数据不跨租户</text>
+  
+  <rect x="400" y="440" width="140" height="75" rx="4" fill="#fff" stroke="#7b1fa2" stroke-width="1"/>
+  <text x="470" y="465" text-anchor="middle" font-size="10" font-weight="bold" fill="#7b1fa2">API鉴权</text>
+  <text x="470" y="482" text-anchor="middle" font-size="9" fill="#666">Token验证</text>
+  <text x="470" y="495" text-anchor="middle" font-size="9" fill="#666">调用频次限制</text>
+  <text x="470" y="508" text-anchor="middle" font-size="9" fill="#666">IP白名单</text>
+  
+  <rect x="560" y="440" width="140" height="75" rx="4" fill="#fff" stroke="#7b1fa2" stroke-width="1"/>
+  <text x="630" y="465" text-anchor="middle" font-size="10" font-weight="bold" fill="#7b1fa2">审计溯源</text>
+  <text x="630" y="482" text-anchor="middle" font-size="9" fill="#666">完整操作日志</text>
+  <text x="630" y="495" text-anchor="middle" font-size="9" fill="#666">异常行为告警</text>
+  <text x="630" y="508" text-anchor="middle" font-size="9" fill="#666">数据导出审计</text>
+</svg>

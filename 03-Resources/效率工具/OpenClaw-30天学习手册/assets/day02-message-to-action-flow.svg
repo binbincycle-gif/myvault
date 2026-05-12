@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1480" viewBox="0 0 1080 1480">
+  <rect width="1080" height="1480" fill="#fcfbf7"/>
+  <style>
+    .title{font: 700 34px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#2d2a26}
+    .section{font: 700 24px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#2d2a26}
+    .label{font: 22px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#2d2a26}
+    .small{font: 18px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#5b554d}
+    .box{fill:#fffdf8; stroke:#3d372f; stroke-width:3; rx:24; ry:24}
+    .line{stroke:#3d372f; stroke-width:4; fill:none; stroke-linecap:round; stroke-linejoin:round}
+    .dash{stroke:#8a7f73; stroke-width:3; fill:none; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:10 10}
+    .accent{fill:#f6efe2; stroke:#3d372f; stroke-width:3; rx:20; ry:20}
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1,1 L10,6 L1,11" fill="none" stroke="#3d372f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <text x="540" y="72" text-anchor="middle" class="title">Day02｜消息如何变成可执行动作</text>
+  <text x="540" y="112" text-anchor="middle" class="small">一条请求，经过分层判断、工具执行、结果校验，最后形成可交付输出</text>
+
+  <rect x="110" y="160" width="860" height="130" class="accent"/>
+  <text x="540" y="205" text-anchor="middle" class="section">四层架构：先分责，再执行</text>
+  <rect x="140" y="225" width="180" height="42" class="box"/>
+  <text x="230" y="252" text-anchor="middle" class="label">交互层</text>
+  <rect x="340" y="225" width="180" height="42" class="box"/>
+  <text x="430" y="252" text-anchor="middle" class="label">决策层</text>
+  <rect x="540" y="225" width="180" height="42" class="box"/>
+  <text x="630" y="252" text-anchor="middle" class="label">执行层</text>
+  <rect x="740" y="225" width="180" height="42" class="box"/>
+  <text x="830" y="252" text-anchor="middle" class="label">治理层</text>
+
+  <path d="M320 246 C330 236, 330 236, 340 246" class="line" marker-end="url(#arrow)"/>
+  <path d="M520 246 C530 236, 530 236, 540 246" class="line" marker-end="url(#arrow)"/>
+  <path d="M720 246 C730 236, 730 236, 740 246" class="line" marker-end="url(#arrow)"/>
+
+  <text x="230" y="315" text-anchor="middle" class="small">渠道消息 / Session 上下文</text>
+  <text x="430" y="315" text-anchor="middle" class="small">意图理解 / 步骤拆解 / 工具选择</text>
+  <text x="630" y="315" text-anchor="middle" class="small">read / exec / browser / cron ...</text>
+  <text x="830" y="315" text-anchor="middle" class="small">日志 / 审批 / 权限 / 重试</text>
+
+  <text x="540" y="392" text-anchor="middle" class="section">六步主链路：从需求到结果</text>
+
+  <rect x="120" y="440" width="250" height="110" class="box"/>
+  <text x="245" y="482" text-anchor="middle" class="label">① 接收请求</text>
+  <text x="245" y="515" text-anchor="middle" class="small">用户话语 + 历史上下文</text>
+
+  <rect x="415" y="440" width="250" height="110" class="box"/>
+  <text x="540" y="482" text-anchor="middle" class="label">② 理解目标</text>
+  <text x="540" y="515" text-anchor="middle" class="small">识别输出、约束、优先级</text>
+
+  <rect x="710" y="440" width="250" height="110" class="box"/>
+  <text x="835" y="482" text-anchor="middle" class="label">③ 规划动作</text>
+  <text x="835" y="515" text-anchor="middle" class="small">拆任务，选最低风险工具</text>
+
+  <path d="M370 495 L415 495" class="line" marker-end="url(#arrow)"/>
+  <path d="M665 495 L710 495" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="120" y="650" width="250" height="110" class="box"/>
+  <text x="245" y="692" text-anchor="middle" class="label">④ 执行动作</text>
+  <text x="245" y="725" text-anchor="middle" class="small">调用工具，拿到中间结果</text>
+
+  <rect x="415" y="650" width="250" height="110" class="box"/>
+  <text x="540" y="692" text-anchor="middle" class="label">⑤ 校验结果</text>
+  <text x="540" y="725" text-anchor="middle" class="small">看是否满足目标与格式</text>
+
+  <rect x="710" y="650" width="250" height="110" class="box"/>
+  <text x="835" y="692" text-anchor="middle" class="label">⑥ 回传沉淀</text>
+  <text x="835" y="725" text-anchor="middle" class="small">生成结果 + 留审计轨迹</text>
+
+  <path d="M370 705 L415 705" class="line" marker-end="url(#arrow)"/>
+  <path d="M665 705 L710 705" class="line" marker-end="url(#arrow)"/>
+
+  <path d="M540 550 L540 650" class="dash" marker-end="url(#arrow)"/>
+  <text x="564" y="610" class="small">进入执行闭环</text>
+
+  <path d="M500 650 C450 610, 410 610, 370 650" class="dash" marker-end="url(#arrow)"/>
+  <text x="435" y="615" text-anchor="middle" class="small">异常时回退</text>
+
+  <rect x="110" y="845" width="860" height="230" class="accent"/>
+  <text x="540" y="890" text-anchor="middle" class="section">为什么这套分层对业务有价值</text>
+
+  <rect x="145" y="925" width="180" height="110" class="box"/>
+  <text x="235" y="965" text-anchor="middle" class="label">提效</text>
+  <text x="235" y="998" text-anchor="middle" class="small">减少人工盯流程</text>
+
+  <rect x="345" y="925" width="180" height="110" class="box"/>
+  <text x="435" y="965" text-anchor="middle" class="label">提质</text>
+  <text x="435" y="998" text-anchor="middle" class="small">输出结构更稳定</text>
+
+  <rect x="545" y="925" width="180" height="110" class="box"/>
+  <text x="635" y="965" text-anchor="middle" class="label">提速</text>
+  <text x="635" y="998" text-anchor="middle" class="small">目标到结果更短</text>
+
+  <rect x="745" y="925" width="180" height="110" class="box"/>
+  <text x="835" y="965" text-anchor="middle" class="label">可控</text>
+  <text x="835" y="998" text-anchor="middle" class="small">每一步都可追踪</text>
+
+  <text x="540" y="1138" text-anchor="middle" class="section">管理者看图时重点盯三件事</text>
+  <path d="M180 1195 L900 1195" class="line"/>
+  <text x="200" y="1245" class="label">1. 哪些动作可以标准化复用</text>
+  <text x="200" y="1288" class="label">2. 哪些动作需要审批、白名单或人工兜底</text>
+  <text x="200" y="1331" class="label">3. 失败后是自动重试，还是转人工确认</text>
+
+  <text x="540" y="1410" text-anchor="middle" class="small">读图顺序：上半部分看技术分层，下半部分看业务价值与治理抓手</text>
+</svg>

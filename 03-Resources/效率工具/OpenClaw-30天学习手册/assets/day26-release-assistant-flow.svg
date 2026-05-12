@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#2f4858" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .bg { fill: #fffdf8; }
+      .box { fill: #fffefb; stroke: #2f4858; stroke-width: 3; rx: 18; ry: 18; }
+      .line { fill: none; stroke: #2f4858; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+      .title { font: 700 28px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #1f2d3d; }
+      .label { font: 600 22px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #1f2d3d; }
+      .small { font: 500 18px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #334e68; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="960" height="720"/>
+  <text class="title" x="58" y="68">Day26｜迭代发布助手：把上线做成可治理执行链</text>
+
+  <rect class="box" x="60" y="120" width="220" height="110"/>
+  <text class="label" x="102" y="170">1. 识别发布版本</text>
+  <text class="small" x="96" y="205">分支 / commit / 变更说明</text>
+
+  <rect class="box" x="370" y="120" width="220" height="110"/>
+  <text class="label" x="408" y="170">2. 前置校验</text>
+  <text class="small" x="388" y="205">测试 / 构建 / 配置检查</text>
+
+  <rect class="box" x="680" y="120" width="220" height="110"/>
+  <text class="label" x="722" y="170">3. 审批门禁</text>
+  <text class="small" x="705" y="205">生产发布 / 迁移 / 灰度</text>
+
+  <rect class="box" x="60" y="360" width="220" height="120"/>
+  <text class="label" x="102" y="410">4. 执行发布</text>
+  <text class="small" x="92" y="445">部署 / 切流 / 更新配置</text>
+
+  <rect class="box" x="370" y="360" width="220" height="120"/>
+  <text class="label" x="395" y="410">5. 发布后验证</text>
+  <text class="small" x="386" y="445">健康检查 / 关键链路 / 监控</text>
+
+  <rect class="box" x="680" y="360" width="220" height="120"/>
+  <text class="label" x="718" y="410">6. 通知与回滚</text>
+  <text class="small" x="695" y="445">结果同步 / 异常回退 / 留痕</text>
+
+  <path class="line" d="M280 175 C320 175, 330 175, 370 175"/>
+  <path class="line" d="M590 175 C630 175, 640 175, 680 175"/>
+  <path class="line" d="M790 230 C790 285, 790 305, 790 360"/>
+  <path class="line" d="M680 420 C645 420, 630 420, 590 420"/>
+  <path class="line" d="M370 420 C335 420, 320 420, 280 420"/>
+  <path class="line" d="M170 360 C170 305, 170 285, 170 230"/>
+
+  <text class="small" x="96" y="548">关键原则：先校验再发布，先确认风险再放行动作。</text>
+  <text class="small" x="96" y="582">判断标准：命令成功 ≠ 业务成功，发布后验证必须进入同一条链路。</text>
+</svg>

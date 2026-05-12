@@ -1,0 +1,90 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: 700 64px 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #111; }
+      .subtitle { font: 600 34px 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #1f3b8a; }
+      .label { font: 600 30px 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #111; }
+      .small { font: 500 24px 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #333; }
+      .box { fill: #fff; stroke: #222; stroke-width: 4; rx: 20; ry: 20; }
+      .coreWrap { fill: none; stroke: #d94848; stroke-width: 6; rx: 48; ry: 48; }
+      .runtime { fill: #f2f8ff; stroke: #4a78c2; stroke-width: 5; rx: 24; ry: 24; }
+      .cloud { fill: #f0f6ff; stroke: #5b8ff9; stroke-width: 4; stroke-dasharray: 10 12; }
+      .arrow { stroke: #2f6fdb; stroke-width: 5; fill: none; marker-end: url(#arrowhead); }
+      .arrow2 { stroke: #2f6fdb; stroke-width: 4; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#2f6fdb"/>
+    </marker>
+  </defs>
+
+  <text x="800" y="90" text-anchor="middle" class="title">OpenClaw 的系统架构（学习版）</text>
+
+  <!-- cloud -->
+  <path class="cloud" d="M280,150
+    C250,120 260,80 320,84
+    C340,48 420,50 444,90
+    C490,54 575,66 592,120
+    C660,92 740,118 746,168
+    C820,140 910,156 934,216
+    C1000,196 1075,220 1082,270
+    C1150,252 1220,282 1210,336
+    C1220,388 1166,426 1104,408
+    C1060,452 980,448 944,408
+    C888,438 812,430 780,386
+    C724,430 636,420 608,366
+    C540,392 470,360 462,304
+    C398,330 328,292 322,236
+    C272,230 252,186 280,150 Z"/>
+  <text x="800" y="218" text-anchor="middle" class="subtitle">多通道接入（Channel）</text>
+  <text x="620" y="292" text-anchor="middle" class="label">Telegram</text>
+  <text x="800" y="292" text-anchor="middle" class="label">Slack / Discord</text>
+  <text x="1010" y="292" text-anchor="middle" class="label">Web / API</text>
+
+  <!-- core wrapper -->
+  <rect x="160" y="360" width="1280" height="320" class="coreWrap"/>
+  <text x="800" y="402" text-anchor="middle" class="subtitle" fill="#bf2f2f">核心执行链路（Agent Loop）</text>
+
+  <!-- core boxes -->
+  <rect x="230" y="450" width="250" height="170" class="box"/>
+  <text x="355" y="510" text-anchor="middle" class="label">LLM</text>
+  <text x="355" y="555" text-anchor="middle" class="small">理解意图 / 任务拆解</text>
+
+  <rect x="520" y="450" width="250" height="170" class="box"/>
+  <text x="645" y="510" text-anchor="middle" class="label">Memory</text>
+  <text x="645" y="555" text-anchor="middle" class="small">会话上下文 / 记忆</text>
+
+  <rect x="810" y="450" width="250" height="170" class="box"/>
+  <text x="935" y="510" text-anchor="middle" class="label">Skills / Tools</text>
+  <text x="935" y="555" text-anchor="middle" class="small">read / exec / browser...</text>
+
+  <rect x="1100" y="450" width="250" height="170" class="box"/>
+  <text x="1225" y="510" text-anchor="middle" class="label">Cron</text>
+  <text x="1225" y="555" text-anchor="middle" class="small">自动化调度 / 定时触发</text>
+
+  <!-- arrows among core -->
+  <path d="M480,535 L520,535" class="arrow"/>
+  <path d="M770,535 L810,535" class="arrow"/>
+  <path d="M1060,535 L1100,535" class="arrow"/>
+  <path d="M810,575 L770,575" class="arrow2"/>
+  <path d="M520,575 L480,575" class="arrow2"/>
+
+  <!-- arrows from cloud -->
+  <path d="M620,320 L355,445" class="arrow"/>
+  <path d="M800,320 L645,445" class="arrow"/>
+  <path d="M980,320 L935,445" class="arrow"/>
+  <path d="M1100,330 L1225,445" class="arrow"/>
+
+  <!-- runtime -->
+  <rect x="220" y="740" width="1160" height="160" class="runtime"/>
+  <text x="800" y="800" text-anchor="middle" class="subtitle" fill="#2f5da8">执行环境（Runtime）</text>
+  <text x="520" y="855" text-anchor="middle" class="label">Shell</text>
+  <text x="800" y="855" text-anchor="middle" class="label">Browser</text>
+  <text x="1080" y="855" text-anchor="middle" class="label">Network / API</text>
+
+  <!-- down arrows -->
+  <path d="M355,620 L355,735" class="arrow"/>
+  <path d="M935,620 L800,735" class="arrow"/>
+  <path d="M1225,620 L1225,735" class="arrow"/>
+
+  <text x="800" y="940" text-anchor="middle" class="small" fill="#666">学习提示：先理解“消息→决策→执行→回传→记录”闭环，再做复杂自动化。</text>
+</svg>

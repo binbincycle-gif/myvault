@@ -1,0 +1,50 @@
+<svg width="1400" height="760" viewBox="0 0 1400 760" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg{fill:#fffdfa}
+      .t{font:700 44px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif;fill:#111}
+      .n{font:700 34px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif;fill:#111}
+      .sub{font:500 24px 'PingFang SC','Microsoft YaHei',sans-serif;fill:#333}
+      .box{fill:#fff;stroke:#111;stroke-width:5;rx:18;ry:18}
+      .main{fill:#fff7ed;stroke:#d44b4b;stroke-width:6;rx:24;ry:24}
+      .arr{stroke:#3b6fd0;stroke-width:5;fill:none;marker-end:url(#a);stroke-linecap:round;stroke-linejoin:round}
+    </style>
+    <marker id="a" markerWidth="6" markerHeight="6" refX="5.2" refY="3" orient="auto" markerUnits="strokeWidth" viewBox="0 0 6 6">
+      <path d="M0.6,0.6 L5.2,3 L0.6,5.4" fill="none" stroke="#3b6fd0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1400" height="760"/>
+  <text class="t" x="700" y="70" text-anchor="middle">概念关系图</text>
+
+  <rect class="main" x="520" y="170" width="360" height="130"/>
+  <text class="n" x="700" y="235" text-anchor="middle">Agent 决策</text>
+  <text class="sub" x="700" y="270" text-anchor="middle">理解意图 / 选择执行路径</text>
+
+  <rect class="box" x="180" y="160" width="260" height="120"/>
+  <text class="n" x="310" y="225" text-anchor="middle">Session</text>
+  <text class="sub" x="310" y="258" text-anchor="middle">会话上下文</text>
+
+  <rect class="box" x="960" y="160" width="260" height="120"/>
+  <text class="n" x="1090" y="225" text-anchor="middle">Tool</text>
+  <text class="sub" x="1090" y="258" text-anchor="middle">执行动作</text>
+
+  <rect class="box" x="960" y="340" width="260" height="120"/>
+  <text class="n" x="1090" y="405" text-anchor="middle">Skill</text>
+  <text class="sub" x="1090" y="438" text-anchor="middle">可复用套路</text>
+
+  <rect class="box" x="180" y="500" width="260" height="120"/>
+  <text class="n" x="310" y="565" text-anchor="middle">Cron</text>
+  <text class="sub" x="310" y="598" text-anchor="middle">定时触发</text>
+
+  <rect class="box" x="520" y="520" width="360" height="120"/>
+  <text class="n" x="700" y="585" text-anchor="middle">Logs / Audit</text>
+  <text class="sub" x="700" y="618" text-anchor="middle">状态记录 / 追溯治理</text>
+
+  <path class="arr" d="M440,220 L520,220"/>
+  <path class="arr" d="M880,220 L960,220"/>
+  <path class="arr" d="M880,260 C930,280 960,320 980,350"/>
+  <path class="arr" d="M1090,460 C1040,500 940,535 880,560"/>
+  <path class="arr" d="M520,560 C470,560 420,560 440,560"/>
+  <path class="arr" d="M310,500 C350,410 420,320 560,250"/>
+  <path class="arr" d="M700,300 L700,520"/>
+</svg>

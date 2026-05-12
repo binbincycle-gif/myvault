@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#fcfbf7"/>
+  <g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#222" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <text x="600" y="55" text-anchor="middle" font-size="34" stroke="none" fill="#222">Day20｜性能与成本台账建立</text>
+    <text x="600" y="90" text-anchor="middle" font-size="18" stroke="none" fill="#555">让自动化能力可度量、可优化、可汇报</text>
+
+    <!-- 四大维度 -->
+    <rect x="60" y="140" rx="18" ry="18" width="260" height="120" fill="none"/>
+    <text x="190" y="180" text-anchor="middle" font-size="24" stroke="none">执行性能</text>
+    <text x="190" y="215" text-anchor="middle" font-size="16" stroke="none" fill="#555">耗时 / 并发 / 响应速度</text>
+    <text x="190" y="240" text-anchor="middle" font-size="16" stroke="none" fill="#555">端到端链路时长</text>
+
+    <rect x="350" y="140" rx="18" ry="18" width="260" height="120" fill="none"/>
+    <text x="480" y="180" text-anchor="middle" font-size="24" stroke="none">执行质量</text>
+    <text x="480" y="215" text-anchor="middle" font-size="16" stroke="none" fill="#555">成功率 / 失败率 / 重试次数</text>
+    <text x="480" y="240" text-anchor="middle" font-size="16" stroke="none" fill="#555">失败原因分布</text>
+
+    <rect x="640" y="140" rx="18" ry="18" width="260" height="120" fill="none"/>
+    <text x="770" y="180" text-anchor="middle" font-size="24" stroke="none">资源消耗</text>
+    <text x="770" y="215" text-anchor="middle" font-size="16" stroke="none" fill="#555">Token / API调用 / 存储</text>
+    <text x="770" y="240" text-anchor="middle" font-size="16" stroke="none" fill="#555">Browser时长</text>
+
+    <rect x="930" y="140" rx="18" ry="18" width="210" height="120" fill="none"/>
+    <text x="1035" y="180" text-anchor="middle" font-size="24" stroke="none">业务价值</text>
+    <text x="1035" y="215" text-anchor="middle" font-size="16" stroke="none" fill="#555">覆盖任务数 / 节省工时</text>
+    <text x="1035" y="240" text-anchor="middle" font-size="16" stroke="none" fill="#555">流程缩短时长</text>
+
+    <!-- 台账闭环 -->
+    <rect x="90" y="350" rx="18" ry="18" width="200" height="100" fill="none"/>
+    <text x="190" y="390" text-anchor="middle" font-size="22" stroke="none">① 数据采集</text>
+    <text x="190" y="425" text-anchor="middle" font-size="16" stroke="none" fill="#555">自动落盘执行日志</text>
+
+    <rect x="330" y="350" rx="18" ry="18" width="200" height="100" fill="none"/>
+    <text x="430" y="390" text-anchor="middle" font-size="22" stroke="none">② 数据存储</text>
+    <text x="430" y="425" text-anchor="middle" font-size="16" stroke="none" fill="#555">统一格式 / 定期归档</text>
+
+    <rect x="570" y="350" rx="18" ry="18" width="200" height="100" fill="none"/>
+    <text x="670" y="390" text-anchor="middle" font-size="22" stroke="none">③ 数据分析</text>
+    <text x="670" y="425" text-anchor="middle" font-size="16" stroke="none" fill="#555">趋势 / 归因 / 对比</text>
+
+    <rect x="810" y="350" rx="18" ry="18" width="200" height="100" fill="none"/>
+    <text x="910" y="390" text-anchor="middle" font-size="22" stroke="none">④ 数据展示</text>
+    <text x="910" y="425" text-anchor="middle" font-size="16" stroke="none" fill="#555">看板 / 周报 / 告警</text>
+
+    <path d="M290 400 L330 400" fill="none"/>
+    <polygon points="330,400 314,392 314,408" fill="#222" stroke="none"/>
+    <path d="M530 400 L570 400" fill="none"/>
+    <polygon points="570,400 554,392 554,408" fill="#222" stroke="none"/>
+    <path d="M770 400 L810 400" fill="none"/>
+    <polygon points="810,400 794,392 794,408" fill="#222" stroke="none"/>
+
+    <!-- 箭头向下循环 -->
+    <path d="M910 450 L910 520" fill="none"/>
+    <polygon points="910,520 902,504 918,504" fill="#222" stroke="none"/>
+    <path d="M750 520 L910 520" fill="none"/>
+    <path d="M750 350 L750 280" fill="none"/>
+    <path d="M750 280 L190 280" fill="none"/>
+    <path d="M190 280 L190 350" fill="none"/>
+    <polygon points="190,280 178,294 202,294" fill="#222" stroke="none"/>
+
+    <!-- 三种方案 -->
+    <rect x="80" y="560" rx="18" ry="18" width="340" height="180" fill="none"/>
+    <text x="250" y="600" text-anchor="middle" font-size="24" stroke="none">方案一：利用自带能力</text>
+    <text x="250" y="640" text-anchor="middle" font-size="16" stroke="none" fill="#555">基于日志和状态追踪</text>
+    <text x="250" y="665" text-anchor="middle" font-size="16" stroke="none" fill="#555">用cron定期汇总生成周报</text>
+    <text x="250" y="690" text-anchor="middle" font-size="16" stroke="none" fill="#555">零额外基础设施</text>
+    <text x="250" y="720" text-anchor="middle" font-size="16" stroke="none" fill="#777">适合起步阶段</text>
+
+    <rect x="450" y="560" rx="18" ry="18" width="340" height="180" fill="none"/>
+    <text x="620" y="600" text-anchor="middle" font-size="24" stroke="none">方案二：外接轻量存储</text>
+    <text x="620" y="640" text-anchor="middle" font-size="16" stroke="none" fill="#555">写入SQLite/文件数据库</text>
+    <text x="620" y="665" text-anchor="middle" font-size="16" stroke="none" fill="#555">或Notion/Obsidian</text>
+    <text x="620" y="690" text-anchor="middle" font-size="16" stroke="none" fill="#555">查询灵活 / 多维分析</text>
+    <text x="620" y="720" text-anchor="middle" font-size="16" stroke="none" fill="#777">适合用量起来后</text>
+
+    <rect x="820" y="560" rx="18" ry="18" width="300" height="180" fill="none"/>
+    <text x="970" y="600" text-anchor="middle" font-size="24" stroke="none">方案三：接入监控体系</text>
+    <text x="970" y="640" text-anchor="middle" font-size="16" stroke="none" fill="#555">对接到Prometheus</text>
+    <text x="970" y="665" text-anchor="middle" font-size="16" stroke="none" fill="#555">Grafana或云监控</text>
+    <text x="970" y="690" text-anchor="middle" font-size="16" stroke="none" fill="#555">统一视图 / 专业分析</text>
+    <text x="970" y="720" text-anchor="middle" font-size="16" stroke="none" fill="#777">适合有专职运维</text>
+
+    <!-- 底部关键 -->
+    <rect x="80" y="790" rx="18" ry="18" width="1040" height="80" fill="none"/>
+    <text x="600" y="830" text-anchor="middle" font-size="22" stroke="none">台账持续的关键：自动化采集 → 自动化汇总 → 自动化告警 → 自动化展示</text>
+  </g>
+</svg>

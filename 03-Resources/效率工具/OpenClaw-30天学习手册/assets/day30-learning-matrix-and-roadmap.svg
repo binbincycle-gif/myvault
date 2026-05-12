@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="HanziPen SC, Hannotate SC, KaiTi, STKaiti, PingFang SC, sans-serif" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="18" y="18" width="864" height="584" rx="18" fill="#fcfcfb" stroke="#d8dee6" stroke-width="1.5"/>
+  <text x="450" y="54" text-anchor="middle" font-size="24" font-weight="bold" fill="#2c3e50" stroke="none">OpenClaw 30天学习收口图</text>
+  <text x="450" y="82" text-anchor="middle" font-size="13" fill="#5d6d7e" stroke="none">先盘点，再聚焦，再落到第一个可交付成果</text>
+
+  <rect x="48" y="118" width="292" height="392" rx="16" fill="#f7fbff" stroke="#6ea8d9" stroke-width="2"/>
+  <text x="194" y="150" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50" stroke="none">① 本月能力盘点</text>
+
+  <rect x="72" y="174" width="244" height="44" rx="10" fill="#ffffff" stroke="#9cb7c9" stroke-width="1.6"/>
+  <text x="90" y="201" font-size="13" fill="#2c3e50" stroke="none">消息接入</text>
+  <text x="250" y="201" font-size="12" fill="#4d6a79" stroke="none">知道 → 能用</text>
+
+  <rect x="72" y="228" width="244" height="44" rx="10" fill="#ffffff" stroke="#9cb7c9" stroke-width="1.6"/>
+  <text x="90" y="255" font-size="13" fill="#2c3e50" stroke="none">工具执行</text>
+  <text x="250" y="255" font-size="12" fill="#4d6a79" stroke="none">能用 → 讲清</text>
+
+  <rect x="72" y="282" width="244" height="44" rx="10" fill="#ffffff" stroke="#9cb7c9" stroke-width="1.6"/>
+  <text x="90" y="309" font-size="13" fill="#2c3e50" stroke="none">Skill 封装</text>
+  <text x="250" y="309" font-size="12" fill="#4d6a79" stroke="none">知道 → 能用</text>
+
+  <rect x="72" y="336" width="244" height="44" rx="10" fill="#ffffff" stroke="#9cb7c9" stroke-width="1.6"/>
+  <text x="90" y="363" font-size="13" fill="#2c3e50" stroke="none">Browser 自动化</text>
+  <text x="238" y="363" font-size="12" fill="#4d6a79" stroke="none">能用 → 讲清</text>
+
+  <rect x="72" y="390" width="244" height="44" rx="10" fill="#ffffff" stroke="#9cb7c9" stroke-width="1.6"/>
+  <text x="90" y="417" font-size="13" fill="#2c3e50" stroke="none">安全治理</text>
+  <text x="250" y="417" font-size="12" fill="#4d6a79" stroke="none">知道 → 能用</text>
+
+  <rect x="72" y="444" width="244" height="44" rx="10" fill="#ffffff" stroke="#9cb7c9" stroke-width="1.6"/>
+  <text x="90" y="471" font-size="13" fill="#2c3e50" stroke="none">观测与SLA</text>
+  <text x="250" y="471" font-size="12" fill="#4d6a79" stroke="none">知道 → 能用</text>
+
+  <text x="72" y="536" font-size="12" fill="#5d6d7e" stroke="none">判断标准：不是会不会，而是是否能迁移到真实场景。</text>
+
+  <path d="M342 316 C382 316, 392 316, 430 316" stroke="#7f8c8d" stroke-width="2.2"/>
+  <path d="M422 308 L438 316 L422 324" fill="#7f8c8d" stroke="none"/>
+
+  <rect x="446" y="138" width="170" height="108" rx="16" fill="#fff8e8" stroke="#d9a441" stroke-width="2"/>
+  <text x="531" y="170" text-anchor="middle" font-size="17" font-weight="bold" fill="#2c3e50" stroke="none">② 判断原则</text>
+  <text x="531" y="198" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">优先选高频、可复用、</text>
+  <text x="531" y="218" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">能看见结果的场景</text>
+
+  <rect x="446" y="272" width="170" height="108" rx="16" fill="#eef8ef" stroke="#63a96f" stroke-width="2"/>
+  <text x="531" y="304" text-anchor="middle" font-size="17" font-weight="bold" fill="#2c3e50" stroke="none">③ 选下一步</text>
+  <text x="531" y="332" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">广度路线：嵌入工作流</text>
+  <text x="531" y="352" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">深度路线：围绕一类能力</text>
+
+  <path d="M531 246 C531 256, 531 262, 531 272" stroke="#7f8c8d" stroke-width="2.2"/>
+  <path d="M523 264 L531 280 L539 264" fill="#7f8c8d" stroke="none"/>
+
+  <path d="M618 326 C656 326, 664 326, 700 326" stroke="#7f8c8d" stroke-width="2.2"/>
+  <path d="M692 318 L708 326 L692 334" fill="#7f8c8d" stroke="none"/>
+
+  <rect x="716" y="116" width="132" height="106" rx="14" fill="#ffffff" stroke="#c4ccd5" stroke-width="1.8"/>
+  <text x="782" y="146" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50" stroke="none">广度路线</text>
+  <text x="782" y="174" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">周报整理</text>
+  <text x="782" y="194" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">资料归档</text>
+  <text x="782" y="214" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">消息通知</text>
+
+  <rect x="716" y="246" width="132" height="106" rx="14" fill="#ffffff" stroke="#c4ccd5" stroke-width="1.8"/>
+  <text x="782" y="276" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50" stroke="none">深度路线</text>
+  <text x="782" y="304" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">Skill 体系化</text>
+  <text x="782" y="324" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">Browser 稳定性</text>
+  <text x="782" y="344" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">安全治理</text>
+
+  <path d="M782 356 C782 376, 782 392, 782 410" stroke="#7f8c8d" stroke-width="2.2"/>
+  <path d="M774 402 L782 418 L790 402" fill="#7f8c8d" stroke="none"/>
+
+  <rect x="630" y="430" width="218" height="98" rx="16" fill="#f9fbfd" stroke="#94a3b0" stroke-width="2"/>
+  <text x="739" y="462" text-anchor="middle" font-size="17" font-weight="bold" fill="#2c3e50" stroke="none">④ 第一个交付物</text>
+  <text x="739" y="490" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">选 1 个高频任务</text>
+  <text x="739" y="510" text-anchor="middle" font-size="12" fill="#5d6d7e" stroke="none">写清输入、执行、异常、输出</text>
+
+  <rect x="58" y="548" width="790" height="34" rx="10" fill="#fff7dc" stroke="#d9a441" stroke-width="1.6"/>
+  <text x="453" y="570" text-anchor="middle" font-size="13" fill="#6b5b2a" stroke="none">一句话：30天学习要落成模板、Skill 与治理规则，才能从“会用”升级成“能持续产出”。</text>
+</svg>

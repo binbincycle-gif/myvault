@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" font-family="HanziPen SC, Hannotate SC, KaiTi, STKaiti, PingFang SC, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#4A5568"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="400" height="520" fill="#FAFAFA"/>
+  
+  <!-- 标题 -->
+  <text x="200" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#2D3748">最小Skill开发流程</text>
+  
+  <!-- 步骤1: 创建目录 -->
+  <g transform="translate(30, 60)">
+    <rect x="0" y="0" width="100" height="40" rx="4" fill="#fff" stroke="#4A5568" stroke-width="2"/>
+    <text x="50" y="25" text-anchor="middle" font-size="12" fill="#2D3748">1. 创建目录结构</text>
+  </g>
+  
+  <!-- 箭头 -->
+  <line x1="130" y1="80" x2="150" y2="80" stroke="#4A5568" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- 步骤2: 编写定义 -->
+  <g transform="translate(170, 60)">
+    <rect x="0" y="0" width="100" height="40" rx="4" fill="#fff" stroke="#4A5568" stroke-width="2"/>
+    <text x="50" y="25" text-anchor="middle" font-size="12" fill="#2D3748">2. 编写 skill.yaml</text>
+  </g>
+  
+  <!-- 箭头 -->
+  <line x1="220" y1="80" x2="240" y2="80" stroke="#4A5568" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- 步骤3: 编写 handler -->
+  <g transform="translate(260, 60)">
+    <rect x="0" y="0" width="100" height="40" rx="4" fill="#fff" stroke="#4A5568" stroke-width="2"/>
+    <text x="50" y="25" text-anchor="middle" font-size="12" fill="#2D3748">3. 编写 handler.js</text>
+  </g>
+  
+  <!-- 箭头下 -->
+  <line x1="310" y1="100" x2="310" y2="130" stroke="#4A5568" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- 步骤4: 放置目录 -->
+  <g transform="translate(220, 140)">
+    <rect x="0" y="0" width="100" height="40" rx="4" fill="#fff" stroke="#4A5568" stroke-width="2"/>
+    <text x="50" y="25" text-anchor="middle" font-size="12" fill="#2D3748">4. 放入 skills 目录</text>
+  </g>
+  
+  <!-- 箭头下 -->
+  <line x1="270" y1="180" x2="270" y2="210" stroke="#4A5568" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- 步骤5: 重载加载 -->
+  <g transform="translate(170, 220)">
+    <rect x="0" y="0" width="100" height="40" rx="4" fill="#fff" stroke="#4A5568" stroke-width="2"/>
+    <text x="50" y="25" text-anchor="middle" font-size="12" fill="#2D3748">5. 重载/启动</text>
+  </g>
+  
+  <!-- 箭头下 -->
+  <line x1="220" y1="260" x2="220" y2="290" stroke="#4A5568" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- 步骤6: 测试 -->
+  <g transform="translate(120, 300)">
+    <rect x="0" y="0" width="100" height="40" rx="4" fill="#fff" stroke="#4A5568" stroke-width="2"/>
+    <text x="50" y="25" text-anchor="middle" font-size="12" fill="#2D3748">6. 本地测试</text>
+  </g>
+  
+  <!-- 箭头下 -->
+  <line x1="170" y1="340" x2="170" y2="370" stroke="#4A5568" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- 步骤7: 部署上线 -->
+  <g transform="translate(120, 380)">
+    <rect x="0" y="0" width="100" height="40" rx="4" fill="#E6FFFA" stroke="#38B2AC" stroke-width="2"/>
+    <text x="50" y="25" text-anchor="middle" font-size="12" fill="#2D3748">7. 部署上线</text>
+  </g>
+  
+  <!-- 文件结构详解 -->
+  <g transform="translate(20, 440)">
+    <text x="0" y="15" font-size="11" font-weight="bold" fill="#4A5568">文件结构示例:</text>
+    <text x="10" y="35" font-size="10" fill="#718096">my-skill/</text>
+    <text x="25" y="52" font-size="10" fill="#718096">├── skill.yaml  ← 定义文件</text>
+    <text x="25" y="67" font-size="10" fill="#718096">├── handler.js  ← 执行逻辑</text>
+    <text x="25" y="82" font-size="10" fill="#718096">└── config.json ← 可选配置</text>
+  </g>
+</svg>

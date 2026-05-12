@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1280" viewBox="0 0 900 1280">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#3a312a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <filter id="paper">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.04"/>
+      </feComponentTransfer>
+    </filter>
+    <style>
+      .bg { fill: #fcfbf7; }
+      .grain { opacity: .28; }
+      .title { font: 700 34px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#2f2721; }
+      .subtitle { font: 500 18px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#5b5148; }
+      .box { fill:#fffdf9; stroke:#3a312a; stroke-width:2.2; rx:22; ry:22; }
+      .box2 { fill:#f8f4ea; stroke:#3a312a; stroke-width:2.2; rx:22; ry:22; }
+      .txt { font: 600 24px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#2f2721; }
+      .small { font: 500 18px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#5b5148; }
+      .arrow { fill:none; stroke:#3a312a; stroke-width:2.6; stroke-linecap:round; stroke-linejoin:round; marker-end:url(#arrow); }
+      .dash { fill:none; stroke:#6e6258; stroke-width:2; stroke-dasharray:7 8; stroke-linecap:round; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="900" height="1280"/>
+  <rect class="grain" x="0" y="0" width="900" height="1280" filter="url(#paper)"/>
+
+  <text x="450" y="72" text-anchor="middle" class="title">Day17｜Browser 自动化失败恢复闭环</text>
+  <text x="450" y="108" text-anchor="middle" class="subtitle">目标：不是一次成功，而是失败后还能继续推进</text>
+
+  <rect class="box" x="180" y="150" width="540" height="108"/>
+  <text x="450" y="195" text-anchor="middle" class="txt">1. 发起 Browser 任务</text>
+  <text x="450" y="228" text-anchor="middle" class="small">打开页面 / 快照 / 点击 / 提取字段</text>
+
+  <path class="arrow" d="M450 258 C450 286,450 302,450 326"/>
+
+  <rect class="box2" x="180" y="332" width="540" height="118"/>
+  <text x="450" y="378" text-anchor="middle" class="txt">2. 判断失败类型</text>
+  <text x="450" y="411" text-anchor="middle" class="small">元素找不到 / 页面未加载 / 登录失效 / 结果为空</text>
+
+  <path class="arrow" d="M450 450 C450 476,450 492,450 516"/>
+
+  <rect class="box" x="60" y="522" width="330" height="158"/>
+  <text x="225" y="568" text-anchor="middle" class="txt">3A. 可恢复失败</text>
+  <text x="225" y="604" text-anchor="middle" class="small">重新 snapshot</text>
+  <text x="225" y="634" text-anchor="middle" class="small">换更稳的定位</text>
+  <text x="225" y="664" text-anchor="middle" class="small">必要时再执行 act</text>
+
+  <rect class="box" x="510" y="522" width="330" height="158"/>
+  <text x="675" y="568" text-anchor="middle" class="txt">3B. 不可恢复失败</text>
+  <text x="675" y="604" text-anchor="middle" class="small">权限缺失 / 页面改版</text>
+  <text x="675" y="634" text-anchor="middle" class="small">站点策略变化</text>
+  <text x="675" y="664" text-anchor="middle" class="small">必须人工介入</text>
+
+  <path class="arrow" d="M225 680 C225 716,225 730,225 760"/>
+  <path class="arrow" d="M675 680 C675 716,675 730,675 760"/>
+
+  <rect class="box2" x="60" y="766" width="330" height="174"/>
+  <text x="225" y="812" text-anchor="middle" class="txt">4A. 执行恢复策略</text>
+  <text x="225" y="848" text-anchor="middle" class="small">限制重试次数</text>
+  <text x="225" y="878" text-anchor="middle" class="small">记录本次失败原因</text>
+  <text x="225" y="908" text-anchor="middle" class="small">保留上下文继续跑</text>
+
+  <rect class="box2" x="510" y="766" width="330" height="174"/>
+  <text x="675" y="812" text-anchor="middle" class="txt">4B. 升级人工处理</text>
+  <text x="675" y="848" text-anchor="middle" class="small">输出失败点</text>
+  <text x="675" y="878" text-anchor="middle" class="small">附页面链接和截图</text>
+  <text x="675" y="908" text-anchor="middle" class="small">给出下一步建议</text>
+
+  <path class="arrow" d="M225 940 C225 980,320 1002,408 1030"/>
+  <path class="arrow" d="M675 940 C675 980,580 1002,492 1030"/>
+
+  <rect class="box" x="180" y="1040" width="540" height="118"/>
+  <text x="450" y="1086" text-anchor="middle" class="txt">5. 形成可治理结果</text>
+  <text x="450" y="1119" text-anchor="middle" class="small">成功继续流转；失败可审计、可复盘、可优化</text>
+
+  <path class="dash" d="M390 600 C450 560,510 560,510 600"/>
+  <text x="450" y="590" text-anchor="middle" class="small">先判断，再处理</text>
+
+  <text x="450" y="1218" text-anchor="middle" class="subtitle">管理重点：重试要有上限，失败要有分类，人工接手要有证据</text>
+</svg>
