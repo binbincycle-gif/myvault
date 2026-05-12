@@ -1,69 +1,63 @@
-<svg width="1600" height="980" viewBox="0 0 1600 980" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620">
   <defs>
-    <style>
-      .bg{fill:#fffdfa}
-      .title{font:700 74px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#111}
-      .text{font:700 40px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#111}
-      .sub{font:600 31px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC','Microsoft YaHei',sans-serif;fill:#222}
-      .cloud{fill:none;stroke:#4f7fd9;stroke-width:6;stroke-dasharray:10 12}
-      .core{fill:none;stroke:#d44b4b;stroke-width:8}
-      .runtime{fill:none;stroke:#4f7fd9;stroke-width:7}
-      .box{fill:#fff;stroke:#111;stroke-width:6}
-      .arr{stroke:#3b6fd0;stroke-width:6.5;fill:none;marker-end:url(#a);stroke-linecap:round;stroke-linejoin:round}
-      .arr2{stroke:#3b6fd0;stroke-width:5.2;fill:none;marker-end:url(#a);stroke-linecap:round;stroke-linejoin:round}
-    </style>
-    <marker id="a" markerWidth="6" markerHeight="6" refX="5.2" refY="3" orient="auto" markerUnits="strokeWidth" viewBox="0 0 6 6">
-      <path d="M0.6,0.6 L5.2,3 L0.6,5.4" fill="none" stroke="#3b6fd0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#2b2b2b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
+    <style>
+      .bg { fill:#fffdf7; }
+      .box { fill:#fffefb; stroke:#2b2b2b; stroke-width:2.2; stroke-linejoin:round; rx:18; ry:18; }
+      .line { fill:none; stroke:#2b2b2b; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; marker-end:url(#arrow); }
+      .title { font: 700 28px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#1f1f1f; }
+      .label { font: 600 22px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#1f1f1f; }
+      .note { font: 16px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill:#444; }
+    </style>
   </defs>
+  <rect class="bg" x="0" y="0" width="960" height="620"/>
+  <text class="title" x="480" y="52" text-anchor="middle">OpenClaw 从对话到执行的主链路</text>
 
-  <rect class="bg" x="0" y="0" width="1600" height="980"/>
-  <text class="title" x="800" y="88" text-anchor="middle">OpenClaw 的系统架构</text>
+  <rect class="box" x="58" y="120" width="170" height="92"/>
+  <text class="label" x="143" y="160" text-anchor="middle">用户对话</text>
+  <text class="note" x="143" y="188" text-anchor="middle">目标、问题、触发词</text>
 
-  <!-- cloud -->
-  <path class="cloud" d="M220,180 C250,120 360,120 410,170 C470,120 560,120 620,170 C700,120 810,120 870,180 C950,140 1060,150 1120,210 C1200,180 1320,220 1320,300 C1330,380 1260,430 1180,420 L360,420 C280,430 210,390 200,320 C190,250 220,210 220,180 Z"/>
-  <text class="text" x="800" y="250" text-anchor="middle">多通道接入</text>
-  <text class="text" x="520" y="330" text-anchor="middle">Feishu</text>
-  <text class="text" x="800" y="330" text-anchor="middle">Telegram</text>
-  <text class="text" x="1080" y="330" text-anchor="middle">Discord</text>
+  <rect class="box" x="274" y="120" width="170" height="92"/>
+  <text class="label" x="359" y="160" text-anchor="middle">Agent 理解</text>
+  <text class="note" x="359" y="188" text-anchor="middle">识别意图与上下文</text>
 
-  <!-- core -->
-  <ellipse class="core" cx="800" cy="585" rx="670" ry="200"/>
+  <rect class="box" x="490" y="120" width="170" height="92"/>
+  <text class="label" x="575" y="160" text-anchor="middle">策略决策</text>
+  <text class="note" x="575" y="188" text-anchor="middle">直答 or 调工具</text>
 
-  <rect class="box" x="230" y="500" width="250" height="170" rx="20"/>
-  <rect class="box" x="520" y="500" width="250" height="170" rx="20"/>
-  <rect class="box" x="810" y="500" width="250" height="170" rx="20"/>
-  <rect class="box" x="1100" y="500" width="250" height="170" rx="20"/>
+  <rect class="box" x="706" y="120" width="170" height="92"/>
+  <text class="label" x="791" y="160" text-anchor="middle">工具执行</text>
+  <text class="note" x="791" y="188" text-anchor="middle">读写、网页、命令、消息</text>
 
-  <text class="text" x="355" y="575" text-anchor="middle">LLM</text>
-  <text class="sub" x="355" y="620" text-anchor="middle">（大脑）</text>
+  <rect class="box" x="706" y="306" width="170" height="92"/>
+  <text class="label" x="791" y="346" text-anchor="middle">结果回收</text>
+  <text class="note" x="791" y="374" text-anchor="middle">汇总、判断、补步骤</text>
 
-  <text class="text" x="645" y="575" text-anchor="middle">Memory</text>
-  <text class="sub" x="645" y="620" text-anchor="middle">（记忆）</text>
+  <rect class="box" x="490" y="306" width="170" height="92"/>
+  <text class="label" x="575" y="346" text-anchor="middle">状态与审计</text>
+  <text class="note" x="575" y="374" text-anchor="middle">日志、轨迹、可回放</text>
 
-  <text class="text" x="935" y="575" text-anchor="middle">Skills</text>
-  <text class="sub" x="935" y="620" text-anchor="middle">（技能）</text>
+  <rect class="box" x="274" y="306" width="170" height="92"/>
+  <text class="label" x="359" y="346" text-anchor="middle">可交付输出</text>
+  <text class="note" x="359" y="374" text-anchor="middle">结论、文件、通知</text>
 
-  <text class="text" x="1225" y="575" text-anchor="middle">Cron</text>
-  <text class="sub" x="1225" y="620" text-anchor="middle">（自动化）</text>
+  <rect class="box" x="58" y="306" width="170" height="92"/>
+  <text class="label" x="143" y="346" text-anchor="middle">业务闭环</text>
+  <text class="note" x="143" y="374" text-anchor="middle">拿结果、继续迭代</text>
 
-  <path class="arr" d="M470,585 L520,585"/>
-  <path class="arr" d="M760,585 L810,585"/>
-  <path class="arr" d="M1050,585 L1100,585"/>
+  <path class="line" d="M228 166 C244 166, 256 166, 274 166"/>
+  <path class="line" d="M444 166 C460 166, 472 166, 490 166"/>
+  <path class="line" d="M660 166 C676 166, 688 166, 706 166"/>
+  <path class="line" d="M791 212 C791 246, 791 270, 791 306"/>
+  <path class="line" d="M706 352 C688 352, 676 352, 660 352"/>
+  <path class="line" d="M490 352 C472 352, 460 352, 444 352"/>
+  <path class="line" d="M274 352 C256 352, 244 352, 228 352"/>
 
-  <path class="arr" d="M530,380 C505,402 430,442 360,498"/>
-  <path class="arr" d="M800,380 C780,404 720,444 645,498"/>
-  <path class="arr" d="M1060,380 C1045,406 1000,446 935,498"/>
-  <path class="arr" d="M1210,380 C1214,414 1220,450 1225,498"/>
+  <path class="line" d="M575 306 C575 270, 610 244, 706 214"/>
+  <text class="note" x="612" y="262">失败可回看，成功可复用</text>
 
-  <!-- runtime -->
-  <rect class="runtime" x="220" y="770" width="1160" height="170"/>
-  <text class="text" x="800" y="840" text-anchor="middle">一台完整的电脑（Runtime）</text>
-  <text class="text" x="480" y="900" text-anchor="middle">Shell</text>
-  <text class="text" x="800" y="900" text-anchor="middle">Browser</text>
-  <text class="text" x="1120" y="900" text-anchor="middle">Network</text>
-
-  <path class="arr" d="M355,670 C346,706 362,736 355,766"/>
-  <path class="arr" d="M935,670 C905,708 860,740 800,766"/>
-  <path class="arr" d="M1225,670 C1216,706 1232,736 1225,766"/>
+  <text class="note" x="480" y="456" text-anchor="middle">重点不是“会聊天”，而是把目标变成一条可执行、可回溯、可持续优化的链路。</text>
+  <text class="note" x="480" y="494" text-anchor="middle">先有对话入口，再有工具动作，最后沉淀为流程和治理能力。</text>
 </svg>
