@@ -180,12 +180,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "03-Resources/效率工具/业务Skill学习手册/00-目录.md",
+                    "file": "03-Resources/效率工具/业务Skill学习手册/Day01-Skill是什么：从功能到能力单元.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "00-目录"
+                  "title": "Day01-Skill是什么：从功能到能力单元"
                 }
               }
             ],
@@ -492,8 +492,9 @@
   },
   "active": "d224afaf543298fe",
   "lastOpenFiles": [
-    "03-Resources/效率工具/业务Skill学习手册/assets/day04-role-based-skill.svg",
     "03-Resources/效率工具/业务Skill学习手册/Day04-角色视角：不同角色需要什么Skill.md",
+    "03-Resources/效率工具/业务Skill学习手册/00-目录.md",
+    "03-Resources/效率工具/业务Skill学习手册/assets/day04-role-based-skill.svg",
     "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/security__THREAT-MODEL-ATLAS.md",
     "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)/cli__secrets.md",
     "02-Areas/AI战略规划/PAI系统/PAI-日同步-2026-05-11.md",
@@ -531,7 +532,6 @@
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day27-alert-sla-flow.svg",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day26-release-assistant-flow.svg",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day25-weekly-stability-assistant-flow.svg",
-    "03-Resources/效率工具/OpenClaw-30天学习手册/assets/day24-env-secrets-flow.svg",
     "03-Resources/效率工具/OpenClaw-30天学习手册/官方文档-本地镜像(节选)",
     "03-Resources/效率工具/OpenClaw-30天学习手册/assets",
     "03-Resources/效率工具/OpenClaw-30天学习手册",
