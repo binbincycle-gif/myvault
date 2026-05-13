@@ -20,6 +20,15 @@
 - 更新项目状态为"completed"
 - 添加项目总结和经验教训
 
+## 当前重点项目
+
+- [[智售助手/README|智售助手]]
+- [[导购小龙虾/README|导购小龙虾]]
+- [[知识库/README|知识库]]
+- [[EZR Skills/README|EZR Skills]]
+- [[AI Coding/README|AI Coding]]
+- [[元工智能/README|元工智能]]
+
 ## 项目分类建议
 
 ### 按类型
