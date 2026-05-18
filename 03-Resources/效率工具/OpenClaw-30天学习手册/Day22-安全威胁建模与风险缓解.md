@@ -117,14 +117,21 @@ OpenClaw 常见暴露面包括：
 
 ## 官方资料（带看点）
 ### 本地文档（知识库镜像路径）
-- [[03-Resources/效率工具/OpenClaw-30天学习手册/Day05-Shell执行能力与安全边界]] - 看点：理解高风险工具为什么必须配套审批和边界。
-- [[03-Resources/效率工具/OpenClaw-30天学习手册/Day12-权限分级与审批流设计]] - 看点：把“谁能做什么”从口头约定变成系统规则。
-- [[03-Resources/效率工具/OpenClaw-30天学习手册/Day13-审计与脱敏规范实践]] - 看点：把可追溯和可审计补齐，安全才不是空架子。
+- [[OpenClaw-30天学习手册/官方文档-本地镜像(节选)/security__THREAT-MODEL-ATLAS.md|security__THREAT-MODEL-ATLAS.md]]
+  - 看点：OpenClaw 场景下敏感数据泄漏、配置篡改、执行越权等威胁如何被拆解与缓解。
+- [[OpenClaw-30天学习手册/官方文档-本地镜像(节选)/tools__exec.md|tools__exec.md]]
+  - 看点：Shell 执行能力为什么要和审批、allowlist、可回滚策略一起设计。
+- [[OpenClaw-30天学习手册/官方文档-本地镜像(节选)/tools__browser.md|tools__browser.md]]
+  - 看点：Browser 自动化如何区分“读取页面信息”和“执行页面动作”，避免网页内容诱导执行。
+- [[OpenClaw-30天学习手册/官方文档-本地镜像(节选)/cli__secrets.md|cli__secrets.md]]
+  - 看点：凭证管理为什么必须从一开始就纳入威胁建模，而不是等出问题后补救。
 
 ### 在线文档
-- https://docs.openclaw.ai - 看点：理解 OpenClaw 的工具、会话、执行与权限边界。
-- https://github.com/openclaw/openclaw - 看点：从项目结构和运行方式理解哪些能力属于高风险面。
-- https://owasp.org/www-project-top-ten/ - 看点：虽然不是 OpenClaw 专属，但对“输入、权限、数据泄漏”仍然有通用启发。
+- OpenClaw Security / Threat Model Atlas: https://github.com/openclaw/openclaw/blob/main/docs/security/THREAT-MODEL-ATLAS.md
+- OpenClaw Exec Tool: https://docs.openclaw.ai/tools/exec
+- OpenClaw Browser Tool: https://docs.openclaw.ai/tools/browser
+- OpenClaw Secrets: https://docs.openclaw.ai/cli/secrets
+- OpenClaw GitHub 仓库：https://github.com/openclaw/openclaw
 
 ## 图示
 ![Day22 安全威胁建模与风险缓解流程](assets/day22-threat-modeling-flow.svg)
@@ -135,7 +142,7 @@ OpenClaw 常见暴露面包括：
 - 然后按影响做优先级；
 - 最后把预防、侦测、恢复三类控制真正落到运行链路里。
 
-## 管理者关注点
+## 管理者关注点（成本/效率/风险）
 ### 成本
 - 前期会增加一些设计和治理时间，比如审批、日志、规则配置。
 - 但如果没有这层治理，后期事故排查、返工、信任损失会更贵。
