@@ -1,1 +1,9 @@
 https://github.com/binbincycle-gif/myvault.git
+
+# Local Obsidian workspace state
+.obsidian/app.json
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Generated Smart Connections / smart-env index data
+.smart-env/
