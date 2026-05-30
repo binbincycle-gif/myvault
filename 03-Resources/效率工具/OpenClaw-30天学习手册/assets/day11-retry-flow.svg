@@ -1,92 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520">
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1480" viewBox="0 0 1080 1480">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&amp;display=swap');
-      .label { font-family: 'Noto Sans SC', 'PingFang SC', 'HanziPen SC', 'Hannotate SC', 'KaiTi', 'STKaiti', sans-serif; font-size: 11px; }
-      .title { font-family: 'Noto Sans SC', 'PingFang SC', 'HanziPen SC', 'Hannotate SC', 'KaiTi', 'STKaiti', sans-serif; font-size: 13px; font-weight: 500; }
-      .box { fill: #fafafa; stroke: #333; stroke-width: 1.5; rx: 4; }
-      .arrow { stroke: #333; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
-      .success { fill: #e6f7ed; stroke: #1e7e34; }
-      .fail { fill: #ffe6e6; stroke: #c00; }
-      .retry { fill: #fff8e6; stroke: #f5a623; }
-      .start { fill: #e3f2fd; stroke: #1565c0; }
+      .bg { fill: #fffdf8; }
+      .box { fill: #ffffff; stroke: #222; stroke-width: 3.2; rx: 22; ry: 22; }
+      .warn { fill: #fff3e2; stroke: #222; stroke-width: 3.2; rx: 22; ry: 22; }
+      .ok { fill: #eaf7ef; stroke: #222; stroke-width: 3.2; rx: 22; ry: 22; }
+      .fail { fill: #fff0f0; stroke: #222; stroke-width: 3.2; rx: 22; ry: 22; }
+      .text { font-family: "HanziPen SC", "Hannotate SC", "KaiTi", "STKaiti", "PingFang SC", sans-serif; fill: #202124; font-size: 34px; font-weight: 600; }
+      .small { font-family: "HanziPen SC", "Hannotate SC", "KaiTi", "STKaiti", "PingFang SC", sans-serif; fill: #444; font-size: 25px; }
+      .note { font-family: "HanziPen SC", "Hannotate SC", "KaiTi", "STKaiti", "PingFang SC", sans-serif; fill: #555; font-size: 23px; }
+      .arrow { fill: none; stroke: #222; stroke-width: 3.4; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrowHead); }
+      .dashed { fill: none; stroke: #777; stroke-width: 2.8; stroke-linecap: round; stroke-dasharray: 10 12; marker-end: url(#arrowHeadGray); }
     </style>
-    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-      <polygon points="0 0, 8 3, 0 6" fill="#333"/>
+    <marker id="arrowHead" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M2,2 L12,7 L2,12" fill="none" stroke="#222" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+    <marker id="arrowHeadGray" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M2,2 L12,7 L2,12" fill="none" stroke="#777" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
     </marker>
   </defs>
-  
-  <!-- 标题 -->
-  <text x="200" y="22" text-anchor="middle" class="title">幂等·超时·重试流程</text>
-  
-  <!-- 开始节点 -->
-  <rect x="150" y="35" width="100" height="28" class="box start" />
-  <text x="200" y="54" text-anchor="middle" class="label">任务触发</text>
-  
-  <!-- 箭头向下 -->
-  <path d="M200,63 L200,78" class="arrow"/>
-  
-  <!-- 检查幂等键 -->
-  <rect x="125" y="82" width="150" height="32" class="box" />
-  <text x="200" y="98" text-anchor="middle" class="label">检查幂等键</text>
-  <text x="200" y="108" text-anchor="middle" class="label" fill="#666" font-size="9">order_id 存在？</text>
-  
-  <!-- 分支：已存在 -->
-  <path d="M200,114 L200,125" class="arrow"/>
-  <rect x="30" y="129" width="80" height="26" class="box success" />
-  <text x="70" y="147" text-anchor="middle" class="label">已存在→返回缓存</text>
-  
-  <!-- 分支：不存在 -->
-  <path d="M275,129 L340,129 L340,150" class="arrow"/>
-  <path d="M340,150 L290,150" class="arrow"/>
-  <rect x="230" y="154" width="150" height="32" class="box" />
-  <text x="305" y="170" text-anchor="middle" class="label">执行核心逻辑</text>
-  <text x="305" y="180" text-anchor="middle" class="label" fill="#666" font-size="9">调用 API / 处理数据</text>
-  
-  <!-- 执行结果 -->
-  <path d="M305,186 L305,205" class="arrow"/>
-  <rect x="245" y="209" width="120" height="32" class="box" />
-  <text x="305" y="225" text-anchor="middle" class="label">执行结果</text>
-  <text x="305" y="235" text-anchor="middle" class="label" fill="#666" font-size="9">成功 / 失败</text>
-  
-  <!-- 成功分支 -->
-  <path d="M305,241 L305,252" class="arrow"/>
-  <rect x="245" y="256" width="120" height="26" class="box success" />
-  <text x="305" y="274" text-anchor="middle" class="label">✓ 成功 → 记录幂等键</text>
-  
-  <!-- 失败分支 -->
-  <path d="M365,225 L390,225 L390,260 L315,260" class="arrow"/>
-  <rect x="230" y="290" width="150" height="36" class="box retry" />
-  <text x="305" y="306" text-anchor="middle" class="label">失败 → 检查是否重试</text>
-  <text x="305" y="318" text-anchor="middle" class="label" fill="#666" font-size="9">可重试错误？次数&lt;3？</text>
-  
-  <!-- 可重试 -->
-  <path d="M305,326 L305,340" class="arrow"/>
-  <rect x="245" y="344" width="120" height="36" class="box retry" />
-  <text x="305" y="358" text-anchor="middle" class="label">可重试</text>
-  <text x="305" y="370" text-anchor="middle" class="label" fill="#666" font-size="9">等待 1s→2s→4s...</text>
-  
-  <!-- 循环回去 -->
-  <path d="M245,362 L220,362 L220,340 L215,340" class="arrow"/>
-  <path d="M215,340 L215,150" class="arrow"/>
-  <path d="M215,150 L225,150" class="arrow"/>
-  
-  <!-- 不可重试 -->
-  <path d="M380,308 L390,308 L390,380 L305,380" class="arrow"/>
-  <rect x="245" y="384" width="120" height="26" class="box fail" />
-  <text x="305" y="402" text-anchor="middle" class="label">✗ 不可重试 → 报错</text>
-  
-  <!-- 结束节点 -->
-  <path d="M305,410 L305,425" class="arrow"/>
-  <rect x="245" y="429" width="120" height="26" class="box success" />
-  <text x="305" y="447" text-anchor="middle" class="label">返回结果</text>
-  
-  <!-- 重试次数耗尽 -->
-  <rect x="230" y="454" width="150" height="32" class="box fail" />
-  <text x="305" y="470" text-anchor="middle" class="label">重试耗尽 → 报错</text>
-  <path d="M305,454 L305,442" class="arrow"/>
-  
-  <!-- 底部说明 -->
-  <rect x="20" y="492" width="360" height="22" fill="#f5f5f5" rx="3"/>
-  <text x="30" y="508" class="label" fill="#666" font-size="9">幂等键：相同 ID 只执行一次 | 超时：等待太久则放弃 | 重试：失败后等间隔再试</text>
+
+  <rect class="bg" width="1080" height="1480" />
+
+  <text x="540" y="70" text-anchor="middle" class="text" style="font-size:42px;">幂等、超时与重试流程</text>
+  <text x="540" y="116" text-anchor="middle" class="note">先防重复，再控等待，最后谨慎恢复</text>
+
+  <rect x="300" y="165" width="480" height="92" class="box" />
+  <text x="540" y="208" text-anchor="middle" class="text">任务触发</text>
+  <text x="540" y="240" text-anchor="middle" class="small">用户 / cron / 消息事件</text>
+
+  <path d="M540 258 C538 290, 542 306, 540 328" class="arrow" />
+
+  <rect x="250" y="330" width="580" height="110" class="box" />
+  <text x="540" y="374" text-anchor="middle" class="text">生成幂等键</text>
+  <text x="540" y="410" text-anchor="middle" class="small">任务类型 + 对象 + 日期 / 事件ID</text>
+
+  <path d="M540 442 C542 472, 538 490, 540 518" class="arrow" />
+
+  <rect x="250" y="520" width="580" height="116" class="warn" />
+  <text x="540" y="566" text-anchor="middle" class="text">是否已经执行过？</text>
+  <text x="540" y="604" text-anchor="middle" class="small">避免重复写入 / 发送 / 提交</text>
+
+  <path d="M250 578 C170 580, 138 650, 138 730" class="arrow" />
+  <text x="154" y="632" class="note">是</text>
+
+  <rect x="70" y="732" width="300" height="108" class="ok" />
+  <text x="220" y="778" text-anchor="middle" class="text">直接返回</text>
+  <text x="220" y="814" text-anchor="middle" class="small">复用已有结果</text>
+
+  <path d="M540 638 C538 670, 542 688, 540 716" class="arrow" />
+  <text x="565" y="682" class="note">否</text>
+
+  <rect x="250" y="718" width="580" height="116" class="box" />
+  <text x="540" y="763" text-anchor="middle" class="text">设置超时边界</text>
+  <text x="540" y="800" text-anchor="middle" class="small">工具 / 步骤 / 整轮任务</text>
+
+  <path d="M540 836 C542 866, 538 886, 540 914" class="arrow" />
+
+  <rect x="250" y="916" width="580" height="116" class="box" />
+  <text x="540" y="961" text-anchor="middle" class="text">执行核心动作</text>
+  <text x="540" y="998" text-anchor="middle" class="small">调用工具、写文件、发通知</text>
+
+  <path d="M540 1034 C538 1064, 542 1083, 540 1110" class="arrow" />
+
+  <rect x="250" y="1112" width="580" height="116" class="warn" />
+  <text x="540" y="1158" text-anchor="middle" class="text">成功还是失败？</text>
+  <text x="540" y="1195" text-anchor="middle" class="small">看错误类型与重试次数</text>
+
+  <path d="M830 1170 C910 1174, 944 1238, 944 1310" class="arrow" />
+  <text x="892" y="1224" class="note">成功</text>
+
+  <rect x="790" y="1312" width="260" height="104" class="ok" />
+  <text x="920" y="1356" text-anchor="middle" class="text">记录结果</text>
+  <text x="920" y="1390" text-anchor="middle" class="small">下次可复用</text>
+
+  <path d="M250 1170 C170 1175, 126 1238, 126 1310" class="arrow" />
+  <text x="155" y="1226" class="note">不可重试</text>
+
+  <rect x="40" y="1312" width="300" height="104" class="fail" />
+  <text x="190" y="1356" text-anchor="middle" class="text">明确失败</text>
+  <text x="190" y="1390" text-anchor="middle" class="small">给出原因和下一步</text>
+
+  <path d="M540 1228 C540 1264, 540 1284, 540 1312" class="arrow" />
+  <text x="565" y="1270" class="note">可重试</text>
+
+  <rect x="380" y="1312" width="320" height="104" class="box" />
+  <text x="540" y="1355" text-anchor="middle" class="text">退避后重试</text>
+  <text x="540" y="1390" text-anchor="middle" class="small">指数退避 + 抖动 + 上限</text>
+
+  <path d="M540 1310 C650 1245, 670 1115, 610 1035" class="dashed" />
+
+  <text x="540" y="1450" text-anchor="middle" class="note">可靠任务 = 幂等保护 + 超时边界 + 有限重试</text>
 </svg>
