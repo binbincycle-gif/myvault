@@ -179,15 +179,19 @@
 
 ## 官方资料（带看点）
 ### 本地文档（知识库镜像路径）
-- [[03-Resources/效率工具/OpenClaw-30天学习手册/Day05-Shell执行能力与安全边界]] - 看点：理解为什么高能力工具必须配审批，不是口头提醒就够。
+- [[OpenClaw-30天学习手册/官方文档-本地镜像(节选)/security__THREAT-MODEL-ATLAS.md|security__THREAT-MODEL-ATLAS.md]] - 看点：从威胁建模角度理解为什么 Agent 需要默认最小权限、明确边界和可追溯记录。
+- [[OpenClaw-30天学习手册/官方文档-本地镜像(节选)/tools__exec.md|tools__exec.md]] - 看点：理解 Shell / 命令执行类工具为什么属于系统级高风险能力，必须有审批与审计。
+- [[OpenClaw-30天学习手册/官方文档-本地镜像(节选)/tools__index.md|tools__index.md]] - 看点：从工具目录视角看，不同工具天然对应不同风险等级，不能用同一套放行策略。
+- [[OpenClaw-30天学习手册/官方文档-本地镜像(节选)/concepts__session.md|concepts__session.md]] - 看点：审批和权限判断必须落到具体会话与上下文里，避免授权被跨场景放大。
 - [[03-Resources/效率工具/OpenClaw-30天学习手册/Day12-权限分级与审批流设计]] - 看点：把权限边界和审批节点系统化，避免“谁都能顺手做”。
-- [[03-Resources/效率工具/OpenClaw-30天学习手册/Day13-审计与脱敏规范实践]] - 看点：审批之后为什么还需要留痕与脱敏，才能形成完整治理闭环。
 - [[03-Resources/效率工具/OpenClaw-30天学习手册/Day22-安全威胁建模与风险缓解]] - 看点：先识别风险来源，再决定哪些动作要拦，逻辑更完整。
 
 ### 在线文档
-- https://docs.openclaw.ai - 看点：理解工具调用、审批、会话和执行权限的基本边界。
+- https://docs.openclaw.ai/security/THREAT-MODEL-ATLAS - 看点：对照 Agent 系统常见威胁，检查最小安全规约是否覆盖关键风险。
+- https://docs.openclaw.ai/tools/exec - 看点：理解命令执行工具的能力边界、风险点和审批必要性。
+- https://docs.openclaw.ai/tools - 看点：按工具类型建立风险分级，而不是把所有能力默认等价处理。
+- https://docs.openclaw.ai/concepts/session - 看点：理解会话上下文如何影响授权、执行和审计。
 - https://github.com/openclaw/openclaw - 看点：从工程结构理解为什么不同工具应有不同风险分级。
-- https://owasp.org/www-community/Access_Control - 看点：访问控制和最小权限原则对 Agent 系统同样适用。
 
 ## 图示
 ![Day23 最小安全规约与审批策略](assets/day23-minimum-security-approval-flow.svg)
