@@ -1,3 +1,12 @@
+---
+title: 项目索引
+date: 2026-06-16
+tags:
+  - project
+  - index
+status: active
+---
+
 # 项目 (Projects)
 
 本目录用于存放当前进行中的项目文档。
@@ -22,12 +31,20 @@
 
 ## 当前重点项目
 
-- [[智售助手/README|智售助手]]
-- [[导购小龙虾/README|导购小龙虾]]
-- [[知识库/README|知识库]]
-- [[EZR Skills/README|EZR Skills]]
-- [[AI Coding/README|AI Coding]]
-- [[元工智能/README|元工智能]]
+| 项目 | 状态 | 优先级 | 负责人 | 入口 |
+| --- | --- | --- | --- | --- |
+| 元工智能 | active | high | 顾伟 | [[元工智能/README|元工智能]] |
+| 智售助手 | active | high | 陈育彬 | [[智售助手/README|智售助手]] |
+| 导购小龙虾 | active | high | 苗子心 | [[导购小龙虾/README|导购小龙虾]] |
+| 知识库 / 睿知库 | active | high | 陈爽 | [[知识库/README|知识库 / 睿知库]] |
+| EZR Skills | active | high | 待定 | [[EZR Skills/README|EZR Skills]] |
+| AI Coding | active | medium | 待定 | [[AI Coding/README|AI Coding]] |
+
+## 每周复盘入口
+
+1. 先看每个项目 README 的“当前推进动作”。
+2. 再看“风险与阻塞”，决定需要升级、协调或暂停的事项。
+3. 最后更新 `review_date` 和下一轮 3-5 个动作。
 
 ## 项目分类建议
 
@@ -45,16 +62,16 @@
 ## 关联关系
 
 项目笔记应与以下内容建立链接：
-- [[技术决策记录]] - 项目中的关键技术选择
-- [[会议记录]] - 项目相关会议
-- [[代码片段]] - 项目中的关键代码
-- [[学习笔记]] - 项目中学到的知识
+- [[05-Templates/技术决策记录模板|技术决策记录模板]] - 项目中的关键技术选择
+- [[05-Templates/会议记录模板|会议记录模板]] - 项目相关会议
+- [[代码片段库/README|代码片段库]] - 项目中的关键代码
+- [[05-Templates/学习笔记模板|学习笔记模板]] - 项目中学到的知识
 
 ## 数据看板（需Dataview插件）
 
 ```dataview
-TABLE status, priority, start_date, end_date
+TABLE status, priority, owner, review_date
 FROM "01-Projects"
 WHERE status != "completed"
-SORT priority DESC, start_date
+SORT priority DESC, review_date DESC
 ```

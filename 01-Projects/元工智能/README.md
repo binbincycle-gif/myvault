@@ -8,6 +8,8 @@ tags:
   - 智变项目
 status: active
 owner: 顾伟
+priority: high
+review_date: 2026-06-16
 ---
 
 # 元工智能
