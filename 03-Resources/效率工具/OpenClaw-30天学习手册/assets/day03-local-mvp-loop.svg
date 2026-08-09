@@ -1,86 +1,92 @@
 <svg width="960" height="1360" viewBox="0 0 960 1360" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      .bg { fill: #fcfbf7; }
+      .bg { fill: #fffdf7; }
       .title { font: 700 34px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #1f2937; }
       .subtitle { font: 600 22px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #334155; }
       .text { font: 18px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #334155; }
       .small { font: 16px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #475569; }
-      .box { fill: #fffef9; stroke: #334155; stroke-width: 3; rx: 24; ry: 24; }
-      .light { fill: #f8fafc; stroke: #475569; stroke-width: 2.5; rx: 20; ry: 20; }
+      .box { fill: #fffefb; stroke: #334155; stroke-width: 3; rx: 24; ry: 24; }
+      .soft { fill: #f8fafc; stroke: #64748b; stroke-width: 2.5; rx: 22; ry: 22; }
+      .warn { fill: #fff7ed; stroke: #c2410c; stroke-width: 2.5; rx: 20; ry: 20; }
       .arrow { stroke: #334155; stroke-width: 3.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-      .dash { stroke: #64748b; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 8 10; }
+      .thin { stroke: #64748b; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 7 9; }
     </style>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-      <path d="M1,1 L11,6 L1,11" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <marker id="arrow" markerWidth="13" markerHeight="13" refX="11" refY="6.5" orient="auto">
+      <path d="M1.5,1.5 L11.5,6.5 L1.5,11.5" fill="none" stroke="#334155" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrowSoft" markerWidth="13" markerHeight="13" refX="11" refY="6.5" orient="auto">
+      <path d="M1.5,1.5 L11.5,6.5 L1.5,11.5" fill="none" stroke="#64748b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
   </defs>
 
   <rect class="bg" x="0" y="0" width="960" height="1360"/>
 
-  <text class="title" x="72" y="78">Day03 本地启动与最小闭环验证</text>
-  <text class="subtitle" x="72" y="118">先证明“能稳定完成一次输入到回执”，再谈更复杂自动化</text>
+  <text class="title" x="64" y="78">Day03 本地启动与最小闭环验证</text>
+  <text class="subtitle" x="64" y="116">先跑通一条短链路，再叠加复杂自动化</text>
 
-  <rect class="box" x="72" y="160" width="816" height="132"/>
-  <text class="subtitle" x="104" y="205">最小闭环验收标准</text>
-  <text class="text" x="104" y="245">服务在线 + 指令进会话 + 工具有结果 + 状态可复盘</text>
-  <text class="small" x="104" y="276">不是“界面能打开”，而是“链路能连续跑通且可重复”</text>
+  <rect class="soft" x="64" y="150" width="832" height="118"/>
+  <text class="subtitle" x="96" y="196">验收口径</text>
+  <text class="text" x="96" y="232">不是“能打开界面”，而是“输入、执行、回执、验证”连续成立</text>
 
-  <rect class="box" x="72" y="346" width="176" height="138"/>
-  <text class="subtitle" x="109" y="390">1 服务启动</text>
-  <text class="small" x="98" y="424">Gateway 在线</text>
-  <text class="small" x="98" y="452">运行时可用</text>
+  <rect class="box" x="66" y="338" width="168" height="126"/>
+  <text class="subtitle" x="112" y="382">用户输入</text>
+  <text class="small" x="96" y="416">目标清楚</text>
+  <text class="small" x="96" y="442">风险可控</text>
 
-  <rect class="box" x="286" y="346" width="176" height="138"/>
-  <text class="subtitle" x="322" y="390">2 指令接收</text>
-  <text class="small" x="312" y="424">消息进入 Session</text>
-  <text class="small" x="312" y="452">上下文不丢</text>
+  <rect class="box" x="282" y="338" width="168" height="126"/>
+  <text class="subtitle" x="328" y="382">会话承接</text>
+  <text class="small" x="312" y="416">上下文正确</text>
+  <text class="small" x="312" y="442">路径明确</text>
 
-  <rect class="box" x="500" y="346" width="176" height="138"/>
-  <text class="subtitle" x="536" y="390">3 工具执行</text>
-  <text class="small" x="532" y="424">先用低风险工具</text>
-  <text class="small" x="532" y="452">结果可读取</text>
+  <rect class="box" x="510" y="338" width="168" height="126"/>
+  <text class="subtitle" x="556" y="382">工具执行</text>
+  <text class="small" x="540" y="416">先用低风险</text>
+  <text class="small" x="540" y="442">结果可读取</text>
 
-  <rect class="box" x="714" y="346" width="174" height="138"/>
-  <text class="subtitle" x="748" y="390">4 结果校验</text>
-  <text class="small" x="742" y="424">日志可追踪</text>
-  <text class="small" x="742" y="452">可复跑验证</text>
+  <rect class="box" x="726" y="338" width="168" height="126"/>
+  <text class="subtitle" x="772" y="382">结果回执</text>
+  <text class="small" x="756" y="416">有证据</text>
+  <text class="small" x="756" y="442">可复跑</text>
 
-  <path class="arrow" marker-end="url(#arrow)" d="M248 415 C260 415, 270 415, 286 415"/>
-  <path class="arrow" marker-end="url(#arrow)" d="M462 415 C474 415, 484 415, 500 415"/>
-  <path class="arrow" marker-end="url(#arrow)" d="M676 415 C688 415, 698 415, 714 415"/>
+  <path class="arrow" marker-end="url(#arrow)" d="M234 401 C250 398, 264 398, 282 401"/>
+  <path class="arrow" marker-end="url(#arrow)" d="M450 401 C470 398, 490 398, 510 401"/>
+  <path class="arrow" marker-end="url(#arrow)" d="M678 401 C694 398, 710 398, 726 401"/>
 
-  <rect class="light" x="94" y="560" width="768" height="110"/>
-  <text class="subtitle" x="120" y="603">推荐验证顺序</text>
-  <text class="text" x="120" y="642">状态检查 → 读一个本地文件 → 看工具回执 → 查日志 / status → 连续复跑 2~3 次</text>
+  <path class="thin" marker-end="url(#arrowSoft)" d="M810 464 C808 520, 694 548, 594 548 C430 548, 250 532, 150 464"/>
+  <text class="small" x="370" y="578">复跑 2~3 次，确认不是偶发成功</text>
 
-  <rect class="box" x="72" y="740" width="244" height="170"/>
-  <text class="subtitle" x="107" y="784">常见卡点 A</text>
-  <text class="small" x="102" y="822">服务未就绪 / 端口冲突</text>
-  <text class="small" x="102" y="852">表现：能聊天，不能执行</text>
-  <text class="small" x="102" y="882">先看 gateway status</text>
+  <rect class="soft" x="86" y="640" width="788" height="132"/>
+  <text class="subtitle" x="118" y="686">推荐验证顺序</text>
+  <text class="text" x="118" y="724">状态检查 → 读取本地文件 → 查看工具回执 → 检查证据 → 再复跑</text>
+  <text class="small" x="118" y="752">原则：先只读，后写入；先短链路，后复杂链路；先证据，再结论</text>
 
-  <rect class="box" x="358" y="740" width="244" height="170"/>
-  <text class="subtitle" x="393" y="784">常见卡点 B</text>
-  <text class="small" x="388" y="822">权限或安全模式拦截</text>
-  <text class="small" x="388" y="852">表现：工具调用被拒</text>
-  <text class="small" x="388" y="882">先分清策略还是能力</text>
+  <rect class="warn" x="70" y="852" width="246" height="158"/>
+  <text class="subtitle" x="108" y="895">卡点 1：入口</text>
+  <text class="small" x="98" y="932">服务未就绪</text>
+  <text class="small" x="98" y="960">请求无响应</text>
+  <text class="small" x="98" y="988">先看运行状态</text>
 
-  <rect class="box" x="644" y="740" width="244" height="170"/>
-  <text class="subtitle" x="679" y="784">常见卡点 C</text>
-  <text class="small" x="674" y="822">路径 / cwd 不一致</text>
-  <text class="small" x="674" y="852">表现：文件明明在却找不到</text>
-  <text class="small" x="674" y="882">先确认工作目录</text>
+  <rect class="warn" x="358" y="852" width="246" height="158"/>
+  <text class="subtitle" x="396" y="895">卡点 2：会话</text>
+  <text class="small" x="386" y="932">上下文错位</text>
+  <text class="small" x="386" y="960">工作目录不一致</text>
+  <text class="small" x="386" y="988">先确认 session</text>
 
-  <path class="dash" marker-end="url(#arrow)" d="M194 910 C194 980, 280 1010, 380 1030"/>
-  <path class="dash" marker-end="url(#arrow)" d="M480 910 C480 980, 480 1000, 480 1030"/>
-  <path class="dash" marker-end="url(#arrow)" d="M766 910 C766 980, 680 1010, 580 1030"/>
+  <rect class="warn" x="646" y="852" width="246" height="158"/>
+  <text class="subtitle" x="684" y="895">卡点 3：工具</text>
+  <text class="small" x="674" y="932">权限策略拦截</text>
+  <text class="small" x="674" y="960">路径或能力不符</text>
+  <text class="small" x="674" y="988">先读错误信息</text>
 
-  <rect class="light" x="214" y="1032" width="532" height="146"/>
-  <text class="subtitle" x="250" y="1076">管理上真正要的不是“启动成功”</text>
-  <text class="text" x="250" y="1116">而是形成统一验收口径：可触发、可回执、可复盘、可复跑</text>
-  <text class="small" x="250" y="1150">这样新环境接入、自动化试点、团队推广都能站在同一基线之上</text>
+  <path class="thin" marker-end="url(#arrowSoft)" d="M193 1010 C236 1088, 330 1112, 420 1124"/>
+  <path class="thin" marker-end="url(#arrowSoft)" d="M481 1010 C481 1066, 481 1092, 481 1120"/>
+  <path class="thin" marker-end="url(#arrowSoft)" d="M769 1010 C724 1088, 632 1112, 542 1124"/>
 
-  <rect class="box" x="72" y="1224" width="816" height="88"/>
-  <text class="text" x="102" y="1278">一句话：先跑通最小闭环，才能证明 OpenClaw 今天真的能干活，而不是“看起来装好了”。</text>
+  <rect class="box" x="222" y="1124" width="516" height="144"/>
+  <text class="subtitle" x="272" y="1172">最终目标：证据化交付</text>
+  <text class="text" x="272" y="1210">成功：能复查、能复跑、能说明结果</text>
+  <text class="text" x="272" y="1242">失败：能定位到入口、会话、工具或权限层</text>
+
+  <text class="small" x="64" y="1320">管理提醒：没有最小闭环，不要直接上高风险、长链路、对外发送类自动化。</text>
 </svg>
