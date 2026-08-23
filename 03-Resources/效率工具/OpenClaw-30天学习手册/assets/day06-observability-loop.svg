@@ -1,70 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1500" viewBox="0 0 1080 1500">
   <defs>
     <style>
-      .bg { fill: #fcfbf7; }
+      .bg { fill: #fffdf7; }
       .title { font: 700 34px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #24313f; }
-      .subtitle { font: 400 20px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #5f6c79; }
-      .label { font: 600 26px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #24313f; }
-      .text { font: 400 20px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #425466; }
-      .small { font: 400 18px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #5f6c79; }
-      .box { fill: #fffdf8; stroke: #3d4b59; stroke-width: 3.2; rx: 24; ry: 24; }
-      .line { fill: none; stroke: #3d4b59; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; }
-      .dash { fill: none; stroke: #7b8794; stroke-width: 2.6; stroke-linecap: round; stroke-dasharray: 10 10; }
+      .subtitle { font: 400 20px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #607080; }
+      .label { font: 700 25px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #24313f; }
+      .text { font: 400 20px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #405163; }
+      .small { font: 400 18px "HanziPen SC","Hannotate SC","KaiTi","STKaiti","PingFang SC",sans-serif; fill: #607080; }
+      .box { fill: #fffefa; stroke: #34495e; stroke-width: 3; rx: 22; ry: 22; }
+      .soft { fill: #f7fbff; stroke: #34495e; stroke-width: 3; rx: 20; ry: 20; }
+      .line { fill: none; stroke: #34495e; stroke-width: 3.1; stroke-linecap: round; stroke-linejoin: round; }
+      .dash { fill: none; stroke: #6d7d8d; stroke-width: 2.7; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 9 10; }
     </style>
-    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M1,1 L12,7 L1,13" fill="none" stroke="#3d4b59" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <marker id="arrow" markerWidth="16" markerHeight="16" refX="12" refY="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M2,2 L13,8 L2,14" fill="none" stroke="#34495e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
   </defs>
 
-  <rect class="bg" x="0" y="0" width="1080" height="1440" rx="28"/>
-  <text class="title" x="60" y="68">Day06｜可观测性：日志、状态与追踪</text>
-  <text class="subtitle" x="60" y="104">目标：把“任务有没有跑通、卡在哪、谁该处理”变成可视事实</text>
+  <rect class="bg" x="0" y="0" width="1080" height="1500" rx="30"/>
+  <text class="title" x="56" y="70">Day06｜可观测性：日志、状态与追踪</text>
+  <text class="subtitle" x="56" y="106">把 Agent 的执行过程，从黑盒变成可定位、可解释、可运营的事实链路</text>
 
-  <rect class="box" x="110" y="150" width="860" height="120"/>
-  <text class="label" x="170" y="198">① 任务触发</text>
-  <text class="text" x="170" y="234">消息 / 定时任务 / Browser 自动化 / 外部工具请求进入统一执行链路</text>
+  <rect class="box" x="100" y="150" width="880" height="112"/>
+  <text class="label" x="150" y="196">① 任务触发</text>
+  <text class="text" x="150" y="232">用户消息 / 定时任务 / Webhook / Browser 自动化进入执行链路</text>
 
-  <path class="line" d="M540 270 C540 300, 540 320, 540 346" marker-end="url(#arrow)"/>
+  <path class="line" d="M540 262 C540 294, 540 309, 540 337" marker-end="url(#arrow)"/>
 
-  <rect class="box" x="110" y="356" width="860" height="138"/>
-  <text class="label" x="170" y="408">② 统一打点</text>
-  <text class="text" x="170" y="444">给这次任务绑定 session / task / trace 标识，方便后续串起整条链路</text>
-  <text class="small" x="170" y="474">这一步决定后面能不能查、能不能复盘、能不能追责</text>
+  <rect class="box" x="100" y="348" width="880" height="126"/>
+  <text class="label" x="150" y="398">② 绑定统一标识</text>
+  <text class="text" x="150" y="434">sessionId / runId / taskId / traceId 串起同一次任务</text>
+  <text class="small" x="150" y="462">标识不断，后面才能查链路、看状态、做复盘</text>
 
-  <path class="line" d="M540 494 C540 524, 540 544, 540 570" marker-end="url(#arrow)"/>
+  <path class="line" d="M540 474 C540 506, 540 521, 540 549" marker-end="url(#arrow)"/>
 
-  <rect class="box" x="110" y="580" width="860" height="170"/>
-  <text class="label" x="170" y="632">③ 执行与校验</text>
-  <text class="text" x="170" y="668">模型推理、工具调用、重试、超时、人工接管都在这一层发生</text>
-  <text class="text" x="170" y="706">不是只看“有没有执行”，而是看“结果是否满足目标”</text>
+  <rect class="box" x="100" y="560" width="880" height="150"/>
+  <text class="label" x="150" y="610">③ 执行并产生事件</text>
+  <text class="text" x="150" y="646">模型推理、工具调用、重试、超时、审批等待、人工接管</text>
+  <text class="small" x="150" y="682">每个关键动作都形成可记录的生命周期事件或工具事件</text>
 
-  <path class="line" d="M540 750 C540 780, 540 800, 540 826" marker-end="url(#arrow)"/>
+  <path class="line" d="M540 710 C540 742, 540 757, 540 785" marker-end="url(#arrow)"/>
 
-  <rect class="box" x="110" y="836" width="860" height="122"/>
-  <text class="label" x="170" y="886">④ 结果沉淀</text>
-  <text class="text" x="170" y="922">把成功 / 失败 / 耗时 / 错误类型沉淀成可检索事实，而不是口头感觉</text>
+  <rect class="soft" x="70" y="796" width="285" height="168"/>
+  <text class="label" x="165" y="848">日志</text>
+  <text class="text" x="112" y="886">发生了什么</text>
+  <text class="small" x="112" y="918">时间、参数摘要、错误、</text>
+  <text class="small" x="112" y="946">耗时、重试与结果</text>
 
-  <path class="dash" d="M540 958 C540 1000, 540 1018, 540 1040" marker-end="url(#arrow)"/>
+  <rect class="soft" x="398" y="796" width="285" height="168"/>
+  <text class="label" x="493" y="848">状态</text>
+  <text class="text" x="440" y="886">现在做到哪</text>
+  <text class="small" x="440" y="918">排队、执行、等待、</text>
+  <text class="small" x="440" y="946">完成、失败或超时</text>
 
-  <rect class="box" x="80" y="1050" width="270" height="170"/>
-  <text class="label" x="160" y="1102">日志层</text>
-  <text class="text" x="122" y="1140">记录时间、参数摘要、</text>
-  <text class="text" x="122" y="1170">错误信息、耗时、重试</text>
+  <rect class="soft" x="725" y="796" width="285" height="168"/>
+  <text class="label" x="820" y="848">追踪</text>
+  <text class="text" x="767" y="886">卡在哪一跳</text>
+  <text class="small" x="767" y="918">Trace 串全链路，</text>
+  <text class="small" x="767" y="946">Span 看单步骤</text>
 
-  <rect class="box" x="405" y="1050" width="270" height="170"/>
-  <text class="label" x="486" y="1102">状态层</text>
-  <text class="text" x="448" y="1140">告诉你任务现在在哪：</text>
-  <text class="text" x="448" y="1170">排队中 / 执行中 / 已完成</text>
+  <path class="line" d="M213 964 C213 998, 300 1022, 382 1038" marker-end="url(#arrow)"/>
+  <path class="line" d="M540 964 C540 1004, 540 1016, 540 1044" marker-end="url(#arrow)"/>
+  <path class="line" d="M867 964 C867 998, 780 1022, 698 1038" marker-end="url(#arrow)"/>
 
-  <rect class="box" x="730" y="1050" width="270" height="170"/>
-  <text class="label" x="811" y="1102">追踪层</text>
-  <text class="text" x="772" y="1140">把模型、工具、子任务</text>
-  <text class="text" x="772" y="1170">串成完整 Trace / Span</text>
+  <rect class="box" x="150" y="1054" width="780" height="120"/>
+  <text class="label" x="222" y="1102">④ 汇总成运营指标</text>
+  <text class="text" x="222" y="1138">成功率、P95耗时、重试率、人工介入率、单位任务成本、失败TopN</text>
 
-  <path class="line" d="M215 1220 C215 1258, 215 1270, 250 1300" marker-end="url(#arrow)"/>
-  <path class="line" d="M540 1220 C540 1258, 540 1270, 540 1300" marker-end="url(#arrow)"/>
-  <path class="line" d="M865 1220 C865 1258, 865 1270, 830 1300" marker-end="url(#arrow)"/>
+  <path class="dash" d="M540 1174 C540 1208, 540 1224, 540 1250" marker-end="url(#arrow)"/>
 
-  <rect class="box" x="130" y="1310" width="820" height="90"/>
-  <text class="label" x="210" y="1362">最终服务对象：运营看板、开发排障、管理复盘、合规审计共用同一套事实底座</text>
+  <rect class="box" x="100" y="1260" width="880" height="128"/>
+  <text class="label" x="150" y="1310">⑤ 服务排障、运营、复盘与审计</text>
+  <text class="text" x="150" y="1346">开发知道怎么修，运营知道是否交付，管理者知道值不值得继续投入</text>
+
+  <path class="dash" d="M140 1388 C126 1430, 146 1452, 190 1452 L880 1452 C934 1452, 956 1428, 940 1390" marker-end="url(#arrow)"/>
+  <text class="small" x="320" y="1432">复盘结果反向优化 Prompt、工具、流程与安全策略</text>
 </svg>
