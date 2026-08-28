@@ -15,7 +15,7 @@ OpenClaw 本质上是一条“消息驱动的执行链路”：
 - 系统回收结果，决定是否继续补步骤
 - 最终形成可交付输出，并保留日志与状态
 
-![[OpenClaw-30天学习手册/assets/day01-openclaw-architecture-whiteboard.svg]]
+![[OpenClaw-30天学习手册/assets/day01-openclaw-overview-flow.svg]]
 
 ### 2. 关键组件分别解决什么问题
 - **Session**：保存当前会话上下文，避免每次都从零开始
@@ -84,7 +84,7 @@ OpenClaw 增加的是“调用能力 + 状态能力 + 治理能力”。
 
 ## 图示
 ### 主流程图
-![[OpenClaw-30天学习手册/assets/day01-openclaw-architecture-whiteboard.svg]]
+![[OpenClaw-30天学习手册/assets/day01-openclaw-overview-flow.svg]]
 
 ### 这张图该怎么看
 - 左上到右上，是“从需求进入系统，到决定是否执行”的前半段
@@ -92,7 +92,7 @@ OpenClaw 增加的是“调用能力 + 状态能力 + 治理能力”。
 - 下半圈回到左侧，表示结果不是终点，而是进入业务闭环和下一轮迭代
 - 中间的“状态与审计”说明，真正可用的系统一定要可回放、可定位、可治理
 
-## 管理者关注点
+## 管理者关注点（成本/效率/风险）
 ### 1. 成本
 第一阶段不要追求大而全，优先选择高频、低风险、可验证的小场景。只要能把一个闭环跑通，后续复制成本会明显下降。
 

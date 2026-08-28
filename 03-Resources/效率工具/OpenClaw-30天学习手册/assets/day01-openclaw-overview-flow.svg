@@ -1,0 +1,81 @@
+<svg width="1200" height="860" viewBox="0 0 1200 860" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #fcfcfb; }
+      .title { font: 700 34px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #1f2937; }
+      .section { font: 700 24px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #0f172a; }
+      .text { font: 500 18px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #334155; }
+      .small { font: 500 15px 'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',sans-serif; fill: #475569; }
+      .lineBlue { stroke: #2b6cb0; stroke-width: 3.2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .lineOrange { stroke: #dd6b20; stroke-width: 3.2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .lineGreen { stroke: #2f855a; stroke-width: 3.2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .lineGray { stroke: #64748b; stroke-width: 2.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .boxBlue { fill: #f7fbff; stroke: #2b6cb0; stroke-width: 3.2; }
+      .boxOrange { fill: #fffaf3; stroke: #dd6b20; stroke-width: 3.2; }
+      .boxGreen { fill: #f4fbf6; stroke: #2f855a; stroke-width: 3.2; }
+      .boxGray { fill: #ffffff; stroke: #94a3b8; stroke-width: 2.8; }
+      .dash { stroke-dasharray: 7 10; }
+    </style>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#2b6cb0"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#dd6b20"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#2f855a"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="860" rx="24"/>
+  <text class="title" x="600" y="54" text-anchor="middle">OpenClaw：从对话到执行的最小全景图</text>
+
+  <rect class="boxGray dash" x="80" y="90" width="1040" height="108" rx="22"/>
+  <text class="section" x="600" y="126" text-anchor="middle">一条请求先进入会话，再决定是回答还是执行</text>
+  <text class="text" x="240" y="168" text-anchor="middle">用户提出目标</text>
+  <text class="text" x="600" y="168" text-anchor="middle">Session 承接上下文</text>
+  <text class="text" x="960" y="168" text-anchor="middle">Agent 判断动作路径</text>
+
+  <rect class="boxBlue" x="90" y="258" width="200" height="112" rx="20"/>
+  <text class="section" x="190" y="304" text-anchor="middle">1. 输入目标</text>
+  <text class="small" x="190" y="332" text-anchor="middle">问题 / 指令 / 触发条件</text>
+
+  <rect class="boxBlue" x="340" y="258" width="200" height="112" rx="20"/>
+  <text class="section" x="440" y="304" text-anchor="middle">2. 理解意图</text>
+  <text class="small" x="440" y="332" text-anchor="middle">结合上下文识别真正目标</text>
+
+  <rect class="boxOrange" x="590" y="258" width="200" height="112" rx="20"/>
+  <text class="section" x="690" y="304" text-anchor="middle">3. 规划步骤</text>
+  <text class="small" x="690" y="332" text-anchor="middle">选工具、排顺序、控风险</text>
+
+  <rect class="boxOrange" x="840" y="258" width="200" height="112" rx="20"/>
+  <text class="section" x="940" y="304" text-anchor="middle">4. 执行动作</text>
+  <text class="small" x="940" y="332" text-anchor="middle">read / exec / browser / message</text>
+
+  <path class="lineBlue" d="M290 314 C308 314, 322 314, 340 314" marker-end="url(#arrowBlue)"/>
+  <path class="lineOrange" d="M540 314 C558 314, 572 314, 590 314" marker-end="url(#arrowOrange)"/>
+  <path class="lineOrange" d="M790 314 C808 314, 822 314, 840 314" marker-end="url(#arrowOrange)"/>
+
+  <rect class="boxGreen" x="210" y="470" width="220" height="118" rx="20"/>
+  <text class="section" x="320" y="516" text-anchor="middle">5. 校验结果</text>
+  <text class="small" x="320" y="544" text-anchor="middle">是否完整、可用、可交付</text>
+
+  <rect class="boxGreen" x="490" y="470" width="220" height="118" rx="20"/>
+  <text class="section" x="600" y="516" text-anchor="middle">6. 交付结果</text>
+  <text class="small" x="600" y="544" text-anchor="middle">回复用户 / 写文件 / 发通知</text>
+
+  <rect class="boxGray" x="770" y="470" width="220" height="118" rx="20"/>
+  <text class="section" x="880" y="516" text-anchor="middle">7. 留下证据</text>
+  <text class="small" x="880" y="544" text-anchor="middle">日志、状态、审计、回放</text>
+
+  <path class="lineGreen" d="M940 370 C940 410, 820 420, 430 500" marker-end="url(#arrowGreen)"/>
+  <path class="lineGreen" d="M430 528 C452 528, 468 528, 490 528" marker-end="url(#arrowGreen)"/>
+  <path class="lineGray" d="M710 528 C732 528, 748 528, 770 528" marker-end="url(#arrowBlue)"/>
+
+  <path class="lineGray dash" d="M320 588 C320 670, 860 670, 860 588" marker-end="url(#arrowBlue)"/>
+  <text class="text" x="602" y="696" text-anchor="middle">如果结果不对，不是硬结束，而是回到上游重选路径</text>
+
+  <rect class="boxGray" x="100" y="734" width="1000" height="82" rx="18"/>
+  <text class="section" x="600" y="768" text-anchor="middle">管理视角看三件事：能不能稳定跑、出错能不能定位、放大后能不能控风险</text>
+  <text class="small" x="600" y="795" text-anchor="middle">所以 OpenClaw 的价值不只是“回答”，而是“理解 + 执行 + 校验 + 治理”的闭环</text>
+</svg>
