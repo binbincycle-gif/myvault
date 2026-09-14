@@ -1,94 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1480" viewBox="0 0 1080 1480">
+<svg width="900" height="1280" viewBox="0 0 900 1280" xmlns="http://www.w3.org/2000/svg">
   <defs>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L12,7 L2,12" fill="none" stroke="#26364f" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <filter id="paper">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0 0.02 0.04"/></feComponentTransfer>
+    </filter>
     <style>
-      .bg { fill: #fffdf8; }
-      .box { fill: #ffffff; stroke: #222; stroke-width: 3.2; rx: 22; ry: 22; }
-      .warn { fill: #fff3e2; stroke: #222; stroke-width: 3.2; rx: 22; ry: 22; }
-      .ok { fill: #eaf7ef; stroke: #222; stroke-width: 3.2; rx: 22; ry: 22; }
-      .fail { fill: #fff0f0; stroke: #222; stroke-width: 3.2; rx: 22; ry: 22; }
-      .text { font-family: "HanziPen SC", "Hannotate SC", "KaiTi", "STKaiti", "PingFang SC", sans-serif; fill: #202124; font-size: 34px; font-weight: 600; }
-      .small { font-family: "HanziPen SC", "Hannotate SC", "KaiTi", "STKaiti", "PingFang SC", sans-serif; fill: #444; font-size: 25px; }
-      .note { font-family: "HanziPen SC", "Hannotate SC", "KaiTi", "STKaiti", "PingFang SC", sans-serif; fill: #555; font-size: 23px; }
-      .arrow { fill: none; stroke: #222; stroke-width: 3.4; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrowHead); }
-      .dashed { fill: none; stroke: #777; stroke-width: 2.8; stroke-linecap: round; stroke-dasharray: 10 12; marker-end: url(#arrowHeadGray); }
+      .bg { fill:#fffdf7; } .grain { opacity:.15; filter:url(#paper); }
+      .title { font-family:'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',cursive; font-size:34px; fill:#20304a; font-weight:600; }
+      .subtitle { font-family:'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',cursive; font-size:22px; fill:#526179; }
+      .label { font-family:'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',cursive; font-size:28px; fill:#20304a; font-weight:600; }
+      .small { font-family:'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',cursive; font-size:21px; fill:#4d5b73; }
+      .tiny { font-family:'HanziPen SC','Hannotate SC','KaiTi','STKaiti','PingFang SC',cursive; font-size:18px; fill:#60708a; }
+      .box { fill:#fffefa; stroke:#26364f; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; }
+      .blue { fill:#eef5ff; } .green { fill:#eef9f0; } .orange { fill:#fff4e2; } .red { fill:#fdeef2; } .purple { fill:#f2efff; }
+      .line { fill:none; stroke:#26364f; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; marker-end:url(#arrow); }
+      .soft { fill:none; stroke:#6c7a92; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:7 10; marker-end:url(#arrow); }
+      .note { fill:#fffefa; stroke:#8b6f2e; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
     </style>
-    <marker id="arrowHead" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
-      <path d="M2,2 L12,7 L2,12" fill="none" stroke="#222" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
-    </marker>
-    <marker id="arrowHeadGray" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
-      <path d="M2,2 L12,7 L2,12" fill="none" stroke="#777" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
-    </marker>
   </defs>
+  <rect width="900" height="1280" class="bg"/><rect width="900" height="1280" class="grain"/>
+  <text x="64" y="72" class="title">Day11｜幂等、超时与重试策略</text>
+  <text x="64" y="110" class="subtitle">目标：面对重复与波动，仍能稳定完成一次正确的动作</text>
 
-  <rect class="bg" width="1080" height="1480" />
+  <rect x="110" y="150" rx="22" ry="22" width="680" height="94" class="box blue"/>
+  <text x="154" y="190" class="label">1. 接收任务</text><text x="154" y="222" class="small">先识别动作类型：查询、写入、发送或提交</text>
+  <path d="M450 244 C450 272,450 285,450 312" class="line"/>
 
-  <text x="540" y="70" text-anchor="middle" class="text" style="font-size:42px;">幂等、超时与重试流程</text>
-  <text x="540" y="116" text-anchor="middle" class="note">先防重复，再控等待，最后谨慎恢复</text>
+  <rect x="110" y="312" rx="22" ry="22" width="680" height="112" class="box purple"/>
+  <text x="154" y="352" class="label">2. 幂等检查</text><text x="154" y="385" class="small">用“任务类型 + 对象 + 时间”等生成唯一标识</text><text x="154" y="412" class="tiny">已经完成？直接返回已有结果，不再制造副作用。</text>
+  <path d="M450 424 C450 452,450 467,450 494" class="line"/>
 
-  <rect x="300" y="165" width="480" height="92" class="box" />
-  <text x="540" y="208" text-anchor="middle" class="text">任务触发</text>
-  <text x="540" y="240" text-anchor="middle" class="small">用户 / cron / 消息事件</text>
+  <rect x="70" y="494" rx="22" ry="22" width="330" height="128" class="box green"/>
+  <text x="112" y="536" class="label">已执行过</text><text x="112" y="572" class="small">返回记录 / 结果</text><text x="112" y="601" class="tiny">避免重复通知、重复写入</text>
+  <rect x="500" y="494" rx="22" ry="22" width="330" height="128" class="box orange"/>
+  <text x="542" y="536" class="label">尚未执行</text><text x="542" y="572" class="small">设置超时边界</text><text x="542" y="601" class="tiny">给工具、步骤、整轮任务定上限</text>
+  <path d="M450 494 C410 520,397 544,400 558" class="soft"/>
+  <path d="M665 622 C665 654,610 672,550 702" class="line"/>
 
-  <path d="M540 258 C538 290, 542 306, 540 328" class="arrow" />
+  <rect x="110" y="702" rx="22" ry="22" width="680" height="110" class="box blue"/>
+  <text x="154" y="743" class="label">3. 执行核心动作</text><text x="154" y="778" class="small">在时限内调用工具；记录状态、耗时与关键结果</text>
+  <path d="M450 812 C450 842,450 858,450 886" class="line"/>
 
-  <rect x="250" y="330" width="580" height="110" class="box" />
-  <text x="540" y="374" text-anchor="middle" class="text">生成幂等键</text>
-  <text x="540" y="410" text-anchor="middle" class="small">任务类型 + 对象 + 日期 / 事件ID</text>
+  <rect x="110" y="886" rx="22" ry="22" width="680" height="112" class="box orange"/>
+  <text x="154" y="927" class="label">4. 判断结果</text><text x="154" y="961" class="small">成功？临时故障？还是权限、参数、规则错误？</text><text x="154" y="988" class="tiny">关键不是“有没有报错”，而是“值不值得再试”。</text>
+  <path d="M280 998 C245 1034,218 1049,200 1082" class="line"/>
+  <path d="M620 998 C655 1034,682 1049,700 1082" class="soft"/>
 
-  <path d="M540 442 C542 472, 538 490, 540 518" class="arrow" />
+  <rect x="60" y="1082" rx="22" ry="22" width="280" height="110" class="box green"/>
+  <text x="101" y="1124" class="label">成功</text><text x="101" y="1159" class="small">写入完成记录</text><text x="101" y="1185" class="tiny">交付可追溯结果</text>
+  <rect x="560" y="1082" rx="22" ry="22" width="280" height="110" class="box red"/>
+  <text x="601" y="1124" class="label">失败分流</text><text x="601" y="1159" class="small">临时故障：有限重试</text><text x="601" y="1185" class="tiny">权限/参数：快速反馈人工</text>
+  <path d="M560 1138 C485 1092,470 1050,475 1008" class="soft"/>
 
-  <rect x="250" y="520" width="580" height="116" class="warn" />
-  <text x="540" y="566" text-anchor="middle" class="text">是否已经执行过？</text>
-  <text x="540" y="604" text-anchor="middle" class="small">避免重复写入 / 发送 / 提交</text>
-
-  <path d="M250 578 C170 580, 138 650, 138 730" class="arrow" />
-  <text x="154" y="632" class="note">是</text>
-
-  <rect x="70" y="732" width="300" height="108" class="ok" />
-  <text x="220" y="778" text-anchor="middle" class="text">直接返回</text>
-  <text x="220" y="814" text-anchor="middle" class="small">复用已有结果</text>
-
-  <path d="M540 638 C538 670, 542 688, 540 716" class="arrow" />
-  <text x="565" y="682" class="note">否</text>
-
-  <rect x="250" y="718" width="580" height="116" class="box" />
-  <text x="540" y="763" text-anchor="middle" class="text">设置超时边界</text>
-  <text x="540" y="800" text-anchor="middle" class="small">工具 / 步骤 / 整轮任务</text>
-
-  <path d="M540 836 C542 866, 538 886, 540 914" class="arrow" />
-
-  <rect x="250" y="916" width="580" height="116" class="box" />
-  <text x="540" y="961" text-anchor="middle" class="text">执行核心动作</text>
-  <text x="540" y="998" text-anchor="middle" class="small">调用工具、写文件、发通知</text>
-
-  <path d="M540 1034 C538 1064, 542 1083, 540 1110" class="arrow" />
-
-  <rect x="250" y="1112" width="580" height="116" class="warn" />
-  <text x="540" y="1158" text-anchor="middle" class="text">成功还是失败？</text>
-  <text x="540" y="1195" text-anchor="middle" class="small">看错误类型与重试次数</text>
-
-  <path d="M830 1170 C910 1174, 944 1238, 944 1310" class="arrow" />
-  <text x="892" y="1224" class="note">成功</text>
-
-  <rect x="790" y="1312" width="260" height="104" class="ok" />
-  <text x="920" y="1356" text-anchor="middle" class="text">记录结果</text>
-  <text x="920" y="1390" text-anchor="middle" class="small">下次可复用</text>
-
-  <path d="M250 1170 C170 1175, 126 1238, 126 1310" class="arrow" />
-  <text x="155" y="1226" class="note">不可重试</text>
-
-  <rect x="40" y="1312" width="300" height="104" class="fail" />
-  <text x="190" y="1356" text-anchor="middle" class="text">明确失败</text>
-  <text x="190" y="1390" text-anchor="middle" class="small">给出原因和下一步</text>
-
-  <path d="M540 1228 C540 1264, 540 1284, 540 1312" class="arrow" />
-  <text x="565" y="1270" class="note">可重试</text>
-
-  <rect x="380" y="1312" width="320" height="104" class="box" />
-  <text x="540" y="1355" text-anchor="middle" class="text">退避后重试</text>
-  <text x="540" y="1390" text-anchor="middle" class="small">指数退避 + 抖动 + 上限</text>
-
-  <path d="M540 1310 C650 1245, 670 1115, 610 1035" class="dashed" />
-
-  <text x="540" y="1450" text-anchor="middle" class="note">可靠任务 = 幂等保护 + 超时边界 + 有限重试</text>
+  <rect x="80" y="1224" rx="18" ry="18" width="740" height="46" class="note"/>
+  <text x="117" y="1255" class="small">可靠性口诀：先防重，再限时；只为临时故障重试，并留下每一步证据。</text>
 </svg>
