@@ -1,0 +1,3660 @@
+{
+  "schema_version": 1,
+  "person": "王少佳",
+  "xuanwu_id": 767,
+  "source_as_of": "2026-11-12",
+  "last_successful_collection_date": "2026-11-12",
+  "stored_at": "2026-11-13T11:02:41+08:00",
+  "timezone": "Asia/Shanghai",
+  "source_sha256": "8ee42912a071dcee3af37000f3467f591457f961f5d0bfb568674db7482d307d",
+  "version": "2026-11-12-8ee42912a071",
+  "status": "persisted_verified_snapshot",
+  "refresh_note": "导出既有已核验资料；存储时间不代表重新查询玄武或飞书。",
+  "collection": {
+    "status": "generated",
+    "asOf": "2026-11-12",
+    "subject": {
+      "name": "王少佳",
+      "xuanwuId": 767
+    },
+    "period": {
+      "plannedTaskBegin": "2026-05-12",
+      "plannedTaskEnd": "2026-11-12"
+    },
+    "tasks": 372,
+    "iterations": 34,
+    "iterationPIC": 23,
+    "successfullyFetchedDocumentFiles": 37,
+    "retrospectiveCoverage": "5 monthly (May-Sep), 7 selected weekly reports",
+    "visualization": "/Users/cycle/.codex/visualizations/2026/11/12/01a1ce97-abe8-79d0-a803-2f7fad1bd832/wang-shaojia-map.html",
+    "caveats": [
+      "snapshot, refresh through agent",
+      "shared ownership",
+      "planned dates are not delivery dates",
+      "3982 source mismatch",
+      "some plan links remain indices",
+      "retrospectives are self-reports, not independent audit"
+    ]
+  },
+  "data": {
+    "groups": [
+      {
+        "name": "CRM 活动与会员",
+        "count": 11
+      },
+      {
+        "name": "销售线索",
+        "count": 7
+      },
+      {
+        "name": "商城、分销与推荐",
+        "count": 7
+      },
+      {
+        "name": "AI 工具与智能体",
+        "count": 6
+      },
+      {
+        "name": "活动数据与统计",
+        "count": 2
+      },
+      {
+        "name": "客户支持池",
+        "count": 1
+      }
+    ],
+    "projects": [
+      {
+        "id": 4522,
+        "name": "消费者数据导出+ma画布创建",
+        "group": "AI 工具与智能体",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "MA",
+        "online": "2026-10-14",
+        "count": 9,
+        "tasks": [
+          {
+            "id": 108326,
+            "name": "【迭代控制】-消费者数据导出+ma画布创建-产品验收",
+            "people": "傅珍羚;王少佳;",
+            "status": 2,
+            "begin": "2026-10-10"
+          },
+          {
+            "id": 108327,
+            "name": "【迭代控制】-消费者数据导出+ma画布创建-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-14"
+          },
+          {
+            "id": 108322,
+            "name": "【迭代控制】-消费者数据导出+ma画布创建-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-10"
+          },
+          {
+            "id": 108323,
+            "name": "【迭代控制】-消费者数据导出+ma画布创建-提供冒烟用例",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-09"
+          },
+          {
+            "id": 108860,
+            "name": "【接口单元测试】-消费者数据导出+ma画布创建",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-09"
+          },
+          {
+            "id": 108324,
+            "name": "【迭代控制】-消费者数据导出+ma画布创建-风险评估",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-08"
+          },
+          {
+            "id": 108862,
+            "name": "【后端】-消费者数据导出+ma画布创建",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-08"
+          },
+          {
+            "id": 108376,
+            "name": "【开发】workbuddy 创建ma 测试与问题修复",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-22"
+          },
+          {
+            "id": 108325,
+            "name": "【迭代控制】-消费者数据导出+ma画布创建-灰度测试",
+            "people": "莫子明;王少佳;",
+            "status": 2,
+            "begin": "2026-10-10"
+          }
+        ],
+        "plans": [],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4522"
+      },
+      {
+        "id": 4435,
+        "name": "PVH-TH：明星活动",
+        "group": "CRM 活动与会员",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "2026-08-24",
+        "count": 8,
+        "tasks": [
+          {
+            "id": 106753,
+            "name": "【迭代控制】-PVH-TH：明星活动-前端技术方案",
+            "people": "王宇锋;王少佳;",
+            "status": 2,
+            "begin": "2026-08-19"
+          },
+          {
+            "id": 106758,
+            "name": "【迭代控制】-PVH-TH：明星活动-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-24"
+          },
+          {
+            "id": 106752,
+            "name": "【迭代控制】-PVH-TH：明星活动-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-20"
+          },
+          {
+            "id": 106762,
+            "name": "【迭代控制】-PVH-TH：明星活动-后端冒烟",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-20"
+          },
+          {
+            "id": 106795,
+            "name": "【接口单元测试】-THE明星抽奖活动",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-19"
+          },
+          {
+            "id": 106797,
+            "name": "【后端】-THE明星抽奖活动",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-19"
+          },
+          {
+            "id": 106792,
+            "name": "【历史定制PRD功能确认】-THE明星抽奖活动",
+            "people": "王少佳;王宇锋;",
+            "status": 2,
+            "begin": "2026-08-20"
+          },
+          {
+            "id": 106793,
+            "name": "【前后端联调】-THE明星抽奖活动",
+            "people": "王少佳;王宇锋;",
+            "status": 2,
+            "begin": "2026-08-20"
+          }
+        ],
+        "plans": [
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/EjyHwMkNTiO6dkk6RdLcouTjnmh?fromScene=spaceOverview"
+            ],
+            "state": "已读正文/子方案"
+          }
+        ],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4435"
+      },
+      {
+        "id": 4346,
+        "name": "PVH（CK）-抽奖活动",
+        "group": "CRM 活动与会员",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "2026-08-26",
+        "count": 13,
+        "tasks": [
+          {
+            "id": 104281,
+            "name": "【迭代控制】-PVH（CK）-抽奖活动-前端技术方案",
+            "people": "王宇锋;王少佳;",
+            "status": 2,
+            "begin": "2026-07-22"
+          },
+          {
+            "id": 104286,
+            "name": "【迭代控制】-PVH（CK）-抽奖活动-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-26"
+          },
+          {
+            "id": 105840,
+            "name": "PVH（CK）-抽奖活动-自测",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-04"
+          },
+          {
+            "id": 105801,
+            "name": "PVH（CK）-抽奖活动-支持按日库存",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-03"
+          },
+          {
+            "id": 105575,
+            "name": "PVH（CK）-抽奖活动-自提券-自测",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-30"
+          },
+          {
+            "id": 105574,
+            "name": "PVH（CK）-抽奖活动-自提券",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-29"
+          },
+          {
+            "id": 104290,
+            "name": "【迭代控制】-PVH（CK）-抽奖活动-后端冒烟",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-28"
+          },
+          {
+            "id": 104282,
+            "name": "【迭代控制】-PVH（CK）-抽奖活动-提供冒烟用例",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-27"
+          },
+          {
+            "id": 105133,
+            "name": "【接口单元测试】-PVH（CK）-抽奖活动",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-27"
+          },
+          {
+            "id": 105130,
+            "name": "【后端】-PVH（CK）-抽奖活动",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-23"
+          },
+          {
+            "id": 104280,
+            "name": "【迭代控制】-PVH（CK）-抽奖活动-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-22"
+          },
+          {
+            "id": 105128,
+            "name": "【历史定制PRD功能确认】-PVH（CK）-抽奖活动",
+            "people": "王少佳;王宇锋;",
+            "status": 2,
+            "begin": "2026-08-14"
+          },
+          {
+            "id": 105131,
+            "name": "【前后端联调】-PVH（CK）-抽奖活动",
+            "people": "王少佳;王宇锋;",
+            "status": 2,
+            "begin": "2026-08-11"
+          }
+        ],
+        "plans": [
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/LOfYwRGY4iJjaxkTtYucK8kgnmh?fromScene=spaceOverview"
+            ],
+            "state": "已读正文/子方案"
+          }
+        ],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4346"
+      },
+      {
+        "id": 4541,
+        "name": "销售线索-森马共创 1 期补充内容",
+        "group": "销售线索",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "2026-10-28",
+        "count": 14,
+        "tasks": [
+          {
+            "id": 109027,
+            "name": "【迭代控制】-销售线索-森马共创 1 期补充内容-产品验收",
+            "people": "苗子心;王少佳;",
+            "status": 2,
+            "begin": "2026-10-22"
+          },
+          {
+            "id": 109085,
+            "name": "【前后端联调】-森马-销售线索-自定义场景中支持浏览商品",
+            "people": "徐孟良;王少佳;",
+            "status": 2,
+            "begin": "2026-10-22"
+          },
+          {
+            "id": 109100,
+            "name": "【前后端联调】-森马-销售线索-导购线索查看数据增加指标",
+            "people": "徐孟良;王少佳;",
+            "status": 2,
+            "begin": "2026-10-20"
+          },
+          {
+            "id": 109028,
+            "name": "【迭代控制】-销售线索-森马共创 1 期补充内容-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-28"
+          },
+          {
+            "id": 109087,
+            "name": "【接口单元测试】-森马-销售线索-自定义场景中支持浏览商品",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-22"
+          },
+          {
+            "id": 109099,
+            "name": "【后端】-森马-销售线索-导购线索查看数据增加指标",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-22"
+          },
+          {
+            "id": 109102,
+            "name": "【接口单元测试】-森马-销售线索-导购线索查看数据增加指标",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-22"
+          },
+          {
+            "id": 109084,
+            "name": "【后端】-森马-销售线索-自定义场景中支持浏览商品",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-21"
+          },
+          {
+            "id": 109092,
+            "name": "【接口单元测试】-森马-销售线索-分配服务导购在导购变更时支持更新",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-21"
+          },
+          {
+            "id": 109097,
+            "name": "【接口单元测试】-森马-销售线索-归因订单商城订单需在支付状态后计入，不用等到进入 CRM 系统后再进入",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-21"
+          },
+          {
+            "id": 109089,
+            "name": "【后端】-森马-销售线索-分配服务导购在导购变更时支持更新",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-20"
+          },
+          {
+            "id": 109094,
+            "name": "【后端】-森马-销售线索-归因订单商城订单需在支付状态后计入，不用等到进入 CRM 系统后再进入",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-19"
+          },
+          {
+            "id": 109022,
+            "name": "【迭代控制】-销售线索-森马共创 1 期补充内容-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-15"
+          },
+          {
+            "id": 109032,
+            "name": "【迭代控制】-销售线索-森马共创 1 期补充内容-后端冒烟",
+            "people": "王少佳;祝金峰;",
+            "status": 2,
+            "begin": "2026-10-21"
+          }
+        ],
+        "plans": [
+          {
+            "name": "前端技术方案",
+            "owners": "徐孟良",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/KRhfwi7r6iik4xkfaFYcLOAYnLg?from=from_copylink"
+            ],
+            "state": "他人方案，未读取"
+          },
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳;祝金峰",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/HE7TwZTKZi21XCkkwotcSvhEnkh?fromScene=spaceOverview"
+            ],
+            "state": "目录或链接待核验"
+          }
+        ],
+        "note": "后端方案由王少佳、祝金峰共同负责；本次读到目录标题，未完成子文档核验。",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4541"
+      },
+      {
+        "id": 4382,
+        "name": "AI报表解读：门店积分分析",
+        "group": "AI 工具与智能体",
+        "pic": "戴鹏",
+        "status": "正式上线",
+        "line": "内部项目",
+        "online": "2026-10-14",
+        "count": 2,
+        "tasks": [
+          {
+            "id": 106978,
+            "name": "【迭代控制】-AI报表解读：门店积分分析-产品验收",
+            "people": "苗子心;王少佳;",
+            "status": 2,
+            "begin": "2026-09-23"
+          },
+          {
+            "id": 106979,
+            "name": "【迭代控制】-AI报表解读：门店积分分析-已上线",
+            "people": "戴鹏;王少佳;",
+            "status": 2,
+            "begin": "2026-10-14"
+          }
+        ],
+        "plans": [],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4382"
+      },
+      {
+        "id": 4458,
+        "name": "销售线索森马共创 - 销售线索支持线索来源配置PC",
+        "group": "销售线索",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "MA",
+        "online": "2026-09-17",
+        "count": 8,
+        "tasks": [
+          {
+            "id": 107499,
+            "name": "【接口联调】销售线索来源支持可配置",
+            "people": "徐孟良;王少佳;",
+            "status": 2,
+            "begin": "2026-09-08"
+          },
+          {
+            "id": 106962,
+            "name": "【迭代控制】-销售线索森马共创 - 销售线索支持线索来源配置PC-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-17"
+          },
+          {
+            "id": 107569,
+            "name": "支付有礼",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-04"
+          },
+          {
+            "id": 107570,
+            "name": "商城活动",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-03"
+          },
+          {
+            "id": 107354,
+            "name": "累计消费赠礼",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-02"
+          },
+          {
+            "id": 107310,
+            "name": "消费赠礼",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-01"
+          },
+          {
+            "id": 107085,
+            "name": "销售线索 · 品牌配置（开关 / 权重 / 归因 / 冷却 / 生成 / 成单 / 预览 / 审计）",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-26"
+          },
+          {
+            "id": 106950,
+            "name": "【迭代控制】-销售线索森马共创 - 销售线索支持线索来源配置PC-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-24"
+          }
+        ],
+        "plans": [
+          {
+            "name": "前端技术方案",
+            "owners": "徐孟良;赵井旗",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/FkjDw1s2Dic2Uekdlgsc3MrFnoh?from=from_copylink"
+            ],
+            "state": "他人方案，未读取"
+          },
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳;祝金峰",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/LtzJwNiwtiYUeVkJvLRcPEmsngb?fromScene=spaceOverview"
+            ],
+            "state": "已读正文/子方案"
+          }
+        ],
+        "note": "与祝金峰共同负责后端方案；已读品牌配置与沟通场景子方案。PC 方案前端负责人为徐孟良、赵井旗。",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4458"
+      },
+      {
+        "id": 4193,
+        "name": "百丽小店订单业绩归属逻调整V5.0",
+        "group": "商城、分销与推荐",
+        "pic": "刘守汉",
+        "status": "正式上线",
+        "line": "商城",
+        "online": "2026-05-27",
+        "count": 15,
+        "tasks": [
+          {
+            "id": 100594,
+            "name": "【迭代控制】-百丽小店订单业绩归属逻调整V5.0-后端冒烟",
+            "people": "刘守汉;梁新江;王少佳;",
+            "status": 2,
+            "begin": "2026-05-14"
+          },
+          {
+            "id": 100511,
+            "name": "【迭代控制】-百丽小店订单业绩归属逻调整V5.0-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-27"
+          },
+          {
+            "id": 100622,
+            "name": "【接口单元测试】-PC商城订单管理/售后-导出中新增支持导出业绩归因",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-20"
+          },
+          {
+            "id": 100625,
+            "name": "【后端】-PC商城订单管理/售后-导出中新增支持导出业绩归因",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-20"
+          },
+          {
+            "id": 100628,
+            "name": "【后端】-2001、2023、2024接口新增业绩归因字段",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-20"
+          },
+          {
+            "id": 100631,
+            "name": "【接口单元测试】-2001、2023、2024接口新增业绩归因字段",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-20"
+          },
+          {
+            "id": 100635,
+            "name": "【后端】-新增参数控制业绩归属订单/退货详情是否显示业绩归因",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-20"
+          },
+          {
+            "id": 100638,
+            "name": "【接口单元测试】-新增参数控制业绩归属订单/退货详情是否显示业绩归因",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-20"
+          },
+          {
+            "id": 100611,
+            "name": "【后端】-小程序端业绩归属订单详情新增发货信息 业绩归属退货详情新增退货物流",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-19"
+          },
+          {
+            "id": 100609,
+            "name": "【接口单元测试】-小程序端业绩归属订单详情新增发货信息 业绩归属退货详情新增退货物流",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-14"
+          },
+          {
+            "id": 100633,
+            "name": "【历史定制PRD功能确认】-新增参数控制业绩归属订单/退货详情是否显示业绩归因",
+            "people": "王松;王少佳;",
+            "status": 2,
+            "begin": "2026-05-18"
+          },
+          {
+            "id": 100636,
+            "name": "【前后端联调】-新增参数控制业绩归属订单/退货详情是否显示业绩归因",
+            "people": "王松;王少佳;",
+            "status": 2,
+            "begin": "2026-05-18"
+          },
+          {
+            "id": 100607,
+            "name": "【前后端联调】-小程序端业绩归属订单详情新增发货信息 业绩归属退货详情新增退货物流",
+            "people": "王松;王少佳;",
+            "status": 2,
+            "begin": "2026-05-18"
+          },
+          {
+            "id": 100626,
+            "name": "【前后端联调】-PC商城订单管理/售后-导出中新增支持导出业绩归因",
+            "people": "王松;王少佳;",
+            "status": 2,
+            "begin": "2026-05-15"
+          },
+          {
+            "id": 100620,
+            "name": "【历史定制PRD功能确认】-PC商城订单管理/售后-导出中新增支持导出业绩归因",
+            "people": "王松;王少佳;",
+            "status": 2,
+            "begin": "2026-05-14"
+          }
+        ],
+        "plans": [
+          {
+            "name": "前端技术方案",
+            "owners": "王松",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/R7mwwGPCtiBluLkPXUJcmdCEnZe?from=from_copylink"
+            ],
+            "state": "他人方案，未读取"
+          },
+          {
+            "name": "后端技术方案",
+            "owners": "刘守汉;梁新江;王少佳",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/BumDwuQVKiFQqPkeUcocl6Gwnpd?from=from_copylink"
+            ],
+            "state": "已读正文/子方案"
+          }
+        ],
+        "note": "后端方案共同负责人：刘守汉、梁新江、王少佳；正文不能归为个人独立产出。",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4193"
+      },
+      {
+        "id": 4600,
+        "name": "销售线索增加提醒+归因优化",
+        "group": "销售线索",
+        "pic": "王少佳",
+        "status": "技术设计",
+        "line": "CRM",
+        "online": "",
+        "count": 7,
+        "tasks": [
+          {
+            "id": 110439,
+            "name": "【接口单元测试】-销售线索增加消息提醒",
+            "people": "王少佳;",
+            "status": 0,
+            "begin": "2026-11-12"
+          },
+          {
+            "id": 110436,
+            "name": "【后端】-销售线索增加消息提醒",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-11"
+          },
+          {
+            "id": 110430,
+            "name": "【前后端联调】-销售线索-订单归因+成单明细",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-10"
+          },
+          {
+            "id": 110432,
+            "name": "【接口单元测试】-销售线索-订单归因+成单明细",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-09"
+          },
+          {
+            "id": 110434,
+            "name": "【后端】-销售线索-订单归因+成单明细",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-06"
+          },
+          {
+            "id": 110421,
+            "name": "【迭代控制】-销售线索增加提醒+归因优化-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-05"
+          },
+          {
+            "id": 110437,
+            "name": "【前后端联调】-销售线索增加消息提醒",
+            "people": "王少佳;徐孟良;",
+            "status": 2,
+            "begin": "2026-11-12"
+          }
+        ],
+        "plans": [
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/K8GjwoKKQiaCSXkb3aAcQhNenUh?fromScene=spaceOverview"
+            ],
+            "state": "已读正文/子方案"
+          }
+        ],
+        "note": "已读提醒与归因两个子方案；玄武当前为技术设计，设计内容尚不能作为生产效果。",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4600"
+      },
+      {
+        "id": 4599,
+        "name": "销售线索增加场景",
+        "group": "销售线索",
+        "pic": "祝金峰",
+        "status": "开发测试",
+        "line": "CRM",
+        "online": "",
+        "count": 1,
+        "tasks": [
+          {
+            "id": 110748,
+            "name": "MA + 销售线索 新增开始节点",
+            "people": "王少佳;",
+            "status": 0,
+            "begin": "2026-11-12"
+          }
+        ],
+        "plans": [
+          {
+            "name": "后端技术方案",
+            "owners": "祝金峰",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/VcHdwcvTNigmvukTFe1cDSdDnEf?fromScene=spaceOverview"
+            ],
+            "state": "他人方案，未读取"
+          }
+        ],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4599"
+      },
+      {
+        "id": 4594,
+        "name": "【智能体平台】新增产品和合同管理",
+        "group": "AI 工具与智能体",
+        "pic": "顾伟",
+        "status": "开发测试",
+        "line": "内部项目",
+        "online": "",
+        "count": 5,
+        "tasks": [
+          {
+            "id": 110555,
+            "name": "【迭代控制】-【智能体平台】新增产品和合同管理-后端冒烟",
+            "people": "王少佳;",
+            "status": 0,
+            "begin": "2026-11-09"
+          },
+          {
+            "id": 110557,
+            "name": "【后端】-新增合同和登录等优化",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-09"
+          },
+          {
+            "id": 110560,
+            "name": "【接口单元测试】-新增合同和登录等优化",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-09"
+          },
+          {
+            "id": 110400,
+            "name": "【迭代控制】-【智能体平台】新增产品和合同管理-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-04"
+          },
+          {
+            "id": 110474,
+            "name": "智能体页切换账号",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-04"
+          }
+        ],
+        "plans": [
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳",
+            "urls": [
+              "https://skillsgateway-q1.ezrpro.com"
+            ],
+            "state": "目录或链接待核验"
+          }
+        ],
+        "note": "控制点链接是 Q1 网关服务地址，未当作技术方案正文。",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4594"
+      },
+      {
+        "id": 2064,
+        "name": "业务研发客户数据处理及支持—勿删",
+        "group": "客户支持池",
+        "pic": "贺斌",
+        "status": "产品调研",
+        "line": "CRM",
+        "online": "",
+        "count": 18,
+        "tasks": [
+          {
+            "id": 110472,
+            "name": "JOYMARK 火山引擎埋点对接 MA 技术方案设计",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-05"
+          },
+          {
+            "id": 110473,
+            "name": "储值卡退卡退款",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-05"
+          },
+          {
+            "id": 110471,
+            "name": "MSMIN品牌新增小红书电商会员通",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-04"
+          },
+          {
+            "id": 110030,
+            "name": "森马刷销售线索数据",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-29"
+          },
+          {
+            "id": 110025,
+            "name": "亚瑟士儿童品牌MA",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 110026,
+            "name": "森马儿童品牌MA",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 110028,
+            "name": "7112开通MA",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-26"
+          },
+          {
+            "id": 109167,
+            "name": "SkillsGateway持续优化-HH定制报表导出",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-14"
+          },
+          {
+            "id": 109166,
+            "name": "SkillsGateway持续优化-商品中心导出+分销订单查询+等级分析导出",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-13"
+          },
+          {
+            "id": 109165,
+            "name": "SkillsGateway持续优化-会员洞察",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-12"
+          },
+          {
+            "id": 108229,
+            "name": "EFM开通ma",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-17"
+          },
+          {
+            "id": 108230,
+            "name": "卓诗尼TQ开通MA",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-16"
+          },
+          {
+            "id": 106061,
+            "name": "7156TRANDS创世开通MA",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-03"
+          },
+          {
+            "id": 103360,
+            "name": "hellyhansen开通MA",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-23"
+          },
+          {
+            "id": 103208,
+            "name": "7149 开通MA",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-15"
+          },
+          {
+            "id": 101796,
+            "name": "7158开通ma",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-29"
+          },
+          {
+            "id": 101795,
+            "name": "生日和季节不准的问题",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-26"
+          },
+          {
+            "id": 101794,
+            "name": "5973 查询会员信息oom",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-25"
+          }
+        ],
+        "plans": [],
+        "note": "这是长期客户支持池，不按独立交付项目计算。",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=2064"
+      },
+      {
+        "id": 4518,
+        "name": "营销助手AI改版-10月",
+        "group": "AI 工具与智能体",
+        "pic": "杨柳",
+        "status": "测试灰度",
+        "line": "CRM",
+        "online": "",
+        "count": 22,
+        "tasks": [
+          {
+            "id": 110246,
+            "name": "企微好友分析",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-04"
+          },
+          {
+            "id": 110247,
+            "name": "会员概况",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-04"
+          },
+          {
+            "id": 110248,
+            "name": "目标管理",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-04"
+          },
+          {
+            "id": 110249,
+            "name": "销售线索-获取 AI 推荐商品",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-03"
+          },
+          {
+            "id": 110250,
+            "name": "销售线索-查询会员可参与活动和券",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-11-03"
+          },
+          {
+            "id": 110022,
+            "name": "SkillsGateway持续优化-EZR储值卡 -卡消费分析",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-30"
+          },
+          {
+            "id": 110023,
+            "name": "SkillsGateway持续优化-性能优化+回访结果+品牌分析取数+会员销售看板取数",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-30"
+          },
+          {
+            "id": 110020,
+            "name": "SkillsGateway持续优化-企微资产分析+生日营销分析+会员积分分析+门店积分分析",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-29"
+          },
+          {
+            "id": 110021,
+            "name": "SkillsGateway-门店查片区和店群",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-29"
+          },
+          {
+            "id": 109927,
+            "name": "查看SApp下单业绩券核销分析",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 109928,
+            "name": "查看SApp下单业绩结构拆分",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 109929,
+            "name": "查看SApp下单业绩汇总",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 109930,
+            "name": "查看SApp导购业绩列表排名",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 109931,
+            "name": "查看SApp导购业绩排名",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 109932,
+            "name": "查看SApp会员招募",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 109933,
+            "name": "查看回访按导购转化",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 109934,
+            "name": "查看回访任务详情及统计",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 109935,
+            "name": "查看会员回访任务列表",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 109936,
+            "name": "查看回访月报汇总",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 109600,
+            "name": "新增应用启动门店支持并分离SApp OAuth客户端",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-26"
+          },
+          {
+            "id": 109601,
+            "name": "App Launch传入shop_id供网关固化工作门店",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-26"
+          },
+          {
+            "id": 109602,
+            "name": "Sapp过滤器支持网关Token双验并回填ShopId与AppUserId",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-26"
+          }
+        ],
+        "plans": [
+          {
+            "name": "后端技术方案",
+            "owners": "桂玮",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/EowWwMXLAi4ljYksWouccnxenZb"
+            ],
+            "state": "他人方案，未读取"
+          }
+        ],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4518"
+      },
+      {
+        "id": 4564,
+        "name": "泰兰尼斯-消费赠礼",
+        "group": "CRM 活动与会员",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "2026-10-30",
+        "count": 6,
+        "tasks": [
+          {
+            "id": 109492,
+            "name": "【迭代控制】-泰兰尼斯-消费赠礼-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-30"
+          },
+          {
+            "id": 109495,
+            "name": "【迭代控制】-泰兰尼斯-消费赠礼-后端冒烟",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 109503,
+            "name": "【历史定制PRD功能确认】-泰兰尼斯：消费赠礼订单第三方可以根据原单号查询订单的券状态及返回退款金额",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 109508,
+            "name": "【接口单元测试】-泰兰尼斯：消费赠礼订单第三方可以根据原单号查询订单的券状态及返回退款金额",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-27"
+          },
+          {
+            "id": 109505,
+            "name": "【后端】-泰兰尼斯：消费赠礼订单第三方可以根据原单号查询订单的券状态及返回退款金额",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-26"
+          },
+          {
+            "id": 109487,
+            "name": "【迭代控制】-泰兰尼斯-消费赠礼-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-23"
+          }
+        ],
+        "plans": [
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/OF6qw4d9miTsvPkYlg2clu9knh1?fromScene=spaceOverview"
+            ],
+            "state": "已读正文/子方案"
+          }
+        ],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4564"
+      },
+      {
+        "id": 4537,
+        "name": "加拿大鹅-遗留需求",
+        "group": "CRM 活动与会员",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "2026-10-28",
+        "count": 9,
+        "tasks": [
+          {
+            "id": 108765,
+            "name": "【迭代控制】-加拿大鹅-遗留需求-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-28"
+          },
+          {
+            "id": 108768,
+            "name": "【迭代控制】-加拿大鹅-遗留需求-后端冒烟",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-14"
+          },
+          {
+            "id": 108778,
+            "name": "【历史定制PRD功能确认】-加拿大鹅-遗留需求",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-14"
+          },
+          {
+            "id": 108780,
+            "name": "【接口单元测试】-加拿大鹅-遗留需求",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-14"
+          },
+          {
+            "id": 108781,
+            "name": "【前端】-加拿大鹅-遗留需求",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-14"
+          },
+          {
+            "id": 108947,
+            "name": "api/CVip/VipsGet 新增id查询",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-13"
+          },
+          {
+            "id": 108783,
+            "name": "【前后端联调】-加拿大鹅-遗留需求",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-13"
+          },
+          {
+            "id": 108760,
+            "name": "【迭代控制】-加拿大鹅-遗留需求-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-12"
+          },
+          {
+            "id": 108782,
+            "name": "【后端】-加拿大鹅-遗留需求",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-10-12"
+          }
+        ],
+        "plans": [
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/MunnwGbq8ibGmHkTAu2cBL8jnPe"
+            ],
+            "state": "目录或链接待核验"
+          }
+        ],
+        "note": "本次读到方案目录标题，尚未展开具体内容。",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4537"
+      },
+      {
+        "id": 4526,
+        "name": "舜华鸭业定制报表支持workbuddy",
+        "group": "AI 工具与智能体",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "大数据",
+        "online": "2026-09-29",
+        "count": 21,
+        "tasks": [
+          {
+            "id": 108606,
+            "name": "【后端】-舜华鸭业-门店业绩",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-29"
+          },
+          {
+            "id": 108607,
+            "name": "【前后端联调】-舜华鸭业-门店业绩",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-29"
+          },
+          {
+            "id": 108609,
+            "name": "【接口单元测试】-舜华鸭业-门店业绩",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-29"
+          },
+          {
+            "id": 108409,
+            "name": "【迭代控制】-舜华鸭业定制报表支持workbuddy-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-29"
+          },
+          {
+            "id": 108407,
+            "name": "【迭代控制】-舜华鸭业定制报表支持workbuddy-灰度测试",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-28"
+          },
+          {
+            "id": 108408,
+            "name": "【迭代控制】-舜华鸭业定制报表支持workbuddy-产品验收",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-28"
+          },
+          {
+            "id": 108610,
+            "name": "【接口单元测试】-舜华鸭业-导购业绩",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-24"
+          },
+          {
+            "id": 108612,
+            "name": "【后端】-舜华鸭业-导购业绩",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-24"
+          },
+          {
+            "id": 108613,
+            "name": "【前后端联调】-舜华鸭业-导购业绩",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-24"
+          },
+          {
+            "id": 108616,
+            "name": "【后端】-舜华鸭业-片区业绩",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-24"
+          },
+          {
+            "id": 108617,
+            "name": "【前后端联调】-舜华鸭业-片区业绩",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-24"
+          },
+          {
+            "id": 108619,
+            "name": "【接口单元测试】-舜华鸭业-片区业绩",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-24"
+          },
+          {
+            "id": 108621,
+            "name": "【后端】-舜华鸭业-导购会员资产",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-23"
+          },
+          {
+            "id": 108622,
+            "name": "【前后端联调】-舜华鸭业-导购会员资产",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-23"
+          },
+          {
+            "id": 108624,
+            "name": "【接口单元测试】-舜华鸭业-导购会员资产",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-23"
+          },
+          {
+            "id": 108627,
+            "name": "【接口单元测试】-舜华鸭业-门店会员资产",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-22"
+          },
+          {
+            "id": 108629,
+            "name": "【后端】-舜华鸭业-门店会员资产",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-22"
+          },
+          {
+            "id": 108631,
+            "name": "【后端】-舜华鸭业-片区会员资产",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-21"
+          },
+          {
+            "id": 108632,
+            "name": "【前后端联调】-舜华鸭业-片区会员资产",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-21"
+          },
+          {
+            "id": 108634,
+            "name": "【接口单元测试】-舜华鸭业-片区会员资产",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-21"
+          },
+          {
+            "id": 108406,
+            "name": "【迭代控制】-舜华鸭业定制报表支持workbuddy-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-21"
+          }
+        ],
+        "plans": [],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4526"
+      },
+      {
+        "id": 4467,
+        "name": "workbuddy MCP/skill开放能力v1.0",
+        "group": "AI 工具与智能体",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "内部项目",
+        "online": "2026-09-20",
+        "count": 16,
+        "tasks": [
+          {
+            "id": 107668,
+            "name": "【迭代控制】-workbuddy MCP/skill开放能力v1.0-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-20"
+          },
+          {
+            "id": 108224,
+            "name": "已登录 CRM 点入口新开标签进内部智能体，不再出网关确认页；WorkBuddy 等外部平台仍走原确认页。",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-18"
+          },
+          {
+            "id": 108222,
+            "name": "购物车降价、库存告急、核销当时发生、任务日期",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-17"
+          },
+          {
+            "id": 108223,
+            "name": "营销画布 Skill：改已有、启用、停用、终止",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-17"
+          },
+          {
+            "id": 108220,
+            "name": "浏览首页、加购后某分类、某张券到期前、只跑一次圈人、短信自定义链接",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-16"
+          },
+          {
+            "id": 108221,
+            "name": "指定券领取后、浏览某页、搜某词、启动场景、浏览首页后某门店、抖音指定商品、指定等级升级、核券门店、加购后商品名称/属性",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-16"
+          },
+          {
+            "id": 108218,
+            "name": "A/B 和按性别、按筛选分流",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-15"
+          },
+          {
+            "id": 108219,
+            "name": "片区/标签/领过券/买过分类货号片区券",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-15"
+          },
+          {
+            "id": 108216,
+            "name": "对某个人群定时发券",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-14"
+          },
+          {
+            "id": 108217,
+            "name": "短信/公众号/企微/回访/弹窗/券包/用户明细/第三方/智能触达",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-14"
+          },
+          {
+            "id": 107671,
+            "name": "【迭代控制】-workbuddy MCP/skill开放能力v1.0-后端冒烟",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-11"
+          },
+          {
+            "id": 107704,
+            "name": "【前后端联调】-新增 MCP和skill的能力",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-11"
+          },
+          {
+            "id": 107706,
+            "name": "【接口单元测试】-新增 MCP和skill的能力",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-11"
+          },
+          {
+            "id": 107702,
+            "name": "【前端】-新增 MCP和skill的能力",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-10"
+          },
+          {
+            "id": 107662,
+            "name": "【迭代控制】-workbuddy MCP/skill开放能力v1.0-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-09"
+          },
+          {
+            "id": 107703,
+            "name": "【后端】-新增 MCP和skill的能力",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-09"
+          }
+        ],
+        "plans": [
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/EDtuw5AAGiHGezkPmIpcaAz8n3f?fromScene=spaceOverview"
+            ],
+            "state": "已读正文/子方案"
+          }
+        ],
+        "note": "目录已展开：已读角色权限、内部智能体免确认授权、品牌技能范围与画布测试用例。迭代整体状态不能证明每个子能力均已在生产验证。",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4467"
+      },
+      {
+        "id": 4446,
+        "name": "销售线索-LLM精筛",
+        "group": "销售线索",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "2026-09-02",
+        "count": 8,
+        "tasks": [
+          {
+            "id": 106294,
+            "name": "【迭代控制】-销售线索-LLM精筛-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-02"
+          },
+          {
+            "id": 106539,
+            "name": "【前端】-销售线索-LLM精筛",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-18"
+          },
+          {
+            "id": 106540,
+            "name": "【后端】-销售线索-LLM精筛",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-18"
+          },
+          {
+            "id": 106541,
+            "name": "【前后端联调】-销售线索-LLM精筛",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-18"
+          },
+          {
+            "id": 106543,
+            "name": "【接口单元测试】-销售线索-LLM精筛",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-18"
+          },
+          {
+            "id": 106342,
+            "name": "LLM 精筛 ",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-13"
+          },
+          {
+            "id": 106341,
+            "name": "销售线索 ScoreLead 规则控量",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-12"
+          },
+          {
+            "id": 106292,
+            "name": "【迭代控制】-销售线索-LLM精筛-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-11"
+          }
+        ],
+        "plans": [],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4446"
+      },
+      {
+        "id": 4415,
+        "name": "会员参加活动汇总统计二期",
+        "group": "活动数据与统计",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "2026-09-02",
+        "count": 64,
+        "tasks": [
+          {
+            "id": 105861,
+            "name": "【迭代控制】-会员参加活动汇总统计二期-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-09-02"
+          },
+          {
+            "id": 106584,
+            "name": "限时优惠",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106585,
+            "name": "新人专享",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106586,
+            "name": "单品团",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106587,
+            "name": "多品团",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106588,
+            "name": "砍价",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106589,
+            "name": "秒杀",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106590,
+            "name": "定金预售",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106591,
+            "name": "全款预售",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106592,
+            "name": "限券预售",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106593,
+            "name": "限券抢购",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106594,
+            "name": "满减/折",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106595,
+            "name": "满赠/换购",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106596,
+            "name": "一口价",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106597,
+            "name": "一口折",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106598,
+            "name": "N元N件",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106599,
+            "name": "优惠券",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 105856,
+            "name": "【迭代控制】-会员参加活动汇总统计二期-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 107181,
+            "name": "【前端】-活动二期",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 107182,
+            "name": "【后端】-活动二期",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 107183,
+            "name": "【前后端联调】-活动二期",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 107185,
+            "name": "【接口单元测试】-活动二期",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-28"
+          },
+          {
+            "id": 106035,
+            "name": "猜灯谜",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-21"
+          },
+          {
+            "id": 106034,
+            "name": "快递送到家",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-20"
+          },
+          {
+            "id": 106054,
+            "name": "智能营销-消费赠礼",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-20"
+          },
+          {
+            "id": 106055,
+            "name": "智能营销-累计消费赢礼",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-20"
+          },
+          {
+            "id": 106056,
+            "name": "智能营销-平台激活礼",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-20"
+          },
+          {
+            "id": 106060,
+            "name": "智能营销-升级礼",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-20"
+          },
+          {
+            "id": 106033,
+            "name": "套红包大作战",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-19"
+          },
+          {
+            "id": 106047,
+            "name": "总部批量营销",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-19"
+          },
+          {
+            "id": 106048,
+            "name": "注册渠道（微信）",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-19"
+          },
+          {
+            "id": 106049,
+            "name": "智能营销-定向营销",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-19"
+          },
+          {
+            "id": 106050,
+            "name": "智能营销-定向二次营销",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-19"
+          },
+          {
+            "id": 106051,
+            "name": "智能营销-自动化营销",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-19"
+          },
+          {
+            "id": 106052,
+            "name": "智能营销-订单N倍积分",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-19"
+          },
+          {
+            "id": 106053,
+            "name": "智能营销-权益N倍积分",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-19"
+          },
+          {
+            "id": 106057,
+            "name": "智能营销-注册礼",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-19"
+          },
+          {
+            "id": 106058,
+            "name": "智能营销-老营销活动",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-19"
+          },
+          {
+            "id": 106059,
+            "name": "智能营销-保级礼",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-19"
+          },
+          {
+            "id": 106032,
+            "name": "老虎机",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-18"
+          },
+          {
+            "id": 106040,
+            "name": "口令券",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-18"
+          },
+          {
+            "id": 106041,
+            "name": "门店送券",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-18"
+          },
+          {
+            "id": 106042,
+            "name": "扫码领券",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-18"
+          },
+          {
+            "id": 106043,
+            "name": "好友瓜分券",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-18"
+          },
+          {
+            "id": 106044,
+            "name": "品牌故事",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-18"
+          },
+          {
+            "id": 106045,
+            "name": "开屏推广",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-18"
+          },
+          {
+            "id": 106046,
+            "name": "带参二维码",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-18"
+          },
+          {
+            "id": 106031,
+            "name": "大转盘",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-17"
+          },
+          {
+            "id": 106036,
+            "name": "方块消消乐",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-17"
+          },
+          {
+            "id": 106037,
+            "name": "拆盲盒",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-17"
+          },
+          {
+            "id": 106038,
+            "name": "企微群抽奖 ",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-17"
+          },
+          {
+            "id": 106039,
+            "name": "营销任务",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-17"
+          },
+          {
+            "id": 106023,
+            "name": "预约",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-07"
+          },
+          {
+            "id": 106024,
+            "name": "抽签购",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-07"
+          },
+          {
+            "id": 106025,
+            "name": "日历签到",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-07"
+          },
+          {
+            "id": 106026,
+            "name": "完善资料",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-07"
+          },
+          {
+            "id": 106027,
+            "name": "学生认证",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-07"
+          },
+          {
+            "id": 106028,
+            "name": "砸金蛋",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-07"
+          },
+          {
+            "id": 106029,
+            "name": "摇一摇",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-07"
+          },
+          {
+            "id": 106030,
+            "name": "刮刮卡",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-07"
+          },
+          {
+            "id": 106019,
+            "name": "会员礼",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-06"
+          },
+          {
+            "id": 106020,
+            "name": "邀请有礼",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-06"
+          },
+          {
+            "id": 106021,
+            "name": "支付有礼",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-06"
+          },
+          {
+            "id": 106022,
+            "name": "评价有礼",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-06"
+          }
+        ],
+        "plans": [],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4415"
+      },
+      {
+        "id": 4289,
+        "name": "PVH客服P1优先级-分权",
+        "group": "CRM 活动与会员",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "",
+        "count": 15,
+        "tasks": [
+          {
+            "id": 102479,
+            "name": "【迭代控制】-PVH客服P1优先级-分权-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-15"
+          },
+          {
+            "id": 102482,
+            "name": "【迭代控制】-PVH客服P1优先级-分权-后端冒烟",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-18"
+          },
+          {
+            "id": 102675,
+            "name": "【后端】-客服会话标签分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-17"
+          },
+          {
+            "id": 102676,
+            "name": "【前后端联调】-客服会话标签分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-17"
+          },
+          {
+            "id": 102678,
+            "name": "【接口单元测试】-客服会话标签分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-17"
+          },
+          {
+            "id": 102679,
+            "name": "【前端】-客服会话标签分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-17"
+          },
+          {
+            "id": 102680,
+            "name": "【前端】-客服系统设置-坐席规则分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-16"
+          },
+          {
+            "id": 102681,
+            "name": "【后端】-客服系统设置-坐席规则分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-16"
+          },
+          {
+            "id": 102682,
+            "name": "【前后端联调】-客服系统设置-坐席规则分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-16"
+          },
+          {
+            "id": 102684,
+            "name": "【接口单元测试】-客服系统设置-坐席规则分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-16"
+          },
+          {
+            "id": 102685,
+            "name": "【前端】-客服评价分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-15"
+          },
+          {
+            "id": 102686,
+            "name": "【后端】-客服评价分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-15"
+          },
+          {
+            "id": 102687,
+            "name": "【前后端联调】-客服评价分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-15"
+          },
+          {
+            "id": 102689,
+            "name": "【接口单元测试】-客服评价分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-15"
+          },
+          {
+            "id": 102474,
+            "name": "【迭代控制】-PVH客服P1优先级-分权-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-15"
+          }
+        ],
+        "plans": [],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4289"
+      },
+      {
+        "id": 4280,
+        "name": "【伊利项目定制】分销-推广体系",
+        "group": "商城、分销与推荐",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "商城",
+        "online": "",
+        "count": 25,
+        "tasks": [
+          {
+            "id": 104268,
+            "name": "【迭代控制】-【伊利项目定制】分销-推广体系-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-08-08"
+          },
+          {
+            "id": 104271,
+            "name": "【迭代控制】-【伊利项目定制】分销-推广体系-后端冒烟",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-21"
+          },
+          {
+            "id": 104599,
+            "name": "【后端】-分销导购离职继承",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-21"
+          },
+          {
+            "id": 104602,
+            "name": "【接口单元测试】-分销导购离职继承",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-21"
+          },
+          {
+            "id": 104567,
+            "name": "【后端】-分销员信息页改造",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-20"
+          },
+          {
+            "id": 104570,
+            "name": "【接口单元测试】-分销员信息页改造",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-20"
+          },
+          {
+            "id": 104595,
+            "name": "【接口单元测试】-支持分销导购查看下级微客和会员",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-17"
+          },
+          {
+            "id": 104597,
+            "name": "【后端】-支持分销导购查看下级微客和会员",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-17"
+          },
+          {
+            "id": 104587,
+            "name": "【接口单元测试】-分销导购邀请微客改造",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-16"
+          },
+          {
+            "id": 104590,
+            "name": "【后端】-分销导购邀请微客改造",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-16"
+          },
+          {
+            "id": 104582,
+            "name": "【后端】-支持分销导购邀请会员及后续归因",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-15"
+          },
+          {
+            "id": 104585,
+            "name": "【接口单元测试】-支持分销导购邀请会员及后续归因",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-15"
+          },
+          {
+            "id": 104575,
+            "name": "【接口单元测试】-支持微客邀请会员及后续归因",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-14"
+          },
+          {
+            "id": 104577,
+            "name": "【接口单元测试】-支持微客查看下级微客和会员",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-14"
+          },
+          {
+            "id": 104579,
+            "name": "【后端】-支持微客查看下级微客和会员",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-14"
+          },
+          {
+            "id": 104557,
+            "name": "支持微客邀请会员及后续归因",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-13"
+          },
+          {
+            "id": 104572,
+            "name": "【后端】-支持微客邀请会员及后续归因",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-13"
+          },
+          {
+            "id": 104263,
+            "name": "【迭代控制】-【伊利项目定制】分销-推广体系-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-10"
+          },
+          {
+            "id": 104580,
+            "name": "【前后端联调】-支持微客查看下级微客和会员",
+            "people": "王少佳;徐孟良;",
+            "status": 2,
+            "begin": "2026-07-21"
+          },
+          {
+            "id": 104600,
+            "name": "【前后端联调】-分销导购离职继承",
+            "people": "王少佳;徐孟良;",
+            "status": 2,
+            "begin": "2026-07-21"
+          },
+          {
+            "id": 104568,
+            "name": "【前后端联调】-分销员信息页改造",
+            "people": "王少佳;徐孟良;",
+            "status": 2,
+            "begin": "2026-07-20"
+          },
+          {
+            "id": 104592,
+            "name": "【前后端联调】-分销导购邀请微客改造",
+            "people": "王少佳;徐孟良;",
+            "status": 2,
+            "begin": "2026-07-17"
+          },
+          {
+            "id": 104593,
+            "name": "【前后端联调】-支持分销导购查看下级微客和会员",
+            "people": "王少佳;徐孟良;",
+            "status": 2,
+            "begin": "2026-07-17"
+          },
+          {
+            "id": 104583,
+            "name": "【前后端联调】-支持分销导购邀请会员及后续归因",
+            "people": "王少佳;徐孟良;",
+            "status": 2,
+            "begin": "2026-07-16"
+          },
+          {
+            "id": 104573,
+            "name": "【前后端联调】-支持微客邀请会员及后续归因",
+            "people": "王少佳;徐孟良;",
+            "status": 2,
+            "begin": "2026-07-14"
+          }
+        ],
+        "plans": [
+          {
+            "name": "前端技术方案",
+            "owners": "徐孟良",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/SnNfwA3HJiH2ePk2T9rclvg6noh?from=from_copylink"
+            ],
+            "state": "他人方案，未读取"
+          },
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/PnKMwaPntinSuckBrNscOtWmnuf?fromScene=spaceOverview"
+            ],
+            "state": "已读正文/子方案"
+          }
+        ],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4280"
+      },
+      {
+        "id": 4239,
+        "name": "【PVH定制】微信客服相关 P2优先级",
+        "group": "CRM 活动与会员",
+        "pic": "梁新江",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "",
+        "count": 34,
+        "tasks": [
+          {
+            "id": 103308,
+            "name": "【迭代控制】-【PVH定制】微信客服相关 P2优先级-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-31"
+          },
+          {
+            "id": 103311,
+            "name": "【迭代控制】-【PVH定制】微信客服相关 P2优先级-后端冒烟",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-31"
+          },
+          {
+            "id": 103390,
+            "name": "【迭代控制】-【PVH定制】微信客服相关 P2优先级-交叉测试",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-31"
+          },
+          {
+            "id": 103394,
+            "name": "【历史定制PRD功能确认】-PVH：微信客服期望可以追踪到以下KPI数据",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-08"
+          },
+          {
+            "id": 103396,
+            "name": "【前后端联调】-PVH：微信客服期望可以追踪到以下KPI数据",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-08"
+          },
+          {
+            "id": 103398,
+            "name": "【接口单元测试】-PVH：微信客服期望可以追踪到以下KPI数据",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-08"
+          },
+          {
+            "id": 103395,
+            "name": "【后端】-PVH：微信客服期望可以追踪到以下KPI数据",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-06"
+          },
+          {
+            "id": 103379,
+            "name": "【前端】-PVH：客服会话明细查看和导出希望可以分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-02"
+          },
+          {
+            "id": 103380,
+            "name": "【后端】-PVH：客服会话明细查看和导出希望可以分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-01"
+          },
+          {
+            "id": 103381,
+            "name": "【前后端联调】-PVH：客服会话明细查看和导出希望可以分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-01"
+          },
+          {
+            "id": 103383,
+            "name": "【接口单元测试】-PVH：客服会话明细查看和导出希望可以分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-01"
+          },
+          {
+            "id": 103364,
+            "name": "【前端】-PVH：微信客服商城订单的商品头图，期望可以点击可以看到商详页",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-30"
+          },
+          {
+            "id": 103374,
+            "name": "【前端】-PVH：微信客服期望可以提醒客服针对会话打标签",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-30"
+          },
+          {
+            "id": 103375,
+            "name": "【后端】-PVH：微信客服期望可以提醒客服针对会话打标签",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-30"
+          },
+          {
+            "id": 103376,
+            "name": "【前后端联调】-PVH：微信客服期望可以提醒客服针对会话打标签",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-30"
+          },
+          {
+            "id": 103378,
+            "name": "【接口单元测试】-PVH：微信客服期望可以提醒客服针对会话打标签",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-30"
+          },
+          {
+            "id": 103401,
+            "name": "【历史定制PRD功能确认】-PVH：电商投放的链接，消费者点击过后，需要有15天的业绩归属期",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-30"
+          },
+          {
+            "id": 103402,
+            "name": "【前后端联调】-PVH：电商投放的链接，消费者点击过后，需要有15天的业绩归属期",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-30"
+          },
+          {
+            "id": 103365,
+            "name": "【后端】-PVH：微信客服商城订单的商品头图，期望可以点击可以看到商详页",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-29"
+          },
+          {
+            "id": 103366,
+            "name": "【前后端联调】-PVH：微信客服商城订单的商品头图，期望可以点击可以看到商详页",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-29"
+          },
+          {
+            "id": 103368,
+            "name": "【接口单元测试】-PVH：微信客服商城订单的商品头图，期望可以点击可以看到商详页",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-29"
+          },
+          {
+            "id": 103404,
+            "name": "【接口单元测试】-PVH：电商投放的链接，消费者点击过后，需要有15天的业绩归属期",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-29"
+          },
+          {
+            "id": 103405,
+            "name": "【前端】-PVH：电商投放的链接，消费者点击过后，需要有15天的业绩归属期",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-29"
+          },
+          {
+            "id": 103385,
+            "name": "【历史定制PRD功能确认】-PVH：商城订单详情页，需要算好每个商品的从吊牌到实付中间的计算方式",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-26"
+          },
+          {
+            "id": 103386,
+            "name": "【接口单元测试】-PVH：商城订单详情页，需要算好每个商品的从吊牌到实付中间的计算方式",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-26"
+          },
+          {
+            "id": 103387,
+            "name": "【前端】-PVH：商城订单详情页，需要算好每个商品的从吊牌到实付中间的计算方式",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-26"
+          },
+          {
+            "id": 103388,
+            "name": "【后端】-PVH：商城订单详情页，需要算好每个商品的从吊牌到实付中间的计算方式",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-26"
+          },
+          {
+            "id": 103389,
+            "name": "【前后端联调】-PVH：商城订单详情页，需要算好每个商品的从吊牌到实付中间的计算方式",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-26"
+          },
+          {
+            "id": 103406,
+            "name": "【后端】-PVH：电商投放的链接，消费者点击过后，需要有15天的业绩归属期",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-26"
+          },
+          {
+            "id": 103369,
+            "name": "【前端】-微信客服的 会员详情页，跟着权限配置走，显示加密",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-25"
+          },
+          {
+            "id": 103370,
+            "name": "【后端】-微信客服的 会员详情页，跟着权限配置走，显示加密",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-25"
+          },
+          {
+            "id": 103371,
+            "name": "【前后端联调】-微信客服的 会员详情页，跟着权限配置走，显示加密",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-25"
+          },
+          {
+            "id": 103373,
+            "name": "【接口单元测试】-微信客服的 会员详情页，跟着权限配置走，显示加密",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-25"
+          },
+          {
+            "id": 103303,
+            "name": "【迭代控制】-【PVH定制】微信客服相关 P2优先级-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-24"
+          }
+        ],
+        "plans": [
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/PNQqw2PZPigf1gkZaPgcUOXUnA0?fromScene=spaceOverview"
+            ],
+            "state": "目录或链接待核验"
+          }
+        ],
+        "note": "王少佳是后端方案负责人，迭代 PIC 是梁新江；本次读到目录标题。",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4239"
+      },
+      {
+        "id": 4264,
+        "name": "PVH微信客服 P1 优先级",
+        "group": "CRM 活动与会员",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "",
+        "count": 15,
+        "tasks": [
+          {
+            "id": 102121,
+            "name": "【迭代控制】-PVH微信客服 P1 优先级-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-27"
+          },
+          {
+            "id": 102124,
+            "name": "【迭代控制】-PVH微信客服 P1 优先级-后端冒烟",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-18"
+          },
+          {
+            "id": 102145,
+            "name": "【接口单元测试】-PVH：微信客服的快捷回复期望可以分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-12"
+          },
+          {
+            "id": 102141,
+            "name": "【前端】-PVH：微信客服的快捷回复期望可以分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-12"
+          },
+          {
+            "id": 102143,
+            "name": "【前后端联调】-PVH：微信客服的快捷回复期望可以分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-12"
+          },
+          {
+            "id": 102131,
+            "name": "【接口单元测试】-PVH：电商客服非营业时间段离线后，期望可以有自动解答消费者咨询的功能",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-11"
+          },
+          {
+            "id": 102134,
+            "name": "【前后端联调】-PVH：电商客服非营业时间段离线后，期望可以有自动解答消费者咨询的功能",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-11"
+          },
+          {
+            "id": 102142,
+            "name": "【后端】-PVH：微信客服的快捷回复期望可以分权",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-11"
+          },
+          {
+            "id": 102132,
+            "name": "【前端】-PVH：电商客服非营业时间段离线后，期望可以有自动解答消费者咨询的功能",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-10"
+          },
+          {
+            "id": 102133,
+            "name": "【后端】-PVH：电商客服非营业时间段离线后，期望可以有自动解答消费者咨询的功能",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-10"
+          },
+          {
+            "id": 102137,
+            "name": "【前后端联调】-微信客服增加知识库",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-08"
+          },
+          {
+            "id": 102140,
+            "name": "【接口单元测试】-微信客服增加知识库",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-08"
+          },
+          {
+            "id": 102136,
+            "name": "【后端】-微信客服增加知识库",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-05"
+          },
+          {
+            "id": 102135,
+            "name": "【前端】-微信客服增加知识库",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-04"
+          },
+          {
+            "id": 101950,
+            "name": "【迭代控制】-PVH微信客服 P1 优先级-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-02"
+          }
+        ],
+        "plans": [],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4264"
+      },
+      {
+        "id": 4310,
+        "name": "销售线索服饰全量上线前优化迭代",
+        "group": "销售线索",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "2026-07-22",
+        "count": 9,
+        "tasks": [
+          {
+            "id": 104766,
+            "name": "【迭代控制】-销售线索服饰全量上线前优化迭代-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-07-22"
+          },
+          {
+            "id": 104769,
+            "name": "【迭代控制】-销售线索服饰全量上线前优化迭代-后端冒烟",
+            "people": "王少佳;杨柳;",
+            "status": 2,
+            "begin": "2026-07-21"
+          },
+          {
+            "id": 105042,
+            "name": "【后端】-小程序销售线索列表页改动",
+            "people": "王少佳;杨柳;",
+            "status": 2,
+            "begin": "2026-07-21"
+          },
+          {
+            "id": 105043,
+            "name": "【前后端联调】-小程序销售线索列表页改动",
+            "people": "王少佳;杨柳;",
+            "status": 2,
+            "begin": "2026-07-21"
+          },
+          {
+            "id": 105045,
+            "name": "【接口单元测试】-小程序销售线索列表页改动",
+            "people": "王少佳;杨柳;",
+            "status": 2,
+            "begin": "2026-07-21"
+          },
+          {
+            "id": 105047,
+            "name": "【后端】-销售线索工作流商品检索节点增加返回内容+兜底商品逻辑",
+            "people": "王少佳;杨柳;",
+            "status": 2,
+            "begin": "2026-07-21"
+          },
+          {
+            "id": 105048,
+            "name": "【前后端联调】-销售线索工作流商品检索节点增加返回内容+兜底商品逻辑",
+            "people": "王少佳;杨柳;",
+            "status": 2,
+            "begin": "2026-07-21"
+          },
+          {
+            "id": 105050,
+            "name": "【接口单元测试】-销售线索工作流商品检索节点增加返回内容+兜底商品逻辑",
+            "people": "王少佳;杨柳;",
+            "status": 2,
+            "begin": "2026-07-21"
+          },
+          {
+            "id": 104761,
+            "name": "【迭代控制】-销售线索服饰全量上线前优化迭代-后端技术方案",
+            "people": "王少佳;杨柳;",
+            "status": 2,
+            "begin": "2026-07-16"
+          }
+        ],
+        "plans": [],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4310"
+      },
+      {
+        "id": 4259,
+        "name": "伊利对接精明购定制",
+        "group": "商城、分销与推荐",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "商城",
+        "online": "2026-06-24",
+        "count": 7,
+        "tasks": [
+          {
+            "id": 101850,
+            "name": "【迭代控制】-伊利对接精明购定制-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-24"
+          },
+          {
+            "id": 101853,
+            "name": "【迭代控制】-伊利对接精明购定制-后端冒烟",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-05"
+          },
+          {
+            "id": 101869,
+            "name": "【接口单元测试】-新增微信小程序中转页面处理相关逻辑",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-05"
+          },
+          {
+            "id": 101867,
+            "name": "【前后端联调】-新增微信小程序中转页面处理相关逻辑",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-02"
+          },
+          {
+            "id": 101845,
+            "name": "【迭代控制】-伊利对接精明购定制-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-01"
+          },
+          {
+            "id": 101865,
+            "name": "【前端】-新增微信小程序中转页面处理相关逻辑",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-01"
+          },
+          {
+            "id": 101866,
+            "name": "【后端】-新增微信小程序中转页面处理相关逻辑",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-01"
+          }
+        ],
+        "plans": [],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4259"
+      },
+      {
+        "id": 4227,
+        "name": "【定制】小CK：区域会员日抽奖活动定制",
+        "group": "CRM 活动与会员",
+        "pic": "郑昆昆",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "2026-06-25",
+        "count": 1,
+        "tasks": [
+          {
+            "id": 103226,
+            "name": "小ck区域会员抽奖-券活动分析",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-18"
+          }
+        ],
+        "plans": [
+          {
+            "name": "前端技术方案",
+            "owners": "程波",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/WNDLwSqbri1jcgkdVPpcO2nLn0d"
+            ],
+            "state": "他人方案，未读取"
+          },
+          {
+            "name": "后端技术方案",
+            "owners": "郑昆昆",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/WNDLwSqbri1jcgkdVPpcO2nLn0d"
+            ],
+            "state": "他人方案，未读取"
+          }
+        ],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4227"
+      },
+      {
+        "id": 4226,
+        "name": "会员参加活动汇总统计一期",
+        "group": "活动数据与统计",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "2026-06-10",
+        "count": 11,
+        "tasks": [
+          {
+            "id": 101176,
+            "name": "【迭代控制】-会员参加活动汇总统计一期-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-06-10"
+          },
+          {
+            "id": 101179,
+            "name": "【迭代控制】-会员参加活动汇总统计一期-后端冒烟",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-19"
+          },
+          {
+            "id": 101184,
+            "name": "【后端】-puma：埋点期望做活动视图",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-19"
+          },
+          {
+            "id": 101185,
+            "name": "【前端】-华南区-香港莎莎：商城数据罗盘访客数字段需求",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-19"
+          },
+          {
+            "id": 101186,
+            "name": "【后端】-华南区-香港莎莎：商城数据罗盘访客数字段需求",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-19"
+          },
+          {
+            "id": 101187,
+            "name": "【前后端联调】-华南区-香港莎莎：商城数据罗盘访客数字段需求",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-19"
+          },
+          {
+            "id": 101189,
+            "name": "【接口单元测试】-华南区-香港莎莎：商城数据罗盘访客数字段需求",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-19"
+          },
+          {
+            "id": 101180,
+            "name": "【前后端联调】-puma：埋点期望做活动视图",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-18"
+          },
+          {
+            "id": 101182,
+            "name": "【接口单元测试】-puma：埋点期望做活动视图",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-18"
+          },
+          {
+            "id": 101183,
+            "name": "【前端】-puma：埋点期望做活动视图",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-18"
+          },
+          {
+            "id": 101067,
+            "name": "【迭代控制】-会员参加活动汇总统计一期-后端技术方案",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-14"
+          }
+        ],
+        "plans": [
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/Kx5IwHCEtiBnWMkMz72cJsxFnPg"
+            ],
+            "state": "已读正文/子方案"
+          }
+        ],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4226"
+      },
+      {
+        "id": 3982,
+        "name": "TH-会员中心首页及权益  UI 及开发",
+        "group": "CRM 活动与会员",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "",
+        "count": 1,
+        "tasks": [
+          {
+            "id": 95258,
+            "name": "【迭代控制】-TH-会员中心首页及权益  UI 及开发-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-28"
+          }
+        ],
+        "plans": [
+          {
+            "name": "前端技术方案",
+            "owners": "徐孟良",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/PbrEwKalOixmZjkenGYcKPcRnsd?from=from_copylink"
+            ],
+            "state": "他人方案，未读取"
+          },
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/EXr9wLZoIiSzPjknsQZcMhTFn5d"
+            ],
+            "state": "目录或链接待核验"
+          }
+        ],
+        "note": "方案链接内容标题为“注册弹窗装修功能”，与本迭代名称不一致，未用于能力判断。",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=3982"
+      },
+      {
+        "id": 4079,
+        "name": "对接火山引擎猜你喜欢",
+        "group": "商城、分销与推荐",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "",
+        "count": 1,
+        "tasks": [
+          {
+            "id": 97056,
+            "name": "【迭代控制】-对接火山引擎猜你喜欢-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-28"
+          }
+        ],
+        "plans": [
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/O7DgwpizJi6QnOkL3F7c9vdfnfd"
+            ],
+            "state": "已读正文/子方案"
+          }
+        ],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4079"
+      },
+      {
+        "id": 4099,
+        "name": "PVH-会员活动活动列表样式&品牌展示浏览活动",
+        "group": "CRM 活动与会员",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "",
+        "count": 1,
+        "tasks": [
+          {
+            "id": 97618,
+            "name": "【迭代控制】-PVH-会员活动活动列表样式&品牌展示浏览活动-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-28"
+          }
+        ],
+        "plans": [
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/MJN2w0RuCiYF1DkwnMkcyUjunDb"
+            ],
+            "state": "已读正文/子方案"
+          }
+        ],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4099"
+      },
+      {
+        "id": 4000,
+        "name": "PVH-订单/售后列表及详情（TH+CK两套页面）",
+        "group": "商城、分销与推荐",
+        "pic": "刘守汉",
+        "status": "正式上线",
+        "line": "商城",
+        "online": "",
+        "count": 1,
+        "tasks": [
+          {
+            "id": 101791,
+            "name": "【后端】C端退货审核通过-寄回商品（待退货）页 快递公司调整",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-28"
+          }
+        ],
+        "plans": [
+          {
+            "name": "前端技术方案",
+            "owners": "王宇锋;刘守汉",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/FIn4wSivviX3LAkvOLtc23C9n0x?fromScene=spaceOverview"
+            ],
+            "state": "他人方案，未读取"
+          },
+          {
+            "name": "后端技术方案",
+            "owners": "刘守汉",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/Jm0gw4Mm3izRIkkwtuHcESKmnsc?fromScene=spaceOverview"
+            ],
+            "state": "他人方案，未读取"
+          }
+        ],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4000"
+      },
+      {
+        "id": 4151,
+        "name": "PVH 搜索页支持分权 限购支持E店群支持分权",
+        "group": "商城、分销与推荐",
+        "pic": "刘守汉",
+        "status": "正式上线",
+        "line": "商城",
+        "online": "",
+        "count": 1,
+        "tasks": [
+          {
+            "id": 101793,
+            "name": "PVH定制商品限购支持分权 支持E店群、全部商品等",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-28"
+          }
+        ],
+        "plans": [
+          {
+            "name": "前端技术方案",
+            "owners": "梁新江",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/CQhhwSWe2iqJWjk7aHEcSXFWnFg?from=from_copylink"
+            ],
+            "state": "他人方案，未读取"
+          },
+          {
+            "name": "后端技术方案",
+            "owners": "梁新江",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/VahPwZ9AhiAPoPkw9H5cOBgenUe?from=from_copylink"
+            ],
+            "state": "他人方案，未读取"
+          }
+        ],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4151"
+      },
+      {
+        "id": 4104,
+        "name": "付费会员等加急需求",
+        "group": "CRM 活动与会员",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "2026-05-27",
+        "count": 1,
+        "tasks": [
+          {
+            "id": 99259,
+            "name": "【迭代控制】-付费会员等加急需求-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-27"
+          }
+        ],
+        "plans": [
+          {
+            "name": "后端技术方案",
+            "owners": "王少佳",
+            "urls": [
+              "https://yhdn05cxqe.feishu.cn/wiki/OKtSwVg22i56r1kzlx1cpl85ngd"
+            ],
+            "state": "已读正文/子方案"
+          }
+        ],
+        "note": "已读正文以模板及流程约束为主，未据此判断实际工程质量。",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4104"
+      },
+      {
+        "id": 4173,
+        "name": "PVH 新首页定制组件",
+        "group": "商城、分销与推荐",
+        "pic": "赵井旗",
+        "status": "正式上线",
+        "line": "商城",
+        "online": "",
+        "count": 2,
+        "tasks": [
+          {
+            "id": 100644,
+            "name": "【前端】-PVH：UI装修组件需求--特殊系列模块",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-13"
+          },
+          {
+            "id": 101106,
+            "name": "PVH：UI装修组件需求--特殊系列模块PC预览",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-12"
+          }
+        ],
+        "plans": [],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4173"
+      },
+      {
+        "id": 4182,
+        "name": "销售线索优化1",
+        "group": "销售线索",
+        "pic": "王少佳",
+        "status": "正式上线",
+        "line": "CRM",
+        "online": "2026-05-13",
+        "count": 1,
+        "tasks": [
+          {
+            "id": 99996,
+            "name": "【迭代控制】-销售线索优化-已上线",
+            "people": "王少佳;",
+            "status": 2,
+            "begin": "2026-05-13"
+          }
+        ],
+        "plans": [],
+        "note": "",
+        "url": "https://demand.ezrpro.work/iteration/detail?id=4182"
+      }
+    ],
+    "taskCount": 372,
+    "picCount": 23,
+    "readFiles": 37,
+    "taskStatus": {
+      "2": 369,
+      "0": 3
+    }
+  },
+  "narrative": {
+    "endpoints": [
+      {
+        "symbol": "{ }",
+        "name": "服务端",
+        "role": "主要工作证据",
+        "text": "接口、MQ、Canal、数据同步、网关鉴权",
+        "detail": "主要依据后端方案控制点、活动汇总方案及 Skill Gateway 子方案。",
+        "token": "Kx5IwHCEtiBnWMkMz72cJsxFnPg",
+        "label": "活动统计方案"
+      },
+      {
+        "symbol": "▱",
+        "name": "PC / CRM",
+        "role": "服务与前后端协同",
+        "text": "配置、导出、权限入口、前后端联调",
+        "detail": "森马线索 PC 方案前端负责人为徐孟良、赵井旗；后端方案由王少佳与祝金峰共同负责。",
+        "token": "NCPLwwyqPiT9lZkFAPycCQSSnyc",
+        "label": "线索品牌配置方案"
+      },
+      {
+        "symbol": "▯",
+        "name": "小程序",
+        "role": "接口与业务联调",
+        "text": "会员活动、线索列表、订单售后",
+        "detail": "7 月月报记录小程序销售线索列表与商品检索节点后端工作，和杨柳协作联调。",
+        "token": "LbiNwofQVilDpFkepMic0lv7nZd",
+        "label": "7 月工作复盘"
+      },
+      {
+        "symbol": "⌁",
+        "name": "App / SApp",
+        "role": "鉴权与服务接入",
+        "text": "OAuth、门店身份、报表与消息提醒",
+        "detail": "10 月 30 日周报记录 SApp 网关接入；尚无原生 iOS / Android 开发证据。",
+        "token": "FqbFwu49xiipbAk9r0icUZvunoc",
+        "label": "10 月 30 日周报"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "业务建模与边界拆分",
+        "chip": "业务建模",
+        "text": "抽奖能力独立建模，同时复用库存、券与积分；线索归因中分开处理归因窗口和冷却窗口，明确一条线索与多笔订单的关系。",
+        "boundary": "体现方案中的模型与边界意识；归因优化当前仍为技术设计状态。",
+        "sources": [
+          [
+            "LOfYwRGY4iJjaxkTtYucK8kgnmh",
+            "CK 扭蛋后端方案"
+          ],
+          [
+            "OQCOwpcMdiVPYtkPve2cUuv1n7c",
+            "线索归因优化方案"
+          ]
+        ]
+      },
+      {
+        "name": "异步链路与一致性设计",
+        "chip": "异步一致性",
+        "text": "活动汇总方案采用 Canal → Producer → MQ → Consumer → Doris 链路，包含幂等键、乱序防旧覆盖与历史补偿。6 月复盘提出把这些风险作为默认检查项。",
+        "boundary": "7 月复盘自述历史重刷已完成；仍缺少重刷后的抽样校验与生产指标。",
+        "sources": [
+          [
+            "Kx5IwHCEtiBnWMkMz72cJsxFnPg",
+            "会员活动统计方案"
+          ],
+          [
+            "RAT0wg7Izi5v40kuVXNcJSKtnWb",
+            "6 月复盘"
+          ]
+        ]
+      },
+      {
+        "name": "系统集成与故障隔离",
+        "chip": "系统集成",
+        "text": "推荐服务对接中设计重试、退避与降级；消费赠礼中退款后通过消息处理失效券；线索提醒失败不回滚已完成的归因。",
+        "boundary": "属于方案层面的设计证据；未审阅实现代码或线上故障恢复记录。",
+        "sources": [
+          [
+            "O7DgwpizJi6QnOkL3F7c9vdfnfd",
+            "火山引擎推荐对接方案"
+          ],
+          [
+            "OF6qw4d9miTsvPkYlg2clu9knh1",
+            "泰兰尼斯消费赠礼方案"
+          ],
+          [
+            "J6VdwrUVoinAq0kVKAgcH5rPnXg",
+            "线索消息提醒方案"
+          ]
+        ]
+      },
+      {
+        "name": "AI 工具平台与权限设计",
+        "chip": "MCP / Skill",
+        "text": "涉及 CRM 角色技能授权、品牌技能范围、目录与执行双重校验，以及内部智能体的一次性授权换码；区分内部免确认入口与外部平台授权流程。",
+        "boundary": "父迭代上线不代表每个子能力都已完成生产效果核验。角色权限文档本身保留待审阅状态。",
+        "sources": [
+          [
+            "OzzJwVcCmiLMoHkG3Rrc1MiFn0d",
+            "CRM 角色 Skill 权限"
+          ],
+          [
+            "TbqlwkiqdiYjYLkKuvscGhePnRh",
+            "品牌技能范围方案"
+          ],
+          [
+            "GemRwT2t1i8iUEkva1XcBhKmnVb",
+            "内部智能体授权方案"
+          ]
+        ]
+      },
+      {
+        "name": "协作与知识资产沉淀",
+        "chip": "协作与沉淀",
+        "text": "有前后端联调、画布测试用例、网关工具标准 Skill、多 Agent 协作协议等资料。9 月复盘记录在舜华鸭业 12 个技能建设中使用统一工具开发流程。",
+        "boundary": "复盘中的使用情况属于自述；多 Agent 协作资料保留待试点事项，团队采用率与提效幅度尚未核验。",
+        "sources": [
+          [
+            "KefKwNsqzirVLMkPGUxcWqwdnpb",
+            "9 月资产与工作复盘"
+          ],
+          [
+            "XPAQwInX8i9nQAknLFHcp0DfnSZ",
+            "多 Agent 协作体系"
+          ],
+          [
+            "ThRIwQuzei4UchkAhvEc1LljnLd",
+            "画布全量测试用例"
+          ]
+        ]
+      }
+    ],
+    "retros": [
+      {
+        "time": "2026.05",
+        "title": "修一个指标，要看完整个页面",
+        "status": "改进效果待验证",
+        "observed": false,
+        "problem": "生日营销仅修复 Bug 指定的指标，没有同步检查同页关联口径，修改后又产生上下数据不一致的问题。",
+        "action": "改动前梳理关联指标与影响范围，统一业务口径；自测覆盖同页相关展示，未定义口径时向产品确认。",
+        "evidence": "后续方案中能看到边界与回归约束，但尚未取得同类缺陷下降数据或该问题的完整回归记录。",
+        "sources": [
+          [
+            "Nakpw99GDiMQyQka8uIcHjiTnke",
+            "5 月原始复盘"
+          ]
+        ]
+      },
+      {
+        "time": "2026.05",
+        "title": "导出设计，需要提前看到数据量级",
+        "status": "改进效果待验证",
+        "observed": false,
+        "problem": "返利金明细使用分页循环导出，大数据量下深分页查询变慢，最终超时；设计时未评估合理导出规模。",
+        "action": "在需求与技术设计阶段评估当前数据规模及增长，避免依赖深分页取数。",
+        "evidence": "后续已见下载中心与导出流程沉淀；缺少该故障的修复记录、压测或生产指标，暂不能判定已闭环。",
+        "sources": [
+          [
+            "Nakpw99GDiMQyQka8uIcHjiTnke",
+            "5 月原始复盘"
+          ],
+          [
+            "KefKwNsqzirVLMkPGUxcWqwdnpb",
+            "9 月导出能力沉淀"
+          ]
+        ]
+      },
+      {
+        "time": "2026.06—07",
+        "title": "从“同步成功”走向乱序防护与历史校准",
+        "status": "有后续自述",
+        "observed": true,
+        "problem": "Canal 会员数据存在乱序场景，旧消息可能覆盖新数据；对历史补偿与最终一致性的风险预估不够前置。",
+        "action": "增加防旧覆盖；把乱序、重复消费、幂等更新、历史重刷作为默认检查项，并计划品牌历史数据校准。",
+        "evidence": "6 月记录防护已上线，7 月记录 7 月 17 日完成会员数据重刷；尚缺重刷后的抽样核对结果。",
+        "sources": [
+          [
+            "RAT0wg7Izi5v40kuVXNcJSKtnWb",
+            "6 月复盘"
+          ],
+          [
+            "LbiNwofQVilDpFkepMic0lv7nZd",
+            "7 月复盘"
+          ]
+        ]
+      },
+      {
+        "time": "2026.09",
+        "title": "画布按图层分批，每次只验证一条主路径",
+        "status": "技术决策有依据",
+        "observed": true,
+        "problem": "按运营场景切分会同时改筛选、触发与执行多个图层，回归面大；按全量属性切分又容易混入执行器内部字段。",
+        "action": "选择按底座、筛选、触发、执行、分流分批；使用同一份设计器元数据，每批以新建草稿独立验收。",
+        "evidence": "复盘记录 Q1 环境逐批核对控件和值，并交付测试用例。9 月测试结果与后续迭代整体上线分别保留。",
+        "sources": [
+          [
+            "KefKwNsqzirVLMkPGUxcWqwdnpb",
+            "9 月技术决策复盘"
+          ],
+          [
+            "ThRIwQuzei4UchkAhvEc1LljnLd",
+            "画布全量测试用例"
+          ]
+        ]
+      }
+    ]
+  }
+}
