@@ -1,6 +1,6 @@
 {
   "name": "王宇锋",
-  "role": "待补充",
+  "role": "业务组开发",
   "group": "业务研发组",
   "historical_level": "T3",
   "uid": 403,
@@ -11152,6 +11152,13 @@
   ],
   "empty_reports": [],
   "excluded_reports": [],
+  "personnel_confirmation": {
+    "name": "王宇锋",
+    "role": "业务组开发",
+    "historical_level": "T3",
+    "confirmed_at": "2026-11-15",
+    "source": "用户在本会话确认岗位与现职级"
+  },
   "plan_gaps": [
     {
       "url": "https://yhdn05cxqe.feishu.cn/wiki/Ev3Zw9037iqNs6kwM4hcQA7BnJ5",

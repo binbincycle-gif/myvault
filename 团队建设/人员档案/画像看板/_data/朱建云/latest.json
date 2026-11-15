@@ -1,6 +1,6 @@
 {
   "name": "朱建云",
-  "role": "待补充",
+  "role": "业务组开发",
   "group": "业务研发组",
   "historical_level": "T1",
   "uid": 623,
@@ -162289,6 +162289,15 @@
   "plan_documents": [],
   "empty_reports": [],
   "excluded_reports": [],
+  "responsibility_context": "主要承接技术中心的在线支持与线上问题处理。",
+  "personnel_confirmation": {
+    "name": "朱建云",
+    "role": "业务组开发",
+    "historical_level": "T1",
+    "responsibility_context": "主要承接技术中心的在线支持与线上问题处理。",
+    "confirmed_at": "2026-11-15",
+    "source": "用户在本会话确认岗位、现职级与职责背景"
+  },
   "plan_gaps": [],
   "detailed_assessment": {
     "schema_version": "team-detailed-analysis-v1",
